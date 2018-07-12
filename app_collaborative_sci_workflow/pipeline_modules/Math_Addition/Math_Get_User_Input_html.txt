@@ -1,0 +1,30 @@
+<br/>
+First Number:
+<select  class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+      <option value="module_1='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1.txt'" selected>From Module 1</option>
+      <option value="module_1='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_2.txt'" >From Module 2</option>
+      <option value="module_1='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_3.txt'" >From Module 3</option>
+      <option value="module_1='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_4.txt'" >From Module 4</option>
+      <option value="module_1='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_5.txt'" >From Module 5</option>
+      <option value="module_1='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_6.txt'" >From Module 6</option>
+      <option value="module_1='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_7.txt'" >From Module 7</option>
+      <option value="module_1='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_8.txt'" >From Module 8</option>
+      <option value="module_1='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_9.txt'" >From Module 9</option>
+      <option value="module_1='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_10.txt'" >From Module 10</option>
+</select>
+<br/><br/>
+Second Number:
+<select  class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+      <option value="module_2='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1.txt'" selected>From Module 1</option>
+      <option value="module_2='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_2.txt'" >From Module 2</option>
+      <option value="module_2='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_3.txt'" >From Module 3</option>
+      <option value="module_2='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_4.txt'" >From Module 4</option>
+      <option value="module_2='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_5.txt'" >From Module 5</option>
+      <option value="module_2='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_6.txt'" >From Module 6</option>
+      <option value="module_2='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_7.txt'" >From Module 7</option>
+      <option value="module_2='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_8.txt'" >From Module 8</option>
+      <option value="module_2='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_9.txt'" >From Module 9</option>
+      <option value="module_2='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_10.txt'" >From Module 10</option>
+</select>
+<br/><br/>
+

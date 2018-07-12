@@ -1,0 +1,15 @@
+<br/>
+Select Input Sequence File: <select  class="setting_param" name="input_seq_file"> <!-- CHANGE IN THIS LINE -->
+      <option value="inputFile = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_inputs/test_workflow/SP1.fq'" selected>Sequence File 1</option>
+      <option value="inputFile = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_inputs/test_workflow/SP2.fq'" >Sequence File 2</option>
+      <option value="inputFile = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/std2sol.fq'" >From Module 1</option>
+</select> 
+
+<br/><br/>
+
+
+Conv. Rate:
+<input type="text" class="setting_param" value="conv_rate=21.0" name="cleaning_threshold" size="45"/>
+
+
+<br/><br/>

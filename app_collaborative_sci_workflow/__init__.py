@@ -1,0 +1,11 @@
+from flask import Blueprint
+
+app_collaborative_sci_workflow = Blueprint(
+'app_collaborative_sci_workflow',
+__name__,
+template_folder='templates',
+static_folder='static',
+static_url_path='/app_collaborative_sci_workflow/static'
+)
+
+from app_collaborative_sci_workflow import views

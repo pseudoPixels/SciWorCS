@@ -1,0 +1,36 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Path of the Project</label>
+            <referenceVariable>sourceFile</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Tokens</label>
+            <referenceVariable>output_tokens</referenceVariable>
+            <dataFormat>token</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+            <b>Tokenizer</b>
+                <p><i>Description:</i><br/>
+            Tokenize the code <br/>
+            <br/></p>
+    </toolDocumentation>
+
+
+</SciWorC>
+

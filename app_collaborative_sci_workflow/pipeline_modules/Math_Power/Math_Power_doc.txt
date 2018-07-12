@@ -1,0 +1,4 @@
+<b>Math - Power</b>
+	<p><i>Description:</i><br/>
+This method returns value of x^y<br/>
+<br/>

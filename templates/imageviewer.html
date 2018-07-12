@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- FEATURE SECTION END-->
+    <section id="datainsert-sec">
+        <div class="container">
+            <div class="row pad-btm">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.1s">Platform for Data Support </h1>
+                    <p data-scroll-reveal="enter from the bottom after 0.3s">
+
+  <p>For Data insertion, Click <a href="{{ url_for('upload') }}">here</a></p>
+
+  <p>Data View</p>
+
+  <form action="/" method="post">
+  {{form.source.label}}
+      <div style = font-size:20px;color:#000000>
+     {{form.source}} &nbsp  <input type="submit" name="submit" value="Update Source">
+  </div>
+      </form>
+  <div id="imageViewer"></div>
+  <script type="text/javascript">
+      viewer.toolbarImages="static/img/toolbar"
+			viewer.onload =  viewer.toolbar;
+        var imagesourceUrl = {{ source|safe }};
+			var viewerObject = new viewer({
+				parent: document.getElementById('imageViewer'),
+				imageSource: imagesourceUrl,
+				frame: ['600px','350px']
+			});
+  </script>
+  <p>&nbsp</p>
+                    <form action="/" method="post">
+            <div style=font-size:20px;color:#000000>
+            {{form.textArea(rows='10',cols='50')}}
+                </div>
+            <div >
+                <input type="submit" class="next_picture" name="submit" value="Next Picture">
+                <input type="submit" class="prev_picture" name="submit" value="Prev. Picture">
+                <input type="submit" class="update_picture" name="submit" value="Update Annotation">
+            </div>
+        </form>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

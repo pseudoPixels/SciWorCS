@@ -1,0 +1,11 @@
+PASS	Basic Statistics	SP1.fq
+WARN	Per base sequence quality	SP1.fq
+PASS	Per sequence quality scores	SP1.fq
+FAIL	Per base sequence content	SP1.fq
+FAIL	Per sequence GC content	SP1.fq
+PASS	Per base N content	SP1.fq
+PASS	Sequence Length Distribution	SP1.fq
+PASS	Sequence Duplication Levels	SP1.fq
+FAIL	Overrepresented sequences	SP1.fq
+WARN	Adapter Content	SP1.fq
+PASS	Kmer Content	SP1.fq

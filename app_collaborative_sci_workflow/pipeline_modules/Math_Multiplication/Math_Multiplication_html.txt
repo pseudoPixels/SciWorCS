@@ -1,0 +1,43 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>First Number (i.e., first num * second num):</label>
+            <referenceVariable>first_number</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+        <toolInput>
+            <label>Second Number (i.e., first num * second num):</label>
+            <referenceVariable>second_number</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Multiplication Result</label>
+            <referenceVariable>multiplication_result</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        <b>Math - Multiplication</b>
+        <p><i>Description:</i><br/>
+        Multiplies Two Numbers <br/>
+        <br/></p>
+    </toolDocumentation>
+
+
+
+</SciWorC>
+
+

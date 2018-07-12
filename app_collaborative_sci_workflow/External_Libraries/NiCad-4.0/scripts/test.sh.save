@@ -1,0 +1,5 @@
+#!/bin/bash
+echo >> "Starting ls Command" >>  '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/mylog01.txt'
+
+exit 0
+

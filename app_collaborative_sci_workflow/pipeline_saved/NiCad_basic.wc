@@ -1,0 +1,141 @@
+<div style="background-color:#EEE;width:100%" class="module" id="module_id_1"><!-- Documentation --><div style="margin:10px;font-size:17px;color:#000000;"> NiCAD_extract_potential_clones (Module 1)<hr> Documentation: <a style="font-size:12px;color:#000000;" href="#" class="documentation_show_hide">(Show/Hide)</a><div class="documentation" style="background-color:#DDDDDD;display:none;font-size:14px;"><b>NiCad - Extract Potential Clones</b>
+	<p><i>Description:</i> <br>
+	Extracts potential clones (based on block sizes) from the project. These results<br>
+	does not include any comparision. Just returns all possible fragments based on configured blocks/functions sizes.<br>
+	</p>
+
+
+<i>Usage:</i>
+<ol>
+	<li>Source Project: Select the module or files to take the input from.</li>
+	<li>Output Files: Select the module or files to send the input to.</li>
+	<li>Set Granularity Levels: Functions/Blocks.</li>
+</ol></div></div><!-- Settings --><div style="margin:10px;font-size:17px;color:#000000;">   Settings: <a style="font-size:12px;color:#000000;" href="#" class="settings_show_hide">(Show/Hide)</a>   <div class="settings" style="background-color: rgb(221, 221, 221); font-size: 14px;"><br>
+ Software System For Analysis: <select class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+      <option value="system_directory = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/Dataset/open_source_projects/JHotDraw54b1'" selected="selected">JHotDraw54b1</option>
+      <option value="system_directory = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/Dataset/open_source_projects/monit-4.2'">Monit-4.2</option>
+</select>
+<br><br>
+ Granularity: <select class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+      <option value="granularity = 'functions'" selected="selected">Functions</option>
+      <option value="granularity = 'blocks'">Blocks</option>
+</select>
+<br><br>
+ Language: <select class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+      <option value="language = 'java'" selected="selected">Java</option>
+      <option value="language = 'cs'">C#</option>
+      <option value="language = 'py'">Python</option>
+      <option value="language = 'c'">C</option>
+</select>
+<br><br>
+ Select Pattern (Reg. Exp.):
+<input type="text" class="setting_param" value="select_pattern=''" name="cleaning_threshold" size="45">
+<br><br>
+ Ignore Pattern (Reg. Exp.):
+<input type="text" class="setting_param" value="ignore_pattern=''" name="cleaning_threshold" size="45">
+<br><br>
+
+<input type="hidden" class="setting_param " size="45" id="module_id_1_output_destination" value="output_destination = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1'"></div></div><div style="margin:10px;font-size:17px;color:#000000;" class="setting_section">    Source Code: <a style="font-size:12px;color:#000000;" href="#" class="code_show_hide">(Show/Hide)</a>   <div class="edit_code" style="background-color:#888888;display:none;font-size:14px;">          <textarea rows="7" cols="180" class="code_settings">
+granularity = 'functions'
+language = 'java'
+system_directory='/home/ubuntu/Webpage/app_collaborative_sci_workflow/Dataset/open_source_projects/JHotDraw54b1'
+select_pattern=''
+ignore_pattern=''
+output_destination = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1'</textarea>         <p style="color:#000000;">Main Implementation: </p>        <textarea rows="10" cols="180">import subprocess
+
+pipe = subprocess.Popen(
+    ["/bin/bash", "/home/ubuntu/Webpage/app_collaborative_sci_workflow/External_Libraries/NiCad-4.0/scripts/Extract",
+     granularity, language,
+     system_directory, select_pattern, ignore_pattern,
+     output_destination]).communicate()
+
+</textarea></div> <pre style="background-color:#333333;width:100%;" class="pre_highlighted_code"><code class="python highlighted_code hljs" style="display:none;">
+
+granularity = <span class="hljs-string"><span class="hljs-string">'functions'</span></span>
+language = <span class="hljs-string"><span class="hljs-string">'java'</span></span>
+system_directory=<span class="hljs-string"><span class="hljs-string">'/home/ubuntu/Webpage/app_collaborative_sci_workflow/Dataset/open_source_projects/JHotDraw54b1'</span></span>
+select_pattern=<span class="hljs-string"><span class="hljs-string">''</span></span>
+ignore_pattern=<span class="hljs-string"><span class="hljs-string">''</span></span>
+output_destination = <span class="hljs-string"><span class="hljs-string">'/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1'</span></span> 
+<span class="hljs-keyword"><span class="hljs-keyword">import</span></span> subprocess
+
+pipe = subprocess.Popen(
+    [<span class="hljs-string"><span class="hljs-string">"/bin/bash"</span></span>, <span class="hljs-string"><span class="hljs-string">"/home/ubuntu/Webpage/app_collaborative_sci_workflow/External_Libraries/NiCad-4.0/scripts/Extract"</span></span>,
+     granularity, language,
+     system_directory, select_pattern, ignore_pattern,
+     output_destination]).communicate()
+
+</code></pre> </div></div><div style="background-color:#EEE;width:100%" class="module" id="module_id_2"><!-- Documentation --><div style="margin:10px;font-size:17px;color:#000000;"> NiCAD_find_near_miss_clones (Module 2)<hr> Documentation: <a style="font-size:12px;color:#000000;" href="#" class="documentation_show_hide">(Show/Hide)</a><div class="documentation" style="background-color:#DDDDDD;display:none;font-size:14px;"><b>NiCad - Find Near Miss Clones</b>
+	<p><i>Description:</i><br>
+Maximum difference threshold we are interested in (0.n)<br>
+Example: 	threshold=0.3<br>
+
+
+ Sizes of clones we are interested in, in pretty-printed lines<br>
+ Example:	minsize=10<br>
+		maxsize=2500<br>
+
+</p>
+
+
+<i>Usage:</i>
+<ol>
+	<li>Source Project: Select the module or files to take the input from.</li>
+	<li>Output Files: Select the module or files to send the input to.</li>
+	<li>Set Granularity Levels: Functions/Blocks.</li>
+</ol></div></div><!-- Settings --><div style="margin:10px;font-size:17px;color:#000000;">   Settings: <a style="font-size:12px;color:#000000;" href="#" class="settings_show_hide">(Show/Hide)</a>   <div class="settings" style="background-color: rgb(221, 221, 221); font-size: 14px;"><br>
+ Input Potential Clone File (xml): <select class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+      <option value="input_source='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1.xml'" selected="selected">From Module 1</option>
+      <option value="input_source='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_2.xml'">From Module 2</option>
+      <option value="input_source='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_3.xml'">From Module 3</option>
+      <option value="input_source='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_4.xml'">From Module 4</option>
+      <option value="input_source='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_5.xml'">From Module 5</option>
+      <option value="input_source='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_6.xml'">From Module 6</option>
+      <option value="input_source='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_7.xml'">From Module 7</option>
+      <option value="input_source='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_8.xml'">From Module 8</option>
+      <option value="input_source='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_9.xml'">From Module 9</option>
+      <option value="input_source='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_10.xml'">From Module 10</option>
+</select>
+<br><br>
+ Threshold (0.n):
+<input type="text" class="setting_param" value="threshold= 0.3" name="cleaning_threshold" size="45">
+<br><br>
+ Minimum Clone Size (e.g., in pretty-printed lines):
+<input type="text" class="setting_param" value="minCloneSize =3" name="cleaning_threshold" size="45">
+<br><br>
+Maximum Clone Size (e.g., in pretty-printed lines):
+<input type="text" class="setting_param" value="maxCloneSize = 2500" name="cleaning_threshold" size="45">
+<br><br>
+<input type="hidden" class="setting_param " size="45" id="module_id_2_output_destination" value="output_destination = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_2'"></div></div><div style="margin:10px;font-size:17px;color:#000000;" class="setting_section">    Source Code: <a style="font-size:12px;color:#000000;" href="#" class="code_show_hide">(Show/Hide)</a>   <div class="edit_code" style="background-color:#888888;display:none;font-size:14px;">          <textarea rows="7" cols="180" class="code_settings">
+
+input_source = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/renaming.xml'
+output_destination = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/nearMissClones2'
+threshold= 0.3
+minCloneSize = 10
+maxCloneSize = 2500</textarea>         <p style="color:#000000;">Main Implementation: </p>        <textarea rows="10" cols="180">import subprocess
+
+pipe = subprocess.Popen(
+    ["/bin/bash",
+     "/home/ubuntu/Webpage/app_collaborative_sci_workflow/External_Libraries/NiCad-4.0/scripts/FindClonePairs",
+     input_source, str(threshold),
+     str(minCloneSize), str(maxCloneSize),
+     output_destination]).communicate()
+
+</textarea></div> <pre style="background-color:#333333;width:100%;" class="pre_highlighted_code"><code class="python highlighted_code hljs" style="display:none;">
+
+
+input_source = <span class="hljs-string">'/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/renaming.xml'</span>
+output_destination = <span class="hljs-string">'/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/nearMissClones2'</span>
+threshold= <span class="hljs-number">0.3</span>
+minCloneSize = <span class="hljs-number">10</span>
+maxCloneSize = <span class="hljs-number">2500</span> 
+<span class="hljs-keyword">import</span> subprocess
+
+pipe = subprocess.Popen(
+    [<span class="hljs-string">"/bin/bash"</span>,
+     <span class="hljs-string">"/home/ubuntu/Webpage/app_collaborative_sci_workflow/External_Libraries/NiCad-4.0/scripts/FindClonePairs"</span>,
+     input_source, str(threshold),
+     str(minCloneSize), str(maxCloneSize),
+     output_destination]).communicate()
+
+</code></pre> </div></div>

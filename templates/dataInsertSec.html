@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Insert</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="static/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FONT AWESOME CSS -->
+    <link href="static/css/font-awesome.css" rel="stylesheet"/>
+    <!-- ANIMATION STYLES -->
+    <link href="static/css/animate.css" rel="stylesheet"/>
+    <!-- CUSTOM STYLE CSS -->
+    <link href="static/css/style.css" rel="stylesheet"/>
+    <!-- GOOGLE FONT -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <!-- Image Viewer -->
+    <link rel="stylesheet" type="text/css" href="static/css/toolbar-ext.css"/>
+    <!-- Image Script  -->
+    <script type="text/javascript" src="static/js/Simple_Viewer_beta_1.1.js"></script>
+    <!-- Toolabr extension -->
+    <script type="text/javascript" src="static/js/toolbar-ext.js"></script>
+</head>
+<body style="background-color: #98cfb1">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+                    data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: #000000;font-family: cursive"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Hello, {{ name }} !</a></li>
+                <li><a href="/">Log out</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href={{ url_for("dataInsert") }}>Platform for Data Support</a></li>
+                <li><a href={{ url_for("lsystemModel") }}>L-Systems Plant Modeling</a></li>
+		<li><a href={{ url_for("p2irc_apis_homepage") }}>P2IRC APIs</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--HEADER SECTION END -->
+<div class="container navbar-fixed-top" id="Info">
+    {% for message in get_flashed_messages() %}
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            {{ message }}
+        </div>
+    {% endfor %}
+</div>
+<!-- ERROR INFO SECTION END-->
+
+<section id="datainsert-sec" class="container">
+    <div class="row pad-btm">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+            {#            <h1 data-scroll-reveal="enter from the bottom after 0.1s">Platform for Data Support </h1>#}
+            <p data-scroll-reveal="enter from the bottom after 0.3s">
+
+            <p>For Data insertion, Click <a href="{{ url_for('upload') }}">here</a></p>
+
+            <h3>Data View</h3>
+
+            <form method="post" action={{ url_for('dataInsert') }}>
+                {{ form.source.label }}
+                <div style=font-size:20px;color:#000000>
+                    {{ form.source }}
+                    &nbsp
+                    <input type="submit" class="btn btn-info" name="submit" value="Update Source">
+                    &nbsp;
+                    <input type="submit" class="btn btn-info" name="submit" value="Simulation">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+            <div id="imageViewer"></div>
+            <script type="text/javascript">
+                viewer.toolbarImages = "static/img/toolbar"
+                viewer.onload = viewer.toolbar;
+                var imagesourceUrl = {{ source|safe }};
+                var viewerObject = new viewer({
+                    parent: document.getElementById('imageViewer'),
+                    imageSource: imagesourceUrl,
+                    frame: ['600px', '350px']
+                });
+            </script>
+        </div>
+
+        <div class="col-md-4" style="margin-left:30px">
+            <div class="input-group">
+                {{ form.metaData.label(class="input-group-addon") }}
+                {{ form.metaData(class="form-control",  placeholder="no information;", readonly="", id="metaData") }}
+            </div>
+            <div class="input-group">
+                {{ form.height.label(class="input-group-addon") }}
+                {{ form.height(class="form-control", placeholder="", id="height") }}
+                {{ form.width.label(class="input-group-addon") }}
+                {{ form.width(class="form-control", placeholder="", id="width") }}
+            </div>
+            <div class="input-group">
+                {{ form.area.label(class="input-group-addon") }}
+                {{ form.area(class="form-control", placeholder="", id="area") }}
+                {{ form.size.label(class="input-group-addon") }}
+                {{ form.size(class="form-control", placeholder="", id="size") }}
+            </div>
+            <div class="input-group">
+                {{ form.soilCondition.label( class="input-group-addon") }}
+                {{ form.soilCondition(class="form-control", placeholder="", id="soilCondition") }}
+            </div>
+            <div class="input-group">
+                {{ form.localSaturation.label( class="input-group-addon") }}
+                {{ form.localSaturation(class="form-control", placeholder="", id="localSaturation") }}
+            </div>
+            <div class="input-group">
+                {{ form.location.label( class="input-group-addon") }}
+                {{ form.location(class="form-control", placeholder="", id="location") }}
+            </div>
+            <div class="input-group">
+                {{ form.weatherCondition.label( class="input-group-addon") }}
+                {{ form.weatherCondition(class="form-control", required="required", id="weatherCondition") }}
+            </div>
+            <div class="form-group">
+                {{ form.textArea.label }}
+                {{ form.textArea(rows="2",class="form-control", style="color:#000000", id="textArea") }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" action={{ url_for('dataInsert') }}>
+            <div class="col-md-offset-2 col-md-2 pad-btm">
+                <input type="submit" class="btn btn-primary center-block" name="submit" value="Prev. Picture">
+            </div>
+            <div class=" col-md-2 pad-btm">
+                <input type="submit" class="btn btn-primary center-block" name="submit" value="Next Picture">
+            </div>
+        </form>
+        <div class="col-md-4 pad-btm col-md-offset-2">
+            {#                <input type="submit" class="btn btn-info center-block" name="submit" value="Update Annotation">#}
+            <button class="btn btn-primary" onclick="updateAnotation()" value="Update Annotation">Update
+                Annotation
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Data Insert Section END-->
+
+<!--CORE SCRIPTS-->
+<script src="/static/js/jquery-1.11.1.js"></script>
+<!--BOOTSTRAP SCRIPTS-->
+<script src="/static/js/bootstrap.js"></script>
+<!--WOW SCRIPTS-->
+<script src="/static/js/wow.js"></script>
+<!--SCROLL SCRIPTS-->
+<script src="/static/js/jquery.smooth-scroll.min.js"></script>
+<!--SCROLL ANIMATION SCRIPTS-->
+<script src="/static/js/scrollReveal.js"></script>
+<!--CUSTOM SCRIPTS-->
+<script src="/static/js/custom.js"></script>
+<script>
+    $(document).ready(function () {
+        var imgObject = $('#imageViewer img');
+        $('#metaData').val(imgObject.width() + " x " + imgObject.height() + "px;");
+
+    })
+
+    function updateAnotation() {
+        $.post('/updateAnotation', {
+            src: $('#imageViewer img').attr('src'),
+            height: $('#height').val(),
+            width: $('#width').val(),
+            area: $('#area').val(),
+            size: $('#size').val(),
+            soilCondition: $('#soilCondition').val(),
+            localSat: $('#localSaturation').val(),
+            location: $('#location').val(),
+            weatherCondition: $('#weatherCondition').val(),
+            textArea: $('#textArea').val()
+        }).done(function (text) {
+            alert(text);
+        }).fail(function () {
+            alert("fail!")
+        })
+    }
+</script>
+</body>
+</html>

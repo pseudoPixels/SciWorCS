@@ -1,0 +1,41 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>First Number</label>
+            <referenceVariable>first_number</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+        <toolInput>
+            <label>Second Number</label>
+            <referenceVariable>second_number</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Summation Result</label>
+            <referenceVariable>summation_result</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+<b>Math - Addition</b>
+	<p><i>Description:</i><br/>
+Adds Two Numbers <br/>
+<br/></p>
+    </toolDocumentation>
+
+
+</SciWorC>
+

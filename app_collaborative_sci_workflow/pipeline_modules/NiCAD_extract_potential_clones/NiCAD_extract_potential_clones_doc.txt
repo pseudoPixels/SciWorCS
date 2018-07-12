@@ -1,0 +1,13 @@
+<b>NiCad - Extract Potential Clones</b>
+	<p><i>Description:</i> <br/>
+	Extracts potential clones (based on block sizes) from the project. These results<br/>
+	does not include any comparision. Just returns all possible fragments based on configured blocks/functions sizes.<br/>
+	</p>
+
+
+<i>Usage:</i>
+<ol>
+	<li>Source Project: Select the module or files to take the input from.</li>
+	<li>Output Files: Select the module or files to send the input to.</li>
+	<li>Set Granularity Levels: Functions/Blocks.</li>
+</ol>

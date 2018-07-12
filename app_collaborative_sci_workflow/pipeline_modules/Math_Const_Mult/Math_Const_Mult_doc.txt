@@ -1,0 +1,4 @@
+<b>Math - Constant Multiplication</b>
+	<p><i>Description:</i><br/>
+Multiplies A Number By Constant. <br/>
+<br/>

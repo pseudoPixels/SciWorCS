@@ -1,0 +1,15 @@
+<b>NiCad - Filtering</b>
+	<p><i>Description:</i><br/>
+	Kind of filtering to be applied (none, nonterminal ...) <br/>
+    Where each "nonterminal" is the name of a nonterminal in the language grammar <br/>
+    Example: 	filter="declaration assign_statement" <br/>
+    means filter out [declaration]s and [assign_statement]s from potential clones <br/>
+</p>
+
+
+<i>Usage:</i>
+<ol>
+	<li>Source Project: Select the module or files to take the input from.</li>
+	<li>Output Files: Select the module or files to send the input to.</li>
+	<li>Set Granularity Levels: Functions/Blocks.</li>
+</ol>

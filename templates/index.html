@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:font-color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Plan Phenotyping Data Collection and View</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="static/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FONT AWESOME CSS -->
+    <link href="static/css/font-awesome.css" rel="stylesheet"/>
+    <!-- ANIMATION STYLES -->
+    <link href="static/css/animate.css" rel="stylesheet"/>
+    <!-- CUSTOM STYLE CSS -->
+    <link href="static/css/style.css" rel="stylesheet"/>
+    <!-- GOOGLE FONT -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <!-- Image Viewer -->
+    <link rel="stylesheet" type="text/css" href="static/css/toolbar-ext.css"/>
+    <!-- Image Script  -->
+    <script type="text/javascript" src="static/js/Simple_Viewer_beta_1.1.js"></script>
+    <!-- Toolabr extension -->
+    <script type="text/javascript" src="static/js/toolbar-ext.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar-example" data-offset="100">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-example">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target=".bs-js-navbar-scrollspy" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse bs-js-navbar-scrollspy" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#home-sec">Home (new) <span class="sr-only">(current)</span></a></li>
+                <li><a href="#about-sec">About</a></li>
+                <li><a href="#features-sec">Features</a></li>
+                <li><a href="#team-sec">Team</a></li>
+                <li><a href="#contact-sec">Contact Us</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#LogIn">Log In</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#SignUp">Sign Up</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+</nav>
+<!-- NAV BAR SECTION END-->
+<div class="modal fade" id="LogIn">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="media-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span><span class="sr-only"></span>
+                </button>
+                <h4 class="modal-title">Please sign in</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-signin" method="post" action={{ url_for('login') }}>
+                    {{ login.login_user(class="form-control", placeholder="Username")}}
+                    {{ login.login_pass(class="form-control", placeholder="Password") }}
+                    <br/>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+                </form>
+            </div>
+            <!--{#            <div class="modal-footer">#}-->
+            <!--{#                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>#}-->
+            <!--{#            </div>#}-->
+        </div>
+    </div>
+</div>
+<!-- LOG IN SECTION END-->
+<div class="modal fade" id="SignUp">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="media-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span><span class="sr-only"></span>
+                </button>
+                <h4 class="modal-title">Please sign up</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-signin" method="post" action={{ url_for("register") }}>
+                    {{ register.username(class="form-control", placeholder="Username", required="", autofocus="") }}
+                    {{ register.password(class="form-control", placeholder="Password") }}
+                    {{ register.confirm_password(class="form-control", placeholder="Confirmed password") }}
+                    {{ register.email(type="email", class="form-control", placeholder="Email") }}
+                    <br/>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SIGN UP SECTION END-->
+<div class="container navbar-fixed-top" id="errorInfo">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+</div>
+<!-- ERROR INFO SECTION END-->
+
+<div id="home-sec">
+    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active ">
+                <img src="/static/img/1.jpg" alt=""/>
+                <div class="carousel-caption">
+                    <h1 class="slide-h1 wow bounceInDown" data-wow-duration="1s">Plant Phenotyping</h1>
+                    <h2 class="slide-h2 wow bounceInLeft" data-wow-duration="2s" data-wow-delay="1s">A new era in
+                        research</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/static/img/2.jpg" alt=""/>
+                <div class="carousel-caption">
+                    <h1 class="slide-h1 wow bounceInDown" data-wow-duration="2s">Big Data Analytics</h1>
+                    <h2 class="slide-h2 wow bounceInLeft" data-wow-duration="2s" data-wow-delay="1s">A way to study on
+                        huge data collection</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/static/img/3.jpg" alt=""/>
+                <div class="carousel-caption">
+                    <h1 class="slide-h1 wow bounceInDown" data-wow-duration="2s">Plant Phenotyping and Big Data
+                        Analytics </h1>
+                    <h2 class="slide-h2 wow bounceInLeft" data-wow-duration="2s" data-wow-delay="1s">A step to save the
+                        future world</h2>
+                </div>
+            </div>
+        </div>
+        <!--INDICATORS-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example" data-slide-to="1"></li>
+            <li data-target="#carousel-example" data-slide-to="2"></li>
+        </ol>
+    </div>
+</div>
+<!-- HOME SECTION END-->
+<section id="about-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s">ABOUT </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                    The Plant Phenotyping and Imaging Research Centre (P2IRC) is a new $37M initiative at the University
+                    of Saskatchewan that will drive transformative innovation in plant breeding through powerful new
+                    computational techniques to digitize desired crop traits (phenotypes) and link them to specific
+                    genes. The project involves exciting research across many areas of Computer Science including: image
+                    processing, machine learning, bioinformatics, high-performance computing, software engineering,
+                    programming languages, data analytics, computer graphics and human-computer interaction. PIRC builds
+                    on the University of Saskatchewan's internationally-renowned food security and computer science
+                    strengths and will accelerate crop development, bolstering Canada’s agricultural leadership and
+                    improving global food security.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ABOUT SECTION END-->
+<section id="features-sec">
+    <div class="container ">
+        <div class="row pad-btm">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s">FEATURES </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    This platform helps to collect data and store them for the future use. This platform also preserves
+                    the motivation to help researchers of University of Saskatchewan to use these plant phenotype data
+                    for their research purpose and extend plant phenotyping present situation to an advanced level.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+    </div>
+</section>
+<!-- FEATURE SECTION END-->
+<section id="team-sec">
+    <div class="container">
+        <div class="row pad-btm">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s">TEAM </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                    At present, plant phenotyping with big data analysing team consists of four members. Our main focus
+                    is right now collecting data from different sources, store them for future use. At the same time,
+                    our focus is to develop collaborative realtions between different disciplines of Department of
+                    Computer Science of University of Saskatchewan.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.4s">
+                <img src="static/img/4t.jpg" class="img-circle img-responsive set-img"/>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.5s">
+                <h2>Kevin Schineder</h2>
+                <p>
+                    Professor
+                    <br/>
+                    Department of Computer Science
+                    <br/>
+                    University of Saskatchewan
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                <img src="static/img/3t.jpg" class="img-circle img-responsive set-img"/>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.7s">
+                <h2>Chanchal Roy</h2>
+                <p>
+                    Associate Professor
+                    <br/>
+                    Department of Computer Science
+                    <br/>
+                    University of Saskatchewan
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.4s">
+                <img src="static/img/1t.jpg" class="img-circle img-responsive set-img"/>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.5s">
+                <h2>Banani Roy</h2>
+                <p>
+                    Professional Research Associate
+                    <br/>
+                    Global Institute of Food Security &
+                    <br/>
+                    Department of Computer Science
+                    <br/>
+                    University of Saskatchewan
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                <img src="static/img/2t.jpg" class="img-circle img-responsive set-img"/>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.7s">
+                <h2>Kawser Wazed Nafi</h2>
+                <p>
+                    PhD student
+                    <br/>
+                    Software Research Laboratory
+                    <br/>
+                    Department of Computer Science
+                    <br/>
+                    University of Saskatchewan
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- TEAM SECTION END-->
+<section id="contact-sec">
+    <div class="container">
+        <div class="row pad-btm">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s">CONTACT US</h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                    This project is a collaborative research project of different research groups under Computer Science
+                    department of University of Saskatchewan. The main target of this project is to find out a solution
+                    for doing plant phenotyping in a easiest way with COTS.
+                </p>
+            </div>
+
+        </div>
+        <div class="row pad-btm">
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  " data-scroll-reveal="enter from the bottom after 0.5s">
+                <h2>Our Location</h2>
+                <p>
+                    176 Thorvaldson Bldg., 110 Science Place
+                    <br>
+                    University of Saskatchewan, Saskatoon, SK
+                    <br>
+                    S7N 5C9, Canada
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                <img src="static/img/2t.jpg" class="img-circle img-responsive cnt-img"/>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                <p>
+                    Developer and Correspondence Contact for this website is
+                    <br>
+                    Kawser Wazed Nafi
+                    <br>
+                    Software Research Lab, USask
+                </p>
+                <div class="form-group">
+                    <input type="text" class="form-control"/>
+                    <br/>
+                    <a href="#" class="btn btn-primary">SUBSCRIBE FOR UPDATES</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- CONTACT SECTION END-->
+<div id="footer-sec">
+    &nbsp;2016 Software Research Department, University of Saskatchewan |
+
+</div>
+<!-- FOOTER SECTION END-->
+
+<!--CORE SCRIPTS-->
+<script src="static/js/jquery-1.11.1.js"></script>
+<!--BOOTSTRAP SCRIPTS-->
+<script src="static/js/bootstrap.js"></script>
+<!--WOW SCRIPTS-->
+<script src="static/js/wow.js"></script>
+<!--SCROLL SCRIPTS-->
+<script src="static/js/jquery.smooth-scroll.min.js"></script>
+<!--SCROLL ANIMATION SCRIPTS-->
+<script src="static/js/scrollReveal.js"></script>
+<!--CUSTOM SCRIPTS-->
+<script src="static/js/custom.js"></script>
+
+</body>
+
+</html>

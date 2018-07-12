@@ -1,0 +1,85 @@
+<div style="background-color: rgb(238, 238, 238); width: 100%;" class="module" id="module_id_1"><!-- Documentation --><div style="margin:10px;font-size:17px;color:#000000;"> NiCAD_Get_Data (Module 1)<hr> Documentation: <a style="font-size:12px;color:#000000;" href="#" class="documentation_show_hide">(Show/Hide)</a><div class="documentation" style="background-color:#DDDDDD;display:none;font-size:14px;">
+        Discovers Input Data of Sepcified Type.
+    </div></div><!-- Settings --><div style="margin:10px;font-size:17px;color:#000000;">   Settings: <a style="font-size:12px;color:#000000;" href="#" class="settings_show_hide">(Show/Hide)</a>   <div class="settings" style="background-color:#DDDDDD;font-size:14px;">
+        Set Input Dataset: <select class="setting_param enableResourceDiscovery" resfiletype="*" referencevariable="inputDataset"><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2&quot;">monit-4.2</option><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/canola.png&quot;">canola.png</option><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JHotDraw54b1&quot;">JHotDraw54b1</option><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_2_obtained_user_input.txt&quot;">module_id_2_obtained_user_input.txt</option><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/aesthetic-master.zip&quot;">aesthetic-master.zip</option><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/helloWorld.java&quot;" selected="selected">helloWorld.java</option><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_1_obtained_user_input.txt&quot;">module_id_1_obtained_user_input.txt</option><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_2_potential_clones.xml&quot;">module_id_2_potential_clones.xml</option><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/SP1.fq&quot;">SP1.fq</option><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_3_summation_result.txt&quot;">module_id_3_summation_result.txt</option><option value="inputDataset=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_1_resource_path.txt&quot;">module_id_1_resource_path.txt</option></select>
+    <br><input type="text" style="display:none;" class="setting_param module_output resource_path" size="45" value="resource_path=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_1_resource_path.txt&quot;"><input type="hidden" class="setting_param " size="45" id="module_id_1_output_destination" value="output_destination = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1'"></div></div><div style="margin:10px;font-size:17px;color:#000000;" class="setting_section">    <a style="display:none;font-size:12px;color:#000000;" href="#" class="code_show_hide">(Show/Hide)</a>   <div class="edit_code" style="background-color:#888888;font-size:14px;display:none;">          <textarea rows="7" cols="150" class="code_settings">
+</textarea>         <p style="color:#000000;">Main Implementation: </p>        <textarea rows="10" cols="150">
+
+
+with open(resource_path, "w+") as moduleOutputFile:
+	moduleOutputFile.write(str(inputDataset))</textarea></div> <pre style="background-color:#333333;width:100%;display:none;" class="pre_highlighted_code"><code class="python highlighted_code" style="display:none;">
+
+ 
+
+
+
+with open(resource_path, "w+") as moduleOutputFile:
+	moduleOutputFile.write(str(inputDataset))</code></pre> </div></div><div style="background-color:#EEE;width:100%;display:none;" class="module" id="module_id_2"><!-- Documentation --><div style="margin:10px;font-size:17px;color:#000000;"> MHI_tokenizer (Module 2)<hr> Documentation: <a style="font-size:12px;color:#000000;" href="#" class="documentation_show_hide">(Show/Hide)</a><div class="documentation" style="background-color:#DDDDDD;display:none;font-size:14px;">
+            <b>Tokenizer</b>
+                <p><i>Description:</i><br>
+            Tokenize the code <br>
+            <br></p>
+    </div></div><!-- Settings --><div style="margin:10px;font-size:17px;color:#000000;">   Settings: <a style="font-size:12px;color:#000000;" href="#" class="settings_show_hide">(Show/Hide)</a>   <div class="settings" style="background-color:#DDDDDD;font-size:14px;">
+    <br><input type="text" style="display:none;" class="setting_param module_input sourceFile" size="45" value="sourceFile='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_1_resource_path.txt'"><input type="text" style="display:none;" class="setting_param module_output output_tokens" size="45" value="output_tokens=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_2_output_tokens.token&quot;"><input type="hidden" class="setting_param " size="45" id="module_id_2_output_destination" value="output_destination = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_2'"></div></div><div style="margin:10px;font-size:17px;color:#000000;" class="setting_section">    <a style="display:none;font-size:12px;color:#000000;" href="#" class="code_show_hide">(Show/Hide)</a>   <div class="edit_code" style="background-color:#888888;font-size:14px;display:none;">          <textarea rows="7" cols="150" class="code_settings">
+# module_1 = 'Module_1.txt'
+# module_2 = 'Module_2.txt'
+# output_destination = 'Module_3'</textarea>         <p style="color:#000000;">Main Implementation: </p>        <textarea rows="10" cols="150">
+
+
+def addTwoNum(a,b):
+	return a + b
+
+def multiply(c,d):
+	return c * d
+
+def writeToF(v):
+	#write out this module Output
+	with open(output_tokens, "w+") as thisModuleOutput:
+		thisModuleOutput.write(str(v))
+	#return (final_stats, final_tokens)
+	return 0
+
+
+n1 = addTwoNum(10, 20)
+n2 = multiply(n1, 3)
+writeToF(n2)
+
+
+
+
+
+
+
+</textarea></div> <pre style="background-color:#333333;width:100%;display:none;" class="pre_highlighted_code"><code class="python highlighted_code" style="display:none;">
+
+# module_1 = 'Module_1.txt'
+# module_2 = 'Module_2.txt'
+# output_destination = 'Module_3' 
+
+
+
+def addTwoNum(a,b):
+	return a + b
+
+def multiply(c,d):
+	return c * d
+
+def writeToF(v):
+	#write out this module Output
+	with open(output_tokens, "w+") as thisModuleOutput:
+		thisModuleOutput.write(str(v))
+	#return (final_stats, final_tokens)
+	return 0
+
+
+n1 = addTwoNum(10, 20)
+n2 = multiply(n1, 3)
+writeToF(n2)
+
+
+
+
+
+
+
+</code></pre> </div></div>

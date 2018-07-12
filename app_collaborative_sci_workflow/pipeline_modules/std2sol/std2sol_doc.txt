@@ -1,0 +1,15 @@
+<b>std2sol</b>
+	<p><i>Description:</i>
+		         std2sol Convert standard FASTQ to Solexa/Illumina FASTQ (simplified)
+	</p>
+
+
+<i>Usage:</i><br/>
+    <li>Input File: Select the module or sequence file to analysis (Fastq File). </li>
+
+
+<i>Outputs:</i>
+<ol>
+	<li>Converted FastQ file.</li>
+</ol>
+

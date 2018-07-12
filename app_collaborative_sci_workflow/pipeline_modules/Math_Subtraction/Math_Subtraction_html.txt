@@ -1,0 +1,42 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>First Number</label>
+            <referenceVariable>first_number</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+        <toolInput>
+            <label>Second Number</label>
+            <referenceVariable>second_number</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Subtraction Result</label>
+            <referenceVariable>subtraction_result</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        <b>Math - Subtraction</b>
+        <p><i>Description:</i><br/>
+        Subracts Second Number from First. <br/>
+        <br/></p>
+    </toolDocumentation>
+
+
+
+</SciWorC>
+

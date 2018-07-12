@@ -1,0 +1,19 @@
+<b>NiCad - Find Near Miss Clones</b>
+	<p><i>Description:</i><br/>
+Maximum difference threshold we are interested in (0.n)<br/>
+Example: 	threshold=0.3<br/>
+
+
+ Sizes of clones we are interested in, in pretty-printed lines<br/>
+ Example:	minsize=10<br/>
+		maxsize=2500<br/>
+
+</p>
+
+
+<i>Usage:</i>
+<ol>
+	<li>Source Project: Select the module or files to take the input from.</li>
+	<li>Output Files: Select the module or files to send the input to.</li>
+	<li>Set Granularity Levels: Functions/Blocks.</li>
+</ol>

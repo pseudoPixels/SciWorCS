@@ -1,0 +1,43 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Fastq File</label>
+            <referenceVariable>fastq_file_path</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Quality Analysis HTML</label>
+            <referenceVariable>fastqc_summary</referenceVariable>
+            <dataFormat>html</dataFormat>
+        </toolOutput>
+        <toolOutput>
+            <label>Quality Analysis ZIP</label>
+            <referenceVariable>fastqc_compressed_report</referenceVariable>
+            <dataFormat>zip</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+<b>Math - Addition</b>
+	<p><i>Description:</i><br/>
+Adds Two Numbers <br/>
+<br/></p>
+    </toolDocumentation>
+
+
+</SciWorC>
+
+
+

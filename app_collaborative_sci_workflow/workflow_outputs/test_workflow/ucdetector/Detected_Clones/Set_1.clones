@@ -1,0 +1,1317 @@
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719724
+src/main/org/ucdetector/action/AbstractUCDetectorAction.java 157 163
+rc/main/org/ucdetector/report/MarkerReport.jav 94 100
+----------------------------------------
+      else if (selection instanceof IProject) {
+        IProject project = (IProject) selection;
+        IJavaProject javaProject = JavaCore.create(project);
+        if (javaProject.exists()) {
+          result.add(javaProject);
+        }
+      }
+
+----------------------------------------
+    else if (javaElement instanceof IField) {
+      IField field = (IField) javaElement;
+      if (field.isEnumConstant()) {
+        return ElementType.ENUM_CONSTANT;
+      }
+      return ElementType.FIELD;
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719813
+src/main/org/ucdetector/util/JavaElementUtil.java 678 684
+rc/main/org/ucdetector/report/MarkerReport.jav 94 100
+----------------------------------------
+      if (member instanceof IMethod) {
+        IMethod method = (IMethod) member;
+        if (method.isConstructor()) {
+          return MemberInfo.Constructor;
+        }
+        return MemberInfo.Method;
+      }
+
+----------------------------------------
+    else if (javaElement instanceof IField) {
+      IField field = (IField) javaElement;
+      if (field.isEnumConstant()) {
+        return ElementType.ENUM_CONSTANT;
+      }
+      return ElementType.FIELD;
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719812
+src/main/org/ucdetector/util/JavaElementUtil.java 685 694
+rc/main/org/ucdetector/report/MarkerReport.jav 94 100
+----------------------------------------
+      if (member instanceof IField) {
+        IField field = (IField) member;
+        if (field.isEnumConstant()) {
+          return MemberInfo.EnumConstant;
+        }
+        if (JavaElementUtil.isConstant(field)) {
+          return MemberInfo.Constant;
+        }
+        return MemberInfo.Field;
+      }
+
+----------------------------------------
+    else if (javaElement instanceof IField) {
+      IField field = (IField) javaElement;
+      if (field.isEnumConstant()) {
+        return ElementType.ENUM_CONSTANT;
+      }
+      return ElementType.FIELD;
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719725
+src/main/org/ucdetector/action/AbstractUCDetectorAction.java 157 163
+rc/main/org/ucdetector/util/JavaElementUtil.jav 144 150
+----------------------------------------
+      else if (selection instanceof IProject) {
+        IProject project = (IProject) selection;
+        IJavaProject javaProject = JavaCore.create(project);
+        if (javaProject.exists()) {
+          result.add(javaProject);
+        }
+      }
+
+----------------------------------------
+    for (IJavaElement javaElement : allPackages) {
+      IPackageFragment pakage = (IPackageFragment) javaElement;
+      String startPackagenName = packageFragment.getElementName() + ".";
+      if (packageFragment.isDefaultPackage() || pakage.getElementName().startsWith(startPackagenName)) {
+        subPackages.add(pakage);
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719728
+src/main/org/ucdetector/util/JavaElementUtil.java 144 150
+rc/cycle/org/ucdetector/cycle/model/CycleRegionIterator.jav 36 42
+----------------------------------------
+    for (IJavaElement javaElement : allPackages) {
+      IPackageFragment pakage = (IPackageFragment) javaElement;
+      String startPackagenName = packageFragment.getElementName() + ".";
+      if (packageFragment.isDefaultPackage() || pakage.getElementName().startsWith(startPackagenName)) {
+        subPackages.add(pakage);
+      }
+    }
+
+----------------------------------------
+      if (baseElement instanceof CycleRegion) {
+        CycleRegion region = (CycleRegion) baseElement;
+        results.add(region);
+        if (startFound && first == null) {
+          first = region;
+        }
+      }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719726
+src/main/org/ucdetector/action/AbstractUCDetectorAction.java 157 163
+rc/cycle/org/ucdetector/cycle/model/CycleRegionIterator.jav 36 42
+----------------------------------------
+      else if (selection instanceof IProject) {
+        IProject project = (IProject) selection;
+        IJavaProject javaProject = JavaCore.create(project);
+        if (javaProject.exists()) {
+          result.add(javaProject);
+        }
+      }
+
+----------------------------------------
+      if (baseElement instanceof CycleRegion) {
+        CycleRegion region = (CycleRegion) baseElement;
+        results.add(region);
+        if (startFound && first == null) {
+          first = region;
+        }
+      }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719727
+src/main/org/ucdetector/action/AbstractUCDetectorAction.java 157 163
+rc/main/org/ucdetector/iterator/AbstractUCDetectorIterator.jav 81 86
+----------------------------------------
+      else if (selection instanceof IProject) {
+        IProject project = (IProject) selection;
+        IJavaProject javaProject = JavaCore.create(project);
+        if (javaProject.exists()) {
+          result.add(javaProject);
+        }
+      }
+
+----------------------------------------
+    for (IProject tempProject : projects) {
+      IJavaProject project = JavaCore.create(tempProject);
+      if (project.isOpen()) {
+        openProjects.add(project);
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719805
+src/main/org/ucdetector/search/VisibilityHandler.java 192 198
+rc/main/org/ucdetector/preferences/Prefs.jav 250 256
+----------------------------------------
+    for (IJavaElement element : type.getChildren()) {
+      if (element instanceof IMember) {
+        if (Flags.isPublic(((IMember) element).getFlags())) {
+          return true;
+        }
+      }
+    }
+
+----------------------------------------
+    for (String stringToFindInFile : stringsToFindInFile) {
+      if (stringToFindInFile.trim().length() > 0) {
+        if (classAsString != null && classAsString.contains(stringToFindInFile)) {
+          return true;
+        }
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719730
+src/main/org/ucdetector/preferences/Prefs.java 250 256
+rc/main/org/ucdetector/util/JavaElementUtil.jav 944 958
+----------------------------------------
+    for (String stringToFindInFile : stringsToFindInFile) {
+      if (stringToFindInFile.trim().length() > 0) {
+        if (classAsString != null && classAsString.contains(stringToFindInFile)) {
+          return true;
+        }
+      }
+    }
+
+----------------------------------------
+      try {
+        if (Signature.SIG_VOID.equals(method.getReturnType()) && Flags.isPublic(method.getFlags())
+            && !Flags.isStatic(method.getFlags()) && method.getNumberOfParameters() == 0) {
+          // JUnit 3
+          if (method.getElementName().startsWith("test")) {
+            return true;
+          }
+          // NOT USED: JUnit 4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          // if (false) {
+          //   String annotation = getAnnotationFor(method);
+          //   return "Test".equals(annotation)
+          //       || "org.junit.Test".equals(annotation);
+          // }
+        }
+      }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719731
+src/main/org/ucdetector/search/VisibilityHandler.java 192 198
+rc/main/org/ucdetector/util/JavaElementUtil.jav 944 958
+----------------------------------------
+    for (IJavaElement element : type.getChildren()) {
+      if (element instanceof IMember) {
+        if (Flags.isPublic(((IMember) element).getFlags())) {
+          return true;
+        }
+      }
+    }
+
+----------------------------------------
+      try {
+        if (Signature.SIG_VOID.equals(method.getReturnType()) && Flags.isPublic(method.getFlags())
+            && !Flags.isStatic(method.getFlags()) && method.getNumberOfParameters() == 0) {
+          // JUnit 3
+          if (method.getElementName().startsWith("test")) {
+            return true;
+          }
+          // NOT USED: JUnit 4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          // if (false) {
+          //   String annotation = getAnnotationFor(method);
+          //   return "Test".equals(annotation)
+          //       || "org.junit.Test".equals(annotation);
+          // }
+        }
+      }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719732
+src/main/org/ucdetector/preferences/Prefs.java 541 551
+rc/main/org/ucdetector/util/MarkerFactory.jav 82 92
+----------------------------------------
+    for (String regex : filters) {
+      // IPackageFragmentRoot can be "", filter can be ""
+      try {
+        if (regex.length() > 0 && Pattern.matches(regex, name)) {
+          return true;
+        }
+      }
+      catch (PatternSyntaxException e) {
+        Log.warn(e.getMessage());
+      }
+    }
+
+----------------------------------------
+  public static String ucdMarkerTypeToNiceString(IMarker marker) {
+    try {
+      if (marker != null) {
+        return markerMap.get(marker.getType());
+      }
+    }
+    catch (CoreException e) {
+      Log.warn("Can't get marker type: " + e);
+    }
+    return null;
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719733
+src/main/org/ucdetector/UCDetectorPlugin.java 299 308
+rc/main/org/ucdetector/util/MarkerFactory.jav 82 92
+----------------------------------------
+  public static void closeSave(Closeable closable) {
+    if (closable != null) {
+      try {
+        closable.close();
+      }
+      catch (Exception e) {
+        Log.warn("Can't close %s: %s", closable, e); //$NON-NLS-1$
+      }
+    }
+  }
+
+----------------------------------------
+  public static String ucdMarkerTypeToNiceString(IMarker marker) {
+    try {
+      if (marker != null) {
+        return markerMap.get(marker.getType());
+      }
+    }
+    catch (CoreException e) {
+      Log.warn("Can't get marker type: " + e);
+    }
+    return null;
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719734
+src/cycle/org/ucdetector/cycle/CycleCalculator.java 82 89
+rc/main/org/ucdetector/util/JavaElementUtil.jav 468 476
+----------------------------------------
+  private TypeAndMatches getTypeAndMatchesFor(IType startType) {
+    for (TypeAndMatches typeAndMatches : typeAndMatchesList) {
+      if (startType.equals(typeAndMatches.getRoot())) {
+        return typeAndMatches;
+      }
+    }
+    return null;
+  }
+
+----------------------------------------
+  public static IMethod getMainMethod(IType member) throws JavaModelException {
+    IMethod[] methods = member.getMethods();
+    for (IMethod method : methods) {
+      if (method.isMainMethod()) {
+        return method;
+      }
+    }
+    return null;
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719736
+src/main/org/ucdetector/preferences/Prefs.java 425 433
+rc/main/org/ucdetector/quickfix/DeleteFileQuickFix.jav 31 39
+----------------------------------------
+  private static boolean isConstant(IMember member) {
+    try {
+      return Flags.isStatic(member.getFlags()) && Flags.isFinal(member.getFlags());
+    }
+    catch (JavaModelException e) {
+      Log.error("Can't get isConstant for: " + member, e);
+      return false;
+    }
+  }
+
+----------------------------------------
+  public void run(IMarker marker2) {
+    IResource resource = marker2.getResource();
+    try {
+      resource.delete(false, null);
+    }
+    catch (CoreException ex) {
+      UCDetectorPlugin.logToEclipseLog("Can't delete file: " + resource, ex); //$NON-NLS-1$
+    }
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719778
+src/main/org/ucdetector/preferences/ModesPanel.java 257 262
+rc/main/org/ucdetector/iterator/AbstractUCDetectorIterator.jav 158 164
+----------------------------------------
+    for (Composite group : page.groups) {
+      Control[] controls = group.getChildren();
+      for (Control control : controls) {
+        control.setEnabled(isCustom);
+      }
+    }
+
+----------------------------------------
+    if (resource instanceof IContainer) {
+      IContainer container = (IContainer) resource;
+      IResource[] members = container.members();
+      for (IResource member : members) {
+        iterateResource(member);
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719779
+src/main/org/ucdetector/UCDetectorPlugin.java 196 202
+rc/main/org/ucdetector/iterator/AbstractUCDetectorIterator.jav 158 164
+----------------------------------------
+    try {
+      String[] propertyNames = ePrefs.keys();
+      Arrays.sort(propertyNames);
+      for (String propertyName : propertyNames) {
+        result.put(propertyName, ePrefs.get(propertyName, null));
+      }
+    }
+
+----------------------------------------
+    if (resource instanceof IContainer) {
+      IContainer container = (IContainer) resource;
+      IResource[] members = container.members();
+      for (IResource member : members) {
+        iterateResource(member);
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719737
+src/main/org/ucdetector/iterator/AbstractUCDetectorIterator.java 158 164
+rc/main/org/ucdetector/iterator/AbstractUCDetectorIterator.jav 211 216
+----------------------------------------
+    if (resource instanceof IContainer) {
+      IContainer container = (IContainer) resource;
+      IResource[] members = container.members();
+      for (IResource member : members) {
+        iterateResource(member);
+      }
+    }
+
+----------------------------------------
+        if (activePackage == packageFragment) {
+          List<IPackageFragment> subPackages = JavaElementUtil.getSubPackages(packageFragment);
+          for (IPackageFragment subPackage : subPackages) {
+            iterate(subPackage);
+          }
+        }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719739
+src/main/org/ucdetector/UCDetectorPlugin.java 300 307
+rc/main/org/ucdetector/search/LineManger.jav 378 386
+----------------------------------------
+    if (closable != null) {
+      try {
+        closable.close();
+      }
+      catch (Exception e) {
+        Log.warn("Can't close %s: %s", closable, e); //$NON-NLS-1$
+      }
+    }
+
+----------------------------------------
+        if (start < offset && offset < end) {
+          try {
+            return String.valueOf(chars, start, end - start).trim();
+          }
+          catch (Exception e) {
+            Log.error("Can't get piece of code for element: " //$NON-NLS-1$
+                + JavaElementUtil.getElementName(element) + ", offset: " + offset, e); //$NON-NLS-1$
+          }
+        }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719738
+src/main/org/ucdetector/UCDetectorPlugin.java 373 380
+rc/main/org/ucdetector/search/LineManger.jav 378 386
+----------------------------------------
+  public static String getHostName() {
+    try {
+      return java.net.InetAddress.getLocalHost().getHostName();
+    }
+    catch (Exception e) {
+      return "?";
+    }
+  }
+
+----------------------------------------
+        if (start < offset && offset < end) {
+          try {
+            return String.valueOf(chars, start, end - start).trim();
+          }
+          catch (Exception e) {
+            Log.error("Can't get piece of code for element: " //$NON-NLS-1$
+                + JavaElementUtil.getElementName(element) + ", offset: " + offset, e); //$NON-NLS-1$
+          }
+        }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719740
+src/main/org/ucdetector/search/VisibilityHandler.java 120 131
+rc/main/org/ucdetector/search/VisibilityHandler.jav 132 145
+----------------------------------------
+    if (startElement instanceof IField) {
+      IField field = (IField) startElement;
+      if (field.isEnumConstant()) {
+        // No modifier allowed for enum constants!
+        return false;
+      }
+      if (JavaElementUtil.isInterfaceField(field)) {
+        // fix bug [ 2269486 ] Constants in Interfaces Can't be Private
+        // only public, static & final are permitted for interface fields
+        return false; // default visibility means public!
+      }
+    }
+
+----------------------------------------
+    else if (startElement instanceof IMethod) {
+      IMethod method = (IMethod) startElement;
+      if (method.isMainMethod()) {
+        return false;
+      }
+      // Bug [ 2269486 ] Constants in Interfaces can't be Private
+      if (JavaElementUtil.isInterfaceMethod(method)) {
+        return false; // default visibility means public!
+      }
+      // Bug [ 2968753] protected abstract method cannot be made private
+      if (Flags.isAbstract(method.getFlags())) {
+        return false;
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719741
+src/main/org/ucdetector/iterator/CountIterator.java 96 103
+rc/main/org/ucdetector/iterator/CountIterator.jav 106 112
+----------------------------------------
+  protected void handleMethod(IMethod method) throws CoreException {
+    if (isPrivate(method) || Prefs.isFilterMethod(method)) {
+      debugNotHandle(method, "isPrivate || isFilterMethod"); //$NON-NLS-1$ 
+      return;
+    }
+    debugHandle(method);
+    methods++;
+  }
+
+----------------------------------------
+  protected void handleField(IField field) throws CoreException {
+    if (isPrivate(field) || Prefs.isFilterField(field)) {
+      return;
+    }
+    debugHandle(field);
+    fields++;
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719743
+src/main/org/ucdetector/util/JavaElementUtil.java 179 186
+rc/main/org/ucdetector/UCDetectorConsole.jav 122 128
+----------------------------------------
+    if (isPrimary && result != null && result.getCompilationUnit() != null) {
+      IType primaryType = result.getCompilationUnit().findPrimaryType();
+      if (primaryType != null) {
+        // Avoid return null for missing primary type.
+        // Eg: Foo.java contains only class Bar
+        result = primaryType;
+      }
+    }
+
+----------------------------------------
+    public void run() {
+      IConsoleManager manager = ConsolePlugin.getDefault().getConsoleManager();
+      if (console != null) {
+        manager.removeConsoles(new IConsole[] { console });
+        console = null;
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719742
+src/main/org/ucdetector/report/XmlReport.java 203 208
+rc/main/org/ucdetector/UCDetectorConsole.jav 122 128
+----------------------------------------
+      if (sourceFolder != null && sourceFolder.getResource() != null) {
+        IPath path = sourceFolder.getResource().getProjectRelativePath();
+        if (path != null) {
+          appendChild(marker, "sourceFolder", path.toString()); // NODE:  src/main
+        }
+      }
+
+----------------------------------------
+    public void run() {
+      IConsoleManager manager = ConsolePlugin.getDefault().getConsoleManager();
+      if (console != null) {
+        manager.removeConsoles(new IConsole[] { console });
+        console = null;
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719747
+src/main/org/ucdetector/quickfix/DeleteFileQuickFix.java 31 39
+rc/main/org/ucdetector/quickfix/UCDQuickGenerator.jav 65 73
+----------------------------------------
+  public void run(IMarker marker2) {
+    IResource resource = marker2.getResource();
+    try {
+      resource.delete(false, null);
+    }
+    catch (CoreException ex) {
+      UCDetectorPlugin.logToEclipseLog("Can't delete file: " + resource, ex); //$NON-NLS-1$
+    }
+  }
+
+----------------------------------------
+  public boolean hasResolutions(IMarker marker) {
+    try {
+      return !MarkerFactory.UCD_MARKER_TYPE_USED_FEW.equals(marker.getType());
+    }
+    catch (CoreException e) {
+      Log.error("Can't get UCD resolutions for marker: " + marker, e); //$NON-NLS-1$
+      return false;
+    }
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719744
+src/main/org/ucdetector/preferences/Prefs.java 541 551
+rc/main/org/ucdetector/quickfix/UCDQuickGenerator.jav 65 73
+----------------------------------------
+    for (String regex : filters) {
+      // IPackageFragmentRoot can be "", filter can be ""
+      try {
+        if (regex.length() > 0 && Pattern.matches(regex, name)) {
+          return true;
+        }
+      }
+      catch (PatternSyntaxException e) {
+        Log.warn(e.getMessage());
+      }
+    }
+
+----------------------------------------
+  public boolean hasResolutions(IMarker marker) {
+    try {
+      return !MarkerFactory.UCD_MARKER_TYPE_USED_FEW.equals(marker.getType());
+    }
+    catch (CoreException e) {
+      Log.error("Can't get UCD resolutions for marker: " + marker, e); //$NON-NLS-1$
+      return false;
+    }
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719781
+src/main/org/ucdetector/preferences/Prefs.java 425 433
+rc/main/org/ucdetector/quickfix/UCDQuickGenerator.jav 65 73
+----------------------------------------
+  private static boolean isConstant(IMember member) {
+    try {
+      return Flags.isStatic(member.getFlags()) && Flags.isFinal(member.getFlags());
+    }
+    catch (JavaModelException e) {
+      Log.error("Can't get isConstant for: " + member, e);
+      return false;
+    }
+  }
+
+----------------------------------------
+  public boolean hasResolutions(IMarker marker) {
+    try {
+      return !MarkerFactory.UCD_MARKER_TYPE_USED_FEW.equals(marker.getType());
+    }
+    catch (CoreException e) {
+      Log.error("Can't get UCD resolutions for marker: " + marker, e); //$NON-NLS-1$
+      return false;
+    }
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719746
+src/main/org/ucdetector/UCDetectorPlugin.java 373 380
+rc/main/org/ucdetector/quickfix/UCDQuickGenerator.jav 65 73
+----------------------------------------
+  public static String getHostName() {
+    try {
+      return java.net.InetAddress.getLocalHost().getHostName();
+    }
+    catch (Exception e) {
+      return "?";
+    }
+  }
+
+----------------------------------------
+  public boolean hasResolutions(IMarker marker) {
+    try {
+      return !MarkerFactory.UCD_MARKER_TYPE_USED_FEW.equals(marker.getType());
+    }
+    catch (CoreException e) {
+      Log.error("Can't get UCD resolutions for marker: " + marker, e); //$NON-NLS-1$
+      return false;
+    }
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719745
+src/main/org/ucdetector/quickfix/UCDQuickGenerator.java 65 73
+rc/main/org/ucdetector/report/MarkerReport.jav 115 123
+----------------------------------------
+  public boolean hasResolutions(IMarker marker) {
+    try {
+      return !MarkerFactory.UCD_MARKER_TYPE_USED_FEW.equals(marker.getType());
+    }
+    catch (CoreException e) {
+      Log.error("Can't get UCD resolutions for marker: " + marker, e); //$NON-NLS-1$
+      return false;
+    }
+  }
+
+----------------------------------------
+    public static ElementType valueOfSave(String valueString) {
+      try {
+        return ElementType.valueOf(valueString);
+      }
+      catch (Exception ex) {
+        Log.error(String.format("Unknown ElementType: '%s'", valueString), ex); //$NON-NLS-1$
+        return null;
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719784
+src/main/org/ucdetector/preferences/Prefs.java 541 551
+rc/main/org/ucdetector/report/MarkerReport.jav 115 123
+----------------------------------------
+    for (String regex : filters) {
+      // IPackageFragmentRoot can be "", filter can be ""
+      try {
+        if (regex.length() > 0 && Pattern.matches(regex, name)) {
+          return true;
+        }
+      }
+      catch (PatternSyntaxException e) {
+        Log.warn(e.getMessage());
+      }
+    }
+
+----------------------------------------
+    public static ElementType valueOfSave(String valueString) {
+      try {
+        return ElementType.valueOf(valueString);
+      }
+      catch (Exception ex) {
+        Log.error(String.format("Unknown ElementType: '%s'", valueString), ex); //$NON-NLS-1$
+        return null;
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719783
+src/main/org/ucdetector/preferences/Prefs.java 425 433
+rc/main/org/ucdetector/report/MarkerReport.jav 115 123
+----------------------------------------
+  private static boolean isConstant(IMember member) {
+    try {
+      return Flags.isStatic(member.getFlags()) && Flags.isFinal(member.getFlags());
+    }
+    catch (JavaModelException e) {
+      Log.error("Can't get isConstant for: " + member, e);
+      return false;
+    }
+  }
+
+----------------------------------------
+    public static ElementType valueOfSave(String valueString) {
+      try {
+        return ElementType.valueOf(valueString);
+      }
+      catch (Exception ex) {
+        Log.error(String.format("Unknown ElementType: '%s'", valueString), ex); //$NON-NLS-1$
+        return null;
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719785
+src/main/org/ucdetector/UCDetectorPlugin.java 373 380
+rc/main/org/ucdetector/report/MarkerReport.jav 115 123
+----------------------------------------
+  public static String getHostName() {
+    try {
+      return java.net.InetAddress.getLocalHost().getHostName();
+    }
+    catch (Exception e) {
+      return "?";
+    }
+  }
+
+----------------------------------------
+    public static ElementType valueOfSave(String valueString) {
+      try {
+        return ElementType.valueOf(valueString);
+      }
+      catch (Exception ex) {
+        Log.error(String.format("Unknown ElementType: '%s'", valueString), ex); //$NON-NLS-1$
+        return null;
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719748
+src/main/org/ucdetector/action/AbstractUCDetectorAction.java 132 139
+rc/main/org/ucdetector/iterator/AbstractUCDetectorIterator.jav 267 274
+----------------------------------------
+        else if (selectedObject instanceof IWorkingSet) {
+          IAdaptable[] workingSetProjects = ((IWorkingSet) selectedObject).getElements();
+          for (IAdaptable workingSetProject : workingSetProjects) {
+            if (workingSetProject instanceof IProject) {
+              selections.add(workingSetProject);
+            }
+          }
+        }
+
+----------------------------------------
+    if (doChildren) {
+      if (javaElement instanceof IParent) {
+        IJavaElement[] children = ((IParent) javaElement).getChildren();
+        for (IJavaElement child : children) {
+          iterate(child);
+        }
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719749
+src/main/org/ucdetector/iterator/AbstractUCDetectorIterator.java 158 164
+rc/main/org/ucdetector/iterator/AbstractUCDetectorIterator.jav 268 273
+----------------------------------------
+    if (resource instanceof IContainer) {
+      IContainer container = (IContainer) resource;
+      IResource[] members = container.members();
+      for (IResource member : members) {
+        iterateResource(member);
+      }
+    }
+
+----------------------------------------
+      if (javaElement instanceof IParent) {
+        IJavaElement[] children = ((IParent) javaElement).getChildren();
+        for (IJavaElement child : children) {
+          iterate(child);
+        }
+      }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719750
+src/main/org/ucdetector/iterator/AbstractUCDetectorIterator.java 211 216
+rc/main/org/ucdetector/iterator/AbstractUCDetectorIterator.jav 268 273
+----------------------------------------
+        if (activePackage == packageFragment) {
+          List<IPackageFragment> subPackages = JavaElementUtil.getSubPackages(packageFragment);
+          for (IPackageFragment subPackage : subPackages) {
+            iterate(subPackage);
+          }
+        }
+
+----------------------------------------
+      if (javaElement instanceof IParent) {
+        IJavaElement[] children = ((IParent) javaElement).getChildren();
+        for (IJavaElement child : children) {
+          iterate(child);
+        }
+      }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+28678409
+src/main/org/ucdetector/preferences/ModesPanel.java 257 262
+rc/main/org/ucdetector/UCDHeadless.jav 133 141
+----------------------------------------
+    for (Composite group : page.groups) {
+      Control[] controls = group.getChildren();
+      for (Control control : controls) {
+        control.setEnabled(isCustom);
+      }
+    }
+
+----------------------------------------
+    if (resourcesToIterateString != null) {
+      String[] resourcesList = resourcesToIterateString.split(",");
+      for (String resourceName : resourcesList) {
+        resourceName = resourceName.trim();
+        if (resourceName.length() > 0) {
+          result.add(resourceName);
+        }
+      }
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719751
+src/main/org/ucdetector/UCDHeadless.java 133 141
+rc/main/org/ucdetector/iterator/AbstractUCDetectorIterator.jav 294 303
+----------------------------------------
+    if (resourcesToIterateString != null) {
+      String[] resourcesList = resourcesToIterateString.split(",");
+      for (String resourceName : resourcesList) {
+        resourceName = resourceName.trim();
+        if (resourceName.length() > 0) {
+          result.add(resourceName);
+        }
+      }
+    }
+
+----------------------------------------
+  protected static final String getSelectedString(IJavaElement[] javaElements) {
+    StringBuilder selectedAsString = new StringBuilder();
+    for (IJavaElement javaElement : javaElements) {
+      if (selectedAsString.length() > 0) {
+        selectedAsString.append(SEP);
+      }
+      selectedAsString.append(JavaElementUtil.getElementName(javaElement));
+    }
+    return selectedAsString.toString();
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+28678397
+src/main/org/ucdetector/util/JavaElementUtil.java 728 734
+rc/main/org/ucdetector/iterator/AbstractUCDetectorIterator.jav 294 303
+----------------------------------------
+  public static String getElementNames(Collection<? extends IJavaElement> javaElements) { // NO_UCD
+    StringBuilder sb = new StringBuilder();
+    for (IJavaElement javaElement : javaElements) {
+      sb.append(getElementName(javaElement)).append("\n\t");
+    }
+    return sb.toString();
+  }
+
+----------------------------------------
+  protected static final String getSelectedString(IJavaElement[] javaElements) {
+    StringBuilder selectedAsString = new StringBuilder();
+    for (IJavaElement javaElement : javaElements) {
+      if (selectedAsString.length() > 0) {
+        selectedAsString.append(SEP);
+      }
+      selectedAsString.append(JavaElementUtil.getElementName(javaElement));
+    }
+    return selectedAsString.toString();
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719752
+src/main/org/ucdetector/UCDHeadless.java 135 140
+rc/main/org/ucdetector/iterator/AbstractUCDetectorIterator.jav 296 301
+----------------------------------------
+      for (String resourceName : resourcesList) {
+        resourceName = resourceName.trim();
+        if (resourceName.length() > 0) {
+          result.add(resourceName);
+        }
+      }
+
+----------------------------------------
+    for (IJavaElement javaElement : javaElements) {
+      if (selectedAsString.length() > 0) {
+        selectedAsString.append(SEP);
+      }
+      selectedAsString.append(JavaElementUtil.getElementName(javaElement));
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719753
+src/main/org/ucdetector/iterator/AbstractUCDetectorIterator.java 305 311
+rc/main/org/ucdetector/util/JavaElementUtil.jav 559 564
+----------------------------------------
+  protected final MarkerFactory getMarkerFactory() throws CoreException {
+    if (markerFactory == null) {
+      markerFactory = MarkerFactory.createInstance();
+      markerFactory.startReport(objectsToIterate, timeStart);
+    }
+    return markerFactory;
+  }
+
+----------------------------------------
+  private static String getFieldName(IField field) {
+    if (field == null) {
+      return UNKNOWN_FIELD;
+    }
+    return String.format("%s.%s", getTypeName(field.getParent()), field.getElementName());
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719754
+src/main/org/ucdetector/UCDetectorPlugin.java 299 308
+rc/cycle/org/ucdetector/cycle/CycleAction.jav 37 48
+----------------------------------------
+  public static void closeSave(Closeable closable) {
+    if (closable != null) {
+      try {
+        closable.close();
+      }
+      catch (Exception e) {
+        Log.warn("Can't close %s: %s", closable, e); //$NON-NLS-1$
+      }
+    }
+  }
+
+----------------------------------------
+      public void run() {
+        try {
+          UCDetectorPlugin.getActivePage().showView(CycleView.ID);
+          CycleView view = CycleView.getInstance();
+          if (view != null) {
+            view.refresh();
+          }
+        }
+        catch (PartInitException e) {
+          status = UCDetectorPlugin.logToEclipseLog(Messages.CycleAction_cant_open_editor, e);
+        }
+      }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719755
+src/cycle/org/ucdetector/cycle/CycleView.java 485 492
+rc/cycle/org/ucdetector/cycle/CycleAction.jav 38 44
+----------------------------------------
+      if (treeItem != null) {
+        Object data = treeItem.getData();
+        if (data != null) {
+          viewer.setSelection(new StructuredSelection(data), true);
+          // open previous/next match!
+          openAction.run();
+        }
+      }
+
+----------------------------------------
+        try {
+          UCDetectorPlugin.getActivePage().showView(CycleView.ID);
+          CycleView view = CycleView.getInstance();
+          if (view != null) {
+            view.refresh();
+          }
+        }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719799
+src/cycle/org/ucdetector/cycle/CycleView.java 485 492
+rc/cycle/org/ucdetector/cycle/CycleView.jav 495 501
+----------------------------------------
+      if (treeItem != null) {
+        Object data = treeItem.getData();
+        if (data != null) {
+          viewer.setSelection(new StructuredSelection(data), true);
+          // open previous/next match!
+          openAction.run();
+        }
+      }
+
+----------------------------------------
+    private TreeItem[] getChildren(TreeItem item) {
+      Object data = item.getData();
+      if (data != null) {
+        viewer.setExpandedState(data, true); // fixed npe
+      }
+      return item.getItems();
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719756
+src/cycle/org/ucdetector/cycle/CycleAction.java 38 44
+rc/cycle/org/ucdetector/cycle/CycleView.jav 495 501
+----------------------------------------
+        try {
+          UCDetectorPlugin.getActivePage().showView(CycleView.ID);
+          CycleView view = CycleView.getInstance();
+          if (view != null) {
+            view.refresh();
+          }
+        }
+
+----------------------------------------
+    private TreeItem[] getChildren(TreeItem item) {
+      Object data = item.getData();
+      if (data != null) {
+        viewer.setExpandedState(data, true); // fixed npe
+      }
+      return item.getItems();
+    }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719797
+src/cycle/org/ucdetector/cycle/CycleView.java 485 492
+rc/main/org/ucdetector/UCDApplication.jav 66 71
+----------------------------------------
+      if (treeItem != null) {
+        Object data = treeItem.getData();
+        if (data != null) {
+          viewer.setSelection(new StructuredSelection(data), true);
+          // open previous/next match!
+          openAction.run();
+        }
+      }
+
+----------------------------------------
+  public void stop() {
+    Log.info("Stopping UCDHeadless as an application");
+    if (systemInReader != null) {
+      systemInReader.interrupt();
+    }
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719757
+src/cycle/org/ucdetector/cycle/CycleAction.java 38 44
+rc/main/org/ucdetector/UCDApplication.jav 66 71
+----------------------------------------
+        try {
+          UCDetectorPlugin.getActivePage().showView(CycleView.ID);
+          CycleView view = CycleView.getInstance();
+          if (view != null) {
+            view.refresh();
+          }
+        }
+
+----------------------------------------
+  public void stop() {
+    Log.info("Stopping UCDHeadless as an application");
+    if (systemInReader != null) {
+      systemInReader.interrupt();
+    }
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719758
+src/cycle/org/ucdetector/cycle/CycleCalculator.java 111 118
+rc/main/org/ucdetector/report/ReportNameManager.jav 94 99
+----------------------------------------
+      for (int i = 0; i < result.size(); i++) {
+        Cycle cycleAlreadyAdded = result.get(i);
+        if (cycleToAdd.contains(cycleAlreadyAdded)) {
+          // because big cycles could be build by small cycles
+          isContained = true;
+          break;
+        }
+      }
+
+----------------------------------------
+      for (String file : files) {
+        if (file.contains(number)) {
+          fileNumberFound = true;
+          break;
+        }
+      }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719764
+src/main/org/ucdetector/UCDetectorPlugin.java 300 307
+rc/main/org/ucdetector/quickfix/AbstractUCDQuickFix.jav 289 296
+----------------------------------------
+    if (closable != null) {
+      try {
+        closable.close();
+      }
+      catch (Exception e) {
+        Log.warn("Can't close %s: %s", closable, e); //$NON-NLS-1$
+      }
+    }
+
+----------------------------------------
+  final String getMarkerType() {
+    try {
+      return marker.getType();
+    }
+    catch (CoreException e) {
+      return null;
+    }
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719759
+src/main/org/ucdetector/search/LineManger.java 378 386
+rc/main/org/ucdetector/quickfix/AbstractUCDQuickFix.jav 289 296
+----------------------------------------
+        if (start < offset && offset < end) {
+          try {
+            return String.valueOf(chars, start, end - start).trim();
+          }
+          catch (Exception e) {
+            Log.error("Can't get piece of code for element: " //$NON-NLS-1$
+                + JavaElementUtil.getElementName(element) + ", offset: " + offset, e); //$NON-NLS-1$
+          }
+        }
+
+----------------------------------------
+  final String getMarkerType() {
+    try {
+      return marker.getType();
+    }
+    catch (CoreException e) {
+      return null;
+    }
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719761
+src/main/org/ucdetector/preferences/Prefs.java 541 551
+rc/main/org/ucdetector/quickfix/AbstractUCDQuickFix.jav 289 296
+----------------------------------------
+    for (String regex : filters) {
+      // IPackageFragmentRoot can be "", filter can be ""
+      try {
+        if (regex.length() > 0 && Pattern.matches(regex, name)) {
+          return true;
+        }
+      }
+      catch (PatternSyntaxException e) {
+        Log.warn(e.getMessage());
+      }
+    }
+
+----------------------------------------
+  final String getMarkerType() {
+    try {
+      return marker.getType();
+    }
+    catch (CoreException e) {
+      return null;
+    }
+  }
+
+----------------------------------------
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+53
+17719763
+src/main/org/ucdetector/UCDetectorPlugin.java 373 380
+rc/main/org/ucdetector/quickfix/AbstractUCDQuickFix.jav 289 296
+----------------------------------------
+  public static String getHostName() {
+    try {
+      return java.net.InetAddress.getLocalHost().getHostName();
+    }
+    catch (Exception e) {
+      return "?";
+    }
+  }
+
+----------------------------------------
+  final String getMarkerType() {
+    try {
+      return marker.getType();
+    }
+    catch (CoreException e) {
+      return null;
+    }
+  }
+
+----------------------------------------

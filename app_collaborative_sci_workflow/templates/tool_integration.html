@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workflow Tool Integration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#tool_name_btn').click(function(){
+             $.ajax({
+                type: "POST",
+                cache: false,
+                url: "/tool_integration_add_tool_name/",
+                data: 'tool_name=' + $("#tool_name_inp").val(),
+                success: function (option) {
+                    var success = option['success'];
+                    if(success == true){
+                        alert("Tool Name Added");
+                        $("#file_upload_div").show();
+                    }else{
+                        alert("Some Error Occured! Tool name already exists !!!");
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert("Some Error Occured while adding Tool.");
+                },
+
+            });
+        });
+    });
+    </script>
+
+</head>
+<body>
+<!--
+    <div id="tool_name_div">
+       Enter the tool name: <input type="text" id="tool_name_inp2"/> <br/>
+        <button id="tool_name_btn">OK</button>
+    </div>
+-->
+<br/>
+
+    <div id="file_upload_div" >
+      <form action = "/uploader" method = "POST"
+         enctype = "multipart/form-data">
+          Tool Name: <input type="text" name="tool_name_inp"/> <br/><br/>
+          Tool Documentation : <input type = "file" name = "tool_doc" /> <br/><br/>
+          Tool Script : <input type = "file" name = "tool_script" /> <br/><br/>
+          Tool Setting : <input type = "file" name = "tool_setting" /> <br/><br/>
+          Tool Setting UI Control : <input type = "file" name = "tool_setting_ui" /> <br/><br/>
+          Additional File/Program (optional) : <input type = "file" name = "tool_additional_file" /> <br/><br/>
+         <input type = "submit"/>
+      </form>
+    </div>
+</body>
+</html>

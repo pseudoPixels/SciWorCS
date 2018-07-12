@@ -1,0 +1,42 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Base (i.e., Base=y and Power=2 for y^2 ):</label>
+            <referenceVariable>base_number</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Powered Result</label>
+            <referenceVariable>result</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+        Power (i.e., Base=y and Power=2 for y^2 ):
+        <input type="text" class="setting_param" value="powr = 0" name="cleaning_threshold" size="45"/>
+        <br/><br/>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        <b>Math - Power</b>
+        <p><i>Description:</i><br/>
+        This method returns value of x^y<br/>
+        <br/></p>
+    </toolDocumentation>
+
+
+
+</SciWorC>
+
+
+

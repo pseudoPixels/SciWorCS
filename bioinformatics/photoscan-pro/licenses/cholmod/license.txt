@@ -1,0 +1,6 @@
+CHOLMOD was authored by Timothy A. Davis, a faculty member in
+the Dept of Computer Science and Engineering at Texas A&M University.
+See http://faculty.cse.tamu.edu/davis/suitesparse.html for more details.
+
+CHOLMOD Core is a proprietary software of University of Florida Research Foundation, Inc.
+UFRF reserves the copyright and all intellectual property rights in the software.

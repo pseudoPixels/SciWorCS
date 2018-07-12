@@ -1,0 +1,33 @@
+<SciWorC>
+
+    <toolOutputs>
+        <toolOutput>
+            <label>User Input</label>
+            <referenceVariable>obtained_user_input</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+        Set Value: <input type="text" class="setting_param" value="user_input = 0.0" name="cleaning_threshold" size="45"/>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        Discovers Input Data of Sepcified Type.
+    </toolDocumentation>
+
+
+
+</SciWorC>
+
+
+
+
+
+
+
+

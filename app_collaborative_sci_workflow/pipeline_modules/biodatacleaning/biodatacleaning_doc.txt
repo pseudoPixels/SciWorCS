@@ -1,0 +1,10 @@
+<b>Bio Data Cleaning</b>
+	<p><i>Description:</i> Removes the redundant and repeating DNA sequences.</p>
+
+
+<i>Usage:</i>
+<ol>
+	<li>Input Files: Select the module or files to take the input from.</li>
+	<li>Output Files: Select the module or files to send the input to.</li>
+	<li>Cleaning Threshold: Threshold value for quality control.</li>
+</ol>

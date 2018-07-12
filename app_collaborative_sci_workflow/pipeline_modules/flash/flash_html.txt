@@ -1,0 +1,31 @@
+<br/>
+Select Input Files Directory: <select  class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+      <!-- <option value="in_file_path = 'bioFiles/'" selected>Directory 1</option> -->
+      <!-- <option value="in_file_path = 'bioFiles_out/'" >Directory 2</option> -->
+      <option value="workflow" >Select Incoming Data Link From</option>
+      <option value="module_id_1" >From Module 1 Output</option>
+      <option value="module_id_2" >From Module 2 Output</option>
+      <option value="module_id_3" >From Module 3 Output</option>
+      <option value="module_id_4" >From Module 4 Output</option>
+      <option value="module_id_5" >From Module 5 Output</option>
+      <option value="module_id_6" >From Module 6 Output</option>
+      <option value="module_id_7" >From Module 7 Output</option>
+      
+</select>
+ <br/><br/>
+
+Select Input Sequence File: <select  class="setting_param" name="input_seq_file"> <!-- CHANGE IN THIS LINE -->
+      <option value="inputFile = 'SP1.fq'" selected>Sequence File 1</option>
+      <option value="inputFile = 'SP2.fq'" >Sequence File 2</option>
+</select> 
+
+
+ <br/><br/>
+
+Select FastQC output Directory: <select  class="setting_param" name="output_dir"> <!-- CHANGE IN THIS LINE -->
+      <option value="outDir = 'Fastqc_dri_1'" selected>Directory 1</option>
+      <option value="outDir = 'Fastqc_dri_2'" >Directory 2</option>
+</select> 
+
+
+<br/><br/>

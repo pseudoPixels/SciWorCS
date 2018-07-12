@@ -1,0 +1,93 @@
+<div style="background-color:#EEE;width:100%;display:none;" class="module" id="module_id_1"><!-- Documentation --><div style="margin:10px;font-size:17px;color:#000000;"> Math_Get_User_Input (Module 1)<hr> Documentation: <a style="font-size:12px;color:#000000;" href="#" class="documentation_show_hide">(Show/Hide)</a><div class="documentation" style="background-color:#DDDDDD;display:none;font-size:14px;">
+        Discovers Input Data of Sepcified Type.
+    </div></div><!-- Settings --><div style="margin:10px;font-size:17px;color:#000000;">   Settings: <a style="font-size:12px;color:#000000;" href="#" class="settings_show_hide">(Show/Hide)</a>   <div class="settings" style="background-color:#DDDDDD;font-size:14px;">
+        Set Value: <input type="text" class="setting_param" value="user_input = 0.0" name="cleaning_threshold" size="45">
+    <br><input type="text" style="display:none;" class="setting_param module_output obtained_user_input" size="45" value="obtained_user_input=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_1_obtained_user_input.txt&quot;"><input type="hidden" class="setting_param " size="45" id="module_id_1_output_destination" value="output_destination = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1'"></div></div><div style="margin:10px;font-size:17px;color:#000000;" class="setting_section">    <a style="display:none;font-size:12px;color:#000000;" href="#" class="code_show_hide">(Show/Hide)</a>   <div class="edit_code" style="background-color:#888888;font-size:14px;display:none;">          <textarea rows="7" cols="150" class="code_settings">
+user_input = 0.0
+output_destination= '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1'</textarea>         <p style="color:#000000;">Main Implementation: </p>        <textarea rows="10" cols="150">
+with open(obtained_user_input, "w+") as moduleOutputFile:
+	moduleOutputFile.write(str(user_input))</textarea></div> <pre style="background-color:#333333;width:100%;display:none;" class="pre_highlighted_code"><code class="python highlighted_code" style="display:none;">
+
+user_input = 0.0
+output_destination= '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1' 
+
+with open(obtained_user_input, "w+") as moduleOutputFile:
+	moduleOutputFile.write(str(user_input))</code></pre> </div></div><div style="background-color:#EEE;width:100%;display:none;" class="module" id="module_id_2"><!-- Documentation --><div style="margin:10px;font-size:17px;color:#000000;"> Math_Get_User_Input (Module 2)<hr> Documentation: <a style="font-size:12px;color:#000000;" href="#" class="documentation_show_hide">(Show/Hide)</a><div class="documentation" style="background-color:#DDDDDD;display:none;font-size:14px;">
+        Discovers Input Data of Sepcified Type.
+    </div></div><!-- Settings --><div style="margin:10px;font-size:17px;color:#000000;">   Settings: <a style="font-size:12px;color:#000000;" href="#" class="settings_show_hide">(Show/Hide)</a>   <div class="settings" style="background-color:#DDDDDD;font-size:14px;">
+        Set Value: <input type="text" class="setting_param" value="user_input = 0.0" name="cleaning_threshold" size="45">
+    <br><input type="text" style="display:none;" class="setting_param module_output obtained_user_input" size="45" value="obtained_user_input=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_2_obtained_user_input.txt&quot;"><input type="hidden" class="setting_param " size="45" id="module_id_2_output_destination" value="output_destination = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_2'"></div></div><div style="margin:10px;font-size:17px;color:#000000;" class="setting_section">    <a style="display:none;font-size:12px;color:#000000;" href="#" class="code_show_hide">(Show/Hide)</a>   <div class="edit_code" style="background-color:#888888;font-size:14px;display:none;">          <textarea rows="7" cols="150" class="code_settings">
+user_input = 0.0
+output_destination= '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1'</textarea>         <p style="color:#000000;">Main Implementation: </p>        <textarea rows="10" cols="150">
+with open(obtained_user_input, "w+") as moduleOutputFile:
+	moduleOutputFile.write(str(user_input))</textarea></div> <pre style="background-color:#333333;width:100%;display:none;" class="pre_highlighted_code"><code class="python highlighted_code" style="display:none;">
+
+user_input = 0.0
+output_destination= '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_1' 
+
+with open(obtained_user_input, "w+") as moduleOutputFile:
+	moduleOutputFile.write(str(user_input))</code></pre> </div></div><div style="background-color:#EEE;width:100%;display:none;" class="module" id="module_id_3"><!-- Documentation --><div style="margin:10px;font-size:17px;color:#000000;"> Math_Addition (Module 3)<hr> Documentation: <a style="font-size:12px;color:#000000;" href="#" class="documentation_show_hide">(Show/Hide)</a><div class="documentation" style="background-color:#DDDDDD;display:none;font-size:14px;">
+<b>Math - Addition</b>
+	<p><i>Description:</i><br>
+Adds Two Numbers <br>
+<br></p>
+    </div></div><!-- Settings --><div style="margin:10px;font-size:17px;color:#000000;">   Settings: <a style="font-size:12px;color:#000000;" href="#" class="settings_show_hide">(Show/Hide)</a>   <div class="settings" style="background-color:#DDDDDD;font-size:14px;">
+    <br><input type="text" style="display:none;" class="setting_param module_input first_number" size="45" value="first_number='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_2_obtained_user_input.txt'"><input type="text" style="display:none;" class="setting_param module_input second_number" size="45" value="second_number='/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_1_obtained_user_input.txt'"><input type="text" style="display:none;" class="setting_param module_output summation_result" size="45" value="summation_result=&quot;/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_3_summation_result.txt&quot;"><input type="hidden" class="setting_param " size="45" id="module_id_3_output_destination" value="output_destination = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/Module_3'"></div></div><div style="margin:10px;font-size:17px;color:#000000;" class="setting_section">    <a style="display:none;font-size:12px;color:#000000;" href="#" class="code_show_hide">(Show/Hide)</a>   <div class="edit_code" style="background-color:#888888;font-size:14px;display:none;">          <textarea rows="7" cols="150" class="code_settings">
+module_1 = 'Module_1.txt'
+module_2 = 'Module_2.txt'
+output_destination = 'Module_3'</textarea>         <p style="color:#000000;">Main Implementation: </p>        <textarea rows="10" cols="150">
+#temp variable for the two nums
+num1 = 0
+num2 = 0
+
+lines = ''
+with open(first_number) as module_1_inp:
+	lines = module_1_inp.readlines()
+
+#only read the first line (in case it has multiples)
+num1 = float(lines[0])
+
+lines = ''
+with open(second_number) as module_2_inp:
+	lines = module_2_inp.readlines()
+
+#only read the first line (in case it has multiples)
+num2 = float(lines[0])
+
+#calculation
+res = num1 + num2
+
+
+#write out this module Output
+with open(summation_result, "w+") as thisModuleOutput:
+	thisModuleOutput.write(str(res))</textarea></div> <pre style="background-color:#333333;width:100%;display:none;" class="pre_highlighted_code"><code class="python highlighted_code" style="display:none;">
+
+module_1 = 'Module_1.txt'
+module_2 = 'Module_2.txt'
+output_destination = 'Module_3' 
+
+#temp variable for the two nums
+num1 = 0
+num2 = 0
+
+lines = ''
+with open(first_number) as module_1_inp:
+	lines = module_1_inp.readlines()
+
+#only read the first line (in case it has multiples)
+num1 = float(lines[0])
+
+lines = ''
+with open(second_number) as module_2_inp:
+	lines = module_2_inp.readlines()
+
+#only read the first line (in case it has multiples)
+num2 = float(lines[0])
+
+#calculation
+res = num1 + num2
+
+
+#write out this module Output
+with open(summation_result, "w+") as thisModuleOutput:
+	thisModuleOutput.write(str(res))</code></pre> </div></div>

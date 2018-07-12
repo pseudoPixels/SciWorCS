@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Pictures in the System</title>
+</head>
+<body>
+    <form action="upload" method= post enctype="multipart/form-data">
+        <fieldset>
+            <legend> Upload Form </legend>
+            <div style = font-size:20px;color:#0C0C0F;margin-left:150px;>
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            <input type="file" multiple="" name="file[]" class="span3" />
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            <label for="annotation">Insert Annotation in following Box</label>
+            <br />&nbsp;&nbsp;&nbsp;
+            {{form.Annotation(rows='20',cols='50')}}
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            <label for="selection">Select Source for insert</label>
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            {{form.Sel_Dir}}
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            <label for="selection">Enter directory name if not found in selection box</label>
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            {{form.dir_name}}
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            {{form.submit}}
+                </div>
+            </fieldset>
+        </form>
+</body>
+</html>

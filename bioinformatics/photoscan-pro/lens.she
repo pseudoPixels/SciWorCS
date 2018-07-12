@@ -1,0 +1,20 @@
+#!/bin/sh
+appname=`basename "$0" | sed s,\.sh$,,`
+
+dirname=`dirname "$0"`
+tmp="${dirname#?}"
+
+if [ "${dirname%$tmp}" != "/" ]; then
+dirname=$PWD/$dirname
+fi
+
+TCL_LIBRARY=$dirname/python/lib/tclTCL_VERSION
+TK_LIBRARY=$dirname/python/lib/tkTCL_VERSION
+export TCL_LIBRARY
+export TK_LIBRARY
+
+LD_LIBRARY_PATH=$dirname:$dirname/python/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+
+"$dirname/$appname" "$@"
+

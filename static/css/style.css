@@ -1,0 +1,211 @@
+﻿body {
+font-family: 'Montserrat', sans-serif;
+font-size:16px;
+line-height:35px;
+}
+
+ .carousel-caption {
+    top: 50px;
+}
+section {
+    padding-top:50px ;
+    padding-bottom:100px;
+}
+h1 {
+    font-weight:900;
+}
+.pad-btm {
+    padding-bottom:10px;
+    padding-top: 5px;
+}
+
+/*======================================
+    NAVBAR SECTION STYLES
+  =======================================*/
+.navbar-default {
+    background-color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+}
+/*======================================
+    HOME SECTION STYLES
+  =======================================*/
+#home-sec {
+    background-color:#29CC71;
+    line-height:30px;
+}
+home-sec .carousel-caption {
+    top: 50px;
+}
+.slide-h1 {
+    font-size:50px;
+    font-weight:900;
+    padding-bottom:10px;
+}
+.slide-h2 {
+    font-size:25px;
+    font-weight:900;
+    padding-bottom:10px;
+}
+/*======================================
+    NAV STYLES
+  =======================================*/
+
+#nav{
+	position: fixed;
+	top: 60%;
+	right:10px;
+}
+
+#nav li{
+	display: block;
+margin: 10px;
+width: 20px;
+height: 20px;
+overflow: hidden;
+background-color: rgb(0, 0, 0);
+border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 3px 2px rgb(255, 255, 255);
+	-moz-box-shadow: 0px 0px 3px 2px rgb(255, 255, 255);
+	-ms-box-shadow: 0px 0px 3px 2px rgb(255, 255, 255);
+	box-shadow: 0px 0px 3px 2px rgb(255, 255, 255);
+}
+
+#nav li:hover{
+	background-color:#fff;
+}
+
+#nav a{
+	text-indent: -999em;
+	color: transparent;
+}
+
+/*======================================
+   ABOUT SECTION STYLES
+  =======================================*/
+
+#about-sec {
+    color:#fff;
+    background-color:#5aabe0;
+}
+/*======================================
+   FEATURES SECTION STYLES
+  =======================================*/
+#features-sec {
+    background-color:#E23E3E;
+    color:#fff;
+}
+/*======================================
+   Data Insertion STYLES
+  =======================================*/
+#datainsert-sec {
+    background-color:#e3f2eb;
+    color:#000;
+}
+
+/*======================================
+   TEAM SECTION STYLES
+  =======================================*/
+#team-sec {
+    color:#fff;
+    background-color:#1e7e52;
+}
+.set-img {
+    border:10px solid #29CC71;
+}
+/*======================================
+   CONTACT SECTION STYLES
+  =======================================*/
+
+#contact-sec {
+    color:#fff;
+    background-color:#fa9040;
+}
+.cnt-img {
+    border:10px solid #FFB566;
+}
+/*======================================
+   FOOTER SECTION STYLES
+  =======================================*/
+#footer-sec {
+    border-top:1px solid #fff;
+    padding:10px 50px 10px 50px;
+    text-align:right;
+    background-color:#fa9040;
+}
+/*======================================
+   MEDIA QUERIES
+  =======================================*/
+
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    .carousel-caption {
+    top: 20px;
+}
+    .slide-h1 {
+         font-size:30px;
+         padding-bottom:5px;
+    }
+    .slide-h2 {
+        padding-bottom:5px;
+        font-size: 20px;
+    }
+   }
+
+
+@media (min-width: 631px) and (max-width: 800px) {
+    .carousel-caption {
+    top: 10px;
+}
+    .slide-h1 {
+         font-size:25px;
+         padding-bottom:3px;
+    }
+    .slide-h2 {
+        padding-bottom:3px;
+        font-size: 15px;
+    }
+   }
+@media (min-width: 501px) and (max-width: 630px) {
+    .carousel-caption {
+    top: 5px;
+}
+    .slide-h1 {
+         font-size:25px;
+         padding-bottom:3px;
+    }
+    .slide-h2 {
+        display:none;
+    }
+   }
+@media (min-width: 100px) and (max-width: 499px) {
+    
+    .slide-h1 {
+        display:none;
+    }
+    .slide-h2 {
+        display:none;
+    }
+   }
+.prev_picture{
+	position:absolute;
+	transition: .5s ease;
+    left: 50px;
+    margin-top: 10px
+}
+
+.next_picture{
+	position:absolute;
+	transition: .5s ease;
+    left: 200px;
+    margin-top: 10px
+}
+.update_picture{
+    position:absolute;
+	transition: .5s ease;
+    left: 350px;
+    margin-top: 10px
+}
+

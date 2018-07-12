@@ -1,0 +1,42 @@
+*{
+    padding:0 0 ;
+}
+
+.header-text{
+    margin-top: 80px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    font-size: 80px;
+    text-align: center;
+   letter-spacing: 8px;
+
+}
+
+header{
+    border-bottom: 1px solid #269abc;
+    margin-bottom: 10px;
+}
+
+.box{
+    position: relative;
+    float: left;
+}
+
+.content{
+    padding:10px;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+}
+
+.content img{
+    width: 200px;
+    height: auto;
+}
+
+#container{
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}

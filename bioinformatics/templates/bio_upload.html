@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>File Upload</h1>
+<form id="upload-form" action="{{ url_for('bioinformatics.bio_upload') }}" method="POST" enctype="multipart/form-data">
+  <input type="file" name="file" multiple id="file">
+  <input type="submit" name="file" value="Execute FastQC">
+  <input type="submit" name="file" value="Execute FLASH">
+</form>
+<h2>------------------------------OR------------------------------</h2>
+<form id="input-form" action="{{ url_for('bioinformatics.bio_upload') }}" method="POST">
+    <ul>Enter directory of folder containing sequence files:</ul>
+    <ul><input type="text" name="textDir" id="textDir"></ul>
+    <ul>Enter a regular expression of your choice:</ul>
+    <ul><input type="text" name="textRegex" id="textRegex"></ul>
+    <ul><input type="submit" name="text" value="Execute FastQC"/></ul>
+    <ul><input type="submit" name="text" value="Execute FLASH"/></ul>
+</form>
+<div id="inputAlert" style={{"display:"+inputAlert+";"}}>
+    <p>{{ title }} of:</p>
+    <ol>
+    {% for file in fileName %}
+    <tr>
+        <td>
+            <li>{{ file  }}</li>
+        </td>
+    </tr>
+    {% endfor %}
+    </ol>
+    <div id="hideLoc" style={{"display:"+hideLoc+";"}}>
+    <p>To:</p>
+    <ol>
+    {% for file in fileLoc %}
+    <tr>
+        <td>
+            <li>{{ file  }}</li>
+        </td>
+    </tr>
+    {% endfor %}
+    </ol>
+    </div>
+    <div id="fastqc" style={{"display:"+fastqc+";"}}>
+    <label>FastQC Output:</label>
+    <ol>
+    {% for file in fastqcName %}
+    <tr>
+        <td>
+            <li><a href={{"static/fastqc_output/"+file+"_fastqc.html"}}>{{ file  }}</a></li>
+        </td>
+    </tr>
+    {% endfor %}
+    </ol>
+    </div>
+    <div id="download" style={{"display:"+download+";"}}>
+    <form id="download-form" action="{{ url_for('bioinformatics.bio_download') }}" method="POST">
+        <ul>Enter a directory to download to:  (If none is provided, will download to "Downloads" folder by default)</ul>
+        <ul><input type="text" name="downloadDir" id="downloadDir"></ul>
+        <ul>Enter a folder name for the zip file to be downloaded as:  (If none is provided, folder will be named "fastqc_output.zip" or "flash_output.zip" by default)</ul>
+        <ul><input type="text" name="downloadName" id="downloadName">.zip</ul>
+        <div style={{"display:"+fastqc+";"}}>
+        <ul><input type="submit" name="download" value="Download FastQC Output"/></ul>
+        </div>
+        <div id="flash" style={{"display:"+flash+";"}}>
+        <ul><input type="submit" name="download" value="Download FLASH Output"/></ul>
+        </div>
+    </form>
+    </div>
+</div>
+<div id="errorAlert" style={{"display:"+errorAlert+";"}}><p>{{ errorMessage }}</p></div>
+<h2>------------------------------OR------------------------------</h2>
+<form id="photoscan" action="{{ url_for('bioinformatics.bio_photoscan') }}" method="POST">
+<ul><input type="submit" name="photoscan" value="Agisoft PhotoScan"/></ul>
+</form>
+</body>
+</html>

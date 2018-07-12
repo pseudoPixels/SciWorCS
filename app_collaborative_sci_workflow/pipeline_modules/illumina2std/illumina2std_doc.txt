@@ -1,0 +1,15 @@
+<b>illumina2std</b>
+	<p><i>Description:</i>
+		         illumina2std Convert Illumina FASTQ (Pipeline v1.3) to the standard FASTQ
+	</p>
+
+
+<i>Usage:</i><br/>
+    <li>Input File: Select the module or sequence file to analysis (Fastq File). </li>
+
+
+<i>Outputs:</i>
+<ol>
+	<li>Converted illumina2std file.</li>
+</ol>
+

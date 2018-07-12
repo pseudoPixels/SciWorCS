@@ -1,0 +1,10 @@
+<br/>
+Select Centrality Type: <select  class="setting_param" name="image_location"> <!-- CHANGE IN THIS LINE -->
+      <option value="cent_type = 'betweenness'" selected>Betweenness</option>
+      <option value="cent_type = 'degree'" selected>Degree</option>
+      <option value="cent_type = 'closeness'" selected>Closeness</option>
+
+
+</select>
+ 
+<br/><br/>

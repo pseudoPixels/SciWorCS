@@ -1,0 +1,207 @@
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <title>P2IRC LSystem</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="P2IRC Lsystem">
+    <meta name="keywords" content="LSystem, Plant, Morphogenesis">
+    <meta name="author" content="Google">
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="static/css/bootstrap.css" rel="stylesheet"/>
+    <!-- CUSTOM STYLE CSS -->
+    <link href="static/css/style.css" rel="stylesheet"/>
+    <!-- GOOGLE FONT -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/static/js/gl2.js"></script>
+    <script type="text/javascript" src="/static/js/gl1.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="/static/js/LSystem.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script id="shader-fs" type="x-shader/x-fragment">
+    precision mediump float;
+
+    varying vec4 vColor;
+
+    void main(void) {
+        gl_FragColor = vColor;
+    }
+
+    </script>
+
+    <script id="shader-vs" type="x-shader/x-vertex">
+    attribute vec3 aVertexPosition;
+    attribute vec4 aVertexColor;
+
+    uniform mat4 uMVMatrix;
+    uniform mat4 uPMatrix;
+
+    varying vec4 vColor;
+
+    void main(void) {
+        gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+        vColor = aVertexColor;
+    }
+    </script>
+</head>
+<body onload="webGLStart();" style="background-color: #98cfb1">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+                    data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color: #000000;font-family: cursive"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Hello, {{ name }} !</a></li>
+                <li><a href="/">Log out</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href={{ url_for("dataInsert") }}>Platform for Data Support</a></li>
+                <li><a href={{ url_for("lsystemModel") }}>L-Systems Plant Modeling</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--HEADER SECTION END -->
+<div class="row" style="margin-top: 35px">
+    <div class="col-md-offset-1">
+        <h1>P2IRC L-Systems Plant Modeling</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-offset-1">
+        <b>Plant Type:</b>
+        <input type="button" class="btn btn-info" id="preset1" value="Type 1" onclick="setPreset(1)"/>
+        <input type="button" class="btn btn-info" id="preset2" value="Type 2" onclick="setPreset(2)"/>
+        <input type="button" class="btn btn-info" id="preset3" value="Type 3" onclick="setPreset(4)"/>
+        <!-- <input type="button" id="preset4" value="P4" onclick="setPreset(3)" title="Von Koch curve"/> -->
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-5">
+        <canvas id="lsys-canvas" class="center-block" style="border: none; margin-left: 10px;" width="550"
+                height="550"></canvas>
+    </div>
+    <div class="col-md-4">
+        <img id="plant" src = "data:;base64,{{image}}" class="center-block" alt="[[Plant image to save]]" width="400" height="550"/>
+    </div>
+    <div class="col-md-3">
+        <b>Axioms:</b>
+        {#        <br/><b>A&#8594;</b> <input type="text" id="ruleA" value="ASLss*[+AL][-AL]///>"#}
+        {#                                    title="A is the initial axiom." )/>#}
+        {#        <br/><b>B&#8594;</b> <input type="text" id="ruleB" value=""/>#}
+        {#        <br/><b>C&#8594;</b> <input type="text" id="ruleC" value=""/>#}
+        {#        <br/><b>D&#8594;</b> <input type="text" id="ruleD" value=""/>#}
+        {#        <br/><b>E&#8594;</b> <input type="text" id="ruleE" value=""/>#}
+        <br/><b>A&#8594;</b> {{ form.ruleA(type="text", id="ruleA", title="A is the initial axiom.") | safe }}
+        <br/><b>B&#8594;</b> {{ form.ruleB(type="text", id="ruleB", value="") }}
+        <br/><b>C&#8594;</b> {{ form.ruleC(type="text", id="ruleC", value="") }}
+        <br/><b>D&#8594;</b> {{ form.ruleD(type="text", id="ruleD", value="") }}
+        <br/><b>E&#8594;</b> {{ form.ruleE(type="text", id="ruleE", value="") }}
+        <br/>
+        <table style="border: 0; padding: 0px;">
+            <tr>
+                <td><br/>
+            <tr>
+
+                <td><b>Scale:</b>
+{#                <td><input type="range" id="plantScale" value="0.45" min="0.000005" max="1" step="0.0005"/>#}
+                <td>{{ form.scale(type="range", id="plantScale", min="0.000005", max="1", step="0.0005")}}
+            <tr>
+                <td><br/>
+            <tr>
+                <td><b>Limits:</b>
+            <tr>
+                <td>Depth:
+{#                <td><input type="range" id="lsmaxDepth" value="6" min="1" max="8" step="1"/>#}
+                <td>{{ form.depth(type="range", id="lsmaxDepth", min="1", max="8", step="1") }}
+            <tr>
+                <td>Segments:
+{#                <td><input type="range" id="maxSegments" value="2000" min="10" max="5000" step="5"/>#}
+                <td>{{ form.segment(type="range", id="maxSegments", min="10", max="5000", step="5") }}
+            <tr>
+                <td><br/>
+            <tr>
+                <td><b>Angles:</b>
+            <tr>
+                <td>Min:
+{#                <td><input type="range" id="minAngle" value="0.55" min="0" max="3.14" step="0.01"/>#}
+                <td>{{ form.minAngle(type="range", id="minAngle", min="0", max="3.14", step="0.01") }}
+            <tr>
+                <td>Max:
+{#                <td><input type="range" id="maxAngle" value="0.60" min="0" max="3.14" step="0.01"/>#}
+                <td>{{ form.maxAngle(type="range", id="maxAngle", min="0", max="3.14", step="0.01") }}
+            <tr>
+                <td>Velocity:
+{#                <td><input type="range" id="velAngle" value="0.1" min="0" max="1" step="0.01"/>#}
+                <td>{{ form.velocity(type="range", id="velAngle", min="0", max="1", step="0.01") }}
+            <tr>
+                <td>Rotation (Y):
+{#                <td><input type="range" id="rotYVel" value="0.05" min="-0.5" max="0.5" step="0.05"/>#}
+                <td>{{ form.rotation(type="range", id="rotYVel", min="-0.5", max="0.5", step="0.05") }}
+            <tr>
+                <td><br/>
+            <tr>
+                <td><input type="checkbox" id="engrowth"/><b>Growth:</b>
+            <tr>
+                <td>Speed:
+{#                <td><input type="range" id="growthSpeed" value="1.0" min="0.1" max="10" step="0.1"/>#}
+                <td>{{ form.speed( type="range", id="growthSpeed", min="0.1", max="10", step="0.1") }}
+            <tr>
+                <td>
+                <td>
+                    <button id="gen" class="btn btn-primary" onclick="restartGrowth()">Restart</button>
+
+            <tr>
+                <td><br/>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-offset-2">
+        <button class="btn btn-primary" onclick="putImage()">Save As Image</button>
+    </div>
+</div>
+
+<script>
+    function putImage() {
+        var canvas1 = document.getElementById("lsys-canvas");
+        if (canvas1.getContext) {
+            //alert("got it")
+            var myImage = canvas1.toDataURL("image/png");
+        }
+        var imageElement = document.getElementById("plant");
+        imageElement.src = myImage;
+        $.post('/saveModel', {
+            src: myImage,
+            ruleA: $('#ruleA').val(),
+            ruleB: $('#ruleB').val(),
+            ruleC: $('#ruleC').val(),
+            ruleD: $('#ruleD').val(),
+            ruleE: $('#ruleE').val(),
+            scale: $('#plantScale').val(),
+            depth: $('#lsmaxDepth').val(),
+            segments: $('#maxSegments').val(),
+            minAngle: $('#minAngle').val(),
+            maxAngle: $('#maxAngle').val(),
+            velocity: $('#velAngle').val(),
+            rotation: $('#rotYVel').val(),
+            speed: $('#growthSpeed').val()
+        }).done(function (text) {
+            alert(text);
+        }).fail(function () {
+            alert("faid");
+        });
+
+    }
+</script>
+</body>
+
+</html>

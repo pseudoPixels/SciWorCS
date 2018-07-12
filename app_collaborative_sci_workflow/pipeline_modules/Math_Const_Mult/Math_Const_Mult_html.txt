@@ -1,0 +1,42 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Number</label>
+            <referenceVariable>input_number</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Multiplication Result</label>
+            <referenceVariable>multiplication_result</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    Variable  (i.e., Constant=3 and Variable=y for 3y ):
+<input type="text" class="setting_param" value="const_num = 0" name="cleaning_threshold" size="45"/>
+<br/><br/>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+<b>Math - Addition</b>
+	<p><i>Description:</i><br/>
+Adds Two Numbers <br/>
+<br/></p>
+    </toolDocumentation>
+
+
+
+</SciWorC>
+
+
+
