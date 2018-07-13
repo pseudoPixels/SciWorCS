@@ -23,6 +23,7 @@ var iAmDone = false;
 
 $(document).ready(function(){
 
+alert("User Study:: Doc Loaded");
 
 
 //TODO: NEED TO MAKE IT RELATIVE
