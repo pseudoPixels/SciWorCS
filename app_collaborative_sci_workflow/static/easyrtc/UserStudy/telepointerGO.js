@@ -23,7 +23,6 @@ var iAmDone = false;
 
 $(document).ready(function(){
 
-alert("User Study:: Doc Loaded");
 
 
 //TODO: NEED TO MAKE IT RELATIVE
@@ -321,6 +320,13 @@ $(document).on('click', '.close', function(){
             var part = iter.value;
             if (part instanceof go.Node) {
                 //alert(part.data.key);
+
+
+                //@@USER_STUDY
+                console.log(user_email + "=>MODULE_DELETED"+"=>module_id:"+part.data.key);
+
+
+
                 var nodeInfoForRemoval = {'key':part.data.key};
                 notifyAll("workflow_obj_selection_node_delete",nodeInfoForRemoval);
             }
@@ -334,6 +340,10 @@ $(document).on('click', '.close', function(){
 
                  $("#"+part.data.to + ' .' + referenceVariable).val(thisPortInput).trigger('change');
 
+
+
+                //@@USER_STUDY
+                console.log(user_email + "=>DATALINK_DELETED"+"=>" + 'from:' + part.data.from + '*frompid:' + part.data.frompid + '*to:' + part.data.to + '*topid:' + part.data.topid);
 
                 var linkInfoForRemoval = {'from': part.data.from, 'frompid': part.data.frompid, 'to': part.data.to, 'topid': part.data.topid};
                 notifyAll("workflow_obj_selection_link_delete",linkInfoForRemoval);
@@ -359,6 +369,8 @@ $(document).on('click', '.close', function(){
 
             $('#'+part.data.to +' .'+toPortClass).val(toPortClass+"='"+ WORKFLOW_OUTPUTS_PATH + THIS_WORKFLOW_NAME + '/' + part.data.from+'_'+part.data.frompid+"'").trigger('change');
 
+            //@@USER_STUDY
+            console.log(user_email + "=>DATALINK_ADDED"+"=>" + 'from:' + part.data.from + '*frompid:' + part.data.frompid + '*to:' + part.data.to + '*topid:' + part.data.topid);
 
             //alert("To " + part.data.to);
             //alert(part.data.topid.split('(')[part.data.topid.split('(').length - 2]);
@@ -378,6 +390,12 @@ $(document).on('click', '.close', function(){
             var part = iter.value;
             if (part instanceof go.Node) {
                 //alert(part.data.key + " x: " + part.location.x + " y: " + part.location.y);
+
+
+                //@@USER_STUDY
+                console.log(user_email + "=>MODULE_MOVED"+"=>" + 'key:' + part.data.key + '*x:' + part.location.x + '*y:' + part.location.y);
+
+
                 var nodeNewLocationInformation = {'key': part.data.key, 'x':part.location.x, 'y':part.location.y};
                 notifyAll('workflow_obj_selection_moved', nodeNewLocationInformation);
             }
@@ -862,6 +880,9 @@ $(document).on('click', ".dag_module", function(){
                     //Allow Both Read and Write
                     //Remove read only from the diagram
                     myDiagram.isReadOnly = false;
+
+                    //@@USER_STUDY
+                    console.log(user_email + "=>GOT_THE_FLOOR");
 
                     alert("Got the Floor.");
                     onFloorOwnerChanged(user_email);
@@ -2167,7 +2188,7 @@ function sendStuffWS(otherEasyrtcid) {
 
 function loginSuccess(easyrtcid) {
     selfEasyrtcid = easyrtcid;
-    console.log("My EasyRTCID: " + easyrtcid);
+    //console.log("My EasyRTCID: " + easyrtcid);
     //document.getElementById("iam").innerHTML = "I am " + easyrtcid;
 }
 
@@ -2259,10 +2280,16 @@ $(document).on('change', ".setting_param" ,function () {//here
 
     //inform of this change to all the other clients...
     if(isItMyFloor() == true){
+
         var myParent = $(this).closest(".module");
         var elementInfo = "#" + myParent.attr('id') + "  .setting_param";
         var paramIndex = $(this).index(elementInfo);
         var newParamValue = $(this).val();
+
+        //@@USER_STUDY
+        console.log(user_email + "=>MODULE_CONFIG_CHANGE=>"+"moduleID:"+myParent.attr('id'));
+
+
         var changeInfo = {"elementInfo": elementInfo, "paramIndex": paramIndex, "newParamValue": newParamValue, "isResourceDiscoveryField": $(this).hasClass('enableResourceDiscovery') };
         //console.log("elementInfo::" + elementInfo + " paramIndex::"+paramIndex + " newParamValue::"+newParamValue);
         notifyAll("moduleSettingsChanged", changeInfo);
@@ -3008,6 +3035,12 @@ $(document).on("click", ".pipeline_modules" ,function(){
 
         //prepare the next valid unique module id
         updateNextUniqueModuleID();
+
+
+        //@@USER_STUDY
+        console.log(user_email + "=>MODULE_ADDED"+"=>module_id:"+newModuleID);
+
+
 
         //add the module to all remote clients as well...
         var moduleInfo = {"newModuleID": newModuleID, "newModuleName": newModuleName};
