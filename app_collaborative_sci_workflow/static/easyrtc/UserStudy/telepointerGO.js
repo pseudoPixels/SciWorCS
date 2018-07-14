@@ -301,12 +301,18 @@ myDiagram='';
   myDiagram.addDiagramListener("BackgroundSingleClicked",
       function(e) {
         //$(".module").hide();
+        //@@USER_STUDY
+        console.log(user_email + "=>BACKGROUND_SINGLE_CLICKED");
+
         $("#modal_module_configs").css('display', 'none');
       }
   );
 
 $(document).on('click', '.close', function(){
     //alert('close clicked');
+    //@@USER_STUDY
+    console.log(user_email + "=>MODULE_CONFIG_CLOSED");
+
     $("#modal_module_configs").css('display', 'none');
     $("#myModal").css('display', 'none');
 });
@@ -1024,6 +1030,11 @@ $(document).on('click', ".dag_module", function(){
             return;
         }
 
+        //@@USER_STUDY
+        console.log(user_email+ "=>CHAT_ROOM_MSG=>"+"text_len:"+text.replace(/\s/g, "").length + "*text:" + text);
+
+
+
         //empty the text box for further msg
         $("#chatRoom_send_msg_txt").val("");
 
@@ -1163,6 +1174,9 @@ $(document).on('click', ".dag_module", function(){
     });
 
     $(document).on('change', '#whiteBoard_color' ,function(){
+        //@@USER_STUDY
+        console.log(user_email + "=>WHITEBOARD_COLOR_CHANGED");
+
         var selectedColor = $(this).val();
         //alert(selectedColor);
         if(selectedColor=='Green')curColor = colorGreen;
@@ -1172,6 +1186,10 @@ $(document).on('click', ".dag_module", function(){
     });
 
     $(document).on('change', '#whiteBoard_brushSize' ,function(){
+        //@@USER_STUDY
+        console.log(user_email + "=>WHITEBOARD_BRUSH_SIZE_CHANGED");
+
+
         var selectedSize = $(this).val();
 
         if(selectedSize=='Small')curSize = 3;
@@ -1182,6 +1200,10 @@ $(document).on('click', ".dag_module", function(){
     });
 
     $(document).on('change', '#whiteBoard_tool' ,function(){
+        //@@USER_STUDY
+        console.log(user_email + "=>WHITEBOARD_TOOL_CHANGED");
+
+
         var selectedTool = $(this).val();
 
         if(selectedTool=='Eraser')curTool = 'Eraser';
@@ -1281,6 +1303,11 @@ $(document).on('click', ".dag_module", function(){
             $(this).prop('disabled', true); //dont allow to request multiple times
             $(this).text('Waiting For Floor');
             $(this).css('background-color', 'DARKGOLDENROD');
+
+
+            //@@USER_STUDY
+            console.log(user_email +"=>FLOOR_REQUESTED");
+
             //finally request the floor
             requestFloor(user_email);
         }
@@ -1288,6 +1315,10 @@ $(document).on('click', ".dag_module", function(){
         else if($(this).text() == "Release Floor"){
             $(this).text('Request Floor');
             $(this).css('background-color', 'darkcyan');
+
+            //@@USER_STUDY
+            console.log(user_email +"=>FLOOR_RELEASED");
+
 
             releaseFloor();
         }
@@ -2242,18 +2273,29 @@ function loginFailure(errorCode, message) {
 
 //source code in pre tag... toggle show/hide
 $(document).on('click', ".code_show_hide", function () {//here
+    //@@USER_STUDY
+    console.log(user_email + "=>MODULE_CODE_TOGGLED");
+
     $(this).siblings('.pre_highlighted_code').children(".highlighted_code").toggle(1000);
 });
 
 $(document).on('click', ".documentation_show_hide", function () {//here
+    //@@USER_STUDY
+    console.log(user_email + "=>MODULE_DOCUMENTATION_TOGGLED");
+
     $(this).siblings('.documentation').toggle(300);
 });
 
 $(document).on('click', ".settings_show_hide" ,function () {//here
+    //@@USER_STUDY
+    console.log(user_email + "=>MODULE_CONFIGS_TOGGLED");
+
+
     $(this).siblings('.settings').toggle(300);
 });
 
 $(document).on('click', ".btn_edit_code" ,function () {//here
+
     $(this).siblings('.edit_code').toggle(1000);
 });
 
@@ -3518,6 +3560,9 @@ function checkChatBoxInputKey(event,chatboxtextarea,chatboxtitle) {
 
                 sendP2pTextMsg(chatboxtitle, message);
 
+                //@@USER_STUDY
+                console.log(user_email + "=>P2P_CHAT_SENT=>"+"to:"+chatboxtitle+"*text:"+message);
+
 
 		}
 		chatHeartbeatTime = minChatHeartbeat;
@@ -3603,6 +3648,9 @@ function chatWith(chatuser, displayTitle) {
 
 
 $(".userThumb").on('click', function(){
+    //@@USER_STUDY
+    console.log(user_email +"=>CHATBOX_OPENED=>"+"chatWith:"+ $(this).attr('userEmail'));
+
     chatWith($(this).attr('userEmail'), $(this).attr('userName'));
     //alert($(this).attr('userEmail'));
 });
@@ -3613,10 +3661,17 @@ $(document).on('keydown', ".chatboxtextarea" ,function(event){//here
 });
 
 $(document).on('click',".closeChatBox", function(){//here
+    //@@USER_STUDY
+    console.log(user_email +"=>CHATBOX_CLOSED=>"+"chatWith:"+ $(this).attr('userEmail'));
+
     closeChatBox($(this).attr('chatboxtitle'));
 });
 
 $(document).on('click', ".minimizeChatBox" ,function(){//here
+    //@@USER_STUDY
+    console.log(user_email +"=>CHATBOX_TOGGLED=>"+"chatWith:"+ $(this).attr('userEmail'));
+
+
     toggleChatBoxGrowth($(this).attr('chatboxtitle'));
 });
 
@@ -3707,11 +3762,16 @@ function showTab(tabID){
 
 
 $(document).on('click', '.output_vis', function(){
+
     $("#tool_vis_file_title").text(">>Loading...");
 
     $('.tool_vis_content').hide();
 
     var fileName = $(this).attr('viewid');
+
+
+    //@@USER_STUDY
+    console.log(user_email + "=>OUTPUT_VIS=>"+"fileName:" + fileName);
 
     showTab('tool_vis');
 
