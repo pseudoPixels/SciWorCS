@@ -1474,7 +1474,7 @@ locking_turn_current_floor_owner = 'NONESRV'
 def locking_turn_request_floor():
 	#get the request details
 	workflow_id = 'workflow_turn_id_1'#request.form['workflow_id']
-	floor_requestor = 'gm_gmail_com'#request.form['floor_requestor']
+	floor_requestor = request.form['floor_requestor']
 
 	haveIGotTheFloor = False
 

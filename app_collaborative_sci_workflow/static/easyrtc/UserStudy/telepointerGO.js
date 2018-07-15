@@ -872,7 +872,7 @@ $(document).on('click', ".dag_module", function(){
     //User requests for floor...
     function requestFloor(requestor_id){
         workflow_id = 'workflow_turn_id_1';
-        requestor_id = 'gm_gmail_com';
+        requestor_id = user_email; //'gm_gmail_com';
 
         $.ajax({
             type: "POST",
