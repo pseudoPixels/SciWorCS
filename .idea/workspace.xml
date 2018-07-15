@@ -4,7 +4,6 @@
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" />
     </list>
     <ignored path="Webpage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="1477" column="0" selection-start-line="1477" selection-start-column="0" selection-end-line="1477" selection-end-column="0" />
+            <state relative-caret-position="394">
+              <caret line="1478" column="28" selection-start-line="1478" selection-start-column="28" selection-end-line="1478" selection-end-column="28" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
               </folding>
@@ -53,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="telepointerGO.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="telepointerGO.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="879" column="45" selection-start-line="879" selection-start-column="19" selection-end-line="879" selection-end-column="45" />
+            <state relative-caret-position="884">
+              <caret line="930" column="2" selection-start-line="930" selection-start-column="2" selection-end-line="930" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -99,8 +98,8 @@
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/testGit.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/telepointerGO.js" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html" />
-        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js" />
       </list>
     </option>
   </component>
@@ -111,8 +110,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="289" />
-    <option name="y" value="322" />
+    <option name="x" value="590" />
+    <option name="y" value="330" />
     <option name="width" value="1524" />
     <option name="height" value="1159" />
   </component>
@@ -498,7 +497,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="289" y="322" width="1524" height="1159" extended-state="0" />
+    <frame x="590" y="330" width="1524" height="1159" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16655563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -759,21 +758,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="879" column="45" selection-start-line="879" selection-start-column="19" selection-end-line="879" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="1477" column="0" selection-start-line="1477" selection-start-column="0" selection-end-line="1477" selection-end-column="0" />
+        <state relative-caret-position="394">
+          <caret line="1478" column="28" selection-start-line="1478" selection-start-column="28" selection-end-line="1478" selection-end-column="28" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="930" column="2" selection-start-line="930" selection-start-column="2" selection-end-line="930" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>

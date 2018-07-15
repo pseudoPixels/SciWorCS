@@ -890,7 +890,7 @@ $(document).on('click', ".dag_module", function(){
                     //@@USER_STUDY
                     console.log(user_email + "=>GOT_THE_FLOOR");
 
-                    alert("Got the Floor.");
+                    //alert("Got the Floor.");
                     onFloorOwnerChanged(user_email);
                     notifyAll("floor_owner_changed", user_email);
                 }else{
@@ -1539,10 +1539,12 @@ function onFloorOwnerChanged(newFloorOwner){
     if(isItMyFloor() == true){
 
         $("#collaboration_controls_request_turn").text('Release Floor');
-        //alert("You have Got the Floor");
+        alert("Got the Floor");
         $("#collaboration_controls_request_turn").prop('disabled', false);
         $("#collaboration_controls_request_turn").css('background-color', 'salmon');
         //as I have got the floor... unlock every para settings for me to work...
+
+        myDiagram.isReadOnly = false;
         unlockParamsSettings();
     }else{
         //as its not this user's turn... lock all the param settings...
