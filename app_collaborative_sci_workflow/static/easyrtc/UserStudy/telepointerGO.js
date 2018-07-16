@@ -283,6 +283,10 @@ myDiagram='';
         if (!(part instanceof go.Link)) {
             var clickedModuleID = part.data.key; // Module_1
             //clickedModuleID = clickedModuleID.split('_')[1]; // 1
+
+            //@@USER_STUDY
+            console.log(user_email + "=>MODULE_CONFIG_OPENED=>"+"moduleID:"+ part.data.key);
+
             $(".module").hide();
             $("#"+clickedModuleID).show();
 
