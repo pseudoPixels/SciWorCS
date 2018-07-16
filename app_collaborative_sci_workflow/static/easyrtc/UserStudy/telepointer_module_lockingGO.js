@@ -1127,6 +1127,9 @@ $(document).on('click', '.close', function(){
     onNodeAccessRequest(user_email, node.data.key);
 
 
+    //@@USER_STUDY
+    console.log(user_email + "=>SUB_WORKFLOW_LOCK_REQUESTED=>" + "rootNode:" + node.data.key);
+
 
     //inform all other clients of this node access
     var requestInfo ={"nodeID":node.data.key, "requestedBy":user_email};
@@ -1161,6 +1164,11 @@ $(document).on('click', '.close', function(){
         var node_id =  obj.part.adornedPart.data.key;
         if(onNodeAccessRelease(node_id, user_email)==true){
             //inform all other clients of this node release
+
+            //@@USER_STUDY
+            console.log(user_email + "=>SUB_WORKFLOW_LOCK_RELEASED=>" + "rootNode:" + node_id);
+
+
             var requestInfo ={"nodeID":node_id, "requestedBy":user_email};
             notifyAll("node_access_release", requestInfo);
 
@@ -2675,6 +2683,10 @@ function onNodeAccessRequest(requestedBy, nodeID){
         //alert("onNodeAccessRequest: " + requestedBy);
         //if this client was the requester, unlock parent and disencedants requested nodes
         if(requestedBy == user_email){
+
+            //@@USER_STUDY
+            console.log(user_email + "=>SUB_WORKFLOW_LOG_GRANTED=>"+"rootNode:" + nodeID);
+
             updateView_unlockThisNodeAndDescendants(nodeID);//unlock for this client
         }else{
             updateView_lockThisNodeAndDescendants(nodeID);//lock this node and its descendants for this client.
