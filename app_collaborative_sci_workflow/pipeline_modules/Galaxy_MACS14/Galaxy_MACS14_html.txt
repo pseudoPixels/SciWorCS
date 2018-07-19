@@ -1,0 +1,43 @@
+<WorC>
+    <toolInputs>
+        <toolInput>
+            <label>Convert</label>
+            <referenceVariable>Chip_seq_tag</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+        <toolInput>
+            <label>Convert</label>
+            <referenceVariable>Chip_seq_control</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Renamed Potential Clones</label>
+            <referenceVariable>output_bed_file</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+        <toolOutput>
+            <label>Renamed Potential Clones</label>
+            <referenceVariable>output_wig_file</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+    </toolDocumentation>
+
+
+
+</WorC>
+
