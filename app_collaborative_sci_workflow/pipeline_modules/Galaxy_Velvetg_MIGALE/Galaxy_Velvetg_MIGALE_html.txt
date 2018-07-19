@@ -1,0 +1,39 @@
+<WorC>
+    <toolInputs>
+        <toolInput>
+            <label>Convert</label>
+            <referenceVariable>velvet_hash</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Renamed Potential Clones</label>
+            <referenceVariable>velvet_outfile</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+
+        <toolOutput>
+            <label>Renamed Potential Clones</label>
+            <referenceVariable>contigs_outfile</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+    </toolDocumentation>
+
+
+
+</WorC>
+

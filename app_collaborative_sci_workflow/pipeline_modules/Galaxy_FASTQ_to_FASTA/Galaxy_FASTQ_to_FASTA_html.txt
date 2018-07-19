@@ -1,0 +1,33 @@
+<WorC>
+    <toolInputs>
+        <toolInput>
+            <label>Convert</label>
+            <referenceVariable>fastq_file_to_convert</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Renamed Potential Clones</label>
+            <referenceVariable>output_file</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+    </toolDocumentation>
+
+
+
+</WorC>
+

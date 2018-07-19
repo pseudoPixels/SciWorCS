@@ -1,0 +1,38 @@
+<WorC>
+    <toolInputs>
+        <toolInput>
+            <label>Convert</label>
+            <referenceVariable>join</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+        <toolInput>
+            <label>Convert</label>
+            <referenceVariable>with</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Renamed Potential Clones</label>
+            <referenceVariable>output</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+    </toolDocumentation>
+
+
+
+</WorC>
+

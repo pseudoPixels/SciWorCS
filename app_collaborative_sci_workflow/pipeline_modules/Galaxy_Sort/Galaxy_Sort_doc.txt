@@ -1,0 +1,15 @@
+<b>NiCad - Renaming</b>
+	<p><i>Description:</i> <br/>
+ Kind of renaming to be applied (none, blind, consistent)<br/>
+ Blind renaming changes every identifier to "X"<br/>
+Consistent renaming consistently renames identifiers to "Xn", where n is a number<br/>
+Example:	rename=consistent<br/>
+</p>
+
+
+<i>Usage:</i>
+<ol>
+	<li>Source Project: Select the module or files to take the input from.</li>
+	<li>Output Files: Select the module or files to send the input to.</li>
+	<li>Set Granularity Levels: Functions/Blocks.</li>
+</ol>

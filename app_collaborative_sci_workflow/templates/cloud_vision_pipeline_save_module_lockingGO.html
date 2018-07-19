@@ -808,6 +808,26 @@ html, body {
                       </ul>
                   </li>
 
+
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-th"></i>
+                          <span>Galaxy Modules</span>
+                      </a>
+                      <ul class="sub" id="galaxy">
+                         <!-- <li><a  href="#" id="design_pipelines_menu_biodatacleaning_id">Bio Data Cleaning</a></li>
+                          <li><a  href="#" id="design_pipelines_menu_biocalc_id">Bio Brome</a></li> -->
+                          {% for aGalaxyModule in pineline_galaxy_modules %}
+                              <li><a href="#" class="pipeline_modules" id="{{aGalaxyModule}}"> {{aGalaxyModule}}</a></li>
+                          {% endfor %}
+
+                      </ul>
+                  </li>
+
+
+
+
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-th"></i>

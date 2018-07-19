@@ -1,0 +1,43 @@
+<WorC>
+    <toolInputs>
+        <toolInput>
+            <label>Convert</label>
+            <referenceVariable>input_files_1_forward</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+        <toolInput>
+            <label>Convert</label>
+            <referenceVariable>input_files_1_reverse</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+        <toolInput>
+            <label>Convert</label>
+            <referenceVariable>reference_file</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Renamed Potential Clones</label>
+            <referenceVariable>output</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+    </toolDocumentation>
+
+
+
+</WorC>
+

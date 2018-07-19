@@ -774,7 +774,8 @@ def proposed_system():
 	pineline_mathematical_analysis_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
 										re.match(r'Math*', f)]
 
-
+	pineline_galaxy_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
+										re.match(r'Galaxy*', f)]
 
 	saved_workflows = os.listdir("app_collaborative_sci_workflow/pipeline_saved/")
 
@@ -795,6 +796,7 @@ def proposed_system():
    	pineline_modules=pineline_modules,
    	pineline_source_analysis_modules=pineline_source_analysis_modules,
    	pineline_mathematical_analysis_modules=pineline_mathematical_analysis_modules,
+	pineline_galaxy_modules=pineline_galaxy_modules,
    	saved_workflows=saved_workflows)
 
 
@@ -982,7 +984,7 @@ def p2irc_turnBased():
 
 
 #Login and Sign Ups for MODULE LOCKING COLLABORATION
-@app_collaborative_sci_workflow.route('/proposed')
+@app_collaborative_sci_workflow.route('/attr_based')
 def proposed():
 	return render_template('login_moduleLocking.html')
 
