@@ -84,7 +84,14 @@ with app.app_context():
 
 @app_code_clone.route('/ccv')
 def ccv():
-	return render_template('quick_validation.html')
+
+	thisUser = 'golammostaeen@gmail.com'
+	projectRoot = 'app_code_clone/user_projects/'
+
+	list_of_file_for_validation = os.listdir(projectRoot + thisUser + '/' )
+
+
+	return render_template('quick_validation.html', list_of_file_for_validation = list_of_file_for_validation)
 
 
 

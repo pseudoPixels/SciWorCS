@@ -5,8 +5,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 <link href="style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
+
+<style>
+.w3-button {width:140px;}
+</style>
+
+
 
 <style>
 body {
@@ -258,8 +266,14 @@ Validated: 45% (<a href="#">Download</a>)
     <h2>Clones</h2>
     <div class="sidemenu">
         <br/>
-        <span>1. JHotDraw.clones</span><br/>
-        <span>2. aTunes.clones</span><br/>
+
+        {% for a_clone_file in list_of_file_for_validation %}
+	        <span>{{ loop.index }} . {{ a_clone_file }}</span><br/>
+        {% endfor %}
+
+
+       <!-- <span>1. JHotDraw.clones</span><br/>
+        <span>2. aTunes.clones</span><br/> -->
 
         <br/>
         <button>Upload Clone File</button>
@@ -588,7 +602,7 @@ $(document).ready(function(){
 
 
 
-
+<button class="w3-button w3-red" style="margin-top:10px;font-size:16px;">False Clone Pair</button> <button class="w3-button w3-amber" style="margin-top:10px;font-size:16px;">Undecided</button>  <button class="w3-button w3-green" style="margin-top:10px;font-size:16px;">True Clone Pair</button>
 
 
 
