@@ -103,8 +103,8 @@ $("#selectCloneFile").on('change', function () {
             var_txl_output.getSession().setValue(option.fragment_2_clone);
 
 
-            var num_clones_validated = parseInt(option.clones_validated)
-            var total_clones = parseInt(option.total_clones)
+            var num_clones_validated = parseInt(option.clones_validated);
+            var total_clones = parseInt(option.total_clones);
             $("#validation_percentage").text( ''+(num_clones_validated*100 / total_clones).toPrecision(2) );
 
             $("#num_validated_clones").text(option.clones_validated);
@@ -172,10 +172,10 @@ $(".manual_validation").on('click', function(){
             $('#fragment_2_start').text(option.fragment_2_startline);
             $('#fragment_2_end').text(option.fragment_2_endline);
             var_txl_output.getSession().setValue(option.fragment_2_clone);
-            
 
-            var num_clones_validated = parseInt(option.clones_validated)
-            var total_clones = parseInt(option.total_clones)
+
+            var num_clones_validated = parseInt(option.clones_validated);
+            var total_clones = parseInt(option.total_clones);
             $("#validation_percentage").text( ''+(num_clones_validated*100 / total_clones).toPrecision(2) );
 
             $("#num_validated_clones").text(option.clones_validated);

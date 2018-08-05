@@ -77,7 +77,7 @@ with app.app_context():
 
 import glob
 
-@app_code_clone.route('/ccv')
+@app_code_clone.route('/manual_validation')
 def ccv():
 
 	thisUser = 'golammostaeen@gmail.com'
