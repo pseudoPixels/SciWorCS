@@ -119,7 +119,7 @@ def srv_get_next_clone_pair_for_validation():
     #
     #
     #
-	fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone = get_next_clone_pair_for_validation(
+	fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone, clones_validated, total_clones  = get_next_clone_pair_for_validation(
 		thisUser, theCloneFile)
 
 
@@ -142,9 +142,11 @@ def srv_get_next_clone_pair_for_validation():
 					'fragment_2_path': fragment_2_path,
 					'fragment_2_startline': fragment_2_startline,
 					'fragment_2_endline': fragment_2_endline,
-					'fragment_2_clone': fragment_2_clone
-					})
+					'fragment_2_clone': fragment_2_clone,
 
+					'clones_validated': clones_validated,
+					'total_clones': total_clones
+					})
 
 
 
@@ -182,8 +184,8 @@ def get_next_clone_pair_for_validation(theUser, cloneFile):
 		new_file = open(projectRoot+thisUser+'/'+theValidationFile, "w")
 		new_file.close()
 
-	#fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone
-	return root[nextCloneIndex][0].attrib['file'], root[nextCloneIndex][0].attrib['startline'], root[nextCloneIndex][0].attrib['endline'], root[nextCloneIndex][1].text, root[nextCloneIndex][2].attrib['file'], root[nextCloneIndex][2].attrib['startline'], root[nextCloneIndex][2].attrib['endline'],root[nextCloneIndex][3].text
+	#fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone, number_of_validated_clones, total_clones
+	return root[nextCloneIndex][0].attrib['file'], root[nextCloneIndex][0].attrib['startline'], root[nextCloneIndex][0].attrib['endline'], root[nextCloneIndex][1].text, root[nextCloneIndex][2].attrib['file'], root[nextCloneIndex][2].attrib['startline'], root[nextCloneIndex][2].attrib['endline'],root[nextCloneIndex][3].text, nextCloneIndex+1, len(root)
 	#return 	root[nextCloneIndex][1].text, root[nextCloneIndex][3].text
 
 
@@ -223,7 +225,7 @@ def save_manual_clone_validation_res_and_get_new_clone_pair():
 
 	saveManualValidationResponse(thisUser, theValidationFile, manual_validation_response, fragment_1_path, fragment_1_start_line, fragment_1_end_line, fragment_2_path, fragment_2_start_line, fragment_2_end_line)
 
-	fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone = get_next_clone_pair_for_validation(thisUser, theCloneFile)
+	fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone, clones_validated, total_clones = get_next_clone_pair_for_validation(thisUser, theCloneFile)
 
 
 	#
@@ -267,7 +269,10 @@ def save_manual_clone_validation_res_and_get_new_clone_pair():
 					'fragment_2_path': fragment_2_path,
 					'fragment_2_startline': fragment_2_startline,
 					'fragment_2_endline': fragment_2_endline,
-					'fragment_2_clone': fragment_2_clone
+					'fragment_2_clone': fragment_2_clone,
+
+					'clones_validated': clones_validated,
+					'total_clones': total_clones
 					})
 
 
