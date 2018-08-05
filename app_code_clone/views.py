@@ -13,6 +13,10 @@ import os
 import uuid
 
 
+
+import xml.etree.ElementTree as ET
+#import BeautifulSoup
+
 #for couch db...
 from couchdb.design import ViewDefinition
 from flaskext.couchdb import CouchDBManager
@@ -92,6 +96,72 @@ def ccv():
 
 
 	return render_template('quick_validation.html', list_of_file_for_validation = list_of_file_for_validation)
+
+
+
+
+
+
+
+
+@app_code_clone.route('/get_next_clone_pair_for_validation', methods=['POST'])
+def get_next_clone_pair_for_validation():
+	# getting the example program name
+
+	projectRoot = 'app_code_clone/user_projects/'
+	thisUser = 'golammostaeen@gmail.com'
+	theCloneFile = 'pair10000.xml'
+	theValidationFile = theCloneFile + '.validated'
+
+	tree2 = ET.parse(projectRoot+thisUser+'/'+theCloneFile)
+	root = tree2.getroot()
+
+	# soup = ''
+	# with open(projectRoot+thisUser+'/'+theCloneFile) as fp:
+	# 	soup = BeautifulSoup(fp, 'lxml')
+    #
+    #
+	# clones = soup.find_all('clone')
+
+
+
+
+
+	# txl_source = str(txl_source, 'utf-8')
+	return jsonify({'fragment1': root[0][1].text, 'fragment2': root[0][3].text})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
