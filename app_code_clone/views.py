@@ -119,6 +119,7 @@ def ml_auto_validate_clone_file():
 	projectRoot = 'app_code_clone/user_projects/'
 	thisUser = request.form['theUser']
 	theCloneFile = request.form['theCloneFile']
+	validationThreshold = 0.5
 
 	mlValidation_output_file = theCloneFile+'.mlValidated'
 
@@ -143,14 +144,14 @@ def ml_auto_validate_clone_file():
 			thisUser, theCloneFile, '.mlValidated')
 
 
-		false_probability, true_probability = app_code_clone_getValidationScore(fragment_1_clone, fragment_2_clone, 'java')
+		true_probability = app_code_clone_getValidationScore(fragment_1_clone, fragment_2_clone, 'java')
 
 		with open(projectRoot+thisUser+'/'+mlValidation_output_file, "a") as validationFile:
-			if true_probability >=false_probability:
-				validationFile.write(str(true_probability) + ',' + fragment_1_path +','+ fragment_1_startline +','+ fragment_1_endline+','+fragment_2_path+','+fragment_2_startline+','+fragment_2_endline + '\n')
+			if true_probability >=validationThreshold:
+				validationFile.write('true' + ',' + fragment_1_path +','+ fragment_1_startline +','+ fragment_1_endline+','+fragment_2_path+','+fragment_2_startline+','+fragment_2_endline + '\n')
 			else:
 				validationFile.write(
-					str(true_probability) + ',' + fragment_1_path + ',' + fragment_1_startline + ',' + fragment_1_endline + ',' + fragment_2_path + ',' + fragment_2_startline + ',' + fragment_2_endline + '\n')
+					'false' + ',' + fragment_1_path + ',' + fragment_1_startline + ',' + fragment_1_endline + ',' + fragment_2_path + ',' + fragment_2_startline + ',' + fragment_2_endline + '\n')
 
 
 
@@ -496,19 +497,137 @@ def app_code_clone_getValidationScore(sourceCode1,sourceCode2,lang='java' ):
 	#load the trained Neural Net
 	fileObject = open('/home/ubuntu/Webpage/pybrain/trainedNetwork', 'rb')
 	loaded_fnn = pickle.load(fileObject, encoding='latin1')
-	network_prediction = loaded_fnn.activate([0.2,0.5,0.6,0.1,0.3,0.7])
+
+	type1sim_by_line, type2sim_by_line, type3sim_by_line = app_code_clone_similaritiesNormalizedByLine(sourceCode1,sourceCode2,lang)
+	type1sim_by_token, type2sim_by_token, type3sim_by_token = app_code_clone_similaritiesNormalizedByToken(sourceCode1,sourceCode2,lang)
+
+
+	#type2sim_by_line, type2sim_by_line, type3sim_by_line, type1sim_by_token, type2sim_by_token, type3sim_by_token
+	#network_prediction = loaded_fnn.activate([0.2,0.5,0.6,0.1,0.3,0.7])
+	network_prediction = loaded_fnn.activate([type2sim_by_line, type2sim_by_line, type3sim_by_line, type1sim_by_token, type2sim_by_token, type3sim_by_token])
 
 	#out = {'false_clone_probability_score':network_prediction[0], 'true_clone_probability_score':network_prediction[1]}
 
 
 	#return jsonify({'error_msg': 'None', 'log_msg': 'Preprocessing Source Codes...\nNormalizing Source Codes...\nCalculating Similarities...\nDone.','output': out})
 
-	#false_clone_probability_score, true_clone_probability_score
-	return network_prediction[0], network_prediction[1]
+	#true_clone_probability_score
+	return network_prediction[1]
+
+
+def app_code_clone_execTxl(txlFilePath, sourceCode, lang, saveOutputFile=False):
+	# get an unique file name for storing the code temporarily
+	fileName = str(uuid.uuid4())
+	sourceFile = '/home/ubuntu/Webpage/txl_tmp_file_dir/' + fileName + '.txt'
+
+	# write submitted source code to corresponding files
+	with open(sourceFile, "w") as fo:
+		fo.write(sourceCode)
+
+	# get the required txl file for feature extraction
+	# txlPath = '/home/ubuntu/Webpage/txl_features/txl_features/java/PrettyPrint.txl'
+
+	# do the feature extraction by txl
+	p = subprocess.Popen(['/usr/local/bin/txl', '-Dapply', txlFilePath, sourceFile], stdout=subprocess.PIPE,
+						 stderr=subprocess.PIPE)
+	out, err = p.communicate()
+
+	# convert to utf-8 format for easier readibility
+	out = str(out, 'utf-8')
+	err = str(err, 'utf-8')
+
+	err = err.replace(sourceFile, 'YOUR_SOURCE_FILE')
+	err = err.replace(txlFilePath, 'REQUIRED_TXL_FILE')
+
+	# once done remove the temp file
+	os.remove(sourceFile)
+
+	if saveOutputFile == False:
+		return out, err
+	else:
+		outputFileLocation = str(uuid.uuid4())
+		outputFileLocation = '/home/ubuntu/Webpage/txl_tmp_file_dir/' + outputFileLocation + '.txt'
+		with open(outputFileLocation, "w") as fo:
+			fo.write(out)
+
+		return outputFileLocation, out, err
 
 
 
 
+
+
+
+def app_code_clone_getCodeCloneSimilarity(sourceCode1, sourceCode2, lang, txlFilePath):
+	saveOutputFile = True
+	outputFileLocation1, out1, err1 = app_code_clone_execTxl(txlFilePath, sourceCode1, lang, saveOutputFile)
+	outputFileLocation2, out2, err2 = app_code_clone_execTxl(txlFilePath, sourceCode2, lang, saveOutputFile)
+
+	p = subprocess.Popen(['/usr/bin/java', '-jar', '/home/ubuntu/Webpage/txl_tmp_file_dir/calculateCloneSimilarity.jar',
+						  outputFileLocation1, outputFileLocation2], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	similarityValue, err = p.communicate()
+
+	similarityValue = str(similarityValue, 'utf-8')
+	similarityValue = similarityValue.replace('\n', '')
+	err = str(err, 'utf-8')
+
+	# once done remove the temp files
+	os.remove(outputFileLocation1)
+	os.remove(outputFileLocation2)
+
+	return similarityValue
+
+
+
+def app_code_clone_similaritiesNormalizedByLine(sourceCode1, sourceCode2, lang):
+	# getting the txl and the input file to parse
+	# sourceCode1 = request.form['sourceCode_1']
+	# sourceCode2 = request.form['sourceCode_2']
+	# lang = request.form['lang']
+
+	txlFilePath = '/home/ubuntu/Webpage/txl_features/txl_features/java/PrettyPrint.txl'
+	type1sim_by_line = app_code_clone_getCodeCloneSimilarity(sourceCode1, sourceCode2, lang, txlFilePath)
+
+	txlFilePath = '/home/ubuntu/Webpage/txl_features/txl_features/java/normalizeLiteralsToDefault.txl'
+	type2sim_by_line = app_code_clone_getCodeCloneSimilarity(sourceCode1, sourceCode2, lang, txlFilePath)
+
+	txlFilePath = '/home/ubuntu/Webpage/txl_features/txl_features/java/normalizeLiteralsToZero.txl'
+	type3sim_by_line = app_code_clone_getCodeCloneSimilarity(sourceCode1, sourceCode2, lang, txlFilePath)
+
+	#out = {'type_1_similarity_by_line': type1sim_by_line, 'type_2_similarity_by_line': type2sim_by_line,
+	#	   'type_3_similarity_by_line': type3sim_by_line}
+
+	#return jsonify({'error_msg': 'None',
+	#				'log_msg': 'Preprocessing Source Codes...\nNormalizing Source Codes...\nCalculating Similarities...\nDone.',
+	#				'output': out})
+
+	return type1sim_by_line, type2sim_by_line, type3sim_by_line
+
+
+
+def app_code_clone_similaritiesNormalizedByToken(sourceCode1, sourceCode2, lang):
+	# getting the txl and the input file to parse
+	# sourceCode1 = request.form['sourceCode_1']
+	# sourceCode2 = request.form['sourceCode_2']
+	# lang = request.form['lang']
+
+	txlFilePath = '/home/ubuntu/Webpage/txl_features/txl_features/java/consistentRenameIdentifiers.txl'
+	type1sim_by_token = app_code_clone_getCodeCloneSimilarity(sourceCode1, sourceCode2, lang, txlFilePath)
+
+	txlFilePath = '/home/ubuntu/Webpage/txl_features/txl_features/java/normalizeLiteralsToZero.txl'
+	type2sim_by_token = app_code_clone_getCodeCloneSimilarity(sourceCode1, sourceCode2, lang, txlFilePath)
+
+	txlFilePath = '/home/ubuntu/Webpage/txl_features/txl_features/java/normalizeLiteralsToZero.txl'
+	type3sim_by_token = app_code_clone_getCodeCloneSimilarity(sourceCode1, sourceCode2, lang, txlFilePath)
+
+	# out = {'type_1_similarity_by_token': type1sim_by_token, 'type_2_similarity_by_token': type2sim_by_token,
+	# 	   'type_3_similarity_by_token': type3sim_by_token}
+    #
+	# return jsonify({'error_msg': 'None',
+	# 				'log_msg': 'Preprocessing Source Codes...\nNormalizing Source Codes...\nCalculating Similarities...\nDone.',
+	# 				'output': out})
+
+	return type1sim_by_token, type2sim_by_token, type3sim_by_token
 
 
 
