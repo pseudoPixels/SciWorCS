@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
-<script type="text/javascript"  src="{{ url_for('app_code_clone.static',filename='cloneJS/cloneValidation.js') }}"></script>
+<script type="text/javascript"  src="{{ url_for('app_code_clone.static',filename='cloneJS/machineLearningCloneValidation.js') }}"></script>
 
 
 </head>
@@ -236,8 +236,8 @@ font-size:17px;
   <div id="navcontainer" >
     <ul id="navlist" >
  <li style="float:right;"><a href="#">Help and References</a></li>
- <li style="float:right;"><a href="#">Machine Learning Based Clone Validation</a></li>
- <li id="active" style="float:right;"><a href="#" id="current">Manual Clone Validation</a></li>
+ <li style="float:right;"><a href="#" id="current">Machine Learning Based Clone Validation</a></li>
+ <li id="active" style="float:right;"><a href="#" >Manual Clone Validation</a></li>
 
 
 
@@ -261,7 +261,7 @@ font-size:17px;
 
 
 
-<h2>Validate</h2>
+<h2>Machine L. Validate</h2>
 <div class="sidemenu">
 <br/>
 <select id="selectCloneFile">
@@ -276,8 +276,9 @@ font-size:17px;
 <br/><br/>
 Validated: <span id="validation_percentage">0</span>% (<a href="#">Download</a>)
 <br/><br/>
-Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clones">0</span> <br/>
+Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clones">0</span> <br/><br/>
 <!-- Precision: 0.85 <br/> -->
+<button id="autoValidate">Start ML Validation</button><br/>
 
 </div>
 
@@ -311,61 +312,7 @@ Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clo
 <br/>
 
 
-    <h2>Settings</h2>
-    <div class="sidemenu">
-   <br/>
-&nbsp &nbsp &nbsp &nbsp <select id="select_editor_theme">
-                    <option value="ambiance">Set Theme</option>
-                    <option value="twilight">Twilight</option>
-                    <option value="eclipse">Eclipse</option>
-		    <option value="github">Github</option>
-                    <option value="cobalt">Cobalt</option>
-		    <option value="dawn">Dawn</option>
-			<option value="chrome">Chrome</option>
-                    <option value="crimson_editor">Crimson</option>
-		     <option value="iplastic">iPlastic</option>
-		    <option value="solarized_dark">Solarized</option>
-		   <option value="clouds">Clouds</option>
-		  <option value="ambiance">Ambiance</option>
-                  <option value="xcode">xCode</option>
-                 <option value="textmate">Text-Mate</option>
-                 <option value="tomorrow">Tomorrow</option>
-                <option value="terminal">Terminal</option>
 
-</select>
-<br/><br/>
-&nbsp &nbsp &nbsp &nbsp <select id="select_font_size">
-		    <option value="17">Font Size</option>
-                    <option value="14">14 PX</option>
-                    <option value="15">15 PX</option>
-			<option value="16">16 PX</option>
-			<option value="17">17 PX</option>
-			<option value="18">18 PX</option>
-			<option value="19">19 PX</option>
-			<option value="20">20 PX</option>
-                    </select>
-
-
-<br/><br/>
-&nbsp &nbsp &nbsp &nbsp <select id="select_font_family">
-		    <option value="Courier">Set Fonts</option>
-                    <option value="Menlo">Menlo</option>
-                    <option value="Monaco">Monaco</option>
-			<option value="Mono">Ubuntu Mono</option>
-			<option value="Courier">Courier</option>
-			<option value="Consolas">Consolas</option>
-			<option value="Courier New">Courier New</option>
-                    </select>
-<br/><br/>
-&nbsp &nbsp &nbsp &nbsp <select id="show_line_number">
-		    <option value="True">Line Number:On</option>
-                    <option value="False">Line Number:Off</option>
-
-                    </select>
-
-
-
-    </div>
 
 <br/><br/><br/>
 
@@ -432,38 +379,6 @@ Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clo
 
 
 
-<!-- For TXL Log -->
-<div style="float:left;width:49%;">
-<span style="font-weight:bold;font-size:17px;">Clone Fragment 1</span><br/>
-<pre id="txl_log"></pre>
-</div>
-
-<!-- For TXL Output -->
-<div style="float:left;width:49%;">
-<span style="font-weight:bold;font-size:17px;">Clone Fragment 2</span><br/>
-<pre id="txl_output"></pre>
-</div>
-
-
-
-
-<button class="w3-button w3-red manual_validation" style="margin-top:10px;font-size:16px;" res="false">False Clone Pair</button> <button class="w3-button w3-amber manual_validation" style="margin-top:10px;font-size:16px;" res="undecided">Undecided</button>  <button class="w3-button w3-green manual_validation" style="margin-top:10px;font-size:16px;" res="true">True Clone Pair</button>
-
-<br/><br/><br/><br/>
-<div>
-    Clone Fragment 1: <br/>
-    Path: <span id="fragment_1_path"></span> <br/>
-    Start Line: <span id="fragment_1_start"></span> <br/>
-    End Line: <span id="fragment_1_end"></span> <br/>
-</div>
-
-<br/>
-<div>
-    Clone Fragment 2: <br/>
-    Path: <span id="fragment_2_path"></span> <br/>
-    Start Line: <span id="fragment_2_start"></span> <br/>
-    End Line: <span id="fragment_2_end"></span> <br/>
-</div>
 
 
 
@@ -492,16 +407,7 @@ Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clo
 </div>
 
 
-<script src="{{ url_for('app_txl_cloud.static',filename='src-noconflict/ace.js') }}" type="text/javascript" charset="utf-8"></script>
-<script>
-    var editor = ace.edit("txl_log");
-    //editor.setTheme("ace/theme/twilight"); abap
-    editor.session.setMode("ace/mode/java");
 
-    var editor2 = ace.edit("txl_output");
-    //editor.setTheme("ace/theme/twilight"); abap
-    editor2.session.setMode("ace/mode/java");
-</script>
 
 </body>
 </html>

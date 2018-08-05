@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" afterPath="$PROJECT_DIR$/app_code_clone/static/cloneJS/manualCloneValidation.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app_code_clone/templates/quick_validation.html" afterPath="$PROJECT_DIR$/app_code_clone/templates/manual_validation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" afterPath="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/views.py" afterPath="$PROJECT_DIR$/app_code_clone/views.py" />
     </list>
     <ignored path="Webpage.iws" />
@@ -28,35 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="quick_validation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_code_clone/templates/quick_validation.html">
+      <file leaf-file-name="machine_learning_validation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_code_clone/templates/machine_learning_validation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1021">
-              <caret line="256" column="23" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="23" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cloneValidation.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1111">
-              <caret line="226" column="40" selection-start-line="226" selection-start-column="40" selection-end-line="226" selection-end-column="40" />
+            <state relative-caret-position="6135">
+              <caret line="409" column="0" selection-start-line="409" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="machineLearningCloneValidation.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/machineLearningCloneValidation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+            <state relative-caret-position="555">
+              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -90,18 +88,6 @@
             <state relative-caret-position="935">
               <caret line="412" column="18" selection-start-line="412" selection-start-column="18" selection-end-line="412" selection-end-column="81" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_txl_cloud/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-636">
-              <caret line="367" column="22" selection-start-line="367" selection-start-column="22" selection-end-line="367" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -165,6 +151,9 @@
         <option value="$PROJECT_DIR$/app_code_clone/templates/quick_validation.html" />
         <option value="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" />
         <option value="$PROJECT_DIR$/app_code_clone/views.py" />
+        <option value="$PROJECT_DIR$/app_code_clone/templates/manual_validation.html" />
+        <option value="$PROJECT_DIR$/app_code_clone/templates/machine_learning_validation.html" />
+        <option value="$PROJECT_DIR$/app_code_clone/static/cloneJS/machineLearningCloneValidation.js" />
       </list>
     </option>
   </component>
@@ -303,20 +292,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app_collaborative_sci_workflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app_code_clone" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -340,6 +315,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="golammostaeen@gmail.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_code_clone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -400,10 +393,11 @@
       <recent name="C:\Users\nafi\PycharmProjects\Webpage\static" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app_code_clone/static/cloneJS" />
+      <recent name="$PROJECT_DIR$/app_code_clone/templates" />
       <recent name="$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com" />
       <recent name="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules" />
       <recent name="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/_Input_Dataset" />
-      <recent name="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -654,16 +648,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/uploads/aa.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/uploads/images.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/imageviewer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -969,10 +953,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/templates/quick_validation.html">
+    <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/manualCloneValidation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1021">
-          <caret line="256" column="23" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="23" />
+        <state relative-caret-position="1111">
+          <caret line="226" column="40" selection-start-line="226" selection-start-column="40" selection-end-line="226" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_code_clone/templates/manual_validation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -981,21 +973,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js">
+    <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1111">
-          <caret line="226" column="40" selection-start-line="226" selection-start-column="40" selection-end-line="226" selection-end-column="40" />
+        <state relative-caret-position="555">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_code_clone/templates/machine_learning_validation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6135">
+          <caret line="409" column="0" selection-start-line="409" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
+    <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/machineLearningCloneValidation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1020">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

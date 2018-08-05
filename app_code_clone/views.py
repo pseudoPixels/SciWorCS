@@ -79,7 +79,7 @@ with app.app_context():
 import glob
 
 @app_code_clone.route('/manual_validation')
-def ccv():
+def manual_validation():
 
 	thisUser = 'golammostaeen@gmail.com'
 	projectRoot = 'app_code_clone/user_projects/'
@@ -88,9 +88,25 @@ def ccv():
 	list_of_file_for_validation = [os.path.basename(x) for x in glob.glob(projectRoot + thisUser + '/' + '*.xml')]
 
 
-	return render_template('quick_validation.html', list_of_file_for_validation = list_of_file_for_validation)
+	return render_template('manual_validation.html', list_of_file_for_validation = list_of_file_for_validation)
 
 
+
+
+
+
+
+@app_code_clone.route('/machine_learning_validation')
+def machine_learning_validation():
+
+	thisUser = 'golammostaeen@gmail.com'
+	projectRoot = 'app_code_clone/user_projects/'
+
+	#list_of_file_for_validation = os.listdir(projectRoot + thisUser + '/' )
+	list_of_file_for_validation = [os.path.basename(x) for x in glob.glob(projectRoot + thisUser + '/' + '*.xml')]
+
+
+	return render_template('machine_learning_validation.html', list_of_file_for_validation = list_of_file_for_validation)
 
 
 
