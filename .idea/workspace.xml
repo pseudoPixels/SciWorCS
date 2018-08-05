@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" afterPath="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/templates/quick_validation.html" afterPath="$PROJECT_DIR$/app_code_clone/templates/quick_validation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/views.py" afterPath="$PROJECT_DIR$/app_code_clone/views.py" />
     </list>
@@ -31,8 +32,8 @@
       <file leaf-file-name="quick_validation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_code_clone/templates/quick_validation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="465" column="14" selection-start-line="465" selection-start-column="8" selection-end-line="465" selection-end-column="14" />
+            <state relative-caret-position="810">
+              <caret line="444" column="0" selection-start-line="444" selection-start-column="0" selection-end-line="444" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,31 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloneValidation.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cloneValidation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+            <state relative-caret-position="910">
+              <caret line="117" column="70" selection-start-line="117" selection-start-column="70" selection-end-line="117" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloud_vision_pipeline_save2GO.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="115" column="39" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <state relative-caret-position="640">
+              <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -117,8 +108,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_txl_cloud/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-720">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+            <state relative-caret-position="-636">
+              <caret line="367" column="22" selection-start-line="367" selection-start-column="22" selection-end-line="367" selection-end-column="22" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -183,8 +174,8 @@
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save_module_lockingGO.html" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" />
         <option value="$PROJECT_DIR$/app_code_clone/templates/quick_validation.html" />
-        <option value="$PROJECT_DIR$/app_code_clone/views.py" />
         <option value="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" />
+        <option value="$PROJECT_DIR$/app_code_clone/views.py" />
       </list>
     </option>
   </component>
@@ -931,16 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_txl_cloud/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com/pair10000.xml">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state />
@@ -949,16 +930,6 @@
     <entry file="file://$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com/pair20000.xml">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_txl_cloud/templates/index.html">
@@ -987,8 +958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_code_clone/templates/quick_validation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="465" column="14" selection-start-line="465" selection-start-column="8" selection-end-line="465" selection-end-column="14" />
+        <state relative-caret-position="810">
+          <caret line="444" column="0" selection-start-line="444" selection-start-column="0" selection-end-line="444" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -997,11 +968,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app_txl_cloud/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-636">
+          <caret line="367" column="22" selection-start-line="367" selection-start-column="22" selection-end-line="367" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+        <state relative-caret-position="910">
+          <caret line="117" column="70" selection-start-line="117" selection-start-column="70" selection-end-line="117" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

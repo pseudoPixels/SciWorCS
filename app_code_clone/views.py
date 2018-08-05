@@ -77,15 +77,6 @@ with app.app_context():
 
 
 
-
-
-
-
-
-
-
-
-
 @app_code_clone.route('/ccv')
 def ccv():
 
@@ -104,8 +95,8 @@ def ccv():
 
 
 
-@app_code_clone.route('/get_next_clone_pair_for_validation', methods=['POST'])
-def get_next_clone_pair_for_validation():
+@app_code_clone.route('/srv_get_next_clone_pair_for_validation', methods=['POST'])
+def srv_get_next_clone_pair_for_validation():
 	# getting the example program name
 
 	projectRoot = 'app_code_clone/user_projects/'
@@ -113,8 +104,22 @@ def get_next_clone_pair_for_validation():
 	theCloneFile = 'pair10000.xml'
 	theValidationFile = theCloneFile + '.validated'
 
-	tree2 = ET.parse(projectRoot+thisUser+'/'+theCloneFile)
-	root = tree2.getroot()
+	# tree2 = ET.parse(projectRoot+thisUser+'/'+theCloneFile)
+	# root = tree2.getroot()
+    #
+	# nextCloneIndex = 0
+    #
+	# if os.path.exists(projectRoot+thisUser+'/'+theValidationFile) == True:
+	# 	#response_code = 'FILE_ALREADY_EXIST'
+	# 	nextCloneIndex = sum(1 for line in open(projectRoot+thisUser+'/'+theValidationFile))
+	# else:
+	# 	new_file = open(projectRoot+thisUser+'/'+theValidationFile, "w")
+	# 	new_file.close()
+    #
+    #
+    #
+	fragment_1_clone, fragment_2_clone = get_next_clone_pair_for_validation(thisUser, theCloneFile)
+
 
 	# soup = ''
 	# with open(projectRoot+thisUser+'/'+theCloneFile) as fp:
@@ -128,7 +133,17 @@ def get_next_clone_pair_for_validation():
 
 
 	# txl_source = str(txl_source, 'utf-8')
-	return jsonify({'fragment1': root[0][1].text, 'fragment2': root[0][3].text})
+	return jsonify({'fragment1': fragment_1_clone, 'fragment2': fragment_2_clone})
+
+
+
+
+
+def saveManualValidationResponse(theUser, theValidationFile, response, fragment_1_path, fragment_1_start_line, fragment_1_end_line, fragment_2_path, fragment_2_start_line, fragment_2_end_line):
+	projectRoot = 'app_code_clone/user_projects/'
+
+	with open(projectRoot+theUser+'/'+theValidationFile, "a") as validationFile:
+		validationFile.write(response + ',' + fragment_1_path +','+ fragment_1_start_line +','+ fragment_1_end_line+','+fragment_2_path+','+fragment_2_start_line+','+fragment_2_end_line + '\n')
 
 
 
@@ -137,11 +152,86 @@ def get_next_clone_pair_for_validation():
 
 
 
+def get_next_clone_pair_for_validation(theUser, cloneFile):
+	# getting the example program name
+
+	projectRoot = 'app_code_clone/user_projects/'
+	thisUser = theUser
+	theCloneFile = cloneFile
+	theValidationFile = theCloneFile + '.validated'
+
+	tree2 = ET.parse(projectRoot+thisUser+'/'+theCloneFile)
+	root = tree2.getroot()
+
+	nextCloneIndex = 0
+
+	if os.path.exists(projectRoot+thisUser+'/'+theValidationFile) == True:
+		#response_code = 'FILE_ALREADY_EXIST'
+		nextCloneIndex = sum(1 for line in open(projectRoot+thisUser+'/'+theValidationFile))
+	else:
+		new_file = open(projectRoot+thisUser+'/'+theValidationFile, "w")
+		new_file.close()
+
+
+	return 	root[nextCloneIndex][1].text, root[nextCloneIndex][3].text
 
 
 
 
 
+
+
+@app_code_clone.route('/save_manual_clone_validation_res_and_get_new_clone_pair', methods=['POST'])
+def save_manual_clone_validation_res_and_get_new_clone_pair():
+	# getting the example program name
+	manual_validation_response = 'true'
+
+
+	thisUser = 'golammostaeen@gmail.com'
+	theCloneFile = 'pair10000.xml'
+	theValidationFile = theCloneFile + '.validated'
+
+
+
+	saveManualValidationResponse(thisUser, theValidationFile, manual_validation_response, 'fragment_1_path', 'fragment_1_start_line', 'fragment_1_end_line', 'fragment_2_path', 'fragment_2_start_line', 'fragment_2_end_line')
+
+	fragment_1_clone, fragment_2_clone = get_next_clone_pair_for_validation(thisUser, theCloneFile)
+
+
+	#
+	#
+	#
+	#
+    #
+	# tree2 = ET.parse(projectRoot+thisUser+'/'+theCloneFile)
+	# root = tree2.getroot()
+    #
+	# nextCloneIndex = 0
+    #
+	# if os.path.exists(projectRoot+thisUser+'/'+theValidationFile) == True:
+	# 	#response_code = 'FILE_ALREADY_EXIST'
+	# 	nextCloneIndex = sum(1 for line in open(projectRoot+thisUser+'/'+theValidationFile))
+	# else:
+	# 	new_file = open(projectRoot+thisUser+'/'+theValidationFile, "w")
+	# 	new_file.close()
+
+
+
+
+
+	# soup = ''
+	# with open(projectRoot+thisUser+'/'+theCloneFile) as fp:
+	# 	soup = BeautifulSoup(fp, 'lxml')
+    #
+    #
+	# clones = soup.find_all('clone')
+
+
+
+
+
+	# txl_source = str(txl_source, 'utf-8')
+	return jsonify({'fragment1': fragment_1_clone, 'fragment2': fragment_2_clone})
 
 
 

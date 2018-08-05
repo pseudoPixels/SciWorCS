@@ -72,50 +72,73 @@ $(document).ready(function(){
 
 
 //====================== CLONE VALIDATION========================
-    //selecting the clone file for validation
-	$("#selectCloneFile").on('change', function () {
-        //alert($(this).val());
+//selecting the clone file for validation
+$("#selectCloneFile").on('change', function () {
+    //alert($(this).val());
 
-		$.ajax({
-			type: "POST",
-			cache: false,
-			url: "/get_next_clone_pair_for_validation",
-			data: 'txl_source=abc',
-			dataType:'json',
-			success: function (option) {
-                //alert(option.fragment1);
-                //$("#txl_log").html(option.fragment1);
-                //$("#txl_output").html(option.fragment2);
-
-                
-                var_txl_log.getSession().setValue(option.fragment1);
-                var_txl_output.getSession().setValue(option.fragment2);
+    $.ajax({
+        type: "POST",
+        cache: false,
+        url: "/srv_get_next_clone_pair_for_validation",
+        data: 'txl_source=abc',
+        dataType:'json',
+        success: function (option) {
+            //alert(option.fragment1);
+            //$("#txl_log").html(option.fragment1);
+            //$("#txl_output").html(option.fragment2);
 
 
-			},
-			error: function (xhr, status, error) {
-				//on error, alert the possible error (system error)
-				alert(xhr.responseText);
-
-			}
-
-		    });
+            var_txl_log.getSession().setValue(option.fragment1);
+            var_txl_output.getSession().setValue(option.fragment2);
 
 
+        },
+        error: function (xhr, status, error) {
+            //on error, alert the possible error (system error)
+            alert(xhr.responseText);
+
+        }
+
+        });
 
 
 
 
-
+});
 
 
 
 
 
+$(".manual_validation").on('click', function(){
 
-	});
+    $.ajax({
+        type: "POST",
+        cache: false,
+        url: "/save_manual_clone_validation_res_and_get_new_clone_pair",
+        data: 'txl_source=abc',
+        dataType:'json',
+        success: function (option) {
+            //alert(option.fragment1);
+            //$("#txl_log").html(option.fragment1);
+            //$("#txl_output").html(option.fragment2);
 
 
+            var_txl_log.getSession().setValue(option.fragment1);
+            var_txl_output.getSession().setValue(option.fragment2);
+
+
+        },
+        error: function (xhr, status, error) {
+            //on error, alert the possible error (system error)
+            alert(xhr.responseText);
+
+        }
+
+        });
+
+
+});
 
 
 
