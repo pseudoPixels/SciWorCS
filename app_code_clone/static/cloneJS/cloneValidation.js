@@ -222,6 +222,13 @@ $("#upload_clone_files").on('click', function(){
                 //console.log('Success!');
                 alert("Clone File Upload Success");
             },
+            error: function (xhr, status, error) {
+                //on error, alert the possible error (system error)
+                alert(xhr.responseText);
+
+        }
+
+
         });
 
 });

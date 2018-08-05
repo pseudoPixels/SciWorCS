@@ -62,7 +62,8 @@ from flask import current_app as app
 app = Flask(__name__)
 app.config.update(
     COUCHDB_SERVER='http://localhost:5984',
-    COUCHDB_DATABASE='plantphenotype'
+    COUCHDB_DATABASE='plantphenotype',
+	MAX_CONTENT_LENGTH=30000000
 )
 
 manager = CouchDBManager()

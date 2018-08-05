@@ -42,21 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloneValidation.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cloneValidation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1090">
-              <caret line="210" column="40" selection-start-line="210" selection-start-column="40" selection-end-line="210" selection-end-column="40" />
+            <state relative-caret-position="1111">
+              <caret line="226" column="40" selection-start-line="226" selection-start-column="40" selection-end-line="226" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="803">
-              <caret line="290" column="39" selection-start-line="290" selection-start-column="39" selection-end-line="290" selection-end-column="39" />
+            <state relative-caret-position="975">
+              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -163,8 +163,8 @@
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save_module_lockingGO.html" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" />
         <option value="$PROJECT_DIR$/app_code_clone/templates/quick_validation.html" />
-        <option value="$PROJECT_DIR$/app_code_clone/views.py" />
         <option value="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" />
+        <option value="$PROJECT_DIR$/app_code_clone/views.py" />
       </list>
     </option>
   </component>
@@ -969,16 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="290" column="39" selection-start-line="290" selection-start-column="39" selection-end-line="290" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_code_clone/templates/quick_validation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1021">
@@ -993,9 +983,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1090">
-          <caret line="210" column="40" selection-start-line="210" selection-start-column="40" selection-end-line="210" selection-end-column="40" />
+        <state relative-caret-position="1111">
+          <caret line="226" column="40" selection-start-line="226" selection-start-column="40" selection-end-line="226" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
