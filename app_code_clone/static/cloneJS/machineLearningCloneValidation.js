@@ -59,6 +59,32 @@ $("#selectCloneFile").on('change', function () {
 
 
 
+function getCloneValidationResults(theUser, theCloneFile, validationFileType){
+
+    $.ajax({
+        type: "POST",
+        cache: false,
+        url: "/get_clone_validation_statistics",
+        data: 'theUser=' + theUser + '&theCloneFile='+theCloneFile+'&validationFileType='+validationFileType,
+        dataType:'json',
+        success: function (option) {
+            alert(option.precision);
+        },
+        error: function (xhr, status, error) {
+            //on error, alert the possible error (system error)
+            alert(xhr.responseText);
+
+        }
+
+    });
+
+
+
+}
+
+
+
+
 
 $("#autoValidate").on('click', function(){
     //alert("starting auto validation....");
@@ -73,7 +99,7 @@ $("#autoValidate").on('click', function(){
         data: 'theUser=' + theUser + '&theCloneFile='+theCloneFile,
         dataType:'json',
         success: function (option) {
-            alert("Done");
+            getCloneValidationResults(theUser, theCloneFile, '.mlValidated');
         },
         error: function (xhr, status, error) {
             //on error, alert the possible error (system error)

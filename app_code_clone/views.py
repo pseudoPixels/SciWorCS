@@ -169,6 +169,30 @@ def ml_auto_validate_clone_file():
 
 
 
+@app_code_clone.route('/get_clone_validation_statistics', methods=['POST'])
+def get_clone_validation_statistics():
+
+	projectRoot = 'app_code_clone/user_projects/'
+	thisUser = request.form['theUser']
+	theCloneFile = request.form['theCloneFile']
+	validationFileType = request.form['validationFileType']
+
+	mlValidation_output_file = theCloneFile + validationFileType
+
+	with open(projectRoot + thisUser + '/' + mlValidation_output_file, "r") as validationFile:
+		validationResponseLines = validationFile.readlines()
+
+	totalClones = len(validationResponseLines)
+	trueCount = 0
+
+	for aValidationLine in validationResponseLines:
+		aResponse = aValidationLine.split(',')[0]
+		if aResponse=='true':
+			trueCount = trueCount + 1
+
+
+
+	return jsonify({'precision': trueCount/totalClones})
 
 
 
