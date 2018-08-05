@@ -143,10 +143,14 @@ def ml_auto_validate_clone_file():
 			thisUser, theCloneFile, '.mlValidated')
 
 
-		mlResponse = 'ture'
+		false_probability, true_probability = app_code_clone_getValidationScore(fragment_1_clone, fragment_2_clone, 'java')
 
 		with open(projectRoot+thisUser+'/'+mlValidation_output_file, "a") as validationFile:
-			validationFile.write(mlResponse + ',' + fragment_1_path +','+ fragment_1_startline +','+ fragment_1_endline+','+fragment_2_path+','+fragment_2_startline+','+fragment_2_endline + '\n')
+			if true_probability >=false_probability:
+				validationFile.write(str(true_probability) + ',' + fragment_1_path +','+ fragment_1_startline +','+ fragment_1_endline+','+fragment_2_path+','+fragment_2_startline+','+fragment_2_endline + '\n')
+			else:
+				validationFile.write(
+					str(true_probability) + ',' + fragment_1_path + ',' + fragment_1_startline + ',' + fragment_1_endline + ',' + fragment_2_path + ',' + fragment_2_startline + ',' + fragment_2_endline + '\n')
 
 
 
@@ -472,6 +476,35 @@ def load_example_txl_programn():
 
 
 
+
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+#############################  MACHINE LEARNING MODEL ##################################################################
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+
+
+import pickle
+import pybrain
+
+
+def app_code_clone_getValidationScore(sourceCode1,sourceCode2,lang='java' ):
+
+
+	#load the trained Neural Net
+	fileObject = open('/home/ubuntu/Webpage/pybrain/trainedNetwork', 'rb')
+	loaded_fnn = pickle.load(fileObject, encoding='latin1')
+	network_prediction = loaded_fnn.activate([0.2,0.5,0.6,0.1,0.3,0.7])
+
+	#out = {'false_clone_probability_score':network_prediction[0], 'true_clone_probability_score':network_prediction[1]}
+
+
+	#return jsonify({'error_msg': 'None', 'log_msg': 'Preprocessing Source Codes...\nNormalizing Source Codes...\nCalculating Similarities...\nDone.','output': out})
+
+	#false_clone_probability_score, true_clone_probability_score
+	return network_prediction[0], network_prediction[1]
 
 
 
