@@ -4,7 +4,6 @@
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" afterPath="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/templates/quick_validation.html" afterPath="$PROJECT_DIR$/app_code_clone/templates/quick_validation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/views.py" afterPath="$PROJECT_DIR$/app_code_clone/views.py" />
     </list>
     <ignored path="Webpage.iws" />
@@ -29,21 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="1304" column="0" selection-start-line="1304" selection-start-column="0" selection-end-line="1305" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="quick_validation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_code_clone/templates/quick_validation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="721">
-              <caret line="302" column="44" selection-start-line="302" selection-start-column="44" selection-end-line="302" selection-end-column="44" />
+            <state relative-caret-position="1021">
+              <caret line="256" column="23" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -53,41 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloneValidation.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cloneValidation.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+            <state relative-caret-position="1090">
+              <caret line="210" column="40" selection-start-line="210" selection-start-column="40" selection-end-line="210" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloud_vision_pipeline_save2GO.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="1527" column="0" selection-start-line="1527" selection-start-column="0" selection-end-line="1531" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="telepointerGO.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/telepointerGO.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="3731" column="0" selection-start-line="3731" selection-start-column="0" selection-end-line="3744" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="285" column="36" selection-start-line="285" selection-start-column="36" selection-end-line="285" selection-end-column="36" />
+            <state relative-caret-position="803">
+              <caret line="290" column="39" selection-start-line="290" selection-start-column="39" selection-end-line="290" selection-end-column="39" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -193,9 +162,9 @@
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_FASTQ_to_FASTA/Galaxy_FASTQ_to_FASTA_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save_module_lockingGO.html" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" />
-        <option value="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" />
         <option value="$PROJECT_DIR$/app_code_clone/templates/quick_validation.html" />
         <option value="$PROJECT_DIR$/app_code_clone/views.py" />
+        <option value="$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js" />
       </list>
     </option>
   </component>
@@ -992,26 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/templates/quick_validation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="302" column="44" selection-start-line="302" selection-start-column="44" selection-end-line="302" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -1022,11 +971,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_code_clone/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="285" column="36" selection-start-line="285" selection-start-column="36" selection-end-line="285" selection-end-column="36" />
+        <state relative-caret-position="803">
+          <caret line="290" column="39" selection-start-line="290" selection-start-column="39" selection-end-line="290" selection-end-column="39" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_code_clone/templates/quick_validation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1021">
+          <caret line="256" column="23" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/cloneValidation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1090">
+          <caret line="210" column="40" selection-start-line="210" selection-start-column="40" selection-end-line="210" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

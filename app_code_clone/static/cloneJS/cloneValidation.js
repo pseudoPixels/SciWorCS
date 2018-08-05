@@ -207,6 +207,9 @@ $(".manual_validation").on('click', function(){
 
 $("#upload_clone_files").on('click', function(){
         var form_data = new FormData($('#upload-file')[0]);
+
+        //append some non-form data also
+        form_data.append('userID',$('#user_id').text());
         $.ajax({
             type: 'POST',
             url: '/upload_new_clone_file',
