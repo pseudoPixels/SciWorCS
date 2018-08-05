@@ -282,8 +282,14 @@ def save_manual_clone_validation_res_and_get_new_clone_pair():
 
 
 
+from flask import  request
+from werkzeug import secure_filename
 
-
+@app_code_clone.route('/upload_new_clone_file', methods = ['GET', 'POST'])
+def upload_new_clone_file():
+	file = request.files['file']
+	file.save(os.path.join('app_code_clone/user_projects/golammostaeen@gmail.com', secure_filename(file.filename)))
+	return "Ajax file upload success"
 
 
 

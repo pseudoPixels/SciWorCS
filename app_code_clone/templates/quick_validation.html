@@ -296,7 +296,16 @@ Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clo
         <span>2. aTunes.clones</span><br/> -->
 
         <br/>
-        <button>Upload Clone File</button>
+        <!-- <button id="upload_clone_files">Upload New Clone File(s)</button> -->
+
+ <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="file">Upload New Clone File(s)</label>
+        <input name="file" type="file"><br/>
+        <button id="upload_clone_files" type="button">Upload</button>
+</form>
+
+
+
     </div>
 
 <br/>

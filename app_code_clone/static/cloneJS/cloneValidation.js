@@ -205,6 +205,29 @@ $(".manual_validation").on('click', function(){
 
 
 
+$("#upload_clone_files").on('click', function(){
+        var form_data = new FormData($('#upload-file')[0]);
+        $.ajax({
+            type: 'POST',
+            url: '/upload_new_clone_file',
+            data: form_data,
+            contentType: false,
+            cache: false,
+            processData: false,
+            async: false,
+            success: function(data) {
+                //console.log('Success!');
+                alert("Clone File Upload Success");
+            },
+        });
+
+});
+
+
+
+
+
+
 
 
 
