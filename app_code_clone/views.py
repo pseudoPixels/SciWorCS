@@ -118,7 +118,8 @@ def srv_get_next_clone_pair_for_validation():
     #
     #
     #
-	fragment_1_clone, fragment_2_clone = get_next_clone_pair_for_validation(thisUser, theCloneFile)
+	fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone = get_next_clone_pair_for_validation(
+		thisUser, theCloneFile)
 
 
 	# soup = ''
@@ -132,8 +133,16 @@ def srv_get_next_clone_pair_for_validation():
 
 
 
-	# txl_source = str(txl_source, 'utf-8')
-	return jsonify({'fragment1': fragment_1_clone, 'fragment2': fragment_2_clone})
+	return jsonify({'fragment_1_path': fragment_1_path,
+					'fragment_1_startline': fragment_1_startline,
+					'fragment_1_endline':fragment_1_endline,
+				    'fragment_1_clone':fragment_1_clone,
+
+					'fragment_2_path': fragment_2_path,
+					'fragment_2_startline': fragment_2_startline,
+					'fragment_2_endline': fragment_2_endline,
+					'fragment_2_clone': fragment_2_clone
+					})
 
 
 
@@ -172,8 +181,9 @@ def get_next_clone_pair_for_validation(theUser, cloneFile):
 		new_file = open(projectRoot+thisUser+'/'+theValidationFile, "w")
 		new_file.close()
 
-
-	return 	root[nextCloneIndex][1].text, root[nextCloneIndex][3].text
+	#fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone
+	return root[nextCloneIndex][0].attrib['file'], root[nextCloneIndex][0].attrib['startline'], root[nextCloneIndex][0].attrib['endline'], root[nextCloneIndex][1].text, root[nextCloneIndex][2].attrib['file'], root[nextCloneIndex][2].attrib['startline'], root[nextCloneIndex][2].attrib['endline'],root[nextCloneIndex][3].text
+	#return 	root[nextCloneIndex][1].text, root[nextCloneIndex][3].text
 
 
 
@@ -195,7 +205,7 @@ def save_manual_clone_validation_res_and_get_new_clone_pair():
 
 	saveManualValidationResponse(thisUser, theValidationFile, manual_validation_response, 'fragment_1_path', 'fragment_1_start_line', 'fragment_1_end_line', 'fragment_2_path', 'fragment_2_start_line', 'fragment_2_end_line')
 
-	fragment_1_clone, fragment_2_clone = get_next_clone_pair_for_validation(thisUser, theCloneFile)
+	fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone = get_next_clone_pair_for_validation(thisUser, theCloneFile)
 
 
 	#
@@ -231,7 +241,16 @@ def save_manual_clone_validation_res_and_get_new_clone_pair():
 
 
 	# txl_source = str(txl_source, 'utf-8')
-	return jsonify({'fragment1': fragment_1_clone, 'fragment2': fragment_2_clone})
+	return jsonify({'fragment_1_path': fragment_1_path,
+					'fragment_1_startline': fragment_1_startline,
+					'fragment_1_endline':fragment_1_endline,
+				    'fragment_1_clone':fragment_1_clone,
+
+					'fragment_2_path': fragment_2_path,
+					'fragment_2_startline': fragment_2_startline,
+					'fragment_2_endline': fragment_2_endline,
+					'fragment_2_clone': fragment_2_clone
+					})
 
 
 

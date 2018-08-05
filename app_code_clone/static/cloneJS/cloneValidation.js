@@ -86,10 +86,16 @@ $("#selectCloneFile").on('change', function () {
             //alert(option.fragment1);
             //$("#txl_log").html(option.fragment1);
             //$("#txl_output").html(option.fragment2);
+            $('#fragment_1_path').text(option.fragment_1_path);
+            $('#fragment_1_start').text(option.fragment_1_startline);
+            $('#fragment_1_end').text(option.fragment_1_endline);
+            var_txl_log.getSession().setValue(option.fragment_1_clone);
 
 
-            var_txl_log.getSession().setValue(option.fragment1);
-            var_txl_output.getSession().setValue(option.fragment2);
+            $('#fragment_2_path').text(option.fragment_2_path);
+            $('#fragment_2_start').text(option.fragment_2_startline);
+            $('#fragment_2_end').text(option.fragment_2_endline);
+            var_txl_output.getSession().setValue(option.fragment_2_clone);
 
 
         },
@@ -112,6 +118,8 @@ $("#selectCloneFile").on('change', function () {
 
 $(".manual_validation").on('click', function(){
 
+    $(".manual_validation").attr("disabled", true);
+
     $.ajax({
         type: "POST",
         cache: false,
@@ -124,8 +132,18 @@ $(".manual_validation").on('click', function(){
             //$("#txl_output").html(option.fragment2);
 
 
-            var_txl_log.getSession().setValue(option.fragment1);
-            var_txl_output.getSession().setValue(option.fragment2);
+            $('#fragment_1_path').text(option.fragment_1_path);
+            $('#fragment_1_start').text(option.fragment_1_startline);
+            $('#fragment_1_end').text(option.fragment_1_endline);
+            var_txl_log.getSession().setValue(option.fragment_1_clone);
+
+
+            $('#fragment_2_path').text(option.fragment_2_path);
+            $('#fragment_2_start').text(option.fragment_2_startline);
+            $('#fragment_2_end').text(option.fragment_2_endline);
+            var_txl_output.getSession().setValue(option.fragment_2_clone);
+
+            $(".manual_validation").attr("disabled", false);
 
 
         },
