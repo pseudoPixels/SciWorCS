@@ -8,7 +8,7 @@ $(document).ready(function(){
 $("#selectCloneFile").on('change', function () {
     //alert($(this).val());
 
-
+/*
 
     var theUser = $("#user_id").text();
 	var theCloneFile = $("#selectCloneFile").val();
@@ -52,7 +52,7 @@ $("#selectCloneFile").on('change', function () {
 
         });
 
-
+*/
 
 
 });
@@ -61,7 +61,31 @@ $("#selectCloneFile").on('change', function () {
 
 
 $("#autoValidate").on('click', function(){
-    alert("starting auto validation....");
+    //alert("starting auto validation....");
+
+    var theUser = $("#user_id").text();
+	var theCloneFile = $("#selectCloneFile").val();
+
+    $.ajax({
+        type: "POST",
+        cache: false,
+        url: "/ml_auto_validate_clone_file",
+        data: 'theUser=' + theUser + '&theCloneFile='+theCloneFile,
+        dataType:'json',
+        success: function (option) {
+            alert("Done");
+        },
+        error: function (xhr, status, error) {
+            //on error, alert the possible error (system error)
+            alert(xhr.responseText);
+
+        }
+
+    });
+
+
+
+
 
 });
 

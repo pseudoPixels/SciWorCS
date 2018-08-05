@@ -113,6 +113,65 @@ def machine_learning_validation():
 
 
 
+@app_code_clone.route('/ml_auto_validate_clone_file', methods=['POST'])
+def ml_auto_validate_clone_file():
+
+	projectRoot = 'app_code_clone/user_projects/'
+	thisUser = request.form['theUser']
+	theCloneFile = request.form['theCloneFile']
+
+	mlValidation_output_file = theCloneFile+'.mlValidated'
+
+
+
+	tree2 = ET.parse(projectRoot+thisUser+'/'+theCloneFile)
+	root = tree2.getroot()
+	totalClonePairs = len(root)
+
+	mlValidationCount = 0
+
+	if os.path.exists(projectRoot+thisUser+'/'+mlValidation_output_file) == True:
+		#response_code = 'FILE_ALREADY_EXIST'
+		mlValidationCount = sum(1 for line in open(projectRoot+thisUser+'/'+mlValidation_output_file))
+	else:
+		new_file = open(projectRoot+thisUser+'/'+mlValidation_output_file, "w")
+		new_file.close()
+
+
+	for aCloneIndex in range(mlValidationCount, totalClonePairs):
+		fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone, clones_validated, total_clones = get_next_clone_pair_for_validation(
+			thisUser, theCloneFile, '.mlValidated')
+
+
+		mlResponse = 'ture'
+
+		with open(projectRoot+thisUser+'/'+mlValidation_output_file, "a") as validationFile:
+			validationFile.write(mlResponse + ',' + fragment_1_path +','+ fragment_1_startline +','+ fragment_1_endline+','+fragment_2_path+','+fragment_2_startline+','+fragment_2_endline + '\n')
+
+
+
+	return jsonify({'status': 'Done'})
+
+
+	#list_of_file_for_validation = os.listdir(projectRoot + thisUser + '/' )
+	#list_of_file_for_validation = [os.path.basename(x) for x in glob.glob(projectRoot + thisUser + '/' + '*.xml')]
+
+
+	#return render_template('machine_learning_validation.html', list_of_file_for_validation = list_of_file_for_validation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @app_code_clone.route('/srv_get_next_clone_pair_for_validation', methods=['POST'])
 def srv_get_next_clone_pair_for_validation():
 	# getting the example program name
@@ -181,13 +240,13 @@ def saveManualValidationResponse(theUser, theValidationFile, response, fragment_
 
 
 
-def get_next_clone_pair_for_validation(theUser, cloneFile):
+def get_next_clone_pair_for_validation(theUser, cloneFile, validationFileExt='.validated'):
 	# getting the example program name
 
 	projectRoot = 'app_code_clone/user_projects/'
 	thisUser = theUser
 	theCloneFile = cloneFile
-	theValidationFile = theCloneFile + '.validated'
+	theValidationFile = theCloneFile + validationFileExt
 
 	tree2 = ET.parse(projectRoot+thisUser+'/'+theCloneFile)
 	root = tree2.getroot()
@@ -204,6 +263,11 @@ def get_next_clone_pair_for_validation(theUser, cloneFile):
 	#fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone, number_of_validated_clones, total_clones
 	return root[nextCloneIndex][0].attrib['file'], root[nextCloneIndex][0].attrib['startline'], root[nextCloneIndex][0].attrib['endline'], root[nextCloneIndex][1].text, root[nextCloneIndex][2].attrib['file'], root[nextCloneIndex][2].attrib['startline'], root[nextCloneIndex][2].attrib['endline'],root[nextCloneIndex][3].text, nextCloneIndex+1, len(root)
 	#return 	root[nextCloneIndex][1].text, root[nextCloneIndex][3].text
+
+
+
+
+
 
 
 
