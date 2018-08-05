@@ -120,11 +120,28 @@ $(".manual_validation").on('click', function(){
 
     $(".manual_validation").attr("disabled", true);
 
+    var theUser = $("#user_id").text();
+    var theCloneFile = $("#selectCloneFile").val();
+
+    var manual_validation_response = $(this).attr('res');
+    var fragment_1_path = $("#fragment_1_path").text();
+    var fragment_1_start_line = $("#fragment_1_start").text();
+    var fragment_1_end_line = $("#fragment_1_end").text();
+
+    var fragment_2_path = $("#fragment_2_path").text();
+    var fragment_2_start_line = $("#fragment_2_start").text();
+    var fragment_2_end_line = $("#fragment_2_end").text();
+
+
+
+
+
+
     $.ajax({
         type: "POST",
         cache: false,
         url: "/save_manual_clone_validation_res_and_get_new_clone_pair",
-        data: 'txl_source=abc',
+        data: 'theUser=' + theUser + '&theCloneFile='+theCloneFile + '&manual_validation_response=' + manual_validation_response + '&fragment_1_path='+fragment_1_path + '&fragment_1_start_line=' + fragment_1_start_line + '&fragment_1_end_line='+fragment_1_end_line +     '&fragment_2_path='+fragment_2_path + '&fragment_2_start_line=' + fragment_2_start_line + '&fragment_2_end_line='+fragment_2_end_line  ,
         dataType:'json',
         success: function (option) {
             //alert(option.fragment1);

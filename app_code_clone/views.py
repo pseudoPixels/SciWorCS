@@ -193,17 +193,34 @@ def get_next_clone_pair_for_validation(theUser, cloneFile):
 
 @app_code_clone.route('/save_manual_clone_validation_res_and_get_new_clone_pair', methods=['POST'])
 def save_manual_clone_validation_res_and_get_new_clone_pair():
+
+	thisUser = request.form['theUser']
+	theCloneFile= request.form['theCloneFile']
+	manual_validation_response= request.form['manual_validation_response']
+
+	fragment_1_path= request.form['fragment_1_path']
+	fragment_1_start_line= request.form['fragment_1_start_line']
+	fragment_1_end_line= request.form['fragment_1_end_line']
+
+	fragment_2_path= request.form['fragment_2_path']
+	fragment_2_start_line= request.form['fragment_2_start_line']
+	fragment_2_end_line= request.form['fragment_2_end_line']
+
+
+
+
+
+
 	# getting the example program name
-	manual_validation_response = 'true'
+	#manual_validation_response = 'true'
 
 
-	thisUser = 'golammostaeen@gmail.com'
-	theCloneFile = 'pair10000.xml'
+
 	theValidationFile = theCloneFile + '.validated'
 
 
 
-	saveManualValidationResponse(thisUser, theValidationFile, manual_validation_response, 'fragment_1_path', 'fragment_1_start_line', 'fragment_1_end_line', 'fragment_2_path', 'fragment_2_start_line', 'fragment_2_end_line')
+	saveManualValidationResponse(thisUser, theValidationFile, manual_validation_response, fragment_1_path, fragment_1_start_line, fragment_1_end_line, fragment_2_path, fragment_2_start_line, fragment_2_end_line)
 
 	fragment_1_path, fragment_1_startline, fragment_1_endline, fragment_1_clone, fragment_2_path, fragment_2_startline, fragment_2_endline, fragment_2_clone = get_next_clone_pair_for_validation(thisUser, theCloneFile)
 
