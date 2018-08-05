@@ -75,7 +75,7 @@ with app.app_context():
 
 
 
-
+import glob
 
 @app_code_clone.route('/ccv')
 def ccv():
@@ -83,7 +83,8 @@ def ccv():
 	thisUser = 'golammostaeen@gmail.com'
 	projectRoot = 'app_code_clone/user_projects/'
 
-	list_of_file_for_validation = os.listdir(projectRoot + thisUser + '/' )
+	#list_of_file_for_validation = os.listdir(projectRoot + thisUser + '/' )
+	list_of_file_for_validation = [os.path.basename(x) for x in glob.glob(projectRoot + thisUser + '/' + '*.xml')]
 
 
 	return render_template('quick_validation.html', list_of_file_for_validation = list_of_file_for_validation)
@@ -100,9 +101,9 @@ def srv_get_next_clone_pair_for_validation():
 	# getting the example program name
 
 	projectRoot = 'app_code_clone/user_projects/'
-	thisUser = 'golammostaeen@gmail.com'
-	theCloneFile = 'pair10000.xml'
-	theValidationFile = theCloneFile + '.validated'
+	thisUser = request.form['theUser']
+	theCloneFile = request.form['theCloneFile']
+	#theValidationFile = theCloneFile + '.validated'
 
 	# tree2 = ET.parse(projectRoot+thisUser+'/'+theCloneFile)
 	# root = tree2.getroot()

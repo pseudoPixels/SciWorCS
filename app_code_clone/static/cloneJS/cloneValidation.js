@@ -76,11 +76,16 @@ $(document).ready(function(){
 $("#selectCloneFile").on('change', function () {
     //alert($(this).val());
 
+
+
+    var theUser = $("#user_id").text();
+	var theCloneFile = $("#selectCloneFile").val();
+
     $.ajax({
         type: "POST",
         cache: false,
         url: "/srv_get_next_clone_pair_for_validation",
-        data: 'txl_source=abc',
+        data: 'theUser=' + theUser + '&theCloneFile='+theCloneFile,
         dataType:'json',
         success: function (option) {
             //alert(option.fragment1);
