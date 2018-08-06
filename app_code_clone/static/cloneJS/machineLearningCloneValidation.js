@@ -68,7 +68,20 @@ function getCloneValidationResults(theUser, theCloneFile, validationFileType){
         data: 'theUser=' + theUser + '&theCloneFile='+theCloneFile+'&validationFileType='+validationFileType,
         dataType:'json',
         success: function (option) {
-            alert(option.precision);
+            //alert(option.precision);
+            alert('Done');
+            $('#ml_clone_validation_stats').text('')
+
+            var totalClones = '<br>Total Clone Pairs: ' + option.totalClonePairs;
+            var truePositives = '<br>True Positives: ' + option.trueClones;
+            var falsePositives = '<br>False Positives: ' + (option.totalClonePairs -  option.trueClones);
+            var precision = '<br>Precision: ' + (option.trueClones / option.totalClonePairs)
+
+
+            var stats = totalClones + truePositives + falsePositives + precision;
+
+            $('#ml_clone_validation_stats').html(stats);
+
         },
         error: function (xhr, status, error) {
             //on error, alert the possible error (system error)
@@ -91,6 +104,9 @@ $("#autoValidate").on('click', function(){
 
     var theUser = $("#user_id").text();
 	var theCloneFile = $("#selectCloneFile").val();
+
+	$('#ml_clone_validation_stats').text('')
+	$('#ml_clone_validation_stats').text('Please wait, submitted clones are being validated by Machine Learning Model...')
 
     $.ajax({
         type: "POST",

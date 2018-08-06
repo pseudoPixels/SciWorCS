@@ -78,6 +78,57 @@ with app.app_context():
 
 import glob
 
+
+
+
+
+
+@app_code_clone.route('/cloneValidationFramework')
+def cloneValidationFramework():
+
+
+
+
+	return render_template('index_cloneValidationFramework.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @app_code_clone.route('/manual_validation')
 def manual_validation():
 
@@ -192,7 +243,7 @@ def get_clone_validation_statistics():
 
 
 
-	return jsonify({'precision': trueCount/totalClones})
+	return jsonify({'trueClones': trueCount, 'totalClonePairs': totalClones})
 
 
 

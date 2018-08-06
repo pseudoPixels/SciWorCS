@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
-<script type="text/javascript"  src="{{ url_for('app_code_clone.static',filename='cloneJS/machineLearningCloneValidation.js') }}"></script>
+
 
 
 </head>
@@ -235,9 +235,9 @@ font-size:17px;
   </div>
   <div id="navcontainer" >
     <ul id="navlist" >
- <li style="float:right;"><a href="#">Help and References</a></li>
- <li style="float:right;"><a href="#" id="current">Machine Learning Based Clone Validation</a></li>
- <li id="active" style="float:right;"><a href="#" >Manual Clone Validation</a></li>
+ <li style="float:right;"><a href="#">Login</a></li>
+ <li style="float:right;"><a href="#">Create An Account</a></li>
+ <li id="active" style="float:right;"><a href="#" id="current">About</a></li>
 
 
 
@@ -252,69 +252,7 @@ font-size:17px;
 
 
   <div id="sidebar">
-<h2>User</h2>
-<div class="sidemenu">
-      <span id="user_id">golammostaeen@gmail.com</span>
-</div>
-<br/>
 
-
-
-
-<h2>Machine L. Validate</h2>
-<div class="sidemenu">
-<br/>
-<select id="selectCloneFile">
-    <option value="none">Select Clone File</option>
-    {% for a_clone_file in list_of_file_for_validation %}
-        <option value="{{ a_clone_file }}">{{ loop.index }} . {{ a_clone_file }}</option>
-    {% endfor %}
-
-
-
-</select>
-<br/><br/>
-Validated: <span id="validation_percentage">0</span>% (<a href="#">Download</a>)
-<br/><br/>
-Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clones">0</span> <br/><br/>
-<!-- Precision: 0.85 <br/> -->
-<button id="autoValidate">Start ML Validation</button><br/>
-
-</div>
-
-<br/>
-
-    <h2>Clones</h2>
-    <div class="sidemenu">
-        <br/>
-
-        {% for a_clone_file in list_of_file_for_validation %}
-	        <span>{{ loop.index }} . {{ a_clone_file }}</span><br/>
-        {% endfor %}
-
-
-       <!-- <span>1. JHotDraw.clones</span><br/>
-        <span>2. aTunes.clones</span><br/> -->
-
-        <br/>
-        <!-- <button id="upload_clone_files">Upload New Clone File(s)</button> -->
-
- <form id="upload-file" method="post" enctype="multipart/form-data">
-        <label for="file">Upload New Clone File(s)</label>
-        <input name="file" type="file"><br/>
-        <button id="upload_clone_files" type="button">Upload</button>
-</form>
-
-
-
-    </div>
-
-<br/>
-
-
-
-
-<br/><br/><br/>
 
   </div>
 
@@ -326,10 +264,26 @@ Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clo
   <div id="content">
 
 
+<p style="font-size:17px;">
+    A code clone  is a pair of code fragments, within or between software systems that are similar.
+    Since code clones often negatively impact the maintainability of a software system, a great many numbers of code clone detection techniques and tools have been proposed and studied over the last decade.
+    To detect all possible similar source code patterns in general, the clone detection tools work on syntax level (such as texts, tokens, AST and so on) while lacking user-specific preferences.
+    This often means the reported clones must be manually validated prior to any analysis in order to filter out the true positive clones from task or user-specific considerations.
+    This manual clone validation effort is very time-consuming and often error-prone, in particular for large-scale clone detection.
+ </p>
+<p style="font-size:17px;">
+    This is machine learning based framework for
+    automatic code clone validation. The method learns to predict
+    tasks or user-specific code clone validation patterns. A tool, which was developed
+    as a proof of concept of the proposed method, showed promising results
+    in comparison to related existing methods for code clone validation.
+</p>
 
-
-
-
+<br>
+<p style="font-size:16px;">References:</p>
+<p style="font-size:16px;">
+   [1] Mostaeen, G., Svajlenko, J., Roy, B., Roy, C. K., & Schneider, K. (2018, September). On the Use of Machine Learning Techniques Towards the Design of Cloud Based Automatic Code Clone Validation Tools. In Source Code Analysis and Manipulation (SCAM), 2018 IEEE 18th International Working Conference on. IEEE.
+</p>
 
 
 
