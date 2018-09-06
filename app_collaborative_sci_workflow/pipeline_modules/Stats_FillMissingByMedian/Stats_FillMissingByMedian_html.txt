@@ -12,8 +12,8 @@
     <toolOutputs>
         <toolOutput>
             <label>Output Stats</label>
-            <referenceVariable>missing_values</referenceVariable>
-            <dataFormat>txt</dataFormat>
+            <referenceVariable>dataset_with_missing_values_filled</referenceVariable>
+            <dataFormat>csv</dataFormat>
         </toolOutput>
     </toolOutputs>
 

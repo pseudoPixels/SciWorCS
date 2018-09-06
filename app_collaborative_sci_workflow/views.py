@@ -696,6 +696,9 @@ def cvs():
 	pineline_galaxy_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
 										re.match(r'Galaxy*', f)]
 
+	pineline_machineLearning_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
+										re.match(r'Stats*', f)]
+
 	saved_workflows = os.listdir("app_collaborative_sci_workflow/pipeline_saved/")
 
 
@@ -716,6 +719,7 @@ def cvs():
 	pineline_source_analysis_modules=pineline_source_analysis_modules,
 	pineline_mathematical_analysis_modules=pineline_mathematical_analysis_modules,
 	pineline_galaxy_modules = pineline_galaxy_modules,
+	pineline_machineLearning_modules = pineline_machineLearning_modules,
 	saved_workflows=saved_workflows)
 
 
