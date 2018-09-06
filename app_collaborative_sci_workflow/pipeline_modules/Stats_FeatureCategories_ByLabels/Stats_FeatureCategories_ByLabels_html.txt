@@ -13,27 +13,15 @@
         <toolOutput>
             <label>Output Stats</label>
             <referenceVariable>feature_categories_by_lables</referenceVariable>
-            <dataFormat>txt</dataFormat>
+            <dataFormat>html</dataFormat>
         </toolOutput>
     </toolOutputs>
 
 
 
     <toolConfigurations>
-         Language: <select  class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
-              <option value="language = 'java'" >Java</option>
-              <option value="language = 'cs'" >C#</option>
-              <option value="language = 'py'" >Python</option>
-              <option value="language = 'c'" >C</option>
-        </select>
-        <br/><br/>
-         Granularity: <select  class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
-              <option value="granularity = 'functions'" >Functions</option>
-              <option value="granularity = 'blocks'" >Blocks</option>
-        </select>
-        <br/><br/>
-         Normalization:
-        <input type="text" class="setting_param" value="normalization='java-normalize-ifconditions-functions'" name="cleaning_threshold" size="45"/>
+         Feature:
+        <input type="text" class="setting_param" value="feature='Pclass'" name="cleaning_threshold" size="45"/>
         <br/><br/>
     </toolConfigurations>
 

@@ -2,894 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/About.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/AviFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/AviWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/FacePanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/JLipSync.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/JPdfWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/JlsFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/OptionForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/SimpleXmlReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/TimeSheet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/TimeSheetTableModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/Utilities.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/WavFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/JLipSync/WavePanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/annotations/Beta.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/annotations/GwtCompatible.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/annotations/GwtIncompatible.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/annotations/VisibleForTesting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/annotations/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Absent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/AbstractIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Ascii.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/CaseFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/CharMatcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Charsets.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/CommonMatcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/CommonPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Converter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Defaults.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Enums.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Equivalence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/ExtraObjectsMethodsForWeb.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/FinalizablePhantomReference.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/FinalizableReference.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/FinalizableReferenceQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/FinalizableSoftReference.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/FinalizableWeakReference.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Function.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/FunctionalEquivalence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Functions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/JdkPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Joiner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/MoreObjects.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Objects.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Optional.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/PairwiseEquivalence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/PatternCompiler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Platform.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Preconditions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Predicate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Predicates.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Present.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/SmallCharMatcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Splitter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/StandardSystemProperty.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Stopwatch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Strings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Supplier.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Suppliers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Throwables.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Ticker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Utf8.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/Verify.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/VerifyException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/internal/Finalizer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/base/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/AbstractCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/AbstractLoadingCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/Cache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/CacheBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/CacheBuilderSpec.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/CacheLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/CacheStats.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/ForwardingCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/ForwardingLoadingCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/LoadingCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/LocalCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/LongAddable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/LongAddables.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/LongAdder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/RemovalCause.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/RemovalListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/RemovalListeners.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/RemovalNotification.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/Striped64.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/Weigher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/cache/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractBiMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractIndexedListIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractListMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractMapBasedMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractMapBasedMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractMapEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractNavigableMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractRangeSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractSequentialIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractSetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractSortedKeySortedSetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractSortedMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractSortedSetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AbstractTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/AllEqualOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ArrayListMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ArrayTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/BiMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/BinaryTreeTraverser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/BoundType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ByFunctionOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/CartesianList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ClassToInstanceMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/CollectPreconditions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Collections2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ComparatorOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ComparisonChain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/CompoundOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ComputationException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ConcurrentHashMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Constraint.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Constraints.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ConsumingQueueIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ContiguousSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Count.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Cut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/DenseImmutableTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/DescendingImmutableSortedMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/DescendingImmutableSortedSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/DescendingMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/DiscreteDomain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/EmptyContiguousSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/EmptyImmutableListMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/EmptyImmutableSetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/EnumBiMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/EnumHashBiMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/EnumMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/EvictingQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ExplicitOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/FilteredEntryMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/FilteredEntrySetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/FilteredKeyListMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/FilteredKeyMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/FilteredKeySetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/FilteredMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/FilteredMultimapValues.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/FilteredSetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/FluentIterable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingBlockingDeque.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingCollection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingConcurrentMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingDeque.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingImmutableCollection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingImmutableList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingImmutableMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingImmutableSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingListIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingListMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingMapEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingNavigableMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingNavigableSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingObject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingSetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingSortedMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingSortedMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingSortedSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingSortedSetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ForwardingTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/GeneralRange.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/GwtTransient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/HashBasedTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/HashBiMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/HashMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/HashMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Hashing.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableAsList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableBiMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableClassToInstanceMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableCollection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableEnumMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableEnumSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableListMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableMapEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableMapEntrySet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableMapKeySet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableMapValues.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableRangeMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableRangeSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableSetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableSortedAsList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableSortedMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableSortedMapFauxverideShim.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableSortedMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableSortedMultisetFauxverideShim.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableSortedSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableSortedSetFauxverideShim.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ImmutableTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Interner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Interners.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Iterables.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Iterators.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/LexicographicalOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/LinkedHashMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/LinkedHashMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/LinkedListMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ListMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Lists.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/MapConstraint.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/MapConstraints.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/MapDifference.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/MapMaker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/MapMakerInternalMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Maps.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/MinMaxPriorityQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Multimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/MultimapBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Multimaps.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Multiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Multisets.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/MultitransformedIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/MutableClassToInstanceMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/NaturalOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/NullsFirstOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/NullsLastOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ObjectArrays.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Ordering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/PeekingIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Platform.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Queues.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Range.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RangeMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RangeSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RegularContiguousSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RegularImmutableAsList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RegularImmutableBiMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RegularImmutableList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RegularImmutableMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RegularImmutableMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RegularImmutableSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RegularImmutableSortedMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RegularImmutableSortedSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RegularImmutableTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ReverseNaturalOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/ReverseOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/RowSortedTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Serialization.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Sets.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SingletonImmutableBiMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SingletonImmutableList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SingletonImmutableSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SingletonImmutableTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SortedIterable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SortedIterables.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SortedLists.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SortedMapDifference.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SortedMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SortedMultisetBridge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SortedMultisets.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SortedSetMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/SparseImmutableTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/StandardRowSortedTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/StandardTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Synchronized.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Table.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/Tables.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/TopKSelector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/TransformedIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/TransformedListIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/TreeBasedTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/TreeMultimap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/TreeMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/TreeRangeMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/TreeRangeSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/TreeTraverser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/UnmodifiableIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/UnmodifiableListIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/UnmodifiableSortedMultiset.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/UsingToStringOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/WellBehavedMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/collect/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/escape/ArrayBasedCharEscaper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/escape/ArrayBasedEscaperMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/escape/ArrayBasedUnicodeEscaper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/escape/CharEscaper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/escape/CharEscaperBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/escape/Escaper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/escape/Escapers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/escape/Platform.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/escape/UnicodeEscaper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/escape/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/AllowConcurrentEvents.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/AsyncEventBus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/DeadEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/Dispatcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/EventBus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/Subscribe.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/Subscriber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/SubscriberExceptionContext.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/SubscriberExceptionHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/SubscriberRegistry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/eventbus/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/AbstractDirectedNetworkConnections.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/AbstractGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/AbstractGraphBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/AbstractNetwork.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/AbstractUndirectedNetworkConnections.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/AbstractValueGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ConfigurableMutableGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ConfigurableMutableNetwork.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ConfigurableMutableValueGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ConfigurableNetwork.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ConfigurableValueGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/DirectedGraphConnections.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/DirectedMultiNetworkConnections.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/DirectedNetworkConnections.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/EdgesConnecting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ElementOrder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/EndpointPair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/EndpointPairIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ForwardingGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/Graph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/GraphBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/GraphConnections.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/GraphConstants.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/Graphs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ImmutableGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ImmutableNetwork.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ImmutableValueGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/MapIteratorCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/MapRetrievalCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/MultiEdgesConnecting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/MutableGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/MutableNetwork.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/MutableValueGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/Network.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/NetworkBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/NetworkConnections.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/UndirectedGraphConnections.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/UndirectedMultiNetworkConnections.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/UndirectedNetworkConnections.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ValueGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/ValueGraphBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/graph/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/AbstractByteHasher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/AbstractCompositeHashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/AbstractHasher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/AbstractNonStreamingHashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/AbstractStreamingHashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/BloomFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/BloomFilterStrategies.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/ChecksumHashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/Crc32cHashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/FarmHashFingerprint64.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/Funnel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/Funnels.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/HashCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/HashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/Hasher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/Hashing.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/HashingInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/HashingOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/LittleEndianByteArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/MacHashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/MessageDigestHashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/Murmur3_128HashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/Murmur3_32HashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/PrimitiveSink.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/SipHashFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/hash/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/html/HtmlEscapers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/html/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/AppendableWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/BaseEncoding.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/ByteArrayDataInput.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/ByteArrayDataOutput.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/ByteProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/ByteSink.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/ByteSource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/ByteStreams.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/CharSequenceReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/CharSink.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/CharSource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/CharStreams.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/Closeables.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/Closer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/CountingInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/CountingOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/FileBackedOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/FileWriteMode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/Files.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/Flushables.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/LineBuffer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/LineProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/LineReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/LittleEndianDataInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/LittleEndianDataOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/MultiInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/MultiReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/PatternFilenameFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/ReaderInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/Resources.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/io/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/BigIntegerMath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/DoubleMath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/DoubleUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/IntMath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/LinearTransformation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/LongMath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/MathPreconditions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/PairedStats.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/PairedStatsAccumulator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/Quantiles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/Stats.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/StatsAccumulator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/math/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/net/HostAndPort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/net/HostSpecifier.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/net/HttpHeaders.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/net/InetAddresses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/net/InternetDomainName.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/net/MediaType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/net/PercentEscaper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/net/UrlEscapers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/net/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/Booleans.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/Bytes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/Chars.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/Doubles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/Floats.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/Ints.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/Longs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/ParseRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/Primitives.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/Shorts.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/SignedBytes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/UnsignedBytes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/UnsignedInteger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/UnsignedInts.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/UnsignedLong.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/UnsignedLongs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/primitives/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/AbstractInvocationHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/ClassPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/Element.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/ImmutableTypeToInstanceMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/Invokable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/MutableTypeToInstanceMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/Parameter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/Reflection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/TypeCapture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/TypeParameter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/TypeResolver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/TypeToInstanceMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/TypeToken.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/TypeVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/Types.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/reflect/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AbstractCatchingFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AbstractCheckedFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AbstractExecutionThreadService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AbstractFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AbstractIdleService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AbstractListeningExecutorService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AbstractScheduledService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AbstractService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AbstractTransformFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AggregateFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AggregateFutureState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AsyncCallable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AsyncFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AtomicDouble.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AtomicDoubleArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/AtomicLongMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/Atomics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/Callables.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/CheckedFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/CollectionFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/CombinedFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/CycleDetectingLockFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ExecutionError.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ExecutionList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/FakeTimeLimiter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ForwardingBlockingQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ForwardingCheckedFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ForwardingExecutorService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ForwardingFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ForwardingListenableFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ForwardingListeningExecutorService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/FutureCallback.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/Futures.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/FuturesGetChecked.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/GwtFuturesCatchingSpecialization.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ImmediateFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/InterruptibleTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/JdkFutureAdapters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ListenableFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ListenableFutureTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ListenableScheduledFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ListenerCallQueue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ListeningExecutorService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ListeningScheduledExecutorService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/Monitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/MoreExecutors.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/Partially.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/Platform.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/RateLimiter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/Runnables.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/SerializingExecutor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/Service.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ServiceManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/SettableFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/SimpleTimeLimiter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/SmoothRateLimiter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/Striped.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/ThreadFactoryBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/TimeLimiter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/TimeoutFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/TrustedListenableFutureTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/UncaughtExceptionHandlers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/UncheckedExecutionException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/UncheckedTimeoutException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/Uninterruptibles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/WrappingExecutorService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/WrappingScheduledExecutorService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/util/concurrent/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/xml/XmlEscapers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/common/xml/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/thirdparty/publicsuffix/PublicSuffixPatterns.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/thirdparty/publicsuffix/PublicSuffixType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/google-guava/src/com/google/thirdparty/publicsuffix/TrieParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/ext/rocksaw/src/java/org/savarese/rocksaw/net/RawSocket.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/ext/vserv-tcpip/src/java/org/savarese/vserv/tcpip/ICMPEchoPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/ext/vserv-tcpip/src/java/org/savarese/vserv/tcpip/ICMPPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/ext/vserv-tcpip/src/java/org/savarese/vserv/tcpip/IPPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/ext/vserv-tcpip/src/java/org/savarese/vserv/tcpip/OctetConverter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/ext/vserv-tcpip/src/java/org/savarese/vserv/tcpip/TCPPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/ext/vserv-tcpip/src/java/org/savarese/vserv/tcpip/UDPPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/ext/win-installer/Installer/DetectJVM.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/CommandLineProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/CommandProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/CommentsConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/ComponentRegistry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/Config.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/ConfigModule.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/FavoritesConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/GUIConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/Labels.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/LoggerFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/MainComponent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/NamedListConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/OpenersConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/Platform.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/ScannerConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/config/Version.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/LibraryLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/Plugin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/PluginLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/PortIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/Scanner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/ScannerDispatcherThread.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/ScannerDispatcherThreadFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/ScanningProgressCallback.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/ScanningResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/ScanningResultCallback.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/ScanningResultComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/ScanningResultList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/ScanningSubject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/UserErrorException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/net/CombinedUnprivilegedPinger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/net/ICMPPinger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/net/ICMPSharedPinger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/net/PingResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/net/Pinger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/net/PingerRegistry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/net/TCPPinger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/net/UDPPinger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/net/WinIpHlpDll.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/net/WindowsPinger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/state/ScanningState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/state/StateMachine.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/state/StateTransitionListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/values/Empty.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/values/InetAddressHolder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/values/IntegerWithUnit.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/values/NotAvailable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/values/NotScanned.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/core/values/NumericRangeList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/exporters/AbstractExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/exporters/CSVExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/exporters/ExportProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/exporters/Exporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/exporters/ExporterException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/exporters/ExporterRegistry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/exporters/IPListExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/exporters/SQLExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/exporters/TXTExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/exporters/XMLExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/feeders/AbstractFeeder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/feeders/Feeder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/feeders/FeederCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/feeders/FeederException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/feeders/FeederRegistry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/feeders/FileFeeder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/feeders/RandomFeeder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/feeders/RangeFeeder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/feeders/RescanFeeder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/feeders/SmartTextFeeder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/AbstractFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/CommentFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/Fetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/FetcherException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/FetcherPrefs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/FetcherRegistry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/FetcherRegistryUpdateListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/FilteredPortsFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/HTTPSenderFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/HostnameFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/IPFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/LastAliveTimeFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/MACFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/MACVendorFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/NetBIOSInfoFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/PacketLossFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/PingFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/PingTTLFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/PortTextFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/PortsFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/UnixMACFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/WebDetectFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/fetchers/WinMACFetcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/AboutDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/AbstractModalDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/DetailsWindow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/EditFavoritesDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/EditOpenersDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/GettingStartedDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/InfoDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/InputDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/MacApplicationMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/MainMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/MainWindow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/PreferencesDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/ResultTable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/SWTAwareStateMachine.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/SelectFetchersDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/Startup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/StatisticsDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/StatusBar.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/BrowserLauncher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/ColumnsActions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/CommandsMenuActions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/FavoritesMenuActions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/FeederActions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/GotoMenuActions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/HelpMenuActions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/OpenerLauncher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/ScanMenuActions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/StartStopScanningAction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/TerminalLauncher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/actions/ToolsActions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/feeders/AbstractFeederGUI.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/feeders/FeederGUIRegistry.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/feeders/FileFeederGUI.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/feeders/RandomFeederGUI.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/feeders/RangeFeederGUI.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/fetchers/PingFetcherPrefs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/fetchers/PortTextFetcherPrefs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/fetchers/PortsFetcherPrefs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/AbstractMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/ColumnsMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/CommandsMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/ExtendableMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/FavoritesMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/GotoMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/HelpMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/OpenersMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/ResultsContextMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/ScanMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/menu/ToolsMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/gui/util/LayoutHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/util/GoogleAnalytics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/util/IOUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/util/InetAddressUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/util/MDNSResolver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/util/NetBIOSResolver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/util/SequenceIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ipscan/src/net/azib/ipscan/util/ThreadResourceBinder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/CHANGES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/CONTRIBUTORS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/COPYING" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/FAQ.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/Makefile.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/PLATFORMS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/README.SSL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/STATUS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/UPGRADE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/aclocal.m4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/alert.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/alert.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/config.h.in" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/configure" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/configure.ac" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/contrib/monit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/contrib/rc.monit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/control.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/daemonize.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/device.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/device_common.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/device_sysdep.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/sysdep_AIX.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/sysdep_DARWIN.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/sysdep_FREEBSD.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/sysdep_HPUX.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/sysdep_LINUX.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/sysdep_OPENBSD.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/sysdep_SOLARIS.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/device/sysdep_UNKNOWN.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/doc/examples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/doc/monit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/doc/presentation.sxi" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/env.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/event.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/event.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/external/strftime.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/files.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/gc.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/getloadavg.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/http.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/http/base64.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/http/base64.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/http/cervlet.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/http/cervlet.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/http/engine.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/http/engine.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/http/processor.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/http/processor.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/install-sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/l.l" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/log.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/m4/strftime.m4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/md5.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/md5.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/monit.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/monitor.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/monitor.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/monitrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/net.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/net.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/p.y" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process/process_common.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process/process_sysdep.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process/sysdep_AIX.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process/sysdep_DARWIN.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process/sysdep_FREEBSD.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process/sysdep_HPUX.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process/sysdep_LINUX.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process/sysdep_OPENBSD.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process/sysdep_SOLARIS.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/process/sysdep_UNKNOWN.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/NOTES" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/default.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/dwp.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/ftp.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/generic.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/http.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/imap.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/ldap2.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/ldap3.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/nntp.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/pop.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/protocol.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/protocol.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/rdate.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/rsync.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/smtp.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/protocols/ssh.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/sendmail.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/sha.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/sha.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/signal.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/socket.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/socket.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/spawn.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/ssl.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/ssl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/state.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/status.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/util.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/validate.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/monit-4.2/xmalloc.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/Detected_Clones/Set_0.clones" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/Detected_Clones/Set_1.clones" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/Detected_Clones/Set_2.clones" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/Detected_Clones/Set_3.clones" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/System_3(ucdetector)" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/codecloneCollector.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/codecloneCollector.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/CycleAction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/CycleCalculator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/CycleIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/CycleSearchManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/CycleView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/TypeAndMatches.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/model/Cycle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/model/CycleBaseElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/model/CycleJavaElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/model/CycleMember.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/model/CycleRegion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/model/CycleRegionIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/model/CycleType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/model/SearchResult.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/cycle/org/ucdetector/cycle/model/SearchResultRoot.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/Compatibility.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/Log.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/Messages.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/UCDApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/UCDHeadless.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/UCDetectorConsole.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/UCDetectorPlugin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/action/AbstractUCDetectorAction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/action/CleanMarkersAction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/action/CountAction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/action/UCDetectorAction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/iterator/AbstractUCDetectorIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/iterator/CleanMarkersIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/iterator/CountIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/iterator/HeadlessExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/iterator/TypeContainer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/iterator/UCDetectorIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/preferences/ModesPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/preferences/ModesReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/preferences/ModesWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/preferences/PreferenceInitializer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/preferences/Prefs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/preferences/UCDetectorPreferencePage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/preferences/WarnLevel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/quickfix/AbstractUCDQuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/quickfix/DeleteFileQuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/quickfix/DeleteQuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/quickfix/LineCommentQuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/quickfix/NoUcdTagQuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/quickfix/TodoQuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/quickfix/UCDQuickGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/quickfix/UseFinalQuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/quickfix/UseSuppressWarningsQuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/quickfix/VisibilityQuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/report/IUCDetectorReport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/report/MarkerReport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/report/ReportExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/report/ReportNameManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/report/ReportParam.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/report/TextReport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/report/XmlReport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/search/CountSearchRequestor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/search/FinalHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/search/LineManger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/search/SearchManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/search/UCDProgressMonitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/search/VisibilityHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/util/ASTMemberVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/util/JavaElementUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/util/MarkerFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/util/StopWatch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/util/TargetPlatformLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/workflow_outputs/test_workflow/ucdetector/src/main/org/ucdetector/util/UsedBy.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_doc.txt" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_doc.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_html.txt" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_html.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_main.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_main.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_settings.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/templates/index_cloneValidationFramework.html" afterPath="$PROJECT_DIR$/app_code_clone/templates/index_cloneValidationFramework.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/views.py" afterPath="$PROJECT_DIR$/app_code_clone/views.py" />
     </list>
     <ignored path="Webpage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -913,8 +31,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Stats_FeatureCount_doc.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_doc.txt">
+      <file leaf-file-name="Stats_FeatureCategories_ByLabels_doc.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_doc.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -923,21 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stats_FeatureCount_html.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_html.txt">
+      <file leaf-file-name="Stats_FeatureCategories_ByLabels_html.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_html.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="47" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="47" />
+            <state relative-caret-position="270">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stats_FeatureCount_main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_main.py">
+      <file leaf-file-name="Stats_FeatureCategories_ByLabels_main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+            <state relative-caret-position="675">
+              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
               <folding>
                 <element signature="e#2#19#0" expanded="true" />
               </folding>
@@ -995,8 +113,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stats_FeatureCount_settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_settings.py">
+      <file leaf-file-name="Stats_FeatureCategories_ByLabels_settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
@@ -1021,8 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/js/toolbar-ext.js" />
-        <option value="$PROJECT_DIR$/static/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/templates/dataform.py" />
         <option value="$PROJECT_DIR$/templates/Upload.html" />
         <option value="$PROJECT_DIR$/testDB.py" />
@@ -1072,6 +188,8 @@
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_doc.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_main.py" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_html.txt" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_main.py" />
       </list>
     </option>
   </component>
@@ -1241,6 +359,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_collaborative_sci_workflow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pipeline_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_collaborative_sci_workflow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pipeline_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stats_FeatureCategories_ByLabels" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1472,7 +630,7 @@
     <frame x="65" y="-4" width="2495" height="1604" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17273463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22532362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2992126" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1850,7 +1008,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_settings.py">
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
@@ -1858,7 +1016,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_doc.txt">
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_doc.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -1870,14 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1914,10 +1064,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_main.py">
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_html.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCategories_ByLabels/Stats_FeatureCategories_ByLabels_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
           <folding>
             <element signature="e#2#19#0" expanded="true" />
           </folding>
