@@ -21,7 +21,7 @@
 
     <toolConfigurations>
          Feature:
-        <input type="text" class="setting_param" value="feature='Pclass'" name="cleaning_threshold" size="45"/>
+        <input type="text" class="setting_param" value="feature='Fare'" name="cleaning_threshold" size="45"/>
         <br/><br/>
     </toolConfigurations>
 
