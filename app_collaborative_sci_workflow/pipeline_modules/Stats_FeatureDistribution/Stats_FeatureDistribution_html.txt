@@ -12,7 +12,7 @@
     <toolOutputs>
         <toolOutput>
             <label>Output Stats</label>
-            <referenceVariable>feature_categories_by_lables</referenceVariable>
+            <referenceVariable>feature_distribution</referenceVariable>
             <dataFormat>html</dataFormat>
         </toolOutput>
     </toolOutputs>
