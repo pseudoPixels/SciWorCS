@@ -1,0 +1,66 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Dataset</label>
+            <referenceVariable>csv_dataset_path</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Output Stats</label>
+            <referenceVariable>feature_categories_by_lables</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+         Language: <select  class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+              <option value="language = 'java'" >Java</option>
+              <option value="language = 'cs'" >C#</option>
+              <option value="language = 'py'" >Python</option>
+              <option value="language = 'c'" >C</option>
+        </select>
+        <br/><br/>
+         Granularity: <select  class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+              <option value="granularity = 'functions'" >Functions</option>
+              <option value="granularity = 'blocks'" >Blocks</option>
+        </select>
+        <br/><br/>
+         Normalization:
+        <input type="text" class="setting_param" value="normalization='java-normalize-ifconditions-functions'" name="cleaning_threshold" size="45"/>
+        <br/><br/>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        <b>NiCad - Normalization</b>
+            <p><i>Description:</i><br/>
+        CUSTOM contextual normalizer to be applied to potential clones (none, normname)<br/>
+        Where "normname" is the name of a normalizing TXL program txl/normname.txl in the txl/<br/>
+        subdirectory to be applied to all potential clones<br/>
+        Example: 	normalize=cabstractifconditions <br/>
+        means apply the normalizing transformation "txl/cabstractifconditions.txl" to <br/>
+        each potential clone<br/>
+        </p>
+
+
+        <i>Usage:</i>
+        <ol>
+            <li>Source Project: Select the module or files to take the input from.</li>
+            <li>Output Files: Select the module or files to send the input to.</li>
+            <li>Set Granularity Levels: Functions/Blocks.</li>
+        </ol>
+    </toolDocumentation>
+
+
+
+</SciWorC>
+
+

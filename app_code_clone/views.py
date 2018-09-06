@@ -52,7 +52,13 @@ views_by_txl_project_shared_members = ViewDefinition('hello', 'findTXLProjectSha
 	}
 	''')
 
-
+views_by_app_code_clone_user = ViewDefinition('hello', 'appCodeClonefindEmailAndDocID', '''
+	function (doc) {
+		if (doc.the_doc_type == 'app_code_clone_user') {
+			emit(doc.user_email, doc._id)
+		};
+	}
+	''')
 
 
 
@@ -70,6 +76,7 @@ manager = CouchDBManager()
 with app.app_context():
 	manager.setup(app)
 	#manager.add_viewdef([views_by_txl_user, views_by_txl_project_authors, views_by_txl_project_shared_members])
+	manager.add_viewdef([views_by_app_code_clone_user])
 	manager.sync(app)
 
 
@@ -81,18 +88,45 @@ import glob
 
 
 
-
+from flaskext.couchdb import Document, TextField, FloatField, DictField, Mapping, ListField
+from datetime import datetime
 
 @app_code_clone.route('/cloneValidationFramework')
 def cloneValidationFramework():
-
-
-
 
 	return render_template('index_cloneValidationFramework.html')
 
 
 
+@app_code_clone.route('/app_code_clone_request_user_access')
+def app_code_clone_request_user_access():
+	return render_template('app_code_clone_request_user_access.html')
+
+
+
+
+@app_code_clone.route('/app_code_clone_process_user_access_request', methods=['POST'])
+def app_code_clone_process_user_access_request():
+	user_email = request.form['code_clone_reg_email']
+	user_name = request.form['code_clone_reg_name']
+	user_password = request.form['code_clone_reg_password']
+
+
+	row = (views_by_app_code_clone_user(g.couch))[user_email]
+
+
+	if not row:
+		new_code_clone_user = AppCodeClone_User()
+		new_code_clone_user.user_email = user_email
+		new_code_clone_user.user_password = user_password
+		new_code_clone_user.user_full_name = user_name
+		new_code_clone_user.store()
+
+		projectRoot = 'app_code_clone/user_projects/'
+		os.makedirs(projectRoot + user_email)
+		return jsonify({'response_code': 'OK'})
+	else:
+		return jsonify({'response_code': 'USER_ALREADY_EXISTS'})
 
 
 
@@ -100,6 +134,61 @@ def cloneValidationFramework():
 
 
 
+@app_code_clone.route('/app_code_clone_login')
+def app_code_clone_login():
+	return render_template('app_code_clone_login.html')
+
+
+
+
+
+
+@app_code_clone.route('/app_code_clone_varify_user', methods=['POST'])
+def app_code_clone_varify_user():
+	# get user credentials
+	app_code_clone_login_email = request.form['app_code_clone_login_email']
+	app_code_clone_login_password = request.form['app_code_clone_login_password']
+	# return redirect(url_for('myProjects'))
+
+	row = (views_by_app_code_clone_user(g.couch))[app_code_clone_login_email]
+
+	this_app_code_clone_user = ''
+	if not row:
+		return redirect(url_for('app_code_clone.app_code_clone_login'))
+	else:
+		this_app_code_clone_user = AppCodeClone_User.load(list(row)[0].value)
+
+	if this_app_code_clone_user.user_email != app_code_clone_login_email or this_app_code_clone_user.user_password != app_code_clone_login_password:
+		return redirect(url_for('app_code_clone.app_code_clone_login'))
+	else:
+		# first_name = p2irc_user.first_name
+		# last_name = p2irc_user.last_name
+		# email = p2irc_user.email
+		session['app_code_clone_user_email'] = this_app_code_clone_user.user_email
+		return redirect(url_for('app_code_clone.machine_learning_validation'))
+
+	#return render_template('app_code_clone_login.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class AppCodeClone_User(Document):
+	user_email = TextField()
+	user_password = TextField()
+	user_full_name = TextField()
+	the_doc_type = TextField(default='app_code_clone_user')
 
 
 
