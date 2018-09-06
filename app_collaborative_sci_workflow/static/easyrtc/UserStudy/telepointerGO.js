@@ -3720,7 +3720,7 @@ function get_workflow_outputs_list(workflow_id){
 				var visulaizationLink = '';
 				if(thisFileName.split('.').length>0){
 				    var thisFileType = thisFileName.split('.')[thisFileName.split('.').length - 1];
-				    if(thisFileType == 'html' || thisFileType == 'htm' || thisFileType == 'xml' || thisFileType == 'txt' || thisFileType == 'java' || thisFileType == 'token'){//currently supported file types for visualization.
+				    if(thisFileType == 'html' || thisFileType == 'htm' || thisFileType == 'xml' || thisFileType == 'txt' || thisFileType == 'java' || thisFileType == 'token' || thisFileType == 'csv'){//currently supported file types for visualization.
 				        visulaizationLink = "<a style='color:white;font-size:11px;' href='#' class='output_vis' viewid='"+ option['workflow_outputs_list'][i] +"'> (View) </a>";
 				    }
 				}
@@ -3798,7 +3798,7 @@ $(document).on('click', '.output_vis', function(){
                 $("#tool_vis_image").attr('src', 'data:image/png;base64,' + option.output );
                 $("#tool_vis_image").show();
             }
-            else if(fileType=='xml' || fileType=='txt' || fileType=='java' || fileType=='token'){
+            else if(fileType=='xml' || fileType=='txt' || fileType=='java' || fileType=='token' || fileType=='csv'){
                 $("#tool_vis_txt").text(option.output);
                 $('pre code').each(function (i, block) {
                     hljs.highlightBlock(block);
