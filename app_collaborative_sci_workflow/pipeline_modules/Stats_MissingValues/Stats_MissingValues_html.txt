@@ -1,0 +1,35 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Dataset</label>
+            <referenceVariable>csv_dataset_path</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Output Stats</label>
+            <referenceVariable>missing_values</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        <b>Stats:: Stats_MissingValues</b>
+            <p><i>Description:</i><br/>
+            Calculates the missing values in the supplied dataset.
+        </p>
+    </toolDocumentation>
+
+</SciWorC>
+
+
