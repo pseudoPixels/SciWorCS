@@ -26,21 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Stats_SVM_html.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_SVM/Stats_SVM_html.txt">
+      <file leaf-file-name="Stats_NaiveBayes_main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_NaiveBayes/Stats_NaiveBayes_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="117" selection-start-line="31" selection-start-column="117" selection-end-line="31" selection-end-column="117" />
+            <state relative-caret-position="645">
+              <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stats_SVM_main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_SVM/Stats_SVM_main.py">
+      <file leaf-file-name="Stats_NaiveBayes_html.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_NaiveBayes/Stats_NaiveBayes_html.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state relative-caret-position="450">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,8 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Tabular_to_FASTA/Galaxy_Tabular_to_FASTA_html.txt" />
-        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_FASTA_Width/Galaxy_FASTA_Width_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_FASTQ_Groomer/Galaxy_FASTQ_Groomer_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Map_with_Bowtie_Illumina/Galaxy_Map_with_Bowtie_Illumina_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_MACS14/Galaxy_MACS14_html.txt" />
@@ -113,6 +111,8 @@
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_KNN/Stats_KNN_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_SVM/Stats_SVM_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_SVM/Stats_SVM_html.txt" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_NaiveBayes/Stats_NaiveBayes_main.py" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_NaiveBayes/Stats_NaiveBayes_html.txt" />
       </list>
     </option>
   </component>
@@ -241,7 +241,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Stats_SVM" />
+              <option name="myItemId" value="Stats_NaiveBayes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -537,22 +537,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_txl_cloud/templates/editor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/static/cloneJS/manualCloneValidation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1111">
-          <caret line="226" column="40" selection-start-line="226" selection-start-column="40" selection-end-line="226" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_code_clone/templates/manual_validation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -953,6 +937,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_SVM/Stats_SVM_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="117" selection-start-line="31" selection-start-column="117" selection-end-line="31" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_SVM/Stats_SVM_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -961,10 +953,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_SVM/Stats_SVM_html.txt">
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_NaiveBayes/Stats_NaiveBayes_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="117" selection-start-line="31" selection-start-column="117" selection-end-line="31" selection-end-column="117" />
+        <state relative-caret-position="645">
+          <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_NaiveBayes/Stats_NaiveBayes_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
