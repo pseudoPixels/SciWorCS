@@ -1,0 +1,38 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Dataset</label>
+            <referenceVariable>csv_dataset_path</referenceVariable>
+            <dataFormat>csv</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Output Stats</label>
+            <referenceVariable>logisticRegression_classification_stats</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+    <toolConfigurations>
+         Feature Variable To Drop:
+        <input type="text" class="setting_param" value="feature='Pclass'" name="cleaning_threshold" size="45"/>
+        <br/><br/>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        <b>Stats:: Stats_MissingValues</b>
+            <p><i>Description:</i><br/>
+            Calculates the missing values in the supplied dataset.
+        </p>
+    </toolDocumentation>
+
+</SciWorC>
+
+
