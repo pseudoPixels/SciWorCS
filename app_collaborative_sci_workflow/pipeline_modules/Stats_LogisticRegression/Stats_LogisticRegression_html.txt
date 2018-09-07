@@ -19,9 +19,24 @@
 
 
     <toolConfigurations>
-         Feature Variable To Drop:
-        <input type="text" class="setting_param" value="feature='Pclass'" name="cleaning_threshold" size="45"/>
         <br/><br/>
+         Select Feature Set for Training ('f_1','f_2','f_n'):
+        <input type="text" class="setting_param" value="featureSet=['Fare','SibSp']" name="cleaning_threshold" size="75"/>
+        <br/><br/>
+
+         Select Target Variable (e.g., class label variable):
+        <input type="text" class="setting_param" value="target='Survived'" name="cleaning_threshold" size="45"/>
+        <br/><br/>
+
+
+        Random State (e.g., The seed of the pseudo random number generator to use when shuffling the data):
+        <input type="text" class="setting_param" value="randState=0" name="cleaning_threshold" size="45"/>
+        <br/><br/>
+
+        n-fold cross validation:
+        <input type="text" class="setting_param" value="n=10" name="cleaning_threshold" size="45"/>
+        <br/><br/>
+
     </toolConfigurations>
 
 

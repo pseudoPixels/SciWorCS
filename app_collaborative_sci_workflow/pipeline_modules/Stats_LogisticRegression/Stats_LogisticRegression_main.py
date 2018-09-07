@@ -33,18 +33,18 @@ dataset = pd.read_csv(csv_dataset_path)
 
 # Fitting Logistic Regression to the Training set
 from sklearn.linear_model import LogisticRegression
-classifier = LogisticRegression(penalty='l2',random_state = 0)
+classifier = LogisticRegression(penalty='l2',random_state = randState)
 
 
-cols = ["Age","Fare"]
-X = dataset[cols]
-y = dataset['Survived']
+#cols = [featureSet]
+X = dataset[featureSet]
+y = dataset[target]
 
 
 
 # Applying k-Fold Cross Validation
 from sklearn.model_selection import cross_val_score
-accuracies = cross_val_score(estimator = classifier, X=X , y=y , cv = 10)
+accuracies = cross_val_score(estimator = classifier, X=X , y=y , cv = n)
 
 
 with open(logisticRegression_classification_stats, "w+") as thisModuleOutput:
