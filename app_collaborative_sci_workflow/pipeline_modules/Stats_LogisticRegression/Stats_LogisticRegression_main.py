@@ -48,7 +48,8 @@ accuracies = cross_val_score(estimator = classifier, X=X , y=y , cv = n)
 
 
 with open(logisticRegression_classification_stats, "w+") as thisModuleOutput:
-    thisModuleOutput.write("Logistic Regression:\n Accuracy:" + str( accuracies.mean() ) +  "+/-" + str(accuracies.std())  + "\n")
+    thisModuleOutput.write("Logistic Regression:\n========================================\n")
+    thisModuleOutput.write("Classification Accuracy: " + str( round(accuracies.mean()*100,2) ) +  " %" )
 
 
 #print("Logistic Regression:\n Accuracy:", accuracies.mean(), "+/-", accuracies.std(),"\n")
