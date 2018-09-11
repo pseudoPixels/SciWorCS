@@ -982,7 +982,7 @@ def get_saved_workflow():
 
 
 #Login and Sign Ups for TURN BASED COLLABORATION
-@app_collaborative_sci_workflow.route('/p2irc_turnBased')
+@app_collaborative_sci_workflow.route('/p2irc_system1')
 def p2irc_turnBased():
 	return render_template('login_turnBased.html')
 
