@@ -646,6 +646,9 @@ def getAllUsersDetails(thisUserEmail):
 
 import html
 import re
+
+import glob
+
 @app_collaborative_sci_workflow.route('/cvs')
 def cvs():
 
@@ -654,6 +657,11 @@ def cvs():
 	for row in views_by_workflow_locking_turn(g.couch):
 		tmp = WorkflowLockingTurn.load(row.value)
 		g.couch.delete(tmp)
+
+	#remove prev. datasets
+	for aFile in glob.glob('/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_*'):
+		os.remove(aFile)
+
 
 	#Add one doc
 	turnBasedLocking = WorkflowLockingTurn(workflow_id='workflow_turn_id_1')
@@ -739,6 +747,11 @@ def proposed_system():
 		tmp = WorkflowLockingTurn.load(row.value)
 		g.couch.delete(tmp)
 
+	#remove prev. datasets
+	for aFile in glob.glob('/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_*'):
+		os.remove(aFile)
+
+
 	#Add one doc
 	turnBasedLocking = WorkflowLockingTurn(workflow_id='workflow_turn_id_1')
 	turnBasedLocking.store()
@@ -781,6 +794,9 @@ def proposed_system():
 	pineline_galaxy_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
 										re.match(r'Galaxy*', f)]
 
+	pineline_machineLearning_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
+										re.match(r'Stats*', f)]
+
 	saved_workflows = os.listdir("app_collaborative_sci_workflow/pipeline_saved/")
 
 
@@ -801,6 +817,7 @@ def proposed_system():
    	pineline_source_analysis_modules=pineline_source_analysis_modules,
    	pineline_mathematical_analysis_modules=pineline_mathematical_analysis_modules,
 	pineline_galaxy_modules=pineline_galaxy_modules,
+	pineline_machineLearning_modules=pineline_machineLearning_modules,
    	saved_workflows=saved_workflows)
 
 

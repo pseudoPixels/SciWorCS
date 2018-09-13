@@ -843,6 +843,24 @@ html, body {
                       </ul>
                   </li>
 
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-th"></i>
+                          <span>Machine Learning</span>
+                      </a>
+                      <ul class="sub" id="machine_learning">
+                         <!-- <li><a  href="#" id="design_pipelines_menu_biodatacleaning_id">Bio Data Cleaning</a></li>
+                          <li><a  href="#" id="design_pipelines_menu_biocalc_id">Bio Brome</a></li> -->
+                          {% for aMachineLearningModule in pineline_machineLearning_modules %}
+                              <li><a href="#" class="pipeline_modules" id="{{aMachineLearningModule}}"> {{aMachineLearningModule}}</a></li>
+                          {% endfor %}
+
+                      </ul>
+                  </li>
+
+
+
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-th"></i>
