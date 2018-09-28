@@ -91,8 +91,8 @@ import glob
 from flaskext.couchdb import Document, TextField, FloatField, DictField, Mapping, ListField
 from datetime import datetime
 
-@app_code_clone.route('/cloneValidationFramework')
-def cloneValidationFramework():
+@app_code_clone.route('/cloneCognition')
+def cloneCognition():
 
 	return render_template('index_cloneValidationFramework.html')
 
@@ -776,6 +776,128 @@ def app_code_clone_similaritiesNormalizedByToken(sourceCode1, sourceCode2, lang)
 	# 				'output': out})
 
 	return type1sim_by_token, type2sim_by_token, type3sim_by_token
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@app_code_clone.route('/cloneviz')
+def cloneViz():
+
+	thisUser = 'golammostaeen@gmail.com'
+	projectRoot = 'app_code_clone/user_projects/'
+
+
+
+	list_of_validated_clone_files = [os.path.basename(x) for x in glob.glob(projectRoot + thisUser + '/' + '*.mlValidated')]
+	list_of_viz_plugins = os.listdir(projectRoot + thisUser + '/vizPlugins')
+
+
+	return render_template('cloneviz.html', list_of_validated_clone_files=list_of_validated_clone_files, list_of_viz_plugins= list_of_viz_plugins)
+
+
+
+
+
+
+
+@app_code_clone.route('/get_viz_plugin_details', methods=['POST'])
+def get_viz_plugin_details():
+	p_module_key = request.form['p_module_key']
+
+	thisUser = 'golammostaeen@gmail.com'
+	projectRoot = 'app_code_clone/user_projects/'
+
+
+	# module = ''
+	# for row in views_by_pipeline_module(g.couch):
+	#	if row.key == p_module_key: #'rgb2gray'
+	#		module = PipelineModule.load(row.value)
+
+	# moduleSourceCode_main = getModuleCodes(module.code_link_main)
+	# moduleSourceCode_settings = getModuleCodes(module.code_link_settings)
+	# moduleSourceCode_html = getModuleCodes(module.code_link_html)
+
+
+	modulesPath = projectRoot + thisUser + '/vizPlugins/'
+
+	# moduleSourceCode_main = getModuleCodes(modulesPath+'biodatacleaning/biodatacleaning_main.py')
+	# moduleSourceCode_settings = getModuleCodes(modulesPath+'biodatacleaning/biodatacleaning_settings.py')
+	# moduleSourceCode_html = getModuleCodes(modulesPath+'biodatacleaning/biodatacleaning_html.txt')
+
+
+	moduleSourceCode_main = getModuleCodes(modulesPath + p_module_key + '/' + p_module_key + '_main.py')
+	moduleSourceCode_html = getModuleCodes(modulesPath + p_module_key + '/' + p_module_key + '_html.txt')
+
+
+	return jsonify({'module_name': p_module_key,  # module.module_name,
+					'moduleSourceCode_main': moduleSourceCode_main,
+					'moduleSourceCode_html': moduleSourceCode_html})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
