@@ -309,6 +309,43 @@ Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clo
 
     </div>
 
+
+
+
+
+
+
+
+      <h2>ML Validated Clones</h2>
+    <div class="sidemenu">
+        <br/>
+
+        {% for a_clone_file in list_of_validated_clone_files %}
+	        <span>{{ loop.index }} . {{ a_clone_file }}</span><br/>
+        {% endfor %}
+
+
+       <!-- <span>1. JHotDraw.clones</span><br/>
+        <span>2. aTunes.clones</span><br/> -->
+
+        <br/>
+        <!-- <button id="upload_clone_files">Upload New Clone File(s)</button> -->
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 <br/>
 
 

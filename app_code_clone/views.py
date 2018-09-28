@@ -200,24 +200,6 @@ class AppCodeClone_User(Document):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @app_code_clone.route('/manual_validation')
 def manual_validation():
 
@@ -245,8 +227,10 @@ def machine_learning_validation():
 	#list_of_file_for_validation = os.listdir(projectRoot + thisUser + '/' )
 	list_of_file_for_validation = [os.path.basename(x) for x in glob.glob(projectRoot + thisUser + '/' + '*.xml')]
 
+	list_of_validated_clone_files = [os.path.basename(x) for x in glob.glob(projectRoot + thisUser + '/' + '*.mlValidated')]
 
-	return render_template('machine_learning_validation.html', list_of_file_for_validation = list_of_file_for_validation)
+
+	return render_template('machine_learning_validation.html', list_of_file_for_validation = list_of_file_for_validation, list_of_validated_clone_files=list_of_validated_clone_files)
 
 
 
