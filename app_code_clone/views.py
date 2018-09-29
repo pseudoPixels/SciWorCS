@@ -878,7 +878,18 @@ def get_viz_plugin_details():
 
 
 
+@app_code_clone.route('/execVizPlugin', methods=['POST'])
+def execVizPlugin():
+	program = request.form['textarea_source_code']
+	# program = 'for i in range(3):\n    print("Python is cool")'
 
+
+	old_stdout = sys.stdout
+	redirected_output = sys.stdout = StringIO()
+	exec (program)
+	sys.stdout = old_stdout
+
+	return redirected_output.getvalue()
 
 
 

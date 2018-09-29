@@ -96,8 +96,7 @@ function addNewVizTool(moduleID, moduleName){
                         dataFormat = $(this).find('dataFormat').text(),
                         referenceVariable = $(this).find('referenceVariable').text();
 
-                        ioInformation +=  '<input type="text" class="setting_param module_input '+ referenceVariable + '" ' + ' size="45"/>';
-
+                        ioInformation +=  'Input Source: ' + referenceVariable +  '<input type="text" class="setting_param module_input '+ referenceVariable + '" ' + ' size="45"/><br/>';
 
                 });
 
@@ -113,7 +112,7 @@ function addNewVizTool(moduleID, moduleName){
                     //var thisPortOutput = 'module_id_' + moduleID + '_' + referenceVariable+'.' + dataFormat;
                     //var thisPortOutputPath = referenceVariable + '="' + thisPortOutput + '"';
 
-                    ioInformation += '<input type="text" class="setting_param module_output '+ referenceVariable + '" size="45"/>';
+                    ioInformation += 'Output Destination: ' + referenceVariable +  '<input type="text" class="setting_param module_output '+ referenceVariable + '" size="45"/><br/>';
 
 
                 });
@@ -125,7 +124,7 @@ function addNewVizTool(moduleID, moduleName){
 
                 //append new module to the pipeline...
                 $("#cloneVizPlugin").append(
-                    '<div style="background-color:#EEE;width:100%;" class="module" id="module_id_'+ '0' +'">' +
+                    '<div style="background-color:#EEE;width:100%;" class="module" id="module_id_'+ '0' +  '">' +
 
                     '<!-- Documentation -->' +
                     '<div style="margin:10px;font-size:17px;color:#000000;">' +
@@ -211,7 +210,54 @@ $(document).on('change', ".setting_param" ,function () {//here
 
 
 
+$("#run_vizPlugin").click(function () {
+    //$("#pr_status").html("<span style='color:orange'>Running Pipeline...</span>");
 
+    var sourceCode = ''
+    $('textarea').each(
+        function () {
+            //alert($(this).val());
+            sourceCode = sourceCode + "\n" +$(this).val();
+        }
+    );
+
+    //alert(sourceCode);
+
+    //encode the source code for any special characters like '+' , '/' etc
+    sourceCode = encodeURIComponent(String(sourceCode));
+
+
+
+
+    //alert(sourceCode);
+
+    //send the code for running in pythoncom
+    $.ajax({
+        type: "POST",
+        cache: false,
+        url: "/execVizPlugin",
+        data: 'textarea_source_code=' + sourceCode,
+        success: function (option) {
+
+            //alert(option);
+            //get_workflow_outputs_list('test_workflow');
+            //$("#pr_status").html("<span style='color:green'>Pipeline Completed Running Successfully.</span>");
+
+            alert('Pipeline Completed Running Successfully.');
+
+        },
+        error: function (xhr, status, error) {
+            //alert(xhr.responseText);
+            $("#pr_status").html("<span style='color:red'>Pipeline Running Failed!!!</span>");
+        }
+
+    });
+
+
+
+
+
+});
 
 
 
