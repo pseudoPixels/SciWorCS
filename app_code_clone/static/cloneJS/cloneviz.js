@@ -96,7 +96,7 @@ function addNewVizTool(moduleID, moduleName){
                         dataFormat = $(this).find('dataFormat').text(),
                         referenceVariable = $(this).find('referenceVariable').text();
 
-                        ioInformation +=  'Input Source: ' + referenceVariable +  '<input type="text" class="setting_param module_input '+ referenceVariable + '" ' + ' size="45"/><br/>';
+                        ioInformation +=  'Input Source: ' + referenceVariable +  '<input type="text" class="setting_param module_input enableResourceDiscovery'+ referenceVariable + '" ' + ' size="45"/><br/>';
 
                 });
 
@@ -243,6 +243,9 @@ $("#run_vizPlugin").click(function () {
             //get_workflow_outputs_list('test_workflow');
             //$("#pr_status").html("<span style='color:green'>Pipeline Completed Running Successfully.</span>");
 
+            $("#tool_vis_iframe").attr('src', 'data:text/html;charset=utf-8,' + encodeURIComponent(option.output));
+            $("#tool_vis_iframe").show();
+
             alert('Pipeline Completed Running Successfully.');
 
         },
@@ -258,6 +261,80 @@ $("#run_vizPlugin").click(function () {
 
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//For Dynamic Resource Discovery
+$(document).on("focus",".enableResourceDiscovery", function(){
+
+    $(this).html('');
+
+    discoverResources(this, $(this).attr('referenceVariable'), THIS_WORKFLOW_NAME);
+    /*$(this).append($('<option>', {
+            value: $(this).attr('referenceVariable'),
+            text: 'My option'
+    }));*/
+
+});
+
+
+
+
+
+function discoverResources(domElement,referenceVariable,workflow_id){
+	var thisWorkflowID = workflow_id;
+
+	//get the ouput list via async call
+    	$.ajax({
+		type: "POST",
+		cache: false,
+		url: "/get_workflow_outputs_list/",
+		data: "workflow_id="+thisWorkflowID,
+		success: function (option) {
+			//$("#workflow_outputs").html("");
+			for(var i=0;i<option['workflow_outputs_list'].length;i++){
+				//var k = i+1;
+				//$("#workflow_outputs").html("");
+				$(domElement).append($('<option>', {
+                    value: referenceVariable+'="'+WORKFLOW_OUTPUTS_PATH+workflow_id+'/'+option['workflow_outputs_list'][i]+'"',
+                    text: option['workflow_outputs_list'][i]
+                }));
+
+				//$("#workflow_outputs").append("<a href='/file_download?workflow_id=" + thisWorkflowID +"&file_id=" + option['workflow_outputs_list'][i]+"' class='a_workflow_output' id='"+option['workflow_outputs_list'][i] +"'>"  + option['workflow_outputs_list'][i] + "</a><br/>");
+			}
+
+		},
+		error: function (xhr, status, error) {
+	    		alert(xhr.responseText);
+		}
+
+    	});
+
+
+}
+
+
+
+
+
+
+
 
 
 

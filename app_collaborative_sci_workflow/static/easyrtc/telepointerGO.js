@@ -3724,7 +3724,7 @@ $(document).on('click', '.output_vis', function(){
 
 });
 
-
+//    /home/ubuntu/Webpage/app_code_clone/user_projects/golammostaeen@gmail.com
 
 
 //AJAX file upload
