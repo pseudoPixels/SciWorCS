@@ -820,7 +820,13 @@ def cloneViz():
 
 
 
+def getModuleCodes(path):
+	sourceCode = ''
+	with open(path) as f:
+		for line in f:
+			sourceCode = sourceCode + line
 
+	return sourceCode
 
 
 @app_code_clone.route('/get_viz_plugin_details', methods=['POST'])
@@ -848,13 +854,24 @@ def get_viz_plugin_details():
 	# moduleSourceCode_html = getModuleCodes(modulesPath+'biodatacleaning/biodatacleaning_html.txt')
 
 
-	moduleSourceCode_main = getModuleCodes(modulesPath + p_module_key + '/' + p_module_key + '_main.py')
-	moduleSourceCode_html = getModuleCodes(modulesPath + p_module_key + '/' + p_module_key + '_html.txt')
+	#moduleSourceCode_main = getModuleCodes(modulesPath + p_module_key + '/' + p_module_key + '_main.py')
+	#moduleSourceCode_html = getModuleCodes(modulesPath + p_module_key + '/' + p_module_key + '_html.txt')
 
 
-	return jsonify({'module_name': p_module_key,  # module.module_name,
-					'moduleSourceCode_main': moduleSourceCode_main,
-					'moduleSourceCode_html': moduleSourceCode_html})
+	moduleSourceCode_main = getModuleCodes(modulesPath+p_module_key+'/'+p_module_key+'_main.py')
+	moduleSourceCode_settings = getModuleCodes(modulesPath+p_module_key+'/'+p_module_key+'_settings.py')
+	moduleSourceCode_html = getModuleCodes(modulesPath+p_module_key+'/'+p_module_key+'_html.txt')
+	module_documentation = getModuleCodes(modulesPath+p_module_key+'/'+p_module_key+'_doc.txt')
+
+
+
+
+
+	return jsonify({ 'module_name':p_module_key,#module.module_name,
+	'documentation': module_documentation,#module.documentation,
+	'moduleSourceCode_settings': moduleSourceCode_settings,
+	'moduleSourceCode_main': moduleSourceCode_main,
+	'moduleSourceCode_html': moduleSourceCode_html})
 
 
 
