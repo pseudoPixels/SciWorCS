@@ -892,7 +892,7 @@ def execVizPlugin():
 
 	#output = getModuleCodes('/home/ubuntu/Webpage/app_code_clone/static/SP1_fastqc.html')
 
-	return jsonify({'output': output})
+	return jsonify({'output': 'ok'})
 
 
 

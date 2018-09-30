@@ -96,7 +96,7 @@ function addNewVizTool(moduleID, moduleName){
                         dataFormat = $(this).find('dataFormat').text(),
                         referenceVariable = $(this).find('referenceVariable').text();
 
-                        ioInformation +=  'Input Source: ' + referenceVariable +  '<select class="setting_param module_input enableResourceDiscovery" referenceVariable="'+ referenceVariable + '"> <option> Select Input Datasource</option> </select> <br/>';
+                        ioInformation +=  'Input Source: ' + '<select  class="setting_param module_input enableResourceDiscovery" referenceVariable="'+ referenceVariable + '"> <option> Select Input Datasource</option> </select> <br/>';
 
                 });
 
@@ -112,7 +112,7 @@ function addNewVizTool(moduleID, moduleName){
                     //var thisPortOutput = 'module_id_' + moduleID + '_' + referenceVariable+'.' + dataFormat;
                     //var thisPortOutputPath = referenceVariable + '="' + thisPortOutput + '"';
 
-                    ioInformation += 'Output Destination: ' + referenceVariable +  '<input type="text" class="setting_param module_output" size="45" value="'+ referenceVariable + '=&quot;/home/ubuntu/Webpage/app_code_clone/user_projects/golammostaeen@gmail.com/vizOutputs/'+referenceVariable+'.'+dataFormat+'&quot;"/><br/>';
+                    ioInformation += '<input type="text" style="display:none;" class="setting_param module_output" size="45" value="'+ referenceVariable + '=&quot;/home/ubuntu/Webpage/app_code_clone/user_projects/golammostaeen@gmail.com/vizOutputs/'+referenceVariable+'.'+dataFormat+'&quot;"/><br/>';
 
 
                 });
@@ -128,7 +128,7 @@ function addNewVizTool(moduleID, moduleName){
 
                     '<!-- Documentation -->' +
                     '<div style="margin:10px;font-size:17px;color:#000000;">' +
-                      ' ' + module_name +  ' (Module )'+ '<hr/>' +
+                      ' ' + module_name +   '<hr/>' +
                     '</div>' +
 
 
@@ -145,12 +145,12 @@ function addNewVizTool(moduleID, moduleName){
                     '    <a style="display:none;font-size:12px;color:#000000;" href="#" class="code_show_hide">(Show/Hide)</a>' +
 
                      '   <div class="edit_code" style="background-color:#888888;font-size:14px;">' +
-                      '          <textarea rows=7 cols=150 class="code_settings">' + moduleSourceCode_settings + '</textarea>' +
-                       '         <p style="color:#000000;">Main Implementation: </p>' +
-                        '        <textarea rows=10 cols=150>' + moduleSourceCode_main + '</textarea>' +
+                      '          <textarea rows=7 style="display:none;" cols=150 class="code_settings">' + moduleSourceCode_settings + '</textarea>' +
+                       '         <p style="display:none;" style="color:#000000;">Main Implementation: </p>' +
+                        '        <textarea style="display:none;" rows=10 cols=150>' + moduleSourceCode_main + '</textarea>' +
                         '</div>' +
 
-                       ' <pre style="background-color:#333333;width:100%;" class="pre_highlighted_code">' + '<code class="python highlighted_code" >' + moduleSourceCode_settings +
+                       ' <pre style="display:none;" style="background-color:#333333;width:100%;" class="pre_highlighted_code">' + '<code style="display:none;" class="python highlighted_code" >' + moduleSourceCode_settings +
                        ' ' +
                     moduleSourceCode_main + '</code></pre>' +
 
@@ -243,10 +243,10 @@ $("#run_vizPlugin").click(function () {
             //get_workflow_outputs_list('test_workflow');
             //$("#pr_status").html("<span style='color:green'>Pipeline Completed Running Successfully.</span>");
 
-            $("#tool_vis_iframe").attr('src', 'data:text/html;charset=utf-8,' + encodeURIComponent(option.output));
-            $("#tool_vis_iframe").show();
+            //$("#tool_vis_iframe").attr('src', 'data:text/html;charset=utf-8,' + encodeURIComponent(option.output));
+            //$("#tool_vis_iframe").show();
 
-            alert('Pipeline Completed Running Successfully.');
+            alert('Visualization Output Generated.');
 
         },
         error: function (xhr, status, error) {
@@ -385,7 +385,7 @@ $(document).on('click', '.output_vis', function(){
 
     var fileName = $(this).attr('viewid');
 
-    alert(fileName);
+    //alert(fileName);
 
 
 
