@@ -813,9 +813,10 @@ def cloneViz():
 
 	list_of_validated_clone_files = [os.path.basename(x) for x in glob.glob(projectRoot + thisUser + '/' + '*.mlValidated')]
 	list_of_viz_plugins = os.listdir(projectRoot + thisUser + '/vizPlugins')
+	list_of_viz_outputs = [os.path.basename(x) for x in glob.glob(projectRoot + thisUser + '/vizOutputs/' + '*.html')]
 
 
-	return render_template('cloneviz.html', list_of_validated_clone_files=list_of_validated_clone_files, list_of_viz_plugins= list_of_viz_plugins)
+	return render_template('cloneviz.html', list_of_validated_clone_files=list_of_validated_clone_files, list_of_viz_plugins= list_of_viz_plugins, list_of_viz_outputs=list_of_viz_outputs)
 
 
 
@@ -899,15 +900,41 @@ def execVizPlugin():
 
 
 
+#list of workflow outputs
+@app_code_clone.route('/cloneViz_get_workflow_outputs_list/',  methods=['POST'])
+def cloneViz_get_workflow_outputs_list():
+	workflow_id = request.form['workflow_id'] #the unique workflow name
+	workflow_outputs_list = os.listdir("/home/ubuntu/Webpage/app_code_clone/user_projects/golammostaeen@gmail.com/")
+	return jsonify({'workflow_outputs_list':workflow_outputs_list})
+
+
+#list of workflow outputs
+@app_code_clone.route('/cloneViz_get_viz_output_list/',  methods=['POST'])
+def cloneViz_get_viz_output_list():
+
+
+	thisUser = 'golammostaeen@gmail.com'
+	projectRoot = 'app_code_clone/user_projects/'
+
+	workflow_id = request.form['workflow_id'] #the unique workflow name
+	workflow_outputs_list = [os.path.basename(x) for x in glob.glob(projectRoot + thisUser + '/vizOutputs/' + '*.html')]
+	return jsonify({'workflow_outputs_list':workflow_outputs_list})
 
 
 
 
 
 
+@app_code_clone.route('/cloneViz_load_output_for_visualization', methods=['POST'])
+def cloneViz_load_output_for_visualization():
+	fileName= request.form['fileName']
+
+
+	output = getModuleCodes('app_code_clone/user_projects/golammostaeen@gmail.com/vizOutputs/'+ fileName)
 
 
 
+	return jsonify({'output': output})
 
 
 

@@ -96,7 +96,7 @@ function addNewVizTool(moduleID, moduleName){
                         dataFormat = $(this).find('dataFormat').text(),
                         referenceVariable = $(this).find('referenceVariable').text();
 
-                        ioInformation +=  'Input Source: ' + referenceVariable +  '<input type="text" class="setting_param module_input enableResourceDiscovery'+ referenceVariable + '" ' + ' size="45"/><br/>';
+                        ioInformation +=  'Input Source: ' + referenceVariable +  '<select class="setting_param module_input enableResourceDiscovery" referenceVariable="'+ referenceVariable + '"> <option> Select Input Datasource</option> </select> <br/>';
 
                 });
 
@@ -112,7 +112,7 @@ function addNewVizTool(moduleID, moduleName){
                     //var thisPortOutput = 'module_id_' + moduleID + '_' + referenceVariable+'.' + dataFormat;
                     //var thisPortOutputPath = referenceVariable + '="' + thisPortOutput + '"';
 
-                    ioInformation += 'Output Destination: ' + referenceVariable +  '<input type="text" class="setting_param module_output '+ referenceVariable + '" size="45"/><br/>';
+                    ioInformation += 'Output Destination: ' + referenceVariable +  '<input type="text" class="setting_param module_output" size="45" value="'+ referenceVariable + '=&quot;/home/ubuntu/Webpage/app_code_clone/user_projects/golammostaeen@gmail.com/vizOutputs/'+referenceVariable+'.'+dataFormat+'&quot;"/><br/>';
 
 
                 });
@@ -285,7 +285,9 @@ $(document).on("focus",".enableResourceDiscovery", function(){
 
     $(this).html('');
 
-    discoverResources(this, $(this).attr('referenceVariable'), THIS_WORKFLOW_NAME);
+    //alert($(this).attr('referenceVariable'));
+
+    discoverResources(this, $(this).attr('referenceVariable'), 'test');
     /*$(this).append($('<option>', {
             value: $(this).attr('referenceVariable'),
             text: 'My option'
@@ -300,19 +302,21 @@ $(document).on("focus",".enableResourceDiscovery", function(){
 function discoverResources(domElement,referenceVariable,workflow_id){
 	var thisWorkflowID = workflow_id;
 
+    var fullPath = '/home/ubuntu/Webpage/app_code_clone/user_projects/golammostaeen@gmail.com/'
+
 	//get the ouput list via async call
     	$.ajax({
 		type: "POST",
 		cache: false,
-		url: "/get_workflow_outputs_list/",
-		data: "workflow_id="+thisWorkflowID,
+		url: "/cloneViz_get_workflow_outputs_list/",
+		data: "workflow_id="+'test',
 		success: function (option) {
 			//$("#workflow_outputs").html("");
 			for(var i=0;i<option['workflow_outputs_list'].length;i++){
 				//var k = i+1;
 				//$("#workflow_outputs").html("");
 				$(domElement).append($('<option>', {
-                    value: referenceVariable+'="'+WORKFLOW_OUTPUTS_PATH+workflow_id+'/'+option['workflow_outputs_list'][i]+'"',
+                    value: referenceVariable+'="'+fullPath+option['workflow_outputs_list'][i]+'"',
                     text: option['workflow_outputs_list'][i]
                 }));
 
@@ -333,7 +337,83 @@ function discoverResources(domElement,referenceVariable,workflow_id){
 
 
 
+function get_workflow_outputs_list(workflow_id){
+	var thisWorkflowID = 'test';
 
+	//get the ouput list via async call
+    	$.ajax({
+		type: "POST",
+		cache: false,
+		url: "/cloneViz_get_viz_output_list/",
+		data: "workflow_id="+thisWorkflowID,
+		success: function (option) {
+			$("#workflow_outputs").html("");
+			for(var i=0;i<option['workflow_outputs_list'].length;i++){
+				var k = i+1;
+				//$("#workflow_outputs").html("");
+				var thisFileName = option['workflow_outputs_list'][i];
+				var visulaizationLink = '';
+				if(thisFileName.split('.').length>0){
+				    var thisFileType = thisFileName.split('.')[thisFileName.split('.').length - 1];
+				    if(thisFileType == 'html' || thisFileType == 'htm'){//currently supported file types for visualization.
+				        visulaizationLink = "<a style='font-size:11px;' href='#' class='output_vis' viewid='"+ option['workflow_outputs_list'][i] +"'> (View) </a>";
+				    }
+				}
+
+
+
+				$("#workflow_outputs").append(visulaizationLink + "<a href='/file_download?workflow_id=" + thisWorkflowID +"&file_id=" + option['workflow_outputs_list'][i]+"' class='a_workflow_output' id='"+option['workflow_outputs_list'][i] +"'>"  + option['workflow_outputs_list'][i] + "</a><br/>");
+			}
+
+		},
+		error: function (xhr, status, error) {
+	    		alert(xhr.responseText);
+		}
+
+    	});
+
+
+}
+
+get_workflow_outputs_list('test_workflow');
+
+
+
+
+
+$(document).on('click', '.output_vis', function(){
+
+    var fileName = $(this).attr('viewid');
+
+    alert(fileName);
+
+
+
+
+    var fileType = fileName.split('.')[fileName.split('.').length - 1];
+
+    $.ajax({
+        type: "POST",
+        cache: false,
+        url: "/cloneViz_load_output_for_visualization",
+        data: 'fileName=' + fileName,
+        success: function (option) {
+            if(fileType=='htm' || fileType=='html'){
+                $("#tool_vis_iframe").attr('src', 'data:text/html;charset=utf-8,' + encodeURIComponent(option.output));
+                $("#tool_vis_iframe").show();
+            }
+
+
+        },
+        error: function (xhr, status, error) {
+            alert(xhr.responseText);
+        }
+
+    });
+
+
+
+});
 
 
 

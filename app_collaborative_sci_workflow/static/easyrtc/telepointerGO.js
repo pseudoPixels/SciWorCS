@@ -2838,7 +2838,7 @@ function addModuleToPipeline(moduleID, moduleName){
                 '<div style="margin:10px;font-size:17px;color:#000000;">' +
                  '   Settings: <a style="font-size:12px;color:#000000;" href="#" class="settings_show_hide">(Show/Hide)</a>' +
                  '   <div class="settings" style="background-color:#DDDDDD;font-size:14px;">' + tool_configs + '<br/>' + ioInformation +
-                        '<input type="hidden" class="setting_param " size="45" id="module_id_'+ moduleID +'_output_destination" />'+
+                        '<input type="hidden" class="setting_param " size="45" id="module_id_'+ moduleID +'_output_destination"/>'+
                     '</div>' +
                 '</div>' +
 
