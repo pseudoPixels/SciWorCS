@@ -890,7 +890,7 @@ def execVizPlugin():
 	exec (program)
 	sys.stdout = old_stdout
 
-	output = getModuleCodes('/home/ubuntu/Webpage/app_code_clone/static/SP1_fastqc.html')
+	#output = getModuleCodes('/home/ubuntu/Webpage/app_code_clone/static/SP1_fastqc.html')
 
 	return jsonify({'output': output})
 
