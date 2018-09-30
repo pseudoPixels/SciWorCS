@@ -4,9 +4,6 @@
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/templates/cloneviz.html" afterPath="$PROJECT_DIR$/app_code_clone/templates/cloneviz.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com/vizPlugins/Stats_FeatureDistribution/Stats_FeatureDistribution_main.py" afterPath="$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com/vizPlugins/Stats_FeatureDistribution/Stats_FeatureDistribution_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_code_clone/views.py" afterPath="$PROJECT_DIR$/app_code_clone/views.py" />
     </list>
     <ignored path="Webpage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,8 +60,8 @@
       <file leaf-file-name="Stats_FeatureDistribution_main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com/vizPlugins/Stats_FeatureDistribution/Stats_FeatureDistribution_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="600">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1202,8 +1199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com/vizPlugins/Stats_FeatureDistribution/Stats_FeatureDistribution_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
