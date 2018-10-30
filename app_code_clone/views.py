@@ -938,7 +938,16 @@ def cloneViz_load_output_for_visualization():
 
 
 
-
+from flask import send_file
+@app_code_clone.route('/cloneViz_file_download/', methods=['GET'])
+def cloneViz_file_download():
+	#workflow_id = request.args.get('workflow_id') #unique workflow name
+	file_id = request.args.get('file_id')
+	filePath_to_download = '/home/ubuntu/Webpage/app_code_clone/user_projects/golammostaeen@gmail.com/'+str(file_id)#+ workflow_id + '/' + file_id
+	try:
+		return send_file(filePath_to_download, as_attachment=True)
+	except Exception as e:
+		return str(e)
 
 
 

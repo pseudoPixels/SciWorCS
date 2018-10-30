@@ -245,7 +245,7 @@ $("#run_vizPlugin").click(function () {
 
             //$("#tool_vis_iframe").attr('src', 'data:text/html;charset=utf-8,' + encodeURIComponent(option.output));
             //$("#tool_vis_iframe").show();
-
+            get_workflow_outputs_list('test_workflow');
             alert('Visualization Output Generated.');
 
         },

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" xml:lang="en">
 <head>
 <title>Clone Validation Framework</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -321,7 +321,7 @@ Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clo
         <br/>
 
         {% for a_clone_file in list_of_validated_clone_files %}
-	        <span>{{ loop.index }} . {{ a_clone_file }}</span><br/>
+	        <span><a href="/cloneViz_file_download?file_id={{ a_clone_file }}"> {{ a_clone_file }} </a></span><br/>
         {% endfor %}
 
 
@@ -363,10 +363,12 @@ Clones Validated: <span id="num_validated_clones">0</span> / <span id="total_clo
   <div id="content">
 
 
-
-
-
-
+<span style="font-size:28px;">Clone Validation Report <br> >> jHotDraw </span><hr>
+<span style="font-size:24px;"> Clone Pairs Validated:: 100<br/>
+True Positive Counts:: 88<br/>
+False Positive Counts:: 12<br/>
+Precision:: 0.88
+</span>
 
 
 

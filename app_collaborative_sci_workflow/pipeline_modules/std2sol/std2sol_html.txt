@@ -1,14 +1,35 @@
-<br/>
-Select Input Sequence File: <select  class="setting_param" name="input_seq_file"> <!-- CHANGE IN THIS LINE -->
-      <option value="inputFile = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_inputs/test_workflow/SP1.fq'" selected>Sequence File 1</option>
-      <option value="inputFile = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_inputs/test_workflow/SP2.fq'" >Sequence File 2</option>
-</select> 
-
-<br/><br/>
-
-
-Conv. Rate:
-<input type="text" class="setting_param" value="conv_rate=21.0" name="cleaning_threshold" size="45"/>
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Fastq File</label>
+            <referenceVariable>input_file_path</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
 
 
-<br/><br/>
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Quality Analysis HTML</label>
+            <referenceVariable>output_file</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        Converts Std 2 Sol
+    </toolDocumentation>
+
+
+</SciWorC>
+
+
+

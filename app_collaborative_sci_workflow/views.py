@@ -659,8 +659,8 @@ def cvs():
 		g.couch.delete(tmp)
 
 	#remove prev. datasets
-	for aFile in glob.glob('/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_*'):
-		os.remove(aFile)
+	#for aFile in glob.glob('/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_*'):
+	#	os.remove(aFile)
 
 
 	#Add one doc
