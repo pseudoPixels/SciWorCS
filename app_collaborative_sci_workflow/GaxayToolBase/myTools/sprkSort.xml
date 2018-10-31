@@ -1,0 +1,17 @@
+<tool id="phenotyping_tools_sparkSort" name="Spark Sort" version="0.1.0">
+  <description>sorting with pyspark.</description>
+  <command interpreter="spark-submit">sprkSort.py $input $output</command>
+  <inputs>
+    <param format="txt" name="input" type="data" label="Select Source file"/>
+  </inputs>
+  <outputs>
+    <data format="txt" name="output"/>
+  </outputs>
+
+
+
+ <help>
+	This tool converts a rgb image to grayscale.
+ </help>
+
+</tool>

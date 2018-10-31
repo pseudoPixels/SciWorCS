@@ -1,0 +1,28 @@
+<tool id="phenotyping_tools_noiseRemoval" name="Noise Removal" version="0.1.0">
+  <description>for a given image.</description>
+  <command interpreter="python">noiseRemoval.py $input $output $filter_strength $template_window_size $search_window_size </command>
+  <inputs>
+    <param format="png" name="input" type="data" label="Select Source File"/>
+    <param name="filter_strength" size="4" type="integer" value="10" label="Filter Strength"/>
+    <param name="template_window_size" size="4" type="integer" value="7" label="Template Window Size (should be odd)"/>
+    <param name="search_window_size" size="4" type="integer" value="21" label="Search Window Size (should be odd)"/>
+
+
+
+  </inputs>
+  <outputs>
+    <data format="png" name="output" value="myres.png" />
+  </outputs>
+
+  <tests>
+    <test>
+      <param name="input" value="plant_sideview.png"/>
+      <output name="output" value="out_plant_sideview.png"/>
+    </test>
+  </tests>
+
+  <help>
+This tool removes noise from a given image.
+  </help>
+
+</tool>

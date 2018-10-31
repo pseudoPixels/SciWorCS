@@ -795,7 +795,7 @@ html, body {
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-th"></i>
-                          <span>Bioinformatics</span>
+                          <span>All Tools</span>
                       </a>
                       <ul class="sub" id="bio_tools">
                          <!-- <li><a  href="#" id="design_pipelines_menu_biodatacleaning_id">Bio Data Cleaning</a></li>
@@ -812,6 +812,24 @@ html, body {
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-th"></i>
+                          <span>Bioinformatics Tools</span>
+                      </a>
+                      <ul class="sub" id="bioinformatics">
+                         <!-- <li><a  href="#" id="design_pipelines_menu_biodatacleaning_id">Bio Data Cleaning</a></li>
+                          <li><a  href="#" id="design_pipelines_menu_biocalc_id">Bio Brome</a></li> -->
+                          {% for aBioModule in pineline_bio_modules %}
+                              <li><a href="#" class="pipeline_modules" id="{{aBioModule}}"> {{aBioModule}}</a></li>
+                          {% endfor %}
+
+                      </ul>
+                  </li>
+
+
+
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-th"></i>
                           <span>Galaxy Modules</span>
                       </a>
                       <ul class="sub" id="galaxy">
@@ -823,6 +841,10 @@ html, body {
 
                       </ul>
                   </li>
+
+
+
+
 
 
 

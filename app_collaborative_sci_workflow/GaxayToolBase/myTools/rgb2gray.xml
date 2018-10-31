@@ -1,0 +1,22 @@
+<tool id="phenotyping_tools_rgb2gray" name="RGB 2 Gray" version="0.1.0">
+  <description>conversion for a given image.</description>
+  <command interpreter="python">rgb2gray.py $input $output</command>
+  <inputs>
+    <param format="png" name="input" type="data" label="Select Source file"/>
+  </inputs>
+  <outputs>
+    <data format="png" name="output" value="myres.png" />
+  </outputs>
+
+  <tests>
+    <test>
+      <param name="input" value="plant_sideview.png"/>
+      <output name="output" value="out_plant_sideview.png"/>
+    </test>
+  </tests>
+
+  <help>
+This tool converts a rgb image to grayscale.
+  </help>
+
+</tool>

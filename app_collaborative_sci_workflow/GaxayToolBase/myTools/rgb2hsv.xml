@@ -1,0 +1,31 @@
+<tool id="phenotyping_tools_rgb2hsv" name="RGB 2 HSV" version="0.1.0">
+  <description>for a given image.</description>
+  <command interpreter="python">rgb2hsv.py $input $output $hsv_channel </command>
+  <inputs>
+    <param format="png" name="input" type="data" label="Select Source File"/>
+
+    <param name="hsv_channel" type="select" label="HSV Channel">
+	    <option value="h" selected="true">Hue</option>
+	    <option value="s">Saturation</option>
+	    <option value="v">Value</option>
+    </param>
+
+  </inputs>
+
+
+  <outputs>
+    <data format="png" name="output" value="myres.png" />
+  </outputs>
+
+  <tests>
+    <test>
+      <param name="input" value="plant_sideview.png"/>
+      <output name="output" value="out_plant_sideview.png"/>
+    </test>
+  </tests>
+
+  <help>
+This tool removes noise from a given image.
+  </help>
+
+</tool>
