@@ -93,7 +93,7 @@ class ParseToolInput:
                 selectOptions = anInputParam.attrib['label'] + ': <select class="setting_param" >' + '\n'
                 for anOption in anInputParam:
                     optionValue = anInputParam.attrib['name']  + "='" +  anOption.attrib['value'] + "'"
-                    selectOptions += '  <option value="' + optionValue + '"</option>'+'\n'
+                    selectOptions += '  <option value="' + optionValue + '">'+ anOption.attrib['value'] +'</option>'+'\n'
                 selectOptions += '</select>'
 
                 toolConfigurations += selectOptions
@@ -195,6 +195,9 @@ class GalaxyToSciWorCS:
             SciWorCS_Defn.write('<SciWorC>\n')
 
 
+            ####################
+            #### Tool inputs
+            ###################
             SciWorCS_Defn.write('   <toolInputs>\n')
             toolInputs = ParseToolInput(root).getToolDataInputDefinition()
 
@@ -204,11 +207,47 @@ class GalaxyToSciWorCS:
                 SciWorCS_Defn.write('           <referenceVariable>' + aToolInput['referenceVariable'] + '</referenceVariable>\n')
                 SciWorCS_Defn.write('           <dataFormat>' + aToolInput['dataFormat'] + '</dataFormat>\n')
 
-                SciWorCS_Defn.write('       </toolInput>\n')
-            SciWorCS_Defn.write('   </toolInputs>\n')
+                SciWorCS_Defn.write('       </toolInput>\n\n')
+            SciWorCS_Defn.write('   </toolInputs>\n\n\n')
 
 
 
+            ####################
+            #### Tool outputs
+            ###################
+            SciWorCS_Defn.write('   <toolOutputs>\n')
+            toolOutputs = ParseToolOutput(root).getToolDataOutputDefinition()
+
+            for aToolOutput in toolOutputs:
+                SciWorCS_Defn.write('       <toolOutput>\n')
+                SciWorCS_Defn.write('           <label>' + aToolOutput['label'] + '</label>\n')
+                SciWorCS_Defn.write('           <referenceVariable>' + aToolOutput['referenceVariable'] + '</referenceVariable>\n')
+                SciWorCS_Defn.write('           <dataFormat>' + aToolOutput['dataFormat'] + '</dataFormat>\n')
+
+                SciWorCS_Defn.write('       </toolOutput>\n\n')
+            SciWorCS_Defn.write('   </toolOutputs>\n\n\n')
+
+
+
+
+            ####################
+            #### Tool  Configurations
+            ###################
+            SciWorCS_Defn.write('   <toolConfigurations>\n\n')
+            toolConfigurations = ParseToolInput(root).getToolConfigurations()
+            SciWorCS_Defn.write(toolConfigurations)
+            SciWorCS_Defn.write('\n   </toolConfigurations>\n\n')
+
+
+
+
+            ####################
+            #### Tool  Documentation
+            ###################
+            SciWorCS_Defn.write('   <toolDocumentation>\n\n')
+            toolDocumentation = ParseToolDocumentation(root).getToolDocumentation()
+            SciWorCS_Defn.write(toolDocumentation)
+            SciWorCS_Defn.write('\n   </toolDocumentation>\n\n')
 
 
             SciWorCS_Defn.write('</SciWorC>\n')
@@ -220,7 +259,7 @@ class GalaxyToSciWorCS:
 
 
 gTOs = GalaxyToSciWorCS()
-gTOs.convertAndWriteToolDefinition('filters/lav_to_bed.xml', 'sciTest.xml')
+gTOs.convertAndWriteToolDefinition('filters/CreateInterval.xml', 'sciTest.xml')
 
 
 
