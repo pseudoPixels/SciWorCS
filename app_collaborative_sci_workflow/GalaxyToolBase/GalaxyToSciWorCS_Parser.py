@@ -34,6 +34,9 @@ class ParseToolCommand:
             withRemovedVarSign = aCommand.replace('$', '')  #$start    ---> start
             withRemovedVarSign = withRemovedVarSign.replace('"','') # '"name"'  ---> 'name'
 
+            if withRemovedVarSign == '>' or withRemovedVarSign == '<':
+                withRemovedVarSign = '"' + withRemovedVarSign + '"'
+
             updatedCommandList.append(withRemovedVarSign)
 
 
@@ -80,15 +83,11 @@ class ParseToolInput:
 
         toolConfigurations = ''
         for anInputParam in toolInputRoot:
-            if anInputParam.attrib['type'] == 'text':
-                configValue = anInputParam.attrib['name'] + "='" +  anInputParam.attrib['value'] + "'"
-                toolConfigurations += anInputParam.attrib['label'] + ': <input type="text" class="setting_param" size="45" value="'  +  configValue  + '" /> <br/>' + '\n'
-
             if anInputParam.attrib['type'] == 'integer':
                 configValue = anInputParam.attrib['name'] + "=" +  anInputParam.attrib['value']
                 toolConfigurations += anInputParam.attrib['label'] + ': <input type="text" class="setting_param" size="45" value="'  +  configValue  + '" /> <br/>' + '\n'
 
-            if anInputParam.attrib['type'] == 'select':
+            elif anInputParam.attrib['type'] == 'select':
 
                 selectOptions = anInputParam.attrib['label'] + ': <select class="setting_param" >' + '\n'
                 for anOption in anInputParam:
@@ -97,6 +96,13 @@ class ParseToolInput:
                 selectOptions += '</select>'
 
                 toolConfigurations += selectOptions
+
+            else: # anInputParam.attrib['type'] == 'text': OR ANY OTHER FORMAT...
+                if 'value' not in anInputParam.attrib:
+                    anInputParam.attrib['value'] = ''
+
+                configValue = anInputParam.attrib['name'] + "='" +  anInputParam.attrib['value'] + "'"
+                toolConfigurations += anInputParam.attrib['label'] + ': <input type="text" class="setting_param" size="45" value="'  +  configValue  + '" /> <br/>' + '\n'
 
         return toolConfigurations
 
@@ -303,14 +309,14 @@ class GalaxyToSciWorCS:
 
 
 
-        print sciworcsConvertedToolName
+        #print sciworcsConvertedToolName
 
 
 
 gTOs = GalaxyToSciWorCS()
 #gTOs.convertAndWriteToolDefinition('filters/headWrapper.xml', 'sciTest.xml')
 #gTOs.writeGalaxyWrapperScript('filters/CreateInterval.xml', 'filters', 'sciTest.py')
-gTOs.convertTool_GalaxyToSciWorCS('filters/CreateInterval.xml', 'filters', 'ConvertedTools_GalaxyToSciWorCS', 'BioF_')
+gTOs.convertTool_GalaxyToSciWorCS('filters/axt_to_concat_fasta.xml', 'filters', 'ConvertedTools_GalaxyToSciWorCS', 'BioF_')
 
 
 
