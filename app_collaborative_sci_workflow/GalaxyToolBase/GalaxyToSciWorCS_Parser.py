@@ -187,6 +187,8 @@ class GalaxyToSciWorCS:
     def __init__(self):
         a=0
 
+
+
     def convertAndWriteToolDefinition(self, galaxyToolDefinitionPath, sciworcsDestinationPath):
         galaxyXML = ET.parse(galaxyToolDefinitionPath)
         root = galaxyXML.getroot()
@@ -255,12 +257,34 @@ class GalaxyToSciWorCS:
 
 
 
+    def writeGalaxyWrapperScript(self, galaxyToolDefinitionPath, sciworcsDestinationPath):
+        galaxyXML = ET.parse(galaxyToolDefinitionPath)
+        root = galaxyXML.getroot()
+
+        with open(sciworcsDestinationPath, "w") as SciWorCS_Tool:
+            SciWorCS_Tool.write('\nimport subprocess\n')
+
+            toolCommandsList = ParseToolCommand(root).getToolCommandAsList()
+            toolInterpreter = ParseToolCommand(root).getToolInterpreter()
+            if toolInterpreter == 'perl':
+                toolInterpreter = '"/usr/bin/perl"'
+
+            SciWorCS_Tool.write('pipe = subprocess.Popen([' + toolInterpreter)
+
+
+            for aToolCommand in toolCommandsList:
+                SciWorCS_Tool.write(", " + aToolCommand)
+
+            SciWorCS_Tool.write(']).communicate()')
+
+
+
 
 
 
 gTOs = GalaxyToSciWorCS()
-gTOs.convertAndWriteToolDefinition('filters/CreateInterval.xml', 'sciTest.xml')
-
+#gTOs.convertAndWriteToolDefinition('filters/CreateInterval.xml', 'sciTest.xml')
+gTOs.writeGalaxyWrapperScript('filters/CreateInterval.xml', 'sciTest.py')
 
 
 
