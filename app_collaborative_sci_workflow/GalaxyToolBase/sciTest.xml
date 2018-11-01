@@ -1,0 +1,9 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>LAV File</label>
+           <referenceVariable>lav_file</referenceVariable>
+           <dataFormat>lav</dataFormat>
+       </toolInput>
+   </toolInputs>
+</SciWorC>

@@ -2,272 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/access_libraries.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/access_libraries.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/bed_convert.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/bed_convert.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/biomart.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/biomart.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/biomart_test.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/biomart_test.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/cbi_rice_mart.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/cbi_rice_mart.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/data_source.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/data_source.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/ebi_sra.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/ebi_sra.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/eupathdb.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/eupathdb.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/fetch.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/fetch.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/fly_modencode.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/fly_modencode.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/flymine.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/flymine.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/flymine_test.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/flymine_test.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/genbank.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/genbank.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/genbank.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/genbank.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/gramene_mart.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/gramene_mart.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/hapmapmart.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/hapmapmart.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/hbvar.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/hbvar.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/hbvar_filter.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/hbvar_filter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/import.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/import.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/import.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/import.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/metabolicmine.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/metabolicmine.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/microbial_import.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/microbial_import.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/microbial_import.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/microbial_import.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/microbial_import_code.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/microbial_import_code.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/modmine.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/modmine.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/mousemine.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/mousemine.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/ratmine.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/ratmine.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/ucsc_tablebrowser.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/ucsc_tablebrowser.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/ucsc_tablebrowser_archaea.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/ucsc_tablebrowser_archaea.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/ucsc_tablebrowser_test.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/ucsc_tablebrowser_test.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/upload.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/upload.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/upload.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/upload.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/worm_modencode.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/worm_modencode.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/wormbase.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/wormbase.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/wormbase_test.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/wormbase_test.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/yeastmine.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/yeastmine.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/data_source/zebrafishmine.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/data_source/zebrafishmine.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/evolution/add_scores.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/evolution/add_scores.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/evolution/add_scores.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/evolution/add_scores.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/evolution/codingSnps.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/evolution/codingSnps.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/evolution/codingSnps.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/evolution/codingSnps.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/evolution/codingSnps_filter.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/evolution/codingSnps_filter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/extract/extract_genomic_dna.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/extract/extract_genomic_dna.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/extract/extract_genomic_dna.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/extract/extract_genomic_dna.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/extract/liftOver_wrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/extract/liftOver_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/extract/liftOver_wrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/extract/liftOver_wrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/CreateInterval.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/CreateInterval.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/axt_to_concat_fasta.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/axt_to_concat_fasta.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/axt_to_concat_fasta.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/axt_to_concat_fasta.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/axt_to_fasta.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/axt_to_fasta.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/axt_to_fasta.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/axt_to_fasta.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/axt_to_lav.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/axt_to_lav.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/axt_to_lav.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/axt_to_lav.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/axt_to_lav_code.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/axt_to_lav_code.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/bed2gff.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/bed2gff.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/bed_to_bigbed.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/bed_to_bigbed.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/bed_to_gff_converter.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/bed_to_gff_converter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/catWrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/catWrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/catWrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/catWrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/changeCase.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/changeCase.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/changeCase.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/changeCase.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/commWrapper.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/commWrapper.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/commWrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/commWrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/compare.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/compare.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/condense_characters.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/condense_characters.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/condense_characters.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/condense_characters.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/convert_characters.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/convert_characters.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/convert_characters.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/convert_characters.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/convert_characters.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/convert_characters.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/cutWrapper.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/cutWrapper.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/cutWrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/cutWrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/fileGrep.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/fileGrep.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/fixedValueColumn.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/fixedValueColumn.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/fixedValueColumn.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/fixedValueColumn.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gff/extract_GFF_Features.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gff/extract_GFF_Features.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gff/extract_GFF_Features.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gff/extract_GFF_Features.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gff/gff_filter_by_attribute.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gff/gff_filter_by_attribute.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gff/gff_filter_by_attribute.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gff/gff_filter_by_attribute.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gff/gff_filter_by_feature_count.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gff/gff_filter_by_feature_count.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gff/gff_filter_by_feature_count.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gff/gff_filter_by_feature_count.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gff/gtf_filter_by_attribute_values_list.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gff/gtf_filter_by_attribute_values_list.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gff/gtf_filter_by_attribute_values_list.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gff/gtf_filter_by_attribute_values_list.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gff2bed.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gff2bed.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gff_to_bed_converter.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gff_to_bed_converter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/grep.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/grep.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/grep.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/grep.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gtf2bedgraph.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gtf2bedgraph.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/gtf_to_bedgraph_converter.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/gtf_to_bedgraph_converter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/headWrapper.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/headWrapper.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/headWrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/headWrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/join.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/join.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/joinWrapper.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/joinWrapper.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/joinWrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/joinWrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/joiner.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/joiner.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/joiner2.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/joiner2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/lav_to_bed.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/lav_to_bed.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/lav_to_bed.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/lav_to_bed.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/lav_to_bed_code.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/lav_to_bed_code.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/mergeCols.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/mergeCols.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/mergeCols.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/mergeCols.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/pasteWrapper.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/pasteWrapper.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/pasteWrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/pasteWrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/random_lines_two_pass.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/random_lines_two_pass.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/randomlines.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/randomlines.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/randomlines.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/randomlines.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/remove_beginning.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/remove_beginning.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/remove_beginning.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/remove_beginning.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/secure_hash_message_digest.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/secure_hash_message_digest.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/secure_hash_message_digest.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/secure_hash_message_digest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/sff_extract.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/sff_extract.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/sff_extractor.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/sff_extractor.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/sorter.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/sorter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/sorter.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/sorter.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/tailWrapper.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/tailWrapper.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/tailWrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/tailWrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/trimmer.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/trimmer.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/trimmer.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/trimmer.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/ucsc_gene_bed_to_exon_bed.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/ucsc_gene_bed_to_exon_bed.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/ucsc_gene_bed_to_exon_bed.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/ucsc_gene_bed_to_exon_bed.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/ucsc_gene_bed_to_intron_bed.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/ucsc_gene_bed_to_intron_bed.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/ucsc_gene_bed_to_intron_bed.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/ucsc_gene_bed_to_intron_bed.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/ucsc_gene_table_to_intervals.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/ucsc_gene_table_to_intervals.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/ucsc_gene_table_to_intervals.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/ucsc_gene_table_to_intervals.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/uniq.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/uniq.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/uniq.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/uniq.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/wc_gnu.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/wc_gnu.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/wig_to_bigwig.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/wig_to_bigwig.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/wiggle_to_simple.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/wiggle_to_simple.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/filters/wiggle_to_simple.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/wiggle_to_simple.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/genomespace/genomespace_exporter.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/genomespace/genomespace_exporter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/genomespace/genomespace_exporter.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/genomespace/genomespace_exporter.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/genomespace/genomespace_file_browser.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/genomespace/genomespace_file_browser.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/genomespace/genomespace_file_browser_dev.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/genomespace/genomespace_file_browser_dev.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/genomespace/genomespace_file_browser_prod.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/genomespace/genomespace_file_browser_prod.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/genomespace/genomespace_file_browser_test.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/genomespace/genomespace_file_browser_test.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/genomespace/genomespace_importer.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/genomespace/genomespace_importer.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/genomespace/genomespace_importer.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/genomespace/genomespace_importer.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/genebed_maf_to_fasta.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/genebed_maf_to_fasta.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/interval2maf.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/interval2maf.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/interval2maf.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/interval2maf.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/interval2maf_pairwise.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/interval2maf_pairwise.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/interval_maf_to_merged_fasta.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/interval_maf_to_merged_fasta.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/interval_maf_to_merged_fasta.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/interval_maf_to_merged_fasta.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/macros.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/macros.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_by_block_number.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_by_block_number.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_by_block_number.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_by_block_number.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_filter.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_filter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_filter.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_filter.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_limit_size.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_limit_size.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_limit_size.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_limit_size.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_limit_to_species.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_limit_to_species.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_limit_to_species.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_limit_to_species.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_reverse_complement.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_reverse_complement.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_reverse_complement.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_reverse_complement.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_split_by_species.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_split_by_species.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_split_by_species.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_split_by_species.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_stats.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_stats.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_stats.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_stats.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_thread_for_species.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_thread_for_species.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_thread_for_species.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_thread_for_species.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_to_bed.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_to_bed.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_to_bed.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_to_bed.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_to_bed_code.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_to_bed_code.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_to_fasta.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_to_fasta.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_to_fasta_concat.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_to_fasta_concat.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_to_fasta_multiple_sets.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_to_fasta_multiple_sets.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_to_interval.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_to_interval.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/maf_to_interval.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_to_interval.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/vcf_to_maf_customtrack.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/vcf_to_maf_customtrack.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/maf/vcf_to_maf_customtrack.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/vcf_to_maf_customtrack.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/meme/fimo.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/meme/fimo.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/meme/fimo_wrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/meme/fimo_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/meme/meme.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/meme/meme.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/metag_tools/blat_wrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/metag_tools/blat_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/metag_tools/blat_wrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/metag_tools/blat_wrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/metag_tools/shrimp_color_wrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/metag_tools/shrimp_color_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/metag_tools/shrimp_color_wrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/metag_tools/shrimp_color_wrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/metag_tools/shrimp_wrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/metag_tools/shrimp_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/metag_tools/shrimp_wrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/metag_tools/shrimp_wrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/binaryThresholding.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/binaryThresholding.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/binaryThresholding.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/binaryThresholding.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/noiseRemoval.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/noiseRemoval.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/noiseRemoval.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/noiseRemoval.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/rgb2gray.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/rgb2gray.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/rgb2gray.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/rgb2gray.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/rgb2hsv.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/rgb2hsv.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/rgb2hsv.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/rgb2hsv.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/sprkSort.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/sprkSort.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/sprkSort.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/sprkSort.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/toolExample.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/toolExample.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/myTools/toolExample.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/myTools/toolExample.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/next_gen_conversion/bwa_solid2fastq_modified.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/bwa_solid2fastq_modified.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/next_gen_conversion/fastq_conversions.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/fastq_conversions.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/next_gen_conversion/fastq_conversions.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/fastq_conversions.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/next_gen_conversion/fastq_gen_conv.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/fastq_gen_conv.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/next_gen_conversion/fastq_gen_conv.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/fastq_gen_conv.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/next_gen_conversion/solid2fastq.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/solid2fastq.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/next_gen_conversion/solid2fastq.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/solid2fastq.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/next_gen_conversion/solid_to_fastq.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/solid_to_fastq.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/next_gen_conversion/solid_to_fastq.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/solid_to_fastq.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/ngs_simulation/ngs_simulation.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ngs_simulation/ngs_simulation.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/ngs_simulation/ngs_simulation.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ngs_simulation/ngs_simulation.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/BEAM2_wrapper.sh" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/BEAM2_wrapper.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/beam.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/beam.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/gpass.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/gpass.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/gpass.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/gpass.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/ldtools.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/ldtools.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/ldtools_wrapper.sh" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/ldtools_wrapper.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/linkToDavid.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/linkToDavid.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/linkToDavid.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/linkToDavid.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/linkToGProfile.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/linkToGProfile.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/linkToGProfile.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/linkToGProfile.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/lped_to_geno.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/lped_to_geno.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/lps.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/lps.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/lps_tool_wrapper.sh" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/lps_tool_wrapper.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/master2gd_snp.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/master2gd_snp.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/master2gd_snp.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/master2gd_snp.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/master2pg.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/master2pg.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/master2pg.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/master2pg.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/mergeSnps.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/mergeSnps.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/pagetag.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/pagetag.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/pass.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/pass.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/pass_wrapper.sh" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/pass_wrapper.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/senatag.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/senatag.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/sift.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/sift.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/sift_variants_wrapper.sh" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/sift_variants_wrapper.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/phenotype_association/vcf2pgSnpMult.pl" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/phenotype_association/vcf2pgSnpMult.pl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/plotting/bar_chart.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/plotting/bar_chart.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/plotting/bar_chart.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/plotting/bar_chart.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/plotting/boxplot.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/plotting/boxplot.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/solid_tools/maq_cs_wrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/solid_tools/maq_cs_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/solid_tools/maq_cs_wrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/solid_tools/maq_cs_wrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/solid_tools/maq_cs_wrapper_code.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/solid_tools/maq_cs_wrapper_code.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/solid_tools/qualsolid_boxplot_graph.sh" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/solid_tools/qualsolid_boxplot_graph.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/solid_tools/solid_qual_boxplot.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/solid_tools/solid_qual_boxplot.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/solid_tools/solid_qual_stats.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/solid_tools/solid_qual_stats.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/solid_tools/solid_qual_stats.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/solid_tools/solid_qual_stats.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_assembly/velvetg.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_assembly/velvetg.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_assembly/velvetg_wrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_assembly/velvetg_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_assembly/velveth.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_assembly/velveth.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_assembly/velveth_wrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_assembly/velveth_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_mapping/PerM.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_mapping/PerM.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_mapping/bfast_wrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_mapping/bfast_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_mapping/bfast_wrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_mapping/bfast_wrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_mapping/fastq_statistics.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_mapping/fastq_statistics.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_mapping/mosaik.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_mapping/mosaik.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_mapping/srma_wrapper.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_mapping/srma_wrapper.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/sr_mapping/srma_wrapper.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sr_mapping/srma_wrapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/stats/aggregate_binned_scores_in_intervals.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/stats/aggregate_binned_scores_in_intervals.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/stats/aggregate_scores_in_intervals.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/stats/aggregate_scores_in_intervals.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/stats/filtering.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/stats/filtering.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/stats/filtering.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/stats/filtering.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/stats/grouping.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/stats/grouping.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/stats/grouping.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/stats/grouping.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/stats/gsummary.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/stats/gsummary.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/stats/gsummary.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/stats/gsummary.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/stats/gsummary.xml.groups" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/stats/gsummary.xml.groups" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/stats/r_wrapper.sh" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/stats/r_wrapper.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/visualization/LAJ.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/visualization/LAJ.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/visualization/LAJ.xml" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/visualization/LAJ.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GaxayToolBase/visualization/LAJ_code.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/visualization/LAJ_code.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Webpage.iml" afterPath="$PROJECT_DIR$/.idea/Webpage.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" />
     </list>
     <ignored path="Webpage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -291,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="383" column="4" selection-start-line="383" selection-start-column="4" selection-end-line="383" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Stats_FeatureDistribution_html.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureDistribution/Stats_FeatureDistribution_html.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="345">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="109" />
               <folding />
             </state>
           </provider>
@@ -311,31 +57,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateInterval.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="randomlines.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/randomlines.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="lav_to_bed.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/lav_to_bed.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="15" />
+            <state relative-caret-position="90">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateInterval.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -344,11 +80,31 @@
       <file leaf-file-name="GalaxyToSciWorCS_Parser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state relative-caret-position="661">
+              <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sciTest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sciTest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NiCAD_normalizing_html.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/NiCAD_normalizing/NiCAD_normalizing_html.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -562,6 +318,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Stats_FeatureDistribution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_collaborative_sci_workflow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pipeline_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stats_DropVariable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_collaborative_sci_workflow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pipeline_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NiCAD_normalizing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -861,7 +661,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2992126" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28047922" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19661734" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -920,34 +720,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_NaiveBayes/Stats_NaiveBayes_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_RandomForest/Stats_RandomForest_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_RandomForest/Stats_RandomForest_html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointer_module_lockingGO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49230">
-          <caret line="3282" column="21" selection-start-line="3282" selection-start-column="21" selection-end-line="3282" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -1238,14 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.pl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1270,34 +1034,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.xml">
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/tailWrapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureDistribution/Stats_FeatureDistribution_html.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="30" />
+        <state relative-caret-position="345">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_DropVariable/Stats_DropVariable_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="383" column="4" selection-start-line="383" selection-start-column="4" selection-end-line="383" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/NiCAD_normalizing/NiCAD_normalizing_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/lav_to_bed.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="15" />
+        <state relative-caret-position="90">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sciTest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state relative-caret-position="661">
+          <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

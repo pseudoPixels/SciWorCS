@@ -75,6 +75,30 @@ class ParseToolInput:
 
 
 
+    def getToolConfigurations(self):
+        toolInputRoot = self.xmlRoot.find("inputs")
+
+        toolConfigurations = ''
+        for anInputParam in toolInputRoot:
+            if anInputParam.attrib['type'] == 'text':
+                configValue = anInputParam.attrib['name'] + "='" +  anInputParam.attrib['value'] + "'"
+                toolConfigurations += anInputParam.attrib['label'] + ': <input type="text" class="setting_param" size="45" value="'  +  configValue  + '" /> <br/>' + '\n'
+
+            if anInputParam.attrib['type'] == 'integer':
+                configValue = anInputParam.attrib['name'] + "=" +  anInputParam.attrib['value']
+                toolConfigurations += anInputParam.attrib['label'] + ': <input type="text" class="setting_param" size="45" value="'  +  configValue  + '" /> <br/>' + '\n'
+
+            if anInputParam.attrib['type'] == 'select':
+
+                selectOptions = anInputParam.attrib['label'] + ': <select class="setting_param" >' + '\n'
+                for anOption in anInputParam:
+                    optionValue = anInputParam.attrib['name']  + "='" +  anOption.attrib['value'] + "'"
+                    selectOptions += '  <option value="' + optionValue + '"</option>'+'\n'
+                selectOptions += '</select>'
+
+                toolConfigurations += selectOptions
+
+        return toolConfigurations
 
 
 
@@ -84,23 +108,149 @@ class ParseToolInput:
 
 
 
-galaxyXML = ET.parse('filters/lav_to_bed.xml')
-root = galaxyXML.getroot()
+###############################################################
+###############################################################
+###############################################################
+class ParseToolDocumentation:
+    def __init__(self, xmlRoot):
+        self.xmlRoot = xmlRoot
+
+    def getToolDocumentation(self):
+        toolDescriptionRoot = self.xmlRoot.find("description")
+        toolHelpRoot = self.xmlRoot.find("help")
+
+        return '<p> '+ toolDescriptionRoot.text + '<br/><br/>' + toolHelpRoot.text + '</p>'
 
 
 
-tc = ParseToolInput(root)
-
-print (tc.getToolDataInputDefinition())
 
 
 
 
 
-# for aChild in root:
-#     print (aChild.tag+" " + aChild.text)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################
+###############################################################
+###############################################################
+class ParseToolOutput:
+    def __init__(self, xmlRoot):
+        self.xmlRoot = xmlRoot
+
+    def getToolDataOutputDefinition(self):
+        toolOutputRoot = self.xmlRoot.find("outputs")
+
+        toolDataOutputs = []
+        for anOutput in toolOutputRoot:
+            aDataOutput = {'label' : '', 'dataFormat': anOutput.attrib['format'], 'referenceVariable': anOutput.attrib['name']}
+            toolDataOutputs.append(aDataOutput)
+
+        return toolDataOutputs
+
+
+
+
+
+
+
+
+
+
+
+
+###############################################################
+###############################################################
+###############################################################
+class GalaxyToSciWorCS:
+    def __init__(self):
+        a=0
+
+    def convertAndWriteToolDefinition(self, galaxyToolDefinitionPath, sciworcsDestinationPath):
+        galaxyXML = ET.parse(galaxyToolDefinitionPath)
+        root = galaxyXML.getroot()
+
+        with open(sciworcsDestinationPath, "w") as SciWorCS_Defn:
+            SciWorCS_Defn.write('<SciWorC>\n')
+
+
+            SciWorCS_Defn.write('   <toolInputs>\n')
+            toolInputs = ParseToolInput(root).getToolDataInputDefinition()
+
+            for aToolInput in toolInputs:
+                SciWorCS_Defn.write('       <toolInput>\n')
+                SciWorCS_Defn.write('           <label>' + aToolInput['label'] + '</label>\n')
+                SciWorCS_Defn.write('           <referenceVariable>' + aToolInput['referenceVariable'] + '</referenceVariable>\n')
+                SciWorCS_Defn.write('           <dataFormat>' + aToolInput['dataFormat'] + '</dataFormat>\n')
+
+                SciWorCS_Defn.write('       </toolInput>\n')
+            SciWorCS_Defn.write('   </toolInputs>\n')
+
+
+
+
+
+            SciWorCS_Defn.write('</SciWorC>\n')
+
+
+
+
+
+
+
+gTOs = GalaxyToSciWorCS()
+gTOs.convertAndWriteToolDefinition('filters/lav_to_bed.xml', 'sciTest.xml')
+
+
+
+
+
+
+
+# galaxyXML = ET.parse('filters/CreateInterval.xml')
+# root = galaxyXML.getroot()
 #
+#
+#
+# tc = ParseToolDocumentation(root)
+#
+#
+#
+# print (tc.getToolDocumentation())
 
-#print  root.tag
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
