@@ -290,6 +290,12 @@ class GalaxyToSciWorCS:
 
     def convertTool_GalaxyToSciWorCS(self, galaxyToolDefinitionPath, galaxyToolRelativePath, convertedToolDestinationPath, toolPrefix=''):
 
+        #return, the tool script path does not exist
+        if self.checkIfToolScriptExists(galaxyToolDefinitionPath) == False:
+            return False
+
+
+
         # 'filters/CreateInterval.xml'   ===>    CreateInterval.xml
         sciworcsConvertedToolName = galaxyToolDefinitionPath.split('/')[len(galaxyToolDefinitionPath.split('/'))-1]
         # CreateInterval.xml    ===>   CreateInterval
@@ -306,10 +312,31 @@ class GalaxyToSciWorCS:
         self.convertAndWriteToolDefinition(galaxyToolDefinitionPath, sciworcsConvertedTool_DestinationDir+'/'+sciworcsConvertedToolName+'.xml')
         self.writeGalaxyWrapperScript(galaxyToolDefinitionPath, galaxyToolRelativePath, sciworcsConvertedTool_DestinationDir+'/'+sciworcsConvertedToolName+'.py')
 
+        return True
+
+    def checkIfToolScriptExists(self, galaxyToolDefinitionPath):
+        galaxyXML = ET.parse(galaxyToolDefinitionPath)
+        root = galaxyXML.getroot()
+
+        tC = ParseToolCommand(root)
+        toolInterpreter = tC.getToolInterpreter()
+
+
+        if toolInterpreter == 'perl':
+            galaxyToolDefinitionPath = galaxyToolDefinitionPath.replace('.xml', '.pl')
+        elif toolInterpreter == 'python':
+            galaxyToolDefinitionPath = galaxyToolDefinitionPath.replace('.xml', '.py')
+
+
+        if os.path.exists(galaxyToolDefinitionPath):
+            return True
+
+        return False
 
 
 
-        #print sciworcsConvertedToolName
+
+
 
 
 
@@ -317,7 +344,7 @@ gTOs = GalaxyToSciWorCS()
 #gTOs.convertAndWriteToolDefinition('filters/headWrapper.xml', 'sciTest.xml')
 #gTOs.writeGalaxyWrapperScript('filters/CreateInterval.xml', 'filters', 'sciTest.py')
 gTOs.convertTool_GalaxyToSciWorCS('filters/axt_to_concat_fasta.xml', 'filters', 'ConvertedTools_GalaxyToSciWorCS', 'BioF_')
-
+#print gTOs.checkIfToolScriptExists('filters/gff2bed.xml')
 
 
 
