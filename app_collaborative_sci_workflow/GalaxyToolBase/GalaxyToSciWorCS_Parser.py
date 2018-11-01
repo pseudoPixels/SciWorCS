@@ -6,7 +6,7 @@ import os
 import uuid
 import glob
 import xml.etree.ElementTree as ET
-
+import shutil
 
 
 
@@ -282,12 +282,35 @@ class GalaxyToSciWorCS:
 
 
 
+    def convertTool_GalaxyToSciWorCS(self, galaxyToolDefinitionPath, galaxyToolRelativePath, convertedToolDestinationPath, toolPrefix=''):
+
+        # 'filters/CreateInterval.xml'   ===>    CreateInterval.xml
+        sciworcsConvertedToolName = galaxyToolDefinitionPath.split('/')[len(galaxyToolDefinitionPath.split('/'))-1]
+        # CreateInterval.xml    ===>   CreateInterval
+        sciworcsConvertedToolName = sciworcsConvertedToolName.split('.')[0]
+        # 'BioFilter_' + CreateInterval  ===>   BioFilter_CreateInterval
+        sciworcsConvertedToolName = toolPrefix + sciworcsConvertedToolName
+
+        #creating the SciWorCS Tool Directory
+        sciworcsConvertedTool_DestinationDir = convertedToolDestinationPath+'/'+sciworcsConvertedToolName
+
+        if os.path.isdir(sciworcsConvertedTool_DestinationDir) == False:
+            os.makedirs(sciworcsConvertedTool_DestinationDir)
+
+        self.convertAndWriteToolDefinition(galaxyToolDefinitionPath, sciworcsConvertedTool_DestinationDir+'/'+sciworcsConvertedToolName+'.xml')
+        self.writeGalaxyWrapperScript(galaxyToolDefinitionPath, galaxyToolRelativePath, sciworcsConvertedTool_DestinationDir+'/'+sciworcsConvertedToolName+'.py')
+
+
+
+
+        print sciworcsConvertedToolName
+
 
 
 gTOs = GalaxyToSciWorCS()
 #gTOs.convertAndWriteToolDefinition('filters/headWrapper.xml', 'sciTest.xml')
-gTOs.writeGalaxyWrapperScript('filters/CreateInterval.xml', 'filters/','sciTest.py')
-
+#gTOs.writeGalaxyWrapperScript('filters/CreateInterval.xml', 'filters', 'sciTest.py')
+gTOs.convertTool_GalaxyToSciWorCS('filters/CreateInterval.xml', 'filters', 'ConvertedTools_GalaxyToSciWorCS', 'BioF_')
 
 
 
