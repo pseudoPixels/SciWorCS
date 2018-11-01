@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_catWrapper/BioF_catWrapper.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" />
     </list>
     <ignored path="Webpage.iws" />
@@ -33,8 +30,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="714" column="4" selection-start-line="714" selection-start-column="4" selection-end-line="714" selection-end-column="4" />
+            <state relative-caret-position="344">
+              <caret line="704" column="16" selection-start-line="704" selection-start-column="16" selection-end-line="704" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -344,11 +341,11 @@
       <recent name="C:\Users\nafi\PycharmProjects\Webpage\static" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules" />
       <recent name="$PROJECT_DIR$/app_collaborative_sci_workflow" />
       <recent name="$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com/vizPlugins" />
       <recent name="$PROJECT_DIR$/app_code_clone/static" />
       <recent name="$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com" />
-      <recent name="$PROJECT_DIR$/app_code_clone/templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python.GalaxyToSciWorCS_Parser">
@@ -1048,8 +1045,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="714" column="4" selection-start-line="714" selection-start-column="4" selection-end-line="714" selection-end-column="4" />
+        <state relative-caret-position="344">
+          <caret line="704" column="16" selection-start-line="704" selection-start-column="16" selection-end-line="704" selection-end-column="16" />
           <folding />
         </state>
       </provider>

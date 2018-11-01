@@ -1,0 +1,65 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>Compare Dataset1</label>
+           <referenceVariable>input1</referenceVariable>
+           <dataFormat>tabular</dataFormat>
+       </toolInput>
+
+       <toolInput>
+           <label>with Dataset2</label>
+           <referenceVariable>input2</referenceVariable>
+           <dataFormat>tabular</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>input</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+Compare Dataset1: <input type="text" class="setting_param" size="45" value="input1=''" /> <br/>
+with Dataset2: <input type="text" class="setting_param" size="45" value="input2=''" /> <br/>
+And find: <select class="setting_param" >
+  <option value="mode='-23'">-23</option>
+  <option value="mode='-12'">-12</option>
+</select>
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> between two datasets<br/><br/>
+This tool is based on UNIX shell command comm. It compares two datasets and returns similarities or differences. For example, if you have two datasets::
+  
+ a  1
+ b  2
+ c  3
+
+and::
+
+ a  1
+ f  6
+ h  8
+
+Using this tool with **Lines unique to Dataset1** option will return::
+
+ b  2
+ c  3
+
+If you use **Lines shared between Dataset1 and Dataset2** option output will look like this::
+
+ a  1
+
+</p>
+   </toolDocumentation>
+
+</SciWorC>

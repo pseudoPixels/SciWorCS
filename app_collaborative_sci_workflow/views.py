@@ -709,10 +709,10 @@ def cvs():
 
 
 	pineline_bio_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
-										re.match(r'Bio*', f)]
+										re.match(r'Filter*', f)]
 
 
-	
+
 
 	saved_workflows = os.listdir("app_collaborative_sci_workflow/pipeline_saved/")
 

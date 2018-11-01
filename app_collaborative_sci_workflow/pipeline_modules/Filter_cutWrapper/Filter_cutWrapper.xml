@@ -1,0 +1,101 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>From</label>
+           <referenceVariable>input</referenceVariable>
+           <dataFormat>txt</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>tabular</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+Cut columns: <input type="text" class="setting_param" size="45" value="columnList='c1,c2'" /> <br/>
+Delimited by: <select class="setting_param" >
+  <option value="delimiter='T'">T</option>
+  <option value="delimiter='Sp'">Sp</option>
+  <option value="delimiter='Dt'">Dt</option>
+  <option value="delimiter='C'">C</option>
+  <option value="delimiter='D'">D</option>
+  <option value="delimiter='U'">U</option>
+  <option value="delimiter='P'">P</option>
+</select>From: <input type="text" class="setting_param" size="45" value="input=''" /> <br/>
+
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> columns from a table<br/><br/>
+
+.. class:: warningmark
+
+**WARNING: This tool breaks column assignments.** To re-establish column assignments run the tools and click on the pencil icon in the latest history item.
+
+.. class:: infomark
+
+The output of this tool is always in tabular format (e.g., if your original delimiters are commas, they will be replaced with tabs). For example:
+
+  Cutting columns 1 and 3 from::
+
+     apple,is,good
+     windows,is,bad
+
+  will give::
+
+    apple   good
+    windows bad
+
+-----
+
+**What it does**
+
+This tool selects (cuts out) specified columns from the dataset.
+
+- Columns are specified as **c1**, **c2**, and so on. Column count begins with **1**
+- Columns can be specified in any order (e.g., **c2,c1,c6**)
+- If you specify more columns than actually present - empty spaces will be filled with dots
+
+-----
+
+**Example**
+
+Input dataset (six columns: c1, c2, c3, c4, c5, and c6)::
+
+   chr1 10   1000  gene1 0 +
+   chr2 100  1500  gene2 0 +
+
+**cut** on columns "**c1,c4,c6**" will return::
+
+   chr1 gene1 +
+   chr2 gene2 +
+
+**cut** on columns "**c6,c5,c4,c1**" will return::
+
+   + 0 gene1 chr1
+   + 0 gene2 chr2
+
+**cut** on columns "**c1-c3**" will return::
+
+   chr1 10   1000
+   chr2 100  1500
+
+
+**cut** on columns "**c8,c7,c4**" will return::
+
+   . . gene1
+   . . gene2
+</p>
+   </toolDocumentation>
+
+</SciWorC>

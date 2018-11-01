@@ -1,0 +1,78 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>From</label>
+           <referenceVariable>input</referenceVariable>
+           <dataFormat>txt</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>tabular</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+From: <input type="text" class="setting_param" size="45" value="input=''" /> <br/>
+Change case of columns: <input type="text" class="setting_param" size="45" value="cols='c1,c2'" /> <br/>
+Delimited by: <select class="setting_param" >
+  <option value="delimiter='TAB'">TAB</option>
+  <option value="delimiter='SPACE'">SPACE</option>
+  <option value="delimiter='DOT'">DOT</option>
+  <option value="delimiter='COMMA'">COMMA</option>
+  <option value="delimiter='DASH'">DASH</option>
+  <option value="delimiter='UNDERSCORE'">UNDERSCORE</option>
+  <option value="delimiter='PIPE'">PIPE</option>
+</select>To: <select class="setting_param" >
+  <option value="casing='up'">up</option>
+  <option value="casing='lo'">lo</option>
+</select>
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p>  of selected columns<br/><br/>
+
+.. class:: warningmark
+
+**This tool breaks column assignments.** To re-establish column assignments run the tool and click on the pencil icon in the resulting history item.
+
+.. class:: warningmark
+
+The format of the resulting dataset from this tool is always tabular.
+
+-----
+
+**What it does**
+
+This tool selects specified columns from a dataset and converts the values of those columns to upper or lower case.
+
+- Columns are specified as **c1**, **c2**, and so on.
+- Columns can be specified in any order (e.g., **c2,c1,c6**)
+
+-----
+
+**Example**
+
+Changing columns 1 and 3 ( delimited by Comma ) to upper case in::
+
+  apple,is,good
+  windows,is,bad
+
+will result in::
+
+  APPLE is GOOD
+  WINDOWS is BAD
+
+  </p>
+   </toolDocumentation>
+
+</SciWorC>

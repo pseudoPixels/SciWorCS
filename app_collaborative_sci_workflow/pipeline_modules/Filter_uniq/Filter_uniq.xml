@@ -1,0 +1,91 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>from dataset</label>
+           <referenceVariable>input</referenceVariable>
+           <dataFormat>tabular</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>tabular</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+from dataset: <input type="text" class="setting_param" size="45" value="input=''" /> <br/>
+Count occurrences of values in column(s): <input type="text" class="setting_param" size="45" value="column=''" /> <br/>
+Delimited by: <select class="setting_param" >
+  <option value="delim='T'">T</option>
+  <option value="delim='Sp'">Sp</option>
+  <option value="delim='Dt'">Dt</option>
+  <option value="delim='C'">C</option>
+  <option value="delim='D'">D</option>
+  <option value="delim='U'">U</option>
+  <option value="delim='P'">P</option>
+</select>How should the results be sorted?: <select class="setting_param" >
+  <option value="sorting='value'">value</option>
+  <option value="sorting='largest'">largest</option>
+  <option value="sorting='smallest'">smallest</option>
+</select>
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> occurrences of each record<br/><br/>
+.. class:: infomark
+
+**TIP:** If your data is not TAB delimited, use *Text Manipulation->Convert*
+
+-----
+
+**Syntax**
+
+This tool counts occurrences of unique values in selected column(s).
+
+- If multiple columns are selected, counting is performed on each unique group of all values in the selected columns.
+- The first column of the resulting dataset will be the count of unique values in the selected column(s) and will be followed by each value.
+
+-----
+
+**Example**
+
+- Input file::
+     
+       chr1   10  100  gene1
+       chr1  105  200  gene2
+       chr1  205  300  gene3
+       chr2   10  100  gene4
+       chr2 1000 1900  gene5
+       chr3   15 1656  gene6
+       chr4   10 1765  gene7
+       chr4   10 1765  gene8
+
+- Counting unique values in column c1 will result in::
+
+       3 chr1
+       2 chr2
+       1 chr3
+       2 chr4   
+
+- Counting unique values in the grouping of columns c2 and c3 will result in::
+
+       2    10    100
+       2    10    1765
+       1    1000  1900
+       1    105   200
+       1    15    1656
+       1    205   300
+
+</p>
+   </toolDocumentation>
+
+</SciWorC>
