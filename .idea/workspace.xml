@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_CreateInterval/BioF_CreateInterval.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_CreateInterval/BioF_CreateInterval.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_axt_to_concat_fasta/BioF_axt_to_concat_fasta.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_axt_to_concat_fasta/BioF_axt_to_concat_fasta.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" />
     </list>
     <ignored path="Webpage.iws" />
@@ -27,14 +32,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="710" column="27" selection-start-line="710" selection-start-column="27" selection-end-line="711" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GalaxyToSciWorCS_Parser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="336" column="0" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="340" column="0" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BioF_catWrapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_catWrapper/BioF_catWrapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catWrapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/catWrapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wig_to_bigwig.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/wig_to_bigwig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -291,33 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BioF_axt_to_concat_fasta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_collaborative_sci_workflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GalaxyToolBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConvertedTools_GalaxyToSciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BioF_CreateInterval" />
+              <option name="myItemId" value="BioF_catWrapper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -577,7 +596,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2992126" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19661734" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19661734" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -636,35 +655,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com/vizPlugins/Stats_FeatureDistribution/Stats_FeatureDistribution_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/user_projects/golammostaeen@gmail.com/vizPlugins/Stats_FeatureDistribution/Stats_FeatureDistribution_html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/templates/txl_cloud_welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_code_clone/templates/index_cloneValidationFramework.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="233" column="43" selection-start-line="233" selection-start-column="43" selection-end-line="233" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_code_clone/templates/app_code_clone_request_user_access.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
@@ -926,14 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="1350" column="8" selection-start-line="1350" selection-start-column="8" selection-end-line="1350" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_CreateInterval/BioF_CreateInterval">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1041,10 +1023,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="710" column="27" selection-start-line="710" selection-start-column="27" selection-end-line="711" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_wig_to_bigwig/BioF_wig_to_bigwig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/wig_to_bigwig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_catWrapper/BioF_catWrapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/catWrapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="336" column="0" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="340" column="0" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

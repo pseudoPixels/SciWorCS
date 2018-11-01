@@ -7,7 +7,7 @@ import uuid
 import glob
 import xml.etree.ElementTree as ET
 import shutil
-
+import re
 
 
 
@@ -47,7 +47,10 @@ class ParseToolCommand:
 
     def getToolInterpreter(self):
         commandLine = self.xmlRoot.find("command")
-        interpreter = commandLine.attrib['interpreter']
+
+        interpreter = ''
+        if 'interpreter' in commandLine.attrib:
+            interpreter = commandLine.attrib['interpreter']
 
         return str(interpreter)
 
@@ -322,13 +325,15 @@ class GalaxyToSciWorCS:
         toolInterpreter = tC.getToolInterpreter()
 
 
+
+        galaxyToolScriptPath = ''
         if toolInterpreter == 'perl':
-            galaxyToolDefinitionPath = galaxyToolDefinitionPath.replace('.xml', '.pl')
+            galaxyToolScriptPath = galaxyToolDefinitionPath.replace('.xml', '.pl')
         elif toolInterpreter == 'python':
-            galaxyToolDefinitionPath = galaxyToolDefinitionPath.replace('.xml', '.py')
+            galaxyToolScriptPath = galaxyToolDefinitionPath.replace('.xml', '.py')
 
 
-        if os.path.exists(galaxyToolDefinitionPath):
+        if os.path.exists(galaxyToolScriptPath):
             return True
 
         return False
@@ -340,11 +345,33 @@ class GalaxyToSciWorCS:
 
 
 
-gTOs = GalaxyToSciWorCS()
+TOOL_PARENT_DIR = 'filters'
+CONVERTED_TOOL_PREFIX = 'BioF_'
+
+#list all xml galaxy tool definition files
+listOfGalaxyToolDefinitionFiles = [TOOL_PARENT_DIR+'/'+f for f in os.listdir(TOOL_PARENT_DIR) if f.endswith('xml')]
+
+galaxyToSciWorCS = GalaxyToSciWorCS()
+
+for aGalaxyToolDefinition in listOfGalaxyToolDefinitionFiles:
+    galaxyToSciWorCS.convertTool_GalaxyToSciWorCS(aGalaxyToolDefinition, 'filters', 'ConvertedTools_GalaxyToSciWorCS', CONVERTED_TOOL_PREFIX)
+
+
+
+
+
+
+
+
+
+
+
+
+#gTOs = GalaxyToSciWorCS()
 #gTOs.convertAndWriteToolDefinition('filters/headWrapper.xml', 'sciTest.xml')
 #gTOs.writeGalaxyWrapperScript('filters/CreateInterval.xml', 'filters', 'sciTest.py')
-gTOs.convertTool_GalaxyToSciWorCS('filters/axt_to_concat_fasta.xml', 'filters', 'ConvertedTools_GalaxyToSciWorCS', 'BioF_')
-#print gTOs.checkIfToolScriptExists('filters/gff2bed.xml')
+#gTOs.convertTool_GalaxyToSciWorCS('filters/axt_to_concat_fasta.xml', 'filters', 'ConvertedTools_GalaxyToSciWorCS', 'BioF_')
+#print gTOs.checkIfToolScriptExists('filters/wig_to_bigwig.xml')
 
 
 
