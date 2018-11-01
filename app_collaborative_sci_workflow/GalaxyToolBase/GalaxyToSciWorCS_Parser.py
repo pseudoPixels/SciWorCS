@@ -33,6 +33,8 @@ class ParseToolCommand:
         for aCommand in commandLineList:
             withRemovedVarSign = aCommand.replace('$', '')  #$start    ---> start
             withRemovedVarSign = withRemovedVarSign.replace('"','') # '"name"'  ---> 'name'
+            withRemovedVarSign = withRemovedVarSign.replace('{', '')  # '{name}'  ---> 'name}'
+            withRemovedVarSign = withRemovedVarSign.replace('}', '')  # 'name}'  ---> 'name'
 
             if withRemovedVarSign == '>' or withRemovedVarSign == '<':
                 withRemovedVarSign = '"' + withRemovedVarSign + '"'
@@ -74,6 +76,8 @@ class ParseToolInput:
         toolDataInputs = []
         for anInputParam in toolInputRoot:
             if anInputParam.attrib['type'] == 'data':
+                if 'format' not in anInputParam.attrib:
+                    anInputParam.attrib['format'] = 'text'
                 aDataInput = {'label' : anInputParam.attrib['label'], 'dataFormat': anInputParam.attrib['format'], 'referenceVariable': anInputParam.attrib['name']}
                 toolDataInputs.append(aDataInput)
 
@@ -346,7 +350,8 @@ class GalaxyToSciWorCS:
 
 
 TOOL_PARENT_DIR = 'filters'
-CONVERTED_TOOL_PREFIX = 'BioF_'
+CONVERTED_TOOL_PREFIX = 'Filter_'
+SciWorCS_To_GALAXY_REF = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/GalaxyToolBase/filters'
 
 #list all xml galaxy tool definition files
 listOfGalaxyToolDefinitionFiles = [TOOL_PARENT_DIR+'/'+f for f in os.listdir(TOOL_PARENT_DIR) if f.endswith('xml')]
@@ -354,7 +359,10 @@ listOfGalaxyToolDefinitionFiles = [TOOL_PARENT_DIR+'/'+f for f in os.listdir(TOO
 galaxyToSciWorCS = GalaxyToSciWorCS()
 
 for aGalaxyToolDefinition in listOfGalaxyToolDefinitionFiles:
-    galaxyToSciWorCS.convertTool_GalaxyToSciWorCS(aGalaxyToolDefinition, 'filters', 'ConvertedTools_GalaxyToSciWorCS', CONVERTED_TOOL_PREFIX)
+    try:
+        galaxyToSciWorCS.convertTool_GalaxyToSciWorCS(aGalaxyToolDefinition, SciWorCS_To_GALAXY_REF, 'ConvertedTools_GalaxyToSciWorCS', CONVERTED_TOOL_PREFIX)
+    except:
+        print 'Error => ' + aGalaxyToolDefinition
 
 
 

@@ -1,0 +1,69 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>in Dataset</label>
+           <referenceVariable>input</referenceVariable>
+           <dataFormat>txt</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>tabular</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+Convert all: <select class="setting_param" >
+  <option value="convert_from='s'">s</option>
+  <option value="convert_from='T'">T</option>
+  <option value="convert_from='Dt'">Dt</option>
+  <option value="convert_from='C'">C</option>
+  <option value="convert_from='D'">D</option>
+  <option value="convert_from='U'">U</option>
+  <option value="convert_from='P'">P</option>
+  <option value="convert_from='Co'">Co</option>
+  <option value="convert_from='Sc'">Sc</option>
+</select>in Dataset: <input type="text" class="setting_param" size="45" value="input=''" /> <br/>
+Strip leading and trailing whitespaces: <input type="text" class="setting_param" size="45" value="strip=''" /> <br/>
+Condense consecutive delimiters in one TAB: <input type="text" class="setting_param" size="45" value="condense=''" /> <br/>
+
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> delimiters to TAB<br/><br/>
+
+**What it does**
+
+Converts all delimiters of a specified type into TABs. Consecutive delimiters can be condensed in a single TAB.
+
+-----
+
+**Example**
+
+- Input file::
+
+    chrX||151283558|151283724|NM_000808_exon_8_0_chrX_151283559_r|0|-
+    chrX|151370273|151370486|NM_000808_exon_9_0_chrX_151370274_r|0|-
+    chrX|151559494|151559583|NM_018558_exon_1_0_chrX_151559495_f|0|+
+    chrX|151564643|151564711|NM_018558_exon_2_0_chrX_151564644_f||||0|+
+
+- Converting all pipe delimiters of the above file to TABs and condensing delimiters will get::
+
+    chrX  151283558  151283724  NM_000808_exon_8_0_chrX_151283559_r  0  -
+    chrX  151370273  151370486  NM_000808_exon_9_0_chrX_151370274_r  0  -
+    chrX  151559494  151559583  NM_018558_exon_1_0_chrX_151559495_f  0  +
+    chrX  151564643  151564711  NM_018558_exon_2_0_chrX_151564644_f  0  +
+
+  </p>
+   </toolDocumentation>
+
+</SciWorC>
