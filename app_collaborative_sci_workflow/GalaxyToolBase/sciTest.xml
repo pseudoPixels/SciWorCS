@@ -1,5 +1,11 @@
 <SciWorC>
    <toolInputs>
+       <toolInput>
+           <label>from</label>
+           <referenceVariable>input</referenceVariable>
+           <dataFormat>txt</dataFormat>
+       </toolInput>
+
    </toolInputs>
 
 
@@ -7,7 +13,7 @@
        <toolOutput>
            <label></label>
            <referenceVariable>out_file1</referenceVariable>
-           <dataFormat>bed</dataFormat>
+           <dataFormat>input</dataFormat>
        </toolOutput>
 
    </toolOutputs>
@@ -15,47 +21,36 @@
 
    <toolConfigurations>
 
-Chromosome: <input type="text" class="setting_param" size="45" value="chrom='chr7'" /> <br/>
-Start position: <input type="text" class="setting_param" size="45" value="start=100" /> <br/>
-End position: <input type="text" class="setting_param" size="45" value="end=1000" /> <br/>
-Name: <input type="text" class="setting_param" size="45" value="name='myInterval'" /> <br/>
-Strand: <select class="setting_param" >
-  <option value="strand='plus'">plus</option>
-  <option value="strand='minus'">minus</option>
-</select>
+Select first: <input type="text" class="setting_param" size="45" value="lineNum=10" /> <br/>
+
    </toolConfigurations>
 
    <toolDocumentation>
 
-<p> as a new dataset<br/><br/>
-
-.. class:: warningmark
-
-**TIP**. Once your interval appears in history, you must tell Galaxy which genome it belongs to by clicking pencil icon or the "?" link in the history item.
-
------
+<p> lines from a dataset<br/><br/>
 
 **What it does**
 
-This tool allows you to create a single genomic interval. The resulting history item will be in the BED format.
+This tool outputs specified number of lines from the **beginning** of a dataset
 
 -----
 
 **Example**
 
-Typing the following values in the form::
+Selecting 2 lines from this::
 
-    Chromosome: chrX
-    Start position: 151087187
-    End position: 151370486
-    Name: NM_000808
-    Strand: minus
+    chr7  56632  56652  D17003_CTCF_R6  310  +
+    chr7  56736  56756  D17003_CTCF_R7  354  +
+    chr7  56761  56781  D17003_CTCF_R4  220  +
+    chr7  56772  56792  D17003_CTCF_R7  372  +
+    chr7  56775  56795  D17003_CTCF_R4  207  +
 
-will create a single interval::
+will produce::
 
-    chrX  151087187  151370486  NM_000808  0  -
+    chr7  56632  56652  D17003_CTCF_R6  310  +
+    chr7  56736  56756  D17003_CTCF_R7  354  +
 
-</p>
+  </p>
    </toolDocumentation>
 
 </SciWorC>
