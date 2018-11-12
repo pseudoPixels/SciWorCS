@@ -812,12 +812,12 @@ html, body {
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-th"></i>
-                          <span>Bioinformatics Tools</span>
+                          <span>Bio Filters</span>
                       </a>
                       <ul class="sub" id="bioinformatics">
                          <!-- <li><a  href="#" id="design_pipelines_menu_biodatacleaning_id">Bio Data Cleaning</a></li>
                           <li><a  href="#" id="design_pipelines_menu_biocalc_id">Bio Brome</a></li> -->
-                          {% for aBioModule in pineline_bio_modules %}
+                          {% for aBioModule in pineline_bio_filters %}
                               <li><a href="#" class="pipeline_modules" id="{{aBioModule}}"> {{aBioModule}}</a></li>
                           {% endfor %}
 

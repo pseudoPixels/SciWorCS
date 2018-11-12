@@ -1,0 +1,39 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>LAV File</label>
+           <referenceVariable>lav_file</referenceVariable>
+           <dataFormat>lav</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>bed_file1</referenceVariable>
+           <dataFormat>bed</dataFormat>
+       </toolOutput>
+
+       <toolOutput>
+           <label></label>
+           <referenceVariable>bed_file2</referenceVariable>
+           <dataFormat>bed</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+LAV File: <input type="text" class="setting_param" size="45" value="lav_file=''" /> <br/>
+
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> Converts a LAV formatted file to BED format<br/><br/><br/><br/>**Syntax**<br/><br/>This tool converts a LAV formatted file to the BED format.<br/><br/>- **LAV format** LAV is an alignment format developed by Webb Miller's group at Penn State University. It is the primary output format for BLASTZ.<br/><br/>- **BED format** Browser Extensible Data format was designed at UCSC for displaying data tracks in the Genome Browser.<br/><br/>-----<br/><br/>**Example**<br/><br/>- Convert LAV format::<br/><br/>    #:lav<br/>    s {<br/>      "/galaxy/data/hg16/seq/chr19.nib" 1 63811651 0 1<br/>      "/galaxy/data/mm5/seq/chr11.nib" 1 121648857 0 1<br/>    }<br/>    h {<br/>      "> hg16.chr19"<br/>      "> mm5.chr11 (reverse complement)"<br/>    }<br/>    a {<br/>      s 3500<br/>      b 3001012 70568380<br/>      e 3001075 70568443<br/>      l 3001012 70568380 3001075 70568443 81<br/>    }<br/>    a {<br/>      s 3900<br/>      b 3008279 70573976<br/>      e 3008357 70574054<br/>      l 3008279 70573976 3008357 70574054 78<br/>    }<br/>    #:eof<br/><br/>- To two BED formatted files::<br/><br/>    chr19	3001011	3001075	hg16_0	0	+<br/>    chr19	3008278	3008357	hg16_1	0	+<br/><br/> **and**::<br/><br/>    chr11	70568379	70568443	mm5_0	0	+<br/>    chr11	70573975	70574054	mm5_1	0	+<br/>  </p>
+   </toolDocumentation>
+
+</SciWorC>

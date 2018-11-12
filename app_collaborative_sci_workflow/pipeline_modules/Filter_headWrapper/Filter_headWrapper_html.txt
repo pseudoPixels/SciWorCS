@@ -1,0 +1,34 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>from</label>
+           <referenceVariable>input</referenceVariable>
+           <dataFormat>txt</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>input</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+Select first: <input type="text" class="setting_param" size="45" value="lineNum=10" /> <br/>
+from: <input type="text" class="setting_param" size="45" value="input=''" /> <br/>
+
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> lines from a dataset<br/><br/><br/><br/>**What it does**<br/><br/>This tool outputs specified number of lines from the **beginning** of a dataset<br/><br/>-----<br/><br/>**Example**<br/><br/>Selecting 2 lines from this::<br/><br/>    chr7  56632  56652  D17003_CTCF_R6  310  +<br/>    chr7  56736  56756  D17003_CTCF_R7  354  +<br/>    chr7  56761  56781  D17003_CTCF_R4  220  +<br/>    chr7  56772  56792  D17003_CTCF_R7  372  +<br/>    chr7  56775  56795  D17003_CTCF_R4  207  +<br/><br/>will produce::<br/><br/>    chr7  56632  56652  D17003_CTCF_R6  310  +<br/>    chr7  56736  56756  D17003_CTCF_R7  354  +<br/><br/>  </p>
+   </toolDocumentation>
+
+</SciWorC>

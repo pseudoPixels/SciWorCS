@@ -2,7 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_CreateInterval/Filter_CreateInterval.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_CreateInterval/Filter_CreateInterval.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_axt_to_concat_fasta/Filter_axt_to_concat_fasta.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_axt_to_concat_fasta/Filter_axt_to_concat_fasta.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_axt_to_fasta/Filter_axt_to_fasta.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_axt_to_fasta/Filter_axt_to_fasta.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_axt_to_lav/Filter_axt_to_lav.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_axt_to_lav/Filter_axt_to_lav.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_catWrapper/Filter_catWrapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_changeCase/Filter_changeCase.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_changeCase/Filter_changeCase.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_commWrapper/Filter_commWrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_commWrapper/Filter_commWrapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_condense_characters/Filter_condense_characters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_condense_characters/Filter_condense_characters.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_convert_characters/Filter_convert_characters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_convert_characters/Filter_convert_characters.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_cutWrapper/Filter_cutWrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_cutWrapper/Filter_cutWrapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_fixedValueColumn/Filter_fixedValueColumn.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_fixedValueColumn/Filter_fixedValueColumn.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_grep/Filter_grep.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_grep/Filter_grep.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_headWrapper/Filter_headWrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_headWrapper/Filter_headWrapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_lav_to_bed/Filter_lav_to_bed.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_lav_to_bed/Filter_lav_to_bed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_mergeCols/Filter_mergeCols.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_randomlines/Filter_randomlines.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_remove_beginning/Filter_remove_beginning.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_remove_beginning/Filter_remove_beginning.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_secure_hash_message_digest/Filter_secure_hash_message_digest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_sorter/Filter_sorter.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_tailWrapper/Filter_tailWrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_tailWrapper/Filter_tailWrapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_ucsc_gene_bed_to_exon_bed/Filter_ucsc_gene_bed_to_exon_bed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_ucsc_gene_bed_to_intron_bed/Filter_ucsc_gene_bed_to_intron_bed.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_ucsc_gene_bed_to_intron_bed/Filter_ucsc_gene_bed_to_intron_bed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_ucsc_gene_table_to_intervals/Filter_ucsc_gene_table_to_intervals.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_uniq/Filter_uniq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_uniq/Filter_uniq.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_wiggle_to_simple/Filter_wiggle_to_simple.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_wiggle_to_simple/Filter_wiggle_to_simple.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/macros.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_CreateInterval/Filter_CreateInterval.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_CreateInterval/Filter_CreateInterval.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_axt_to_concat_fasta/Filter_axt_to_concat_fasta.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_axt_to_concat_fasta/Filter_axt_to_concat_fasta.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_axt_to_fasta/Filter_axt_to_fasta.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_axt_to_fasta/Filter_axt_to_fasta.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_axt_to_lav/Filter_axt_to_lav.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_axt_to_lav/Filter_axt_to_lav.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_catWrapper/Filter_catWrapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_changeCase/Filter_changeCase.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_changeCase/Filter_changeCase.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_commWrapper/Filter_commWrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_commWrapper/Filter_commWrapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_condense_characters/Filter_condense_characters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_condense_characters/Filter_condense_characters.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_convert_characters/Filter_convert_characters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_convert_characters/Filter_convert_characters.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_cutWrapper/Filter_cutWrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_cutWrapper/Filter_cutWrapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_fixedValueColumn/Filter_fixedValueColumn.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_fixedValueColumn/Filter_fixedValueColumn.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_grep/Filter_grep.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_grep/Filter_grep.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_headWrapper/Filter_headWrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_headWrapper/Filter_headWrapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_lav_to_bed/Filter_lav_to_bed.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_lav_to_bed/Filter_lav_to_bed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_mergeCols/Filter_mergeCols.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_randomlines/Filter_randomlines.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_remove_beginning/Filter_remove_beginning.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_remove_beginning/Filter_remove_beginning.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_secure_hash_message_digest/Filter_secure_hash_message_digest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_sorter/Filter_sorter.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_tailWrapper/Filter_tailWrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_tailWrapper/Filter_tailWrapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_ucsc_gene_bed_to_exon_bed/Filter_ucsc_gene_bed_to_exon_bed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_ucsc_gene_bed_to_intron_bed/Filter_ucsc_gene_bed_to_intron_bed.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_ucsc_gene_bed_to_intron_bed/Filter_ucsc_gene_bed_to_intron_bed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_ucsc_gene_table_to_intervals/Filter_ucsc_gene_table_to_intervals.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_uniq/Filter_uniq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_uniq/Filter_uniq.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_wiggle_to_simple/Filter_wiggle_to_simple.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_wiggle_to_simple/Filter_wiggle_to_simple.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" />
     </list>
     <ignored path="Webpage.iws" />
@@ -27,30 +117,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="704" column="16" selection-start-line="704" selection-start-column="16" selection-end-line="704" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GalaxyToSciWorCS_Parser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="348" column="0" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NiCAD_abstracting_html.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/NiCAD_abstracting/NiCAD_abstracting_html.txt">
+      <file leaf-file-name="Bio_std2sol_main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Bio_std2sol/Bio_std2sol_main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -59,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NiCAD_abstracting_main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/NiCAD_abstracting/NiCAD_abstracting_main.py">
+      <file leaf-file-name="fq_all2std.pl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/fq_all2std.pl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="71" />
+            <state relative-caret-position="450">
+              <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -85,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_doc.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureCount/Stats_FeatureCount_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js" />
@@ -129,13 +196,14 @@
         <option value="$PROJECT_DIR$/app_code_clone/templates/machine_learning_validation.html" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/std2sol/std2sol_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/std2sol/std2sol_html.txt" />
-        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sciTest.xml" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sciTest.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/lav_to_bed.xml" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_CreateInterval/BioF_CreateInterval.xml" />
-        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_CreateInterval/Filter_CreateInterval_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" />
       </list>
     </option>
   </component>
@@ -237,7 +305,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app_collaborative_sci_workflow" />
+              <option name="myItemId" value="bioinformatics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioinformatics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FLASH-1.2.11" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,72 +338,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app_collaborative_sci_workflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pipeline_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_collaborative_sci_workflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pipeline_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NiCAD_abstracting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_collaborative_sci_workflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GalaxyToolBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SciWorCS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_collaborative_sci_workflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GalaxyToolBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConvertedTools_GalaxyToSciWorCS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -572,9 +592,10 @@
     <frame x="67" y="25" width="2493" height="1575" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15263158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19595142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2992126" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19661734" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
@@ -587,7 +608,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -636,299 +656,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Bio_std2sol/Bio_std2sol_doc.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Bio_std2sol/Bio_std2sol_html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="832" column="53" selection-start-line="832" selection-start-column="53" selection-end-line="832" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Bio_std2sol/Bio_std2sol_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#226#243#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/fastqc/fastqc_html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Bio_std2sol/Bio_std2sol_html_temp.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/solid2fastq.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/solid_to_fastq.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/f.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/convert_characters.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/pasteWrapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/randomlines.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/tailWrapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_FeatureDistribution/Stats_FeatureDistribution_html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Stats_DropVariable/Stats_DropVariable_html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/fastqc/fastqc_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/NiCAD_normalizing/NiCAD_normalizing_html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/NiCAD_normalizing/NiCAD_normalizing_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.pl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sciTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/sciTest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/lav_to_bed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_CreateInterval/BioF_CreateInterval">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_CreateInterval/BioF_CreateInterval.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_CreateInterval/BioF_CreateInterval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="68" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/axt_to_concat_fasta.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="89" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
-          <folding>
-            <element signature="e#341#345#0" expanded="true" />
-            <element signature="e#357#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_axt_to_concat_fasta/BioF_axt_to_concat_fasta.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_axt_to_concat_fasta/BioF_axt_to_concat_fasta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="90" selection-start-line="2" selection-start-column="90" selection-end-line="2" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/joiner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/joinWrapper.pl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/joinWrapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/mergeCols.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/joiner2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/fixedValueColumn.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/secure_hash_message_digest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/BioF_wig_to_bigwig/BioF_wig_to_bigwig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1033,10 +760,250 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/telepointerGO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="2752" column="41" selection-start-line="2752" selection-start-column="16" selection-end-line="2752" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_CreateInterval/Filter_CreateInterval_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="145" selection-start-line="2" selection-start-column="145" selection-end-line="2" selection-end-column="145" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_CreateInterval/Filter_CreateInterval_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Filter_CreateInterval/Filter_CreateInterval_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="782" column="23" selection-start-line="782" selection-start-column="23" selection-end-line="782" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_CreateInterval/Filter_CreateInterval_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Evolution_codingSnps/Evolution_codingSnps_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/extract/extract_genomic_dna.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/filters/CreateInterval.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/genomespace/genomespace_exporter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/genomespace/genomespace_file_browser_dev.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/interval2maf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_split_by_species.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_limit_to_species.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/maf/maf_limit_size.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Maf_blat_wrapper/Maf_blat_wrapper_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ngs_simulation/ngs_simulation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Maf_gpass/Maf_gpass_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Maf_gpass/Maf_gpass_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Maf_master2pg/Maf_master2pg_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Maf_master2pg/Maf_master2pg_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Maf_solid_qual_stats/Maf_solid_qual_stats_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/ConvertedTools_GalaxyToSciWorCS/Maf_solid_qual_stats/Maf_solid_qual_stats_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/evolution/add_scores.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-615">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/fastq_conversions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/fastq_conversions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/evolution/codingSnps.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/evolution/add_scores.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="348" column="0" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="342" column="20" selection-start-line="342" selection-start-column="20" selection-end-line="342" selection-end-column="20" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -1045,8 +1012,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="704" column="16" selection-start-line="704" selection-start-column="16" selection-end-line="704" selection-end-column="16" />
+        <state relative-caret-position="929">
+          <caret line="737" column="24" selection-start-line="737" selection-start-column="4" selection-end-line="737" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bioinformatics/FLASH-1.2.11/COPYING">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="625" column="26" selection-start-line="625" selection-start-column="26" selection-end-line="625" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bioinformatics/FLASH-1.2.11/flash.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8370">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/flash/flash_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/next_gen_conversion/fastq_gen_conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="141" column="46" selection-start-line="141" selection-start-column="46" selection-end-line="141" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Bio_std2sol/Bio_std2sol_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/fq_all2std.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
           <folding />
         </state>
       </provider>

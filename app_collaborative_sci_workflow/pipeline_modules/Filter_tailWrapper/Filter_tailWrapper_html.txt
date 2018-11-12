@@ -1,0 +1,34 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>from</label>
+           <referenceVariable>input</referenceVariable>
+           <dataFormat>txt</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>input</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+Select last: <input type="text" class="setting_param" size="45" value="lineNum=10" /> <br/>
+from: <input type="text" class="setting_param" size="45" value="input=''" /> <br/>
+
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> lines from a dataset<br/><br/><br/><br/>**What it does**<br/><br/>This tool outputs specified number of lines from the **end** of a dataset<br/><br/>-----<br/><br/>**Example**<br/><br/>- Input File::<br/><br/>    chr7    57134   57154   D17003_CTCF_R7  356     -<br/>    chr7    57247   57267   D17003_CTCF_R4  207     +<br/>    chr7    57314   57334   D17003_CTCF_R5  269     +<br/>    chr7    57341   57361   D17003_CTCF_R7  375     +<br/>    chr7    57457   57477   D17003_CTCF_R3  188     +<br/><br/>- Show last two lines of above file. The result is::<br/><br/>    chr7    57341   57361   D17003_CTCF_R7  375     +<br/>    chr7    57457   57477   D17003_CTCF_R3  188     +<br/><br/>  </p>
+   </toolDocumentation>
+
+</SciWorC>

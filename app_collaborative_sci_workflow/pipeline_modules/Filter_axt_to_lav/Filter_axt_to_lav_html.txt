@@ -1,0 +1,47 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>Alignment File</label>
+           <referenceVariable>align_input</referenceVariable>
+           <dataFormat>axt</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>lav_file</referenceVariable>
+           <dataFormat>lav</dataFormat>
+       </toolOutput>
+
+       <toolOutput>
+           <label></label>
+           <referenceVariable>seq_file1</referenceVariable>
+           <dataFormat>fasta</dataFormat>
+       </toolOutput>
+
+       <toolOutput>
+           <label></label>
+           <referenceVariable>seq_file2</referenceVariable>
+           <dataFormat>fasta</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+Alignment File: <input type="text" class="setting_param" size="45" value="align_input=''" /> <br/>
+Genome: <input type="text" class="setting_param" size="45" value="dbkey_1=''" /> <br/>
+Genome: <input type="text" class="setting_param" size="45" value="dbkey_2=''" /> <br/>
+
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> Converts an AXT formatted file to LAV format<br/><br/><br/><br/>.. class:: warningmark<br/><br/>**IMPORTANT**: AXT formatted alignments will be phased out from Galaxy in the coming weeks. They will be replaced with pairwise MAF alignments, which are already available. To try pairwise MAF alignments use "Extract Pairwise MAF blocks" tool in *Fetch Sequences and Alignments* section.<br/><br/>--------<br/><br/><br/>**Syntax**<br/><br/>This tool converts an AXT formatted file to the LAV format.<br/><br/>- **AXT format** The alignments are produced from Blastz, an alignment tool available from Webb Miller's lab at Penn State University. The lav format Blastz output, which does not include the sequence, was converted to AXT format with lavToAxt. Each alignment block in an AXT file contains three lines: a summary line and 2 sequence lines. Blocks are separated from one another by blank lines.<br/><br/>- **LAV format** LAV is an alignment format developed by Webb Miller's group. It is the primary output format for BLASTZ.<br/><br/>- **FASTA format** a text-based format for representing both nucleic and protein sequences, in which base pairs or proteins are represented using a single-letter code.<br/><br/>  - This format contains an one line header. It starts with a ">" symbol. The first word on this line is the name of the sequence. The rest of the line is a description of the sequence.<br/>  - The remaining lines contain the sequence itself.<br/>  - Blank lines in a FASTA file are ignored, and so are spaces or other gap symbols (dashes, underscores, periods) in a sequence.<br/>  - Fasta files containing multiple sequences are just the same, with one sequence listed right after another. This format is accepted for many multiple sequence alignment programs.<br/><br/>-----<br/><br/>**Example**<br/><br/>- AXT format::<br/><br/>    0 chr19 3001012 3001075 chr11 70568380 70568443 - 3500<br/>    TCAGCTCATAAATCACCTCCTGCCACAAGCCTGGCCTGGTCCCAGGAGAGTGTCCAGGCTCAGA<br/>    TCTGTTCATAAACCACCTGCCATGACAAGCCTGGCCTGTTCCCAAGACAATGTCCAGGCTCAGA<br/><br/>    1 chr19 3008279 3008357 chr11 70573976 70574054 - 3900<br/>    CACAATCTTCACATTGAGATCCTGAGTTGCTGATCAGAATGGAAGGCTGAGCTAAGATGAGCGACGAGGCAATGTCACA<br/>    CACAGTCTTCACATTGAGGTACCAAGTTGTGGATCAGAATGGAAAGCTAGGCTATGATGAGGGACAGTGCGCTGTCACA<br/><br/>- Convert the above file to LAV format::<br/><br/>    #:lav<br/>    s {<br/>      "/galaxy/data/hg16/seq/chr19.nib" 1 63811651 0 1<br/>      "/galaxy/data/mm5/seq/chr11.nib-" 1 121648857 0 1<br/>    }<br/>    h {<br/>      "> hg16.chr19"<br/>      "> mm5.chr11 (reverse complement)"<br/>    }<br/>    a {<br/>      s 3500<br/>      b 3001012 70568380<br/>      e 3001075 70568443<br/>      l 3001012 70568380 3001075 70568443 81<br/>    }<br/>    a {<br/>      s 3900<br/>      b 3008279 70573976<br/>      e 3008357 70574054<br/>      l 3008279 70573976 3008357 70574054 78<br/>    }<br/>    #:eof<br/><br/>- With two files in the FASTA format::<br/><br/>    >hg16.chr19_-_3001011_3001075<br/>    TCAGCTCATAAATCACCTCCTGCCACAAGCCTGGCCTGGTCCCAGGAGAGTGTCCAGGCTCAGA<br/><br/>    >hg16.chr19_-_3008278_3008357<br/>    CACAATCTTCACATTGAGATCCTGAGTTGCTGATCAGAATGGAAGGCTGAGCTAAGATGAGCGACGAGGCAATGTCACA<br/><br/> **and**::<br/><br/>    >mm5.chr11_-_70568379_70568443<br/>    TCTGTTCATAAACCACCTGCCATGACAAGCCTGGCCTGTTCCCAAGACAATGTCCAGGCTCAGA<br/><br/>    >mm5.chr11_-_70573975_70574054<br/>    CACAGTCTTCACATTGAGGTACCAAGTTGTGGATCAGAATGGAAAGCTAGGCTATGATGAGGGACAGTGCGCTGTCACA<br/>  </p>
+   </toolDocumentation>
+
+</SciWorC>

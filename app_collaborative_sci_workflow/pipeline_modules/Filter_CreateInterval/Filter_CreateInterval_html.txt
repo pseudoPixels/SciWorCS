@@ -1,0 +1,33 @@
+<SciWorC>
+   <toolInputs>
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>bed</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+Chromosome: <input type="text" class="setting_param" size="45" value="chrom='chr7'" /> <br/>
+Start position: <input type="text" class="setting_param" size="45" value="start='100'" /> <br/>
+End position: <input type="text" class="setting_param" size="45" value="end='1000'" /> <br/>
+Name: <input type="text" class="setting_param" size="45" value="name='myInterval'" /> <br/>
+Strand: <select class="setting_param" >
+  <option value="strand='plus'">plus</option>
+  <option value="strand='minus'">minus</option>
+</select>
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> as a new dataset<br/><br/><br/><br/>.. class:: warningmark<br/><br/>**TIP**. Once your interval appears in history, you must tell Galaxy which genome it belongs to by clicking pencil icon or the "?" link in the history item.<br/><br/>-----<br/><br/>**What it does**<br/><br/>This tool allows you to create a single genomic interval. The resulting history item will be in the BED format.<br/><br/>-----<br/><br/>**Example**<br/><br/>Typing the following values in the form::<br/><br/>    Chromosome: chrX<br/>    Start position: 151087187<br/>    End position: 151370486<br/>    Name: NM_000808<br/>    Strand: minus<br/><br/>will create a single interval::<br/><br/>    chrX  151087187  151370486  NM_000808  0  -<br/><br/></p>
+   </toolDocumentation>
+
+</SciWorC>

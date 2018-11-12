@@ -1,0 +1,37 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>Select lines from</label>
+           <referenceVariable>input</referenceVariable>
+           <dataFormat>txt</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>input</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+Select lines from: <input type="text" class="setting_param" size="45" value="input=''" /> <br/>
+that: <select class="setting_param" >
+  <option value="invert='false'">false</option>
+  <option value="invert='true'">true</option>
+</select>the pattern: <input type="text" class="setting_param" size="45" value="pattern='^chr([0-9A-Za-z])+'" /> <br/>
+
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> lines that match an expression<br/><br/><br/><br/>.. class:: infomark<br/><br/>**TIP:** If your data is not TAB delimited, use *Text Manipulation->Convert*<br/><br/>-----<br/><br/>**Syntax**<br/><br/>The select tool searches the data for lines containing or not containing a match to the given pattern. Regular Expression is introduced in this tool. A Regular Expression is a pattern describing a certain amount of text. <br/><br/>- **( ) { } [ ] . * ? + \ ^ $** are all special characters. **\\** can be used to "escape" a special character, allowing that special character to be searched for.<br/>- **\\A** matches the beginning of a string(but not an internal line).<br/>- **\\d** matches a digit, same as [0-9].<br/>- **\\D** matches a non-digit.<br/>- **\\s** matches a whitespace character.<br/>- **\\S** matches anything BUT a whitespace.<br/>- **\\t** matches a tab.<br/>- **\\w** matches an alphanumeric character.<br/>- **\\W** matches anything but an alphanumeric character.<br/>- **(** .. **)** groups a particular pattern.<br/>- **\\Z** matches the end of a string(but not a internal line).<br/>- **{** n or n, or n,m **}** specifies an expected number of repetitions of the preceding pattern.<br/><br/>  - **{n}** The preceding item is matched exactly n times.<br/>  - **{n,}** The preceding item is matched n or more times. <br/>  - **{n,m}** The preceding item is matched at least n times but not more than m times. <br/><br/>- **[** ... **]** creates a character class. Within the brackets, single characters can be placed. A dash (-) may be used to indicate a range such as **a-z**.<br/>- **.** Matches any single character except a newline.<br/>- ***** The preceding item will be matched zero or more times.<br/>- **?** The preceding item is optional and matched at most once.<br/>- **+** The preceding item will be matched one or more times.<br/>- **^** has two meaning:<br/>  - matches the beginning of a line or string. <br/>  - indicates negation in a character class. For example, [^...] matches every character except the ones inside brackets.<br/>- **$** matches the end of a line or string.<br/>- **\|** Separates alternate possibilities. <br/><br/>-----<br/><br/>**Example**<br/><br/>- **^chr([0-9A-Za-z])+** would match lines that begin with chromosomes, such as lines in a BED format file.<br/>- **(ACGT){1,5}** would match at least 1 "ACGT" and at most 5 "ACGT" consecutively.<br/>- **([^,][0-9]{1,3})(,[0-9]{3})\*** would match a large integer that is properly separated with commas such as 23,078,651.<br/>- **(abc)|(def)** would match either "abc" or "def".<br/>- **^\\W+#** would match any line that is a comment.<br/></p>
+   </toolDocumentation>
+
+</SciWorC>

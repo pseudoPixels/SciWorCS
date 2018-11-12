@@ -1,0 +1,41 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>in this Dataset</label>
+           <referenceVariable>input</referenceVariable>
+           <dataFormat>txt</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>input</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+Condense all consecutive: <select class="setting_param" >
+  <option value="character='T'">T</option>
+  <option value="character='Sp'">Sp</option>
+  <option value="character='Dt'">Dt</option>
+  <option value="character='C'">C</option>
+  <option value="character='D'">D</option>
+  <option value="character='U'">U</option>
+  <option value="character='P'">P</option>
+</select>in this Dataset: <input type="text" class="setting_param" size="45" value="input=''" /> <br/>
+
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> consecutive characters<br/><br/><br/><br/>**What it does**<br/><br/>This tool condenses all consecutive characters of a specified type.<br/><br/>-----<br/><br/>**Example**<br/><br/>- Input file::<br/><br/>    geneX,,,10,,,,,20<br/>    geneY,,5,,,,,12,15,9,<br/><br/>- Condense all consecutive commas. The above file will be converted into::<br/><br/>    geneX,10,20<br/>    geneY,5,12,15,9<br/><br/></p>
+   </toolDocumentation>
+
+</SciWorC>

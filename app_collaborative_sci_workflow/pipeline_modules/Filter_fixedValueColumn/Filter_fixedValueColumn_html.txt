@@ -1,0 +1,37 @@
+<SciWorC>
+   <toolInputs>
+       <toolInput>
+           <label>to Dataset</label>
+           <referenceVariable>input</referenceVariable>
+           <dataFormat>tabular</dataFormat>
+       </toolInput>
+
+   </toolInputs>
+
+
+   <toolOutputs>
+       <toolOutput>
+           <label></label>
+           <referenceVariable>out_file1</referenceVariable>
+           <dataFormat>input</dataFormat>
+       </toolOutput>
+
+   </toolOutputs>
+
+
+   <toolConfigurations>
+
+Add this value: <input type="text" class="setting_param" size="45" value="exp='1'" /> <br/>
+to Dataset: <input type="text" class="setting_param" size="45" value="input=''" /> <br/>
+Iterate?: <select class="setting_param" >
+  <option value="iterate='no'">no</option>
+  <option value="iterate='yes'">yes</option>
+</select>
+   </toolConfigurations>
+
+   <toolDocumentation>
+
+<p> to an existing dataset<br/><br/><br/><br/>.. class:: infomark<br/><br/>**TIP:** If your data is not TAB delimited, use *Text Manipulation->Convert*<br/><br/>-----<br/><br/>**What it does**<br/><br/>You can enter any value and it will be added as a new column to your dataset<br/><br/>-----<br/><br/>**Example**<br/><br/>If you original data looks like this::<br/><br/>    chr1 10  100 geneA<br/>    chr2 200 300 geneB<br/>    chr2 400 500 geneC<br/><br/>Typing **+** in the text box will generate::<br/><br/>    chr1 10  100 geneA +<br/>    chr2 200 300 geneB +<br/>    chr2 400 500 geneC +<br/>     <br/><br/>You can also add line numbers by selecting **Iterate: YES**. In this case if you enter **1** in the text box you will get::<br/><br/>    chr1 10  100 geneA 1<br/>    chr2 200 300 geneB 2<br/>    chr2 400 500 geneC 3<br/><br/><br/><br/></p>
+   </toolDocumentation>
+
+</SciWorC>

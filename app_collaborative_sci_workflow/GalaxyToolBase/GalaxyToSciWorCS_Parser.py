@@ -132,7 +132,7 @@ class ParseToolDocumentation:
         toolDescriptionRoot = self.xmlRoot.find("description")
         toolHelpRoot = self.xmlRoot.find("help")
 
-        return '<p> '+ toolDescriptionRoot.text + '<br/><br/>' + toolHelpRoot.text + '</p>'
+        return '<p> '+ toolDescriptionRoot.text.replace('\n','<br/>') + '<br/><br/>' + toolHelpRoot.text.replace('\n','<br/>') + '</p>'
 
 
 
@@ -316,8 +316,8 @@ class GalaxyToSciWorCS:
         if os.path.isdir(sciworcsConvertedTool_DestinationDir) == False:
             os.makedirs(sciworcsConvertedTool_DestinationDir)
 
-        self.convertAndWriteToolDefinition(galaxyToolDefinitionPath, sciworcsConvertedTool_DestinationDir+'/'+sciworcsConvertedToolName+'.xml')
-        self.writeGalaxyWrapperScript(galaxyToolDefinitionPath, galaxyToolRelativePath, sciworcsConvertedTool_DestinationDir+'/'+sciworcsConvertedToolName+'.py')
+        self.convertAndWriteToolDefinition(galaxyToolDefinitionPath, sciworcsConvertedTool_DestinationDir+'/'+sciworcsConvertedToolName+'_html.txt')
+        self.writeGalaxyWrapperScript(galaxyToolDefinitionPath, galaxyToolRelativePath, sciworcsConvertedTool_DestinationDir+'/'+sciworcsConvertedToolName+'_main.py')
 
         return True
 
@@ -349,9 +349,9 @@ class GalaxyToSciWorCS:
 
 
 
-TOOL_PARENT_DIR = 'filters'
-CONVERTED_TOOL_PREFIX = 'Filter_'
-SciWorCS_To_GALAXY_REF = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/GalaxyToolBase/filters'
+TOOL_PARENT_DIR = 'sr_assembly'
+CONVERTED_TOOL_PREFIX = 'Maf_'
+SciWorCS_To_GALAXY_REF = '/home/ubuntu/Webpage/app_collaborative_sci_workflow/GalaxyToolBase/maf'
 
 #list all xml galaxy tool definition files
 listOfGalaxyToolDefinitionFiles = [TOOL_PARENT_DIR+'/'+f for f in os.listdir(TOOL_PARENT_DIR) if f.endswith('xml')]

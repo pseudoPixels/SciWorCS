@@ -708,7 +708,7 @@ def cvs():
 										re.match(r'Stats*', f)]
 
 
-	pineline_bio_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
+	pineline_bio_filters = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
 										re.match(r'Filter*', f)]
 
 
@@ -735,7 +735,7 @@ def cvs():
 	pineline_mathematical_analysis_modules=pineline_mathematical_analysis_modules,
 	pineline_galaxy_modules = pineline_galaxy_modules,
 	pineline_machineLearning_modules = pineline_machineLearning_modules,
-	pineline_bio_modules = pineline_bio_modules,
+	pineline_bio_filters = pineline_bio_filters,
 	saved_workflows=saved_workflows)
 
 
@@ -931,9 +931,9 @@ def get_module_details():
 
 	
 	moduleSourceCode_main = getModuleCodes(modulesPath+p_module_key+'/'+p_module_key+'_main.py')
-	moduleSourceCode_settings = getModuleCodes(modulesPath+p_module_key+'/'+p_module_key+'_settings.py')
+	moduleSourceCode_settings = ''#getModuleCodes(modulesPath+p_module_key+'/'+p_module_key+'_settings.py')
 	moduleSourceCode_html = getModuleCodes(modulesPath+p_module_key+'/'+p_module_key+'_html.txt')
-	module_documentation = getModuleCodes(modulesPath+p_module_key+'/'+p_module_key+'_doc.txt')
+	module_documentation = '' #getModuleCodes(modulesPath+p_module_key+'/'+p_module_key+'_doc.txt')
 
 
 
