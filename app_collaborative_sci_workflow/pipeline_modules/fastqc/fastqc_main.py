@@ -23,3 +23,5 @@ tmpZIP = fileName+'_fastqc.zip'
 os.rename(tmpDir+'/' + tmpHTML, fastqc_summary)
 os.rename(tmpDir+'/' + tmpZIP, fastqc_compressed_report)
 pipe3 = subprocess.Popen(["/bin//rm", "-r", tmpDir]).communicate()
+
+

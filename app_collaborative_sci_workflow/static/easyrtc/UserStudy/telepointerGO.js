@@ -76,7 +76,7 @@ myDiagram='';
     var portOneDataType = fromport.portId.split('.')[fromport.portId.split('.').length - 1];
     var portTwoDataType = toport.portId.split('.')[toport.portId.split('.').length - 1];
 
-
+    if(portOneDataType == 'any')return true;
     if(portOneDataType == portTwoDataType)return true; //the linking datatype is same, so allow
 
     return false;

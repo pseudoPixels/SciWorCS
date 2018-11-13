@@ -12,8 +12,13 @@
     <toolOutputs>
         <toolOutput>
             <label>Quality Analysis HTML</label>
-            <referenceVariable>fasta_file</referenceVariable>
-            <dataFormat>fa</dataFormat>
+            <referenceVariable>fastqc_summary</referenceVariable>
+            <dataFormat>html</dataFormat>
+        </toolOutput>
+        <toolOutput>
+            <label>Quality Analysis ZIP</label>
+            <referenceVariable>fastqc_compressed_report</referenceVariable>
+            <dataFormat>zip</dataFormat>
         </toolOutput>
     </toolOutputs>
 
@@ -25,7 +30,10 @@
 
 
     <toolDocumentation>
-        Converts Std 2 Sol
+<b>Math - Addition</b>
+	<p><i>Description:</i><br/>
+Adds Two Numbers <br/>
+<br/></p>
     </toolDocumentation>
 
 
