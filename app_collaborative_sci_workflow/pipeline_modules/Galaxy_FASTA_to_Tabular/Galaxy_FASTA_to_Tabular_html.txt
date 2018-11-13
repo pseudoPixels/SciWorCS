@@ -2,8 +2,8 @@
     <toolInputs>
         <toolInput>
             <label>Convert</label>
-            <referenceVariable>convert_seq</referenceVariable>
-            <dataFormat>txt</dataFormat>
+            <referenceVariable>fasta_input</referenceVariable>
+            <dataFormat>fa</dataFormat>
         </toolInput>
     </toolInputs>
 
@@ -12,19 +12,93 @@
     <toolOutputs>
         <toolOutput>
             <label>Renamed Potential Clones</label>
-            <referenceVariable>output</referenceVariable>
-            <dataFormat>txt</dataFormat>
+            <referenceVariable>tabular_output</referenceVariable>
+            <dataFormat>tabular</dataFormat>
         </toolOutput>
     </toolOutputs>
 
 
 
     <toolConfigurations>
+        How many title characters to keep? :
+        <input type="text" class="setting_param" value="keep_first='0'" size="45"/> <br/>
+        How many columns to divide title string into? :
+        <input type="text" class="setting_param" value="descr_columns='1'" size="45"/> <br/>
     </toolConfigurations>
 
 
 
+
+
     <toolDocumentation>
+
+
+    **What it does**
+
+This tool converts FASTA formatted sequences to TAB-delimited format.
+
+Many tools consider the first word of the FASTA "&gt;" title line to be an identifier, and any remaining text to be a free form description.
+It is therefore useful to split this text into two columns in Galaxy (identifier and any description) by setting **How many columns to divide title string into?** to **2**.
+In some cases the description can be usefully broken up into more columns -- see the examples .
+
+The option *How many characters to keep?* allows to select a specified number of letters from the beginning of each FASTA entry.
+With the introduction of the **How many columns to divide title string into?** option this setting is of limited use, but does still allow you to truncate the identifier.
+<br/>
+-----
+<br/>
+**Example**
+<br/>
+Suppose you have the following FASTA formatted sequences from a Roche (454) FLX sequencing run::<br/>
+
+    &gt;EYKX4VC02EQLO5 length=108 xy=1826_0455 region=2 run=R_2007_11_07_16_15_57_<br/>
+    TCCGCGCCGAGCATGCCCATCTTGGATTCCGGCGCGATGACCATCGCCCGCTCCACCACG<br/>
+    TTCGGCCGGCCCTTCTCGTCGAGGAATGACACCAGCGCTTCGCCCACG<br/>
+    &gt;EYKX4VC02D4GS2 length=60 xy=1573_3972 region=2 run=R_2007_11_07_16_15_57_<br/>
+    AATAAAACTAAATCAGCAAAGACTGGCAAATACTCACAGGCTTATACAATACAAATGTAA<br/>
+
+Running this tool with the default settings will produce this (2 column output):<br/>
+
+========================================================================== =======================================<br/>
+EYKX4VC02EQLO5 length=108 xy=1826_0455 region=2 run=R_2007_11_07_16_15_57_ TCCGCGCCGAGCATGCCCATCTTGGATTCCGGC...ACG<br/>
+EYKX4VC02D4GS2 length=60 xy=1573_3972 region=2 run=R_2007_11_07_16_15_57_  AATAAAACTAAATCAGCAAAGACTGGCAAATAC...TAA<br/>
+========================================================================== =======================================<br/>
+
+Having the full title line (the FASTA "&gt;" line text) as a column is not always ideal.<br/>
+
+The **How many characters to keep?** option is useful if your identifiers are all the same length.<br/>
+In this example the identifier is 14 characters, so setting **How many characters to keep?** to **14** (and leaving **How many columns to divide title string into?** as the default, **1**) will produce this (2 column output):<br/>
+
+============== =======================================<br/>
+EYKX4VC02EQLO5 TCCGCGCCGAGCATGCCCATCTTGGATTCCGGC...ACG<br/>
+EYKX4VC02D4GS2 AATAAAACTAAATCAGCAAAGACTGGCAAATAC...TAA<br/>
+============== =======================================<br/>
+
+If however your FASTA file has identifiers of variable length, it is better to split the text into at least two columns.
+Running this tool with **How many columns to divide title string into?** to **2** will produce this (3 column output):
+<br/>
+============== =========================================================== =======================================<br/>
+EYKX4VC02EQLO5 length=108 xy=1826_0455 region=2 run=R_2007_11_07_16_15_57_ TCCGCGCCGAGCATGCCCATCTTGGATTCCGGC...ACG<br/>
+EYKX4VC02D4GS2 length=60 xy=1573_3972 region=2 run=R_2007_11_07_16_15_57_  AATAAAACTAAATCAGCAAAGACTGGCAAATAC...TAA<br/>
+============== =========================================================== =======================================<br/>
+
+Running this tool with **How many columns to divide title string into?** to **5** will produce this (5 column output):
+<br/>
+============== ========== ============ ======== ========================== =======================================<br/>
+EYKX4VC02EQLO5 length=108 xy=1826_0455 region=2 run=R_2007_11_07_16_15_57_ TCCGCGCCGAGCATGCCCATCTTGGATTCCGGC...ACG<br/>
+EYKX4VC02D4GS2 length=60  xy=1573_3972 region=2 run=R_2007_11_07_16_15_57_ AATAAAACTAAATCAGCAAAGACTGGCAAATAC...TAA<br/>
+============== ========== ============ ======== ========================== =======================================<br/>
+
+Running this tool with **How many columns to divide title string into?** to **5** and **How many characters to keep?** to **10** will produce this (5 column output).<br/>
+Notice that only the first column is truncated to 10 characters -- and be careful not to trim your sequence names too much (generally they should be unique):<br/>
+<br/>
+========== ========== ============ ======== ========================== =======================================<br/>
+EYKX4VC02E length=108 xy=1826_0455 region=2 run=R_2007_11_07_16_15_57_ TCCGCGCCGAGCATGCCCATCTTGGATTCCGGC...ACG<br/>
+EYKX4VC02D length=60  xy=1573_3972 region=2 run=R_2007_11_07_16_15_57_ AATAAAACTAAATCAGCAAAGACTGGCAAATAC...TAA<br/>
+========== ========== ============ ======== ========================== =======================================<br/>
+<br/>
+Note the sequences have been truncated for display purposes in the above tables.
+
+
     </toolDocumentation>
 
 
