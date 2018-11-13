@@ -2,8 +2,8 @@
     <toolInputs>
         <toolInput>
             <label>Convert</label>
-            <referenceVariable>tab_delimited_file</referenceVariable>
-            <dataFormat>txt</dataFormat>
+            <referenceVariable>tabular_input</referenceVariable>
+            <dataFormat>tabular</dataFormat>
         </toolInput>
     </toolInputs>
 
@@ -12,19 +12,46 @@
     <toolOutputs>
         <toolOutput>
             <label>Renamed Potential Clones</label>
-            <referenceVariable>output</referenceVariable>
-            <dataFormat>txt</dataFormat>
+            <referenceVariable>fasta_output</referenceVariable>
+            <dataFormat>fa</dataFormat>
         </toolOutput>
     </toolOutputs>
 
 
 
     <toolConfigurations>
+        Title column(s) :
+        <input type="text" class="setting_param" value="title_columns='1'" size="45"/> <br/>
+        Sequence column :
+        <input type="text" class="setting_param" value="seq_col='2'" size="45"/> <br/>
     </toolConfigurations>
 
 
 
+
+
     <toolDocumentation>
+
+**What it does**<br/>
+
+Converts tab delimited data into FASTA formatted sequences.<br/>
+
+-----------<br/>
+
+**Example**<br/>
+
+Suppose this is a sequence file produced by Illumina (Solexa) sequencer::<br/>
+
+	5	300	902	419	GACTCATGATTTCTTACCTATTAGTGGTTGAACATC<br/>
+	5	300	880	431	GTGATATGTATGTTGACGGCCATAAGGCTGCTTCTT<br/>
+
+Selecting **c3** and **c4** as the **Title column(s)** and **c5** as the **Sequence column** will result in::<br/>
+
+	&gt;902_419<br/>
+	GACTCATGATTTCTTACCTATTAGTGGTTGAACATC<br/>
+	&gt;880_431<br/>
+	GTGATATGTATGTTGACGGCCATAAGGCTGCTTCTT<br/>
+
     </toolDocumentation>
 
 

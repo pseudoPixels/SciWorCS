@@ -2,8 +2,7 @@
 import subprocess
 
 pipe = subprocess.Popen(
-    ["/bin/bash", "/home/ubuntu/Webpage/app_collaborative_sci_workflow/External_Libraries/NiCad-4.0/scripts/Rename",
-     granularity, language,
-     potential_clones, renaming,
-     renamed_potential_clones]).communicate()
+    ["python", "/home/ubuntu/Webpage/app_collaborative_sci_workflow/GalaxyToolBase/Imported/tabular_to_fasta.py",
+     tabular_input, title_columns,
+     seq_col, fasta_output]).communicate()
 
