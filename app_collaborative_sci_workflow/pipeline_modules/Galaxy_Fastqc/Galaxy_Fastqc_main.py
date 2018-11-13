@@ -17,30 +17,12 @@ pipe2 = subprocess.Popen(["/usr/bin/perl", "/home/ubuntu/Webpage/fastqc_wrapper/
 
 
 
-
-
-
-# tmpHTML = fastq_file_path.split('/')[len(fastq_file_path.split('/')) - 1]
-# fileName = ''
-# for i in range(len(tmpHTML.split('.')) - 1):
-# 	fileName += str(tmpHTML.split('.')[i])
-# tmpHTML = fileName+'_fastqc.html'
-# tmpZIP = fileName+'_fastqc.zip'
-# os.rename(tmpDir+'/' + tmpHTML, fastqc_summary)
-# os.rename(tmpDir+'/' + tmpZIP, fastqc_compressed_report)
-
-
-
-
 tmpHTML = fastq_file_path.split('/')[len(fastq_file_path.split('/')) - 1]
 
-#print("=============tempHTML==========")
-#print(tmpHTML)
 
-#print (fastqc_summary)
-#print "========="
 
 subprocess.Popen(['/bin/cp', tmpDir+'/'+tmpHTML+'_fastqc.html', fastqc_summary]).communicate()
 
 
 pipe3 = subprocess.Popen(["/bin//rm", "-r", tmpDir]).communicate()
+

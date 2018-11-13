@@ -11,14 +11,14 @@
 import subprocess
 import os
 
-lines = ''
-with open(input_file_path) as module_1_inp:
-	lines = module_1_inp.readlines()
+# lines = ''
+# with open(input_file_path) as module_1_inp:
+# 	lines = module_1_inp.readlines()
 
 #only read the first line (in case it has multiples)
-input_file_path = lines[0]
+input_file_path = fastq_file
 
-with open(output_file, "w") as f:
-	subprocess.Popen(["/usr/bin/perl", "/home/ubuntu/Webpage/app_collaborative_sci_workflow/fq_all2std.pl", "std2sol", input_file_path], stdout=f).communicate()
+with open(fasta_file, "w") as f:
+	subprocess.Popen(["/usr/bin/perl", "/home/ubuntu/Webpage/app_collaborative_sci_workflow/fq_all2std.pl", "fq2fa", input_file_path], stdout=f).communicate()
 
 
