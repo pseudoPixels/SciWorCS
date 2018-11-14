@@ -1,0 +1,35 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Fastq File</label>
+            <referenceVariable>solexa_export_file</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Quality Analysis HTML</label>
+            <referenceVariable>sanger_file</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        Converts Std 2 Sol
+    </toolDocumentation>
+
+
+</SciWorC>
+
+
+
