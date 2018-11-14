@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html" />
     </list>
     <ignored path="Webpage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,31 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tabular_to_fasta.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/Imported/tabular_to_fasta.py">
+      <file leaf-file-name="telepointerGO.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="58" column="80" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="80" />
+            <state relative-caret-position="899">
+              <caret line="3808" column="57" selection-start-line="3808" selection-start-column="57" selection-end-line="3808" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Galaxy_Pear_html.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Pear/Galaxy_Pear_html.txt">
+      <file leaf-file-name="cloud_vision_pipeline_save2GO.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="36" column="50" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Galaxy_Pear_main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Pear/Galaxy_Pear_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="350">
+              <caret line="832" column="59" selection-start-line="832" selection-start-column="59" selection-end-line="832" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -74,14 +66,12 @@
       <list>
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Filter_CreateInterval/Filter_CreateInterval_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/views.py" />
-        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/GalaxyToSciWorCS_Parser.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_FASTQ_to_FASTA/Galaxy_FASTQ_to_FASTA_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Get_Input/Galaxy_Get_Input_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/fastqc/fastqc_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Fastqc/Galaxy_Fastqc_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Get_Input/Galaxy_Get_Input_html.txt" />
-        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Fastqc/Galaxy_Fastqc_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_FASTQ_to_FASTA/Galaxy_FASTQ_to_FASTA_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/Imported/fasta_to_tabular.py" />
@@ -123,6 +113,8 @@
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Flash/Galaxy_Flash_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Pear/Galaxy_Pear_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Pear/Galaxy_Pear_main.py" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html" />
       </list>
     </option>
   </component>
@@ -282,7 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GalaxyToolBase" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -535,9 +527,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="2493" height="1575" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19595142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19595142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2992126" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -601,24 +593,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Input_Dataset/Galaxy_Input_Dataset_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_FASTQ_to_FASTA/Galaxy_FASTQ_to_FASTA_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#226#243#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Bio_std2sol/Bio_std2sol_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -985,18 +959,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/Imported/tabular_to_fasta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="58" column="80" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Tabular_Filter/Galaxy_Tabular_Filter_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Pear/Galaxy_Pear_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -1009,10 +983,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Pear/Galaxy_Pear_main.py">
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/Imported/tabular_to_fasta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="768">
+          <caret line="58" column="80" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/static/easyrtc/UserStudy/telepointerGO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="3808" column="57" selection-start-line="3808" selection-start-column="57" selection-end-line="3808" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/templates/cloud_vision_pipeline_save2GO.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="832" column="59" selection-start-line="832" selection-start-column="59" selection-end-line="832" selection-end-column="59" />
           <folding />
         </state>
       </provider>
