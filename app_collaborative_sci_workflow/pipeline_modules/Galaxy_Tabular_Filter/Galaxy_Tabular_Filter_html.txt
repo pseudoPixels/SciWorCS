@@ -41,16 +41,10 @@
           A filtered tabular dataset.<br/>
 
 
-
         filter: select_columns, columns=1<br/>
         filter:regex, pattern:^\d+, action:include_find<br/>
 
         Source Doc:: https://github.com/galaxyproject/tools-iuc/blob/43d0f694b024cf9b1f0e26d803d3f19f38c95ee9/tools/query_tabular/filter_tabular.xml
-
-
-
-
-
 
 
     </toolDocumentation>
