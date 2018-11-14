@@ -1,0 +1,58 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Fastq File</label>
+            <referenceVariable>fastq_file</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Quality Analysis HTML</label>
+            <referenceVariable>extendedFrags</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolOutput>
+        <toolOutput>
+            <label>Quality Analysis ZIP</label>
+            <referenceVariable>hist</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+        <toolOutput>
+            <label>Quality Analysis ZIP</label>
+            <referenceVariable>histogram</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolOutput>
+        <toolOutput>
+            <label>Quality Analysis ZIP</label>
+            <referenceVariable>notCombined_1</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolOutput>
+        <toolOutput>
+            <label>Quality Analysis ZIP</label>
+            <referenceVariable>notCombined_2</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+<b>Math - Addition</b>
+	<p><i>Description:</i><br/>
+Adds Two Numbers <br/>
+<br/></p>
+    </toolDocumentation>
+
+
+</SciWorC>
+
+
+
