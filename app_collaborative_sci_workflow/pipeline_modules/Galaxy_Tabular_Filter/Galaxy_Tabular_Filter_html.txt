@@ -1,0 +1,49 @@
+<WorC>
+    <toolInputs>
+        <toolInput>
+            <label>Convert</label>
+            <referenceVariable>tabular_input</referenceVariable>
+            <dataFormat>tabular</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Renamed Potential Clones</label>
+            <referenceVariable>filtered_tabular</referenceVariable>
+            <dataFormat>tabular</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+        Filter Json Array :
+        <input type="text" class="setting_param" value="filter_json='''[{'filter':'select_columns', 'columns':'1'}]'''" size="75"/> <br/>
+    </toolConfigurations>
+
+
+
+
+
+    <toolDocumentation>
+
+        ==============<br/>
+        Filter Tabular
+        ==============<br/>
+          Filter a tabular dataset by applying line filters as it is being read.<br/>
+          Multiple filters may be used with each filter using the result of the previous filter. <br/>
+        **Inputs**<br/>
+          A tabular dataset.<br/>
+        **Outputs**<br/>
+          A filtered tabular dataset.<br/>
+
+
+    </toolDocumentation>
+
+
+
+</WorC>
+
