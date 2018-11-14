@@ -1,0 +1,35 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Fastq File</label>
+            <referenceVariable>std_fastq</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Quality Analysis HTML</label>
+            <referenceVariable>seqPlusQual</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        Converts Std 2 Sol
+    </toolDocumentation>
+
+
+</SciWorC>
+
+
+
