@@ -1,0 +1,57 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Fastq File</label>
+            <referenceVariable>forward_fastq</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolInput>
+
+        <toolInput>
+            <label>Fastq File</label>
+            <referenceVariable>reverse_fastq</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolInput>
+
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Quality Analysis HTML</label>
+            <referenceVariable>assembled</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolOutput>
+        <toolOutput>
+            <label>Quality Analysis ZIP</label>
+            <referenceVariable>discarded</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolOutput>
+        <toolOutput>
+            <label>Quality Analysis ZIP</label>
+            <referenceVariable>forward_unassembled</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolOutput>
+        <toolOutput>
+            <label>Quality Analysis ZIP</label>
+            <referenceVariable>reverse_unassembled</referenceVariable>
+            <dataFormat>fq</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+
+    </toolDocumentation>
+
+
+</SciWorC>
+
+
+

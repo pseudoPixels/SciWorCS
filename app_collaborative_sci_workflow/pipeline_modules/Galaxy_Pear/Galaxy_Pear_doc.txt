@@ -1,0 +1,21 @@
+<b>Fastqc</b>
+	<p><i>Description:</i>
+		FastQC reads a set of sequence files and produces from each one a quality
+	   	control report consisting of a number of different modules, each one of 
+	    	which will help to identify a different potential type of problem in your
+	    	data.
+	</p>
+
+
+<i>Usage:</i>
+<ol>
+	<li>Input File: Select the module or sequence file to analysis (Fastq File). </li>
+</ol>
+
+
+<i>Outputs:</i>
+<ol>
+	<li>HTML File: HTML file with generated qualitiy reports with Visualization.</li>
+	<li>Summary File: A summary about the quality of the input Fastq file.</li>
+</ol>
+
