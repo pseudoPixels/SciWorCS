@@ -18,6 +18,12 @@ from couchdb.design import ViewDefinition
 from flaskext.couchdb import CouchDBManager
 
 
+import sys
+#print ("===========================PRINTING SYSTEM PATH=================================")
+#print (sys.path)
+sys.path.append('/usr/local/lib/python3.5/dist-packages')
+
+
 
 
 views_by_user = ViewDefinition('hello', 'myind', '''
@@ -108,8 +114,14 @@ with app.app_context():
 	manager.sync(app)
 
 
+from flask_cas import CAS
+from flask_cas import login_required
+# from xmltodict import parse
+cas = CAS(app, '/cas')
 
-
+app.config['CAS_SERVER'] = 'https://cas.usask.ca'
+app.config['CAS_AFTER_LOGIN'] = 'SciWorCS' #// this is a method name see below
+app.config['CAS_AFTER_LOGOUT'] = 'sign_out'
 
 
 
@@ -659,8 +671,8 @@ def cvs():
 		g.couch.delete(tmp)
 
 	#remove prev. datasets
-	#for aFile in glob.glob('/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_*'):
-	#	os.remove(aFile)
+	for aFile in glob.glob('/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_*'):
+		os.remove(aFile)
 
 
 	#Add one doc
@@ -685,6 +697,10 @@ def cvs():
 	user_role = p2irc_user.user_role
 	#store the user role in session
 	session['user_role'] = user_role
+
+
+
+
 
 	#get the list of all saved pipelines from DB
 	saved_pipelines = getSavedPipelines(session.get('p2irc_user_email'))
@@ -737,6 +753,136 @@ def cvs():
 	pineline_machineLearning_modules = pineline_machineLearning_modules,
 	pineline_bio_filters = pineline_bio_filters,
 	saved_workflows=saved_workflows)
+
+
+
+
+
+
+
+
+
+################################################################################################
+################################### WITH CAS AUTHENTICATION ####################################
+######## TODO: There is no role info in case of CAS usage ######################################
+############################# Using Temporarily, Need Fixes#####################################
+@app_collaborative_sci_workflow.route('/SciWorCS')
+@login_required
+def SciWorCS():
+
+	#TODO: REMOVE WHEN DEBUGGLING FOR LOCKING DONE
+	#Remove all existing documents
+	for row in views_by_workflow_locking_turn(g.couch):
+		tmp = WorkflowLockingTurn.load(row.value)
+		g.couch.delete(tmp)
+
+	#remove prev. datasets
+	for aFile in glob.glob('/home/ubuntu/Webpage/app_collaborative_sci_workflow/workflow_outputs/test_workflow/module_id_*'):
+		os.remove(aFile)
+
+
+	#Add one doc
+	turnBasedLocking = WorkflowLockingTurn(workflow_id='workflow_turn_id_1')
+	turnBasedLocking.store()
+
+	module = ''
+	for row in views_by_pipeline_module(g.couch):
+		if row.key == 'rgb2gray':
+			module = PipelineModule.load(row.value)
+
+	moduleSourceCode_main = ''#getModuleCodes(module.code_link_main)
+	moduleSourceCode_settings = ''#getModuleCodes(module.code_link_settings)
+	moduleSourceCode_html = ''#getModuleCodes(module.code_link_html)
+
+	#load user details...
+	# row = (views_by_email(g.couch))[session.get('p2irc_user_email')]
+	# p2irc_user = P2IRC_User.load(list(row)[0].value)
+	# first_name = p2irc_user.first_name
+	# last_name = p2irc_user.last_name
+	# email = p2irc_user.email
+	# user_role = p2irc_user.user_role
+	# #store the user role in session
+	# session['user_role'] = user_role
+
+
+
+	#### For CAS
+	session['p2irc_user_email'] = cas.username+'@gmail.com'
+	#p2irc_user = P2IRC_User.load(list(row)[0].value)
+	first_name = cas.username
+	last_name = ''
+	email = cas.username+'@gmail.com'
+	user_role = 'plant_scientist'
+	#store the user role in session
+	session['user_role'] = user_role
+
+
+
+	#get the list of all saved pipelines from DB
+	saved_pipelines = getSavedPipelines(session.get('p2irc_user_email'))
+	#get the list of all shared pipelines with this user from DB
+	shared_pipelines = getSharedPipelines(session.get('p2irc_user_email'))
+	#get all other user details
+	all_other_users = getAllUsersDetails(session.get('p2irc_user_email'))
+
+
+	pineline_modules = os.listdir("app_collaborative_sci_workflow/pipeline_modules/")
+
+	pineline_source_analysis_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if re.match(r'NiCAD*', f)] #os.listdir("app_collaborative_sci_workflow/pipeline_modules/source_analysis_tools/")
+
+	pineline_mathematical_analysis_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
+										re.match(r'Math*', f)]
+
+	pineline_galaxy_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
+										re.match(r'Galaxy*', f)]
+
+	pineline_machineLearning_modules = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
+										re.match(r'Stats*', f)]
+
+
+	pineline_bio_filters = [f for f in os.listdir('app_collaborative_sci_workflow/pipeline_modules/') if
+										re.match(r'Filter*', f)]
+
+
+
+
+	saved_workflows = os.listdir("app_collaborative_sci_workflow/pipeline_saved/")
+
+
+	return render_template('cloud_vision_pipeline_save2GO.html', # change to cloud_vision_pipeline_save2.html for normal (without GO, which is in testing phase)
+	module_name = '',#module.module_name,
+	documentation = '',#module.documentation,
+	moduleSourceCode_settings = moduleSourceCode_settings,
+	moduleSourceCode_main = moduleSourceCode_main,
+	moduleSourceCode_html = moduleSourceCode_html,
+	first_name = first_name,
+	last_name = last_name,
+	email = email,
+	user_role = user_role,
+	saved_pipelines = saved_pipelines,
+	shared_pipelines = shared_pipelines,
+    all_other_users=all_other_users,
+    pineline_modules=pineline_modules,
+	pineline_source_analysis_modules=pineline_source_analysis_modules,
+	pineline_mathematical_analysis_modules=pineline_mathematical_analysis_modules,
+	pineline_galaxy_modules = pineline_galaxy_modules,
+	pineline_machineLearning_modules = pineline_machineLearning_modules,
+	pineline_bio_filters = pineline_bio_filters,
+	saved_workflows=saved_workflows)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1008,7 +1154,10 @@ def get_saved_workflow():
 
 #Login and Sign Ups for TURN BASED COLLABORATION
 @app_collaborative_sci_workflow.route('/p2irc_system1')
+@login_required
 def p2irc_turnBased():
+	#subprocess.Popen(["pip", "install", "Flask-CAS"]).communicate()
+
 	return render_template('login_turnBased.html')
 
 
@@ -1050,9 +1199,13 @@ def p2irc_signup():
 	return jsonify({'success': 1})
 
 
+
+
 #User Login Verification (TURN BASED)
 @app_collaborative_sci_workflow.route('/p2irc_login_turnBased/',  methods=['POST'])
 def p2irc_login_turnBased():
+
+
 	email = request.form['email']
 	password = request.form['password']
 
@@ -1084,10 +1237,12 @@ def p2irc_login_turnBased():
 
 
 
-
+#import subprocess
 #User Login Verification (MODULE LOCKING)
 @app_collaborative_sci_workflow.route('/p2irc_login_moduleLocking/',  methods=['POST'])
 def p2irc_login_moduleLocking():
+
+
 	email = request.form['email']
 	password = request.form['password']
 

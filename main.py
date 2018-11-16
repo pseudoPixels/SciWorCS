@@ -25,6 +25,9 @@ from flask import jsonify, make_response
 
 from io import StringIO
 import sys
+#print ("===========================PRINTING SYSTEM PATH=================================")
+#print (sys.path)
+sys.path.append('/usr/local/lib/python3.5/dist-packages')
 
 #import StringIO
 import contextlib
@@ -37,9 +40,14 @@ import contextlib
 
 #import paramiko
 
+# subprocess.Popen(["pip", "install", "xmltodict"]).communicate()
+# subprocess.Popen(["pip3", "install", "xmltodict"]).communicate()
+#
 
 
-
+# subprocess.Popen(["/usr/bin/git", "clone", "https://github.com/cameronbwhite/Flask-CAS.git"]).communicate()
+# # subprocess.Popen(["cd", "Flask-CAS"]).communicate()
+# subprocess.Popen(["python", "Flask-CAS/setup.py", "install"]).communicate()
 
 
 
@@ -73,6 +81,19 @@ app.config.update(
     COUCHDB_SERVER='http://localhost:5984',
     COUCHDB_DATABASE='plantphenotype'
 )
+
+# import subprocess
+# subprocess.Popen(["pip", "install", "xmltodict"]).communicate()
+
+from FlaskCAS.flask_cas import CAS
+from FlaskCAS.flask_cas import login_required
+# from xmltodict import parse
+cas = CAS(app, '/cas')
+
+app.config['CAS_SERVER'] = 'https://cas.usask.ca'
+app.config['CAS_AFTER_LOGIN'] = 'index' #// this is a method name see belowlo
+app.config['CAS_AFTER_LOGOUT'] = 'sign_out'
+
 
 views_by_source = ViewDefinition('source', 'findid', '''
     function (doc) {
@@ -183,6 +204,7 @@ def allowed_files(filename):
 
 
 @app.route('/', methods=['GET', 'POST'])
+@login_required
 def index():
     l_login = Login()
     l_register = Register()
