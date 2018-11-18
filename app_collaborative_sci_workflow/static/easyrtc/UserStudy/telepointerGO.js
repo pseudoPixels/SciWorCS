@@ -2624,6 +2624,10 @@ $("#run_pipeline").click(function () {
 
 
 $("#save_pipeline").click(function () {
+
+    //alert(myDiagram.model.toJson());
+
+
     var pipelineName = $("#save_pipeline_name").val();
 
 
@@ -2660,11 +2664,15 @@ $("#save_pipeline").click(function () {
 
     //alert(sourceCode);
 */
+
+    var dagModelJson = myDiagram.model.toJson();
+    myDiagram.isModified = false;
+
     $.ajax({
         type: "POST",
         cache: false,
         url: "/save_pipeline/",
-        data: 'textarea_source_code=' + workflowToSave + '&pipelineName='+pipelineName,
+        data: 'textarea_source_code=' + workflowToSave + '&dagModel='+ dagModelJson +'&pipelineName='+pipelineName,
         success: function (option) {
             alert('Workflow Saved Successfully.');
 
@@ -2811,11 +2819,13 @@ $("#design_pipelines_menu_biodatacleaning_id").click(function () {
 //moduleName is the name of the module like: rgb2gray, medianFilter and so on
 function addModuleToPipeline(moduleID, moduleName){
 
-        var module_name = ''
-        var documentation = ''
-        var moduleSourceCode_settings = ''
-        var moduleSourceCode_main = ''
-        var moduleSourceCode_html = ''
+
+
+        var module_name = '';
+        var documentation = '';
+        var moduleSourceCode_settings = '';
+        var moduleSourceCode_main = '';
+        var moduleSourceCode_html = '';
 
         $.ajax({
             type: "POST",
@@ -2888,14 +2898,6 @@ function addModuleToPipeline(moduleID, moduleName){
 
 
 
-
-//Parse the givn XML
-//var xmlDoc = $.parseXML( xml );
-
-//var $xml = $(xmlDoc);
-
-  // Find Person Tag
-//var $person = $xml.find("toolConfigurations");
 
 
                 //append new module to the pipeline...
@@ -3116,6 +3118,23 @@ $(document).on("click", ".aSavedWorkflow" ,function(){
             $("#img_processing_screen").html(option.savedWorkflow)
 
             $("#img_processing_screen input").trigger('change');
+
+            myDiagram.isReadOnly = true;
+
+            var dagJsonObj = JSON.parse(option.savedWorkflowDag)
+            var i=0;
+            for(i=0; i< dagJsonObj.nodeDataArray.length; i++){
+                addModuleToPipeline('Module_'+i, dagJsonObj.nodeDataArray[i]['type']);
+            }
+
+        setTimeout(
+            function()
+            {
+                myDiagram.model = go.Model.fromJson(option.savedWorkflowDag);
+                myDiagram.isReadOnly = false;
+            }, 10000);
+
+
 
 		},
 		error: function (xhr, status, error) {

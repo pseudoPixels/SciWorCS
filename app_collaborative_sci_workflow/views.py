@@ -1107,10 +1107,17 @@ def save_pipeline():
 	program = request.form['textarea_source_code']
 	pipeline_name =  request.form['pipelineName']
 
+	dagModel = request.form['dagModel']
+
 
 	#save the pipeline to file system
 	f = open('app_collaborative_sci_workflow/pipeline_saved/'+pipeline_name+'.wc', 'w')
 	f.write(program)
+	f.close()
+
+
+	f = open('app_collaborative_sci_workflow/pipeline_saved/'+pipeline_name+'.go', 'w')
+	f.write(dagModel)
 	f.close()
 
 	#save piepline information to database
@@ -1131,18 +1138,21 @@ def get_saved_workflow():
 
 	savedWorkflowPath = 'app_collaborative_sci_workflow/pipeline_saved/' + workflow_id #mySavedPipeline.gom' #+workflow_id
 
+	savedWorkflowDagModelPath = 'app_collaborative_sci_workflow/pipeline_saved/' + 'flash.go'
+
 
 	# moduleSourceCode_main = getModuleCodes(modulesPath+'biodatacleaning/biodatacleaning_main.py')
 	# moduleSourceCode_settings = getModuleCodes(modulesPath+'biodatacleaning/biodatacleaning_settings.py')
 	# moduleSourceCode_html = getModuleCodes(modulesPath+'biodatacleaning/biodatacleaning_html.txt')
 
 	savedWorkflow = getModuleCodes(savedWorkflowPath)
+	savedWorkflowDagModel = getModuleCodes(savedWorkflowDagModelPath)
 	#moduleSourceCode_main = getModuleCodes(modulesPath + p_module_key + '/' + p_module_key + '_main.py')
 	#moduleSourceCode_settings = getModuleCodes(modulesPath + p_module_key + '/' + p_module_key + '_settings.py')
 	#moduleSourceCode_html = getModuleCodes(modulesPath + p_module_key + '/' + p_module_key + '_html.txt')
 	#module_documentation = getModuleCodes(modulesPath + p_module_key + '/' + p_module_key + '_doc.txt')
 
-	return jsonify({'savedWorkflow': savedWorkflow})
+	return jsonify({'savedWorkflow': savedWorkflow, 'savedWorkflowDag':savedWorkflowDagModel})
 
 
 
