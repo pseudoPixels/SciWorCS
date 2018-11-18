@@ -875,14 +875,9 @@ def SciWorCS():
 
 
 
-
-
-
-
-
-
-
-
+@app_collaborative_sci_workflow.route('/cas_logout')
+def cas_logout():
+	return redirect('/cas/logout')
 
 
 

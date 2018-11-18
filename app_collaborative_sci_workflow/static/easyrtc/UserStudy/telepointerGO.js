@@ -2642,7 +2642,7 @@ $("#save_pipeline").click(function () {
     });
 
 
-    var workflowToSave = encodeURIComponent(String($("#img_processing_screen").html()))
+    var workflowToSave = encodeURIComponent(String($("#img_processing_screen").html()));
 
 
 /*
