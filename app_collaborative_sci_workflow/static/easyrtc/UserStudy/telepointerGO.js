@@ -3121,12 +3121,19 @@ $(document).on("click", ".aSavedWorkflow" ,function(){
 
             myDiagram.isReadOnly = true;
 
+
+            //dummy load the used modules in the workflow
+            //these are required to build the corresponding node templates...
             var dagJsonObj = JSON.parse(option.savedWorkflowDag)
             var i=0;
             for(i=0; i< dagJsonObj.nodeDataArray.length; i++){
                 addModuleToPipeline('Module_'+i, dagJsonObj.nodeDataArray[i]['type']);
             }
 
+
+            //Load the workflow with nodes and required datalink relations among them
+            //the previous templates are used while loading
+            //Wait a few seconds to allow building all the templates first time in the previous
         setTimeout(
             function()
             {
@@ -3134,7 +3141,8 @@ $(document).on("click", ".aSavedWorkflow" ,function(){
                 myDiagram.isReadOnly = false;
             }, 10000);
 
-
+            //TODO: Add workflow loading spinner for the users
+            
 
 		},
 		error: function (xhr, status, error) {
