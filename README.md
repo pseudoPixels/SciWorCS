@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="gitImages/SciWorCS_logo.png" width="25%" title="CloneCognition">
+  <img src="gitImages/SciWorCS_logo.png" width="35%" title="CloneCognition">
 </p>
 
 # SciWorCS
