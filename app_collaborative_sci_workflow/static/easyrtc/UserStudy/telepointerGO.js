@@ -3142,7 +3142,7 @@ $(document).on("click", ".aSavedWorkflow" ,function(){
             }, 10000);
 
             //TODO: Add workflow loading spinner for the users
-            
+
 
 		},
 		error: function (xhr, status, error) {
