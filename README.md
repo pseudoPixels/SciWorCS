@@ -12,5 +12,5 @@ The collaborative composition of the workflow is done on panel 'B'. For the inte
 Please make sure you have the following environment setups:
 
 1. Python 2.7.
-
-2. Flask  
+2. Flask Mircorframework (http://flask.pocoo.org/)
+3. Apache CouchDB (http://couchdb.apache.org/)
