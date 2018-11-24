@@ -1,2 +1,2 @@
 # SciWorCS
-Collaborative Scientific Workflow Management System
+A number of SWfMSs have been proposed and developed in recent years to facilitate the scientific experiments. For example some of the popular SWfMSs are: Taverna, Galaxy, Kepler, Pegasus, VisTrails, Triana, VIEW. The existing SWfMSs support only single user for a given data analysis process, however, modern scientific research projects are often collaborative in nature --involving multiple researchers of diverse domain and expertise.
