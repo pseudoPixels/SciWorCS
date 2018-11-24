@@ -14,3 +14,17 @@ Please make sure you have the following environment setups:
 1. Python 2.7.
 2. Flask Mircorframework (http://flask.pocoo.org/)
 3. Apache CouchDB (http://couchdb.apache.org/)
+
+
+# Usage Instructions
+On Cloning and setting up the required environment for this project, you need to follow the speps below:
+
+###### 1. Make sure in the project directory:
+```
+$cd SciWorCS
+```
+
+###### 3. Run the `main.py` script as following for starting SciWorCS:
+```
+$python main.py
+```
