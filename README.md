@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="gitImages/sciworcs_logo.png" width="15%" title="CloneCognition">
+</p>
+
 # SciWorCS
 [![Sponsors on Open Collective](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](#sponsors)
 [![Backers on Open Collective](https://img.shields.io/badge/python-2.7-orange.svg?style=flat-square)](#backers)
