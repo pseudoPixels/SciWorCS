@@ -2,6 +2,7 @@
 [![Sponsors on Open Collective](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](#sponsors)
 [![Backers on Open Collective](https://img.shields.io/badge/python-2.7-orange.svg?style=flat-square)](#backers)
 [![Sponsors on Open Collective](https://img.shields.io/badge/ubuntu-14.0%2B-yellow.svg?style=flat-square)](#sponsors)
+[![Sponsors on Open Collective](https://img.shields.io/badge/server-linux-red.svg?style=flat-square)](#sponsors)
 
 A number of Scientific Workflow Management Systems (SWfMSs) have been proposed and developed in recent years to facilitate the scientific experiments. For example some of the popular SWfMSs are: Taverna, Galaxy, Kepler, Pegasus, VisTrails, Triana, VIEW. The existing SWfMSs support only single user for a given data analysis process, however, modern scientific research projects are often collaborative in nature --involving multiple researchers of diverse domain and expertise. SciWorCS is a Collaborative Scientific Workflow management System. SciWorCS follows a plugin-based architecture for the scientific computational modules. It provides collaborative environment for scientific data analysis using efficient attribute level locking scheme. In addition to the collaborative data analysis, SciWorCS also provides real time monitoring of the computation steps.
 
