@@ -46,5 +46,5 @@ On successfull installation, running the SciWorCS should display the workflow ed
 The collaborative composition of the workflow is done on panel 'B'. For the intended data analysis task, the required modules are selected from the corresponding Toolbox to appear in the composition panel. The selected modules are then connected together on the corresponding input/output ports for defining the datalink relation among the modules. The modules can be configured with corresponding attributes from panel 'C'. Panel 'D' shows a list of collaborators and their current online/offline status. The list of the workflow outputs are shown in panel 'E'. New dataset can be browsed and uploaded to the central server for analysis from the panel 'F'.
 
 <p align="center">
-  <img src="gitImages/SciWorCS.jpg" width="95%" title="SciWorCS">
+  <img src="docs/Images/SciWorCS.jpg" width="95%" title="SciWorCS">
 </p>
