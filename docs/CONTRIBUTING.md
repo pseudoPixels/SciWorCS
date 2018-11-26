@@ -7,13 +7,10 @@ do and I will get back to you as soon as I can!
 
 ### Resources
 
-If you are new to Gameboy emulation I would recommend checking out some of these documents, as they are a good place
-for information about the internals of the hardware:
+If you are new to Scientific Workflow Management Sytem I would recommend checking out some of these research papers, as they are a good place for information on the domain:
 
-* <http://www.codeslinger.co.uk/pages/projects/gameboy/files/GB.pdf>
-* <https://github.com/retrio/gb-test-roms>
-* <http://www.codeslinger.co.uk/pages/projects/gameboy/beginning.html>
-* <http://bgb.bircd.org/> - invaluable for debugging
-* <https://github.com/AntonioND/giibiiadvance/tree/master/docs>
-* <https://github.com/trekawek/coffee-gb>
+[1] Mostaeen, Golam, et al. "Fine-Grained Attribute Level Locking Scheme for Collaborative Scientific Workflow Development." 2018 IEEE International Conference on Services Computing (SCC). IEEE, 2018.
 
+[2] Zhang, Jia, Daniel Kuc, and Shiyong Lu. "Confucius: a scientific collaboration system using collaborative scientific workflows." Web Services (ICWS), 2010 IEEE International Conference on. IEEE, 2010.
+
+[2] Afgan, Enis, et al. "Galaxy: A gateway to tools in e-Science." Guide to e-Science. Springer, London, 2011. 145-177.
