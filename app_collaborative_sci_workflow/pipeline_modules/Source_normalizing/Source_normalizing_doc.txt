@@ -1,0 +1,17 @@
+<b>NiCad - Normalization</b>
+	<p><i>Description:</i><br/>
+CUSTOM contextual normalizer to be applied to potential clones (none, normname)<br/>
+Where "normname" is the name of a normalizing TXL program txl/normname.txl in the txl/<br/>
+subdirectory to be applied to all potential clones<br/>
+Example: 	normalize=cabstractifconditions <br/>
+means apply the normalizing transformation "txl/cabstractifconditions.txl" to <br/>
+each potential clone<br/>
+</p>
+
+
+<i>Usage:</i>
+<ol>
+	<li>Source Project: Select the module or files to take the input from.</li>
+	<li>Output Files: Select the module or files to send the input to.</li>
+	<li>Set Granularity Levels: Functions/Blocks.</li>
+</ol>

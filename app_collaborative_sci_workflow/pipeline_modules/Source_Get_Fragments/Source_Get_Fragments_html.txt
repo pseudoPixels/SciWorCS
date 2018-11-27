@@ -1,0 +1,65 @@
+<SciWorC>
+    <toolInputs>
+        <toolInput>
+            <label>Source Path</label>
+            <referenceVariable>source_directory</referenceVariable>
+            <dataFormat>txt</dataFormat>
+        </toolInput>
+    </toolInputs>
+
+
+
+    <toolOutputs>
+        <toolOutput>
+            <label>Potential Clones</label>
+            <referenceVariable>potential_clones</referenceVariable>
+            <dataFormat>xml</dataFormat>
+        </toolOutput>
+    </toolOutputs>
+
+
+
+    <toolConfigurations>
+         Granularity: <select  class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+              <option value="granularity = 'functions'" >Functions</option>
+              <option value="granularity = 'blocks'" >Blocks</option>
+        </select>
+        <br/><br/>
+         Language: <select  class="setting_param setting_param_parent" name="seq_file"> <!-- CHANGE IN THIS LINE -->
+              <option value="language = 'java'" >Java</option>
+              <option value="language = 'cs'" >C#</option>
+              <option value="language = 'py'" >Python</option>
+              <option value="language = 'c'" >C</option>
+        </select>
+        <br/><br/>
+         Select Pattern (Reg. Exp.):
+        <input type="text" class="setting_param" value="select_pattern=''" name="cleaning_threshold" size="45"/>
+        <br/><br/>
+         Ignore Pattern (Reg. Exp.):
+        <input type="text" class="setting_param" value="ignore_pattern=''" name="cleaning_threshold" size="45"/>
+        <br/><br/>
+    </toolConfigurations>
+
+
+
+    <toolDocumentation>
+        <b>NiCad - Renaming</b>
+        <p><i>Description:</i> <br/>
+            Kind of renaming to be applied (none, blind, consistent)<br/>
+            Blind renaming changes every identifier to "X"<br/>
+            Consistent renaming consistently renames identifiers to "Xn", where n is a number<br/>
+            Example:	rename=consistent<br/>
+        </p>
+
+
+        <i>Usage:</i>
+        <ol>
+            <li>Source Project: Select the module or files to take the input from.</li>
+            <li>Output Files: Select the module or files to send the input to.</li>
+            <li>Set Granularity Levels: Functions/Blocks.</li>
+        </ol>
+    </toolDocumentation>
+
+
+
+</SciWorC>
