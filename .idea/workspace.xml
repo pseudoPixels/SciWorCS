@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dacf276-6a52-4237-af32-108df60ae4af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easyrtc" afterPath="$PROJECT_DIR$/easyrtc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_Get_Fragments/Source_Get_Fragments_html.txt" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_Get_Fragments/Source_Get_Fragments_html.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_Get_Fragments/Source_Get_Fragments_main.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_Get_Fragments/Source_Get_Fragments_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_abstracting/Source_abstracting_html.txt" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_abstracting/Source_abstracting_html.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_abstracting/Source_abstracting_main.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_abstracting/Source_abstracting_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_diff/Source_diff_html.txt" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_diff/Source_diff_html.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_diff/Source_diff_main.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_diff/Source_diff_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_diff_similarity/Source_diff_similarity_html.txt" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_diff_similarity/Source_diff_similarity_html.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_diff_similarity/Source_diff_similarity_main.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_diff_similarity/Source_diff_similarity_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_filtering/Source_filtering_html.txt" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_filtering/Source_filtering_html.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_filtering/Source_filtering_main.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_filtering/Source_filtering_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_normalizing/Source_normalizing_html.txt" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_normalizing/Source_normalizing_html.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_normalizing/Source_normalizing_main.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_normalizing/Source_normalizing_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_renaming/Source_renaming_html.txt" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_renaming/Source_renaming_html.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_renaming/Source_renaming_main.py" afterPath="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_renaming/Source_renaming_main.py" />
     </list>
     <ignored path="Webpage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,11 +66,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Source_Load_Dataset_html.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Source_Load_Dataset_html.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_Load_Dataset/Source_Load_Dataset_html.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Source_lines_html.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_lines/Source_lines_html.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Source_lines_main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_lines/Source_lines_main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,8 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/Imported/filter_tabular.py" />
-        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/Imported/filters.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/GalaxyToolBase/Imported/outexample.tsv" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Tabular_Filter/Galaxy_Tabular_Filter_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Tabular_Filter/Galaxy_Tabular_Filter_html.txt" />
@@ -157,6 +161,8 @@
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_normalizing/Source_normalizing_main.py" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_renaming/Source_renaming_html.txt" />
         <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_renaming/Source_renaming_main.py" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_lines/Source_lines_html.txt" />
+        <option value="$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_lines/Source_lines_main.py" />
       </list>
     </option>
   </component>
@@ -307,6 +313,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Source_normalizing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_collaborative_sci_workflow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pipeline_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Source_lines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SciWorCS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_collaborative_sci_workflow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pipeline_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Source_functionIntersected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -759,22 +809,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_SeqPrb_to_Std/Galaxy_SeqPrb_to_Std_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_SeqPrb_to_Std/Galaxy_SeqPrb_to_Std_html.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Galaxy_Export_to_Solexa/Galaxy_Export_to_Solexa_html.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1162,6 +1196,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_lines/Source_lines_html.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_collaborative_sci_workflow/pipeline_modules/Source_lines/Source_lines_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
