@@ -2,7 +2,7 @@
     <toolInputs>
         <toolInput>
             <label>Potential Clones</label>
-            <referenceVariable>potential_clones</referenceVariable>
+            <referenceVariable>input_sourceCode</referenceVariable>
             <dataFormat>xml</dataFormat>
         </toolInput>
     </toolInputs>
@@ -12,7 +12,7 @@
     <toolOutputs>
         <toolOutput>
             <label>Renamed Potential Clones</label>
-            <referenceVariable>abstracted_potential_clones</referenceVariable>
+            <referenceVariable>diffSimilarity_sourceCode</referenceVariable>
             <dataFormat>xml</dataFormat>
         </toolOutput>
     </toolOutputs>
