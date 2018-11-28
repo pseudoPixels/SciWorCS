@@ -32,11 +32,11 @@ final_train = dataset
 
 
 plt.figure(figsize=(15,7))
-ax = sns.kdeplot(final_train[feature][final_train.Survived == 1], color="darkturquoise", shade=True)
-sns.kdeplot(final_train[feature][final_train.Survived == 0], color="lightcoral", shade=True)
+ax = sns.kdeplot(final_train[feature][final_train.tp == 1], color="darkturquoise", shade=True)
+sns.kdeplot(final_train[feature][final_train.tp == 0], color="lightcoral", shade=True)
 
 
-plt.legend(['Survived', 'Died'])
+plt.legend(['True Positive Clones', 'False Positive Clones'])
 plt.title('Density Plot of ' + feature)
 ax.set(xlabel=feature)
 plt.xlim(-10,85)
