@@ -1,0 +1,22 @@
+<b>NiCad - Abstracting</b>
+	<p><i>Description:</i><br/>
+Kind of abstraction to be applied (none, nonterminal ...) <br/>
+Where each "nonterminal" is the name of a nonterminal in the language grammar <br/>
+Example: 	abstract=expression <br/>
+means abstract all [expression]s to the identifier "expression" in potential clones <br/>
+Abstraction nonterminals presently supported for C, C#, Java, Python: <br/>
+    block - all blocks, including function bodies <br/>
+    declaration - all data declarations <br/>
+    statement - all statements <br/>
+    expression - all expressions <br/>
+    condition - all if/while conditions <br/>
+    literal - all literal constant values <br/>
+</p>
+
+
+<i>Usage:</i>
+<ol>
+	<li>Source Project: Select the module or files to take the input from.</li>
+	<li>Output Files: Select the module or files to send the input to.</li>
+	<li>Set Granularity Levels: Functions/Blocks.</li>
+</ol>
