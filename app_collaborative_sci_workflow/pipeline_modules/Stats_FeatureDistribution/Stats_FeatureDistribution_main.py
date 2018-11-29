@@ -31,7 +31,7 @@ final_train = dataset
 
 
 
-plt.figure(figsize=(15,7))
+plt.figure(figsize=(15,5))
 ax = sns.kdeplot(final_train[feature][final_train.tp == 1], color="darkturquoise", shade=True)
 sns.kdeplot(final_train[feature][final_train.tp == 0], color="lightcoral", shade=True)
 
