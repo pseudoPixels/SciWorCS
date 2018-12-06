@@ -3108,6 +3108,7 @@ $(document).on("click", ".pipeline_modules" ,function(){
 $(document).on("click", ".aSavedWorkflow" ,function(){
 
     	var savedWorkflowName = $(this).attr("id");
+    	//alert(savedWorkflowName);
 
     	$.ajax({
 		type: "POST",

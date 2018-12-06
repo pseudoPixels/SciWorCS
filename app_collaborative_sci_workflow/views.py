@@ -1135,10 +1135,11 @@ def save_pipeline():
 def get_saved_workflow():
 	workflow_id = request.form['workflow_id']
 
+	workflowName = workflow_id.split('.')[0]
 
 	savedWorkflowPath = 'app_collaborative_sci_workflow/pipeline_saved/' + workflow_id #mySavedPipeline.gom' #+workflow_id
 
-	savedWorkflowDagModelPath = 'app_collaborative_sci_workflow/pipeline_saved/' + 'flash.go'
+	savedWorkflowDagModelPath = 'app_collaborative_sci_workflow/pipeline_saved/' + str(workflowName) +'.go'
 
 
 	# moduleSourceCode_main = getModuleCodes(modulesPath+'biodatacleaning/biodatacleaning_main.py')
